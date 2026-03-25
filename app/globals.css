@@ -15,8 +15,6 @@
   --color-border: #DDD8CE;
 
   /* Tipografie */
-  --font-heading: 'Fraunces', serif;
-  --font-body: 'Inter', sans-serif;
   --text-base: 17px;
 
   /* Spacing — 8px grid */
@@ -62,12 +60,12 @@ html {
 body {
   background: var(--color-background);
   color: var(--color-text);
-  font-family: var(--font-body);
+  font-family: var(--font-body), 'Inter', sans-serif;
   line-height: 1.75;
 }
 
 h1, h2, h3 {
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), 'Fraunces', serif;
   color: var(--color-primary);
 }
 
