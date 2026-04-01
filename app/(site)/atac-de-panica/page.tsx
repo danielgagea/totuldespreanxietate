@@ -335,38 +335,46 @@ export default function AtacDePanicaHub() {
                 <strong>frica</strong> de a-l retrăi.
               </p>
             </div>
-            {/* Image placeholder */}
+            {/* Illustration: person with heart racing but safe */}
             <div
               className="shrink-0 w-full md:w-[280px] h-[320px] rounded-xl flex items-center justify-center"
               style={{
                 backgroundColor: "var(--color-secondary-light)",
                 border: "1px solid var(--color-border)",
+                overflow: "hidden",
               }}
             >
-              <div className="text-center px-6">
-                <svg
-                  width="40"
-                  height="40"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="mx-auto mb-3"
-                  style={{ color: "var(--color-secondary)" }}
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <polyline points="21 15 16 10 5 21" />
-                </svg>
-                <p
-                  className="text-sm"
-                  style={{ color: "var(--color-text-secondary)" }}
-                >
-                  Imagine reprezentativă
-                </p>
-              </div>
+              <style>{`
+                @keyframes adp-pulse { 0%,100%{opacity:0.6} 50%{opacity:0.9} }
+                @keyframes adp-ring { 0%{r:20;opacity:0.3} 100%{r:60;opacity:0} }
+                @keyframes adp-ring2 { 0%{r:20;opacity:0.3} 100%{r:60;opacity:0} }
+                .adp-heart { animation: adp-pulse 0.8s ease-in-out infinite; }
+                .adp-ring1 { animation: adp-ring 1.5s ease-out infinite; }
+                .adp-ring2 { animation: adp-ring 1.5s ease-out 0.5s infinite; }
+              `}</style>
+              <svg viewBox="0 0 280 320" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "100%" }}>
+                {/* Person silhouette */}
+                <circle cx="140" cy="105" r="28" fill="#1B2B4B" opacity="0.35"/>
+                <path d="M140 133 C115 133 95 158 95 185 L95 220 L185 220 L185 185 C185 158 165 133 140 133Z" fill="#1B2B4B" opacity="0.25"/>
+                {/* Hand on chest */}
+                <ellipse cx="155" cy="175" rx="12" ry="8" fill="#1B2B4B" opacity="0.3" transform="rotate(-15 155 175)"/>
+                {/* Heart icon pulsing */}
+                <path d="M140 161 C140 157.5 136.5 155 133.5 155 C130.5 155 127.5 157.5 127.5 161 C127.5 167 140 173 140 173 C140 173 152.5 167 152.5 161 C152.5 157.5 149.5 155 146.5 155 C143.5 155 140 157.5 140 161Z" fill="#C4614A" className="adp-heart"/>
+                {/* Pulse waves from chest */}
+                <circle cx="140" cy="170" r="20" fill="none" stroke="#C4614A" strokeWidth="1" className="adp-ring1"/>
+                <circle cx="140" cy="170" r="20" fill="none" stroke="#C4614A" strokeWidth="1" className="adp-ring2"/>
+                {/* Safety circle / shield */}
+                <circle cx="140" cy="160" r="85" fill="none" stroke="#5C7A6A" strokeWidth="1.5" opacity="0.2" strokeDasharray="6 4"/>
+                {/* Text */}
+                <text x="140" y="275" textAnchor="middle" fill="#5C7A6A" fontSize="11" fontWeight="500" opacity="0.5">ești în siguranță</text>
+                {/* Alarm bell with strikethrough */}
+                <g transform="translate(200, 55)" opacity="0.3">
+                  <path d="M8 0 C8 0 0 6 0 12 L16 12 C16 6 8 0 8 0Z" fill="#C4614A" opacity="0.4"/>
+                  <line x1="5" y1="12" x2="11" y2="12" stroke="#C4614A" strokeWidth="1.5"/>
+                  <circle cx="8" cy="14" r="2" fill="#C4614A" opacity="0.3"/>
+                  <line x1="0" y1="0" x2="16" y2="14" stroke="#5C7A6A" strokeWidth="1.5" opacity="0.6"/>
+                </g>
+              </svg>
             </div>
           </div>
         </div>
@@ -592,7 +600,7 @@ export default function AtacDePanicaHub() {
               schimba.
             </p>
             <Link
-              href="/programare/"
+              href="/programare/?din=atac-de-panica"
               className="inline-block rounded-lg px-7 py-3.5 text-[16px] font-medium text-white cursor-pointer"
               style={{
                 backgroundColor: "var(--color-accent)",

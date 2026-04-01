@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Fraunces } from "next/font/google";
+import { Inter, Fraunces, Playfair_Display, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -15,6 +15,19 @@ const fraunces = Fraunces({
   style: ["normal", "italic"],
 });
 
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "600", "700"],
+  style: ["normal", "italic"],
+});
+
+const sourceSans = Source_Sans_3({
+  variable: "--font-source-sans",
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "600"],
+});
+
 export const metadata: Metadata = {
   title: "Totul despre Anxietate",
   description:
@@ -28,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ro">
-      <body className={`${inter.variable} ${fraunces.variable} antialiased`}>
+      <body className={`${inter.variable} ${fraunces.variable} ${playfair.variable} ${sourceSans.variable} antialiased`}>
         {children}
       </body>
     </html>

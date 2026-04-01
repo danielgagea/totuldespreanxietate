@@ -54,8 +54,21 @@ async function run() {
 
   try {
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 15000 });
+    // Scroll through the page to trigger IntersectionObserver reveals
+    await page.evaluate(async () => {
+      const distance = 400;
+      const delay = 80;
+      const scrollHeight = document.body.scrollHeight;
+      let current = 0;
+      while (current < scrollHeight) {
+        window.scrollBy(0, distance);
+        current += distance;
+        await new Promise(r => setTimeout(r, delay));
+      }
+      window.scrollTo(0, 0);
+    });
     // Wait for CSS animations to settle
-    await new Promise(r => setTimeout(r, 1200));
+    await new Promise(r => setTimeout(r, 1500));
 
     await page.screenshot({ path: filepath, fullPage: true });
     console.log(`${filepath}`);
