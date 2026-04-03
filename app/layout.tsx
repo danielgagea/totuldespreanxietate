@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Fraunces, Playfair_Display, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
@@ -54,6 +55,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ro">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WDYJ09S9F0"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WDYJ09S9F0');
+          `}
+        </Script>
+      </head>
       <body className={`${inter.variable} ${fraunces.variable} ${playfair.variable} ${sourceSans.variable} antialiased`}>
         {children}
       </body>
