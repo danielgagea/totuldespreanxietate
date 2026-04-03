@@ -97,6 +97,13 @@ export function Navbar() {
             </Link>
 
             <Link
+              href="/tipuri/fobii-specifice"
+              className={`nav-link ${pathname.startsWith("/tipuri/fobii-specifice") ? "nav-link-active" : ""}`}
+            >
+              Fobii specifice
+            </Link>
+
+            <Link
               href="/programare"
               className={`nav-cta ${pathname === "/programare" ? "nav-cta-active" : ""}`}
             >
@@ -153,6 +160,12 @@ export function Navbar() {
             className={`nav-mobile-link ${pathname === "/tipuri/anxietate-sociala" ? "nav-link-active" : ""}`}
           >
             Anxietate socială
+          </Link>
+          <Link
+            href="/tipuri/fobii-specifice"
+            className={`nav-mobile-link ${pathname.startsWith("/tipuri/fobii-specifice") ? "nav-link-active" : ""}`}
+          >
+            Fobii specifice
           </Link>
           <Link href="/programare" className="nav-mobile-cta">
             Programare

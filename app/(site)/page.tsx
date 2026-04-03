@@ -43,7 +43,7 @@ const tipuri = [
   { title: "Anxietatea socială", href: "/tipuri/anxietate-sociala", desc: "Repeți mental ce vei spune. Analizezi fiecare interacțiune ore sau zile. Eviți situații sociale nu pentru că nu vrei, ci pentru că te temi de judecată.", ok: true },
   { title: "Anxietatea generalizată", href: "#", desc: "Te îngrijorezi constant. Nu despre un lucru anume, ci despre orice. Mintea ta produce scenarii negative non-stop.", ok: false },
   { title: "Tulburarea obsesiv-compulsivă", href: "#", desc: "Gânduri intruzive care revin, ritualuri pe care le repeți ca să scapi de anxietate. Un cerc vicios.", ok: false },
-  { title: "Fobii specifice", href: "#", desc: "Frica intensă de ceva concret.. înălțimi, zbor, spații închise. Știi rațional că frica e disproporționată, dar corpul nu ascultă.", ok: false },
+  { title: "Fobii specifice", href: "/tipuri/fobii-specifice", desc: "Frica intensă de ceva concret.. înălțimi, zbor, spații închise. Știi rațional că frica e disproporționată, dar corpul nu ascultă.", ok: true },
 ];
 
 const faqs = [
