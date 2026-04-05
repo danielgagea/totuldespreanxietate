@@ -17,6 +17,7 @@ const fobiiSublinks = [
   { href: "/tipuri/fobii-specifice/claustrofobie", label: "Claustrofobie" },
   { href: "/tipuri/fobii-specifice/fobie-de-animale", label: "Fobia de animale" },
   { href: "/tipuri/fobii-specifice/fobie-de-zbor", label: "Fobia de zbor" },
+  { href: "/tipuri/fobii-specifice/fobie-de-inaltime", label: "Fobia de înălțimi" },
 ];
 
 export function Navbar() {
