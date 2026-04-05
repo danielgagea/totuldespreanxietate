@@ -111,6 +111,13 @@ export function Navbar() {
               Anxietate socială
             </Link>
 
+            <Link
+              href="/tipuri/toc"
+              className={`nav-link ${pathname === "/tipuri/toc" ? "nav-link-active" : ""}`}
+            >
+              TOC
+            </Link>
+
             {/* Fobii specifice dropdown */}
             <div className="nav-dropdown" ref={fobiiDropdownRef}>
               <button
@@ -193,6 +200,12 @@ export function Navbar() {
             className={`nav-mobile-link ${pathname === "/tipuri/anxietate-sociala" ? "nav-link-active" : ""}`}
           >
             Anxietate socială
+          </Link>
+          <Link
+            href="/tipuri/toc"
+            className={`nav-mobile-link ${pathname === "/tipuri/toc" ? "nav-link-active" : ""}`}
+          >
+            TOC
           </Link>
           {/* Mobile fobii dropdown */}
           <button
