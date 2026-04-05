@@ -16,6 +16,7 @@ const fobiiSublinks = [
   { href: "/tipuri/fobii-specifice/fobie-de-sange", label: "Fobia de sânge și ace" },
   { href: "/tipuri/fobii-specifice/claustrofobie", label: "Claustrofobie" },
   { href: "/tipuri/fobii-specifice/fobie-de-animale", label: "Fobia de animale" },
+  { href: "/tipuri/fobii-specifice/fobie-de-zbor", label: "Fobia de zbor" },
 ];
 
 export function Navbar() {
