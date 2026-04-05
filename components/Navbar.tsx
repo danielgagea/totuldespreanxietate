@@ -15,6 +15,7 @@ const fobiiSublinks = [
   { href: "/tipuri/fobii-specifice", label: "Ghid complet" },
   { href: "/tipuri/fobii-specifice/fobie-de-sange", label: "Fobia de sânge și ace" },
   { href: "/tipuri/fobii-specifice/claustrofobie", label: "Claustrofobie" },
+  { href: "/tipuri/fobii-specifice/fobie-de-animale", label: "Fobia de animale" },
 ];
 
 export function Navbar() {
