@@ -201,45 +201,64 @@ export default function FobieDeInaltimePage() {
         </div>
       </section>
 
-      {/* ── AMEȚEALA ── */}
+      {/* ── AMEȚEALA — INTRO + CELE 3 SISTEME ── */}
       <section id="ameteala" style={{ background: "var(--color-background)", padding: "64px 24px" }}>
         <div style={{ maxWidth: 760, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: 30, fontWeight: 400, color: "var(--color-primary)", marginBottom: 24 }}>
             Amețeala ta nu e imaginară
           </h2>
-          <p style={{ marginBottom: 16 }}>
+          <p style={{ marginBottom: 32 }}>
             Mulți oameni cred că amețeala pe care o simt la înălțime e &quot;doar în capul lor&quot;. Nu e. E un fenomen real, fiziologic, și are o explicație clară.
           </p>
-          <p style={{ marginBottom: 16 }}>
-            Corpul tău menține echilibrul folosind trei sisteme care lucrează împreună:
+
+          <p style={{ fontSize: 15, fontWeight: 600, color: "var(--color-primary)", marginBottom: 20 }}>
+            Corpul tău menține echilibrul folosind trei sisteme. Când ele se contrazic, apare amețeala.
           </p>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 24 }}>
+          <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 32 }}>
             {[
-              { name: "Ochii", desc: "Caută puncte de referință vizuale.. pereți, mobilier, obiecte din jur. La înălțime, aceste puncte de referință sunt departe sau lipsesc complet. Ochii nu au pe ce se ancora." },
-              { name: "Urechea internă", desc: "Sistemul vestibular detectează mișcarea și poziția capului. La înălțime, funcționează normal, dar trimite informații care nu se potrivesc cu ce văd ochii." },
-              { name: "Mușchii și articulațiile", desc: "Receptorii din picioare și din gleznă simt suprafața sub tine și ajustează echilibrul. La înălțime, suprafața e acolo, dar vizual pare că nu e nimic sub tine." },
+              { icon: "👁️", name: "Ce văd ochii", normal: "Caută puncte de referință.. pereți, mobilier, podea.", inaltime: "La înălțime, punctele de referință sunt departe sau lipsesc. Ochii nu au pe ce se ancora." },
+              { icon: "👂", name: "Ce simte urechea internă", normal: "Detectează mișcarea și poziția capului. Spune dacă ești stabil.", inaltime: "La înălțime funcționează normal, dar trimite informații care nu se potrivesc cu ce văd ochii." },
+              { icon: "🦶", name: "Ce simt picioarele", normal: "Receptorii din tălpi simt suprafața solidă sub tine.", inaltime: "La înălțime suprafața e acolo, dar vizual pare că nu e nimic sub tine." },
             ].map((sys) => (
-              <div key={sys.name} style={{ padding: "18px 24px", background: "var(--color-background-white)", borderRadius: 10, border: "1px solid var(--color-border)" }}>
-                <p style={{ fontWeight: 600, color: "var(--color-primary)", marginBottom: 6, fontSize: 17 }}>{sys.name}</p>
-                <p style={{ color: "var(--color-text)", fontSize: 16, lineHeight: 1.7, margin: 0 }}>{sys.desc}</p>
+              <div key={sys.name} style={{ flex: "1 1 220px", background: "var(--color-background-white)", borderRadius: 12, padding: 24, border: "1px solid var(--color-border)" }}>
+                <p style={{ fontSize: 28, marginBottom: 8 }}>{sys.icon}</p>
+                <p style={{ fontWeight: 600, color: "var(--color-primary)", marginBottom: 10, fontSize: 17 }}>{sys.name}</p>
+                <p style={{ fontSize: 15, marginBottom: 8 }}>{sys.normal}</p>
+                <p style={{ fontSize: 15, color: "#8B3A3A", margin: 0 }}>{sys.inaltime}</p>
               </div>
             ))}
           </div>
 
-          <p style={{ marginBottom: 16 }}>
-            Când aceste trei sisteme trimit informații contradictorii, creierul primește un mesaj de eroare. Și acea eroare se simte ca amețeală, instabilitate, senzația că te trage în jos. Nu e panică. Nu e imaginație. E un conflict senzorial real.
-          </p>
+          <div style={{ background: "var(--color-primary)", borderRadius: 12, padding: "24px 28px" }}>
+            <p style={{ color: "#ffffff", fontSize: 17, fontWeight: 500, lineHeight: 1.65, margin: 0 }}>
+              Când cele trei sisteme trimit mesaje contradictorii, creierul primește un conflict pe care nu-l poate rezolva. Și acel conflict se simte ca amețeală. Nu e panică. Nu e slăbiciune. E un fenomen fiziologic real.
+            </p>
+          </div>
+        </div>
+      </section>
 
-          <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 16, marginTop: 32 }}>
+      {/* ── AMEȚEALA — NORMALĂ VS FOBIE ── */}
+      <section style={{ background: "var(--color-background-white)", padding: "48px 24px 64px" }}>
+        <div style={{ maxWidth: 760, margin: "0 auto" }}>
+          <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 26, fontWeight: 400, color: "var(--color-primary)", marginBottom: 24 }}>
             Amețeală normală vs. fobie
           </h3>
-          <p style={{ marginBottom: 16 }}>
-            Aproape oricine simte un grad de amețeală dacă se uită în jos de la etajul 20. E normal. Diferența o face ce se întâmplă după. O persoană fără fobie simte amețeala, se dă un pas înapoi, și gata. O persoană cu fobie simte amețeala și o interpretează catastrofic: &quot;O să cad. O să leșin. O să pierd controlul.&quot; Și acea interpretare declanșează anxietatea, care amplifică amețeala, care confirmă interpretarea. Cercul se închide.
-          </p>
-          <div style={{ background: "var(--color-background-white)", borderRadius: 12, padding: "24px 28px", borderLeft: "3px solid var(--color-secondary)" }}>
+
+          <div style={{ display: "flex", gap: 24, flexWrap: "wrap", marginBottom: 24 }}>
+            <div style={{ flex: 1, minWidth: 280, background: "var(--color-background)", borderRadius: 12, padding: 28, border: "1px solid var(--color-border)" }}>
+              <p style={{ fontSize: 13, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--color-secondary)", fontWeight: 600, marginBottom: 10 }}>Fără fobie</p>
+              <p style={{ fontSize: 16, margin: 0 }}>Simți amețeala. Te dai un pas înapoi. Și gata. Continui ce făceai.</p>
+            </div>
+            <div style={{ flex: 1, minWidth: 280, background: "var(--color-background)", borderRadius: 12, padding: 28, border: "1px solid var(--color-border)" }}>
+              <p style={{ fontSize: 13, textTransform: "uppercase", letterSpacing: "0.1em", color: "#8B3A3A", fontWeight: 600, marginBottom: 10 }}>Cu fobie</p>
+              <p style={{ fontSize: 16, margin: 0 }}>Simți amețeala și o interpretezi catastrofic: &quot;O să cad. O să leșin. O să pierd controlul.&quot; Interpretarea declanșează anxietatea, care amplifică amețeala, care confirmă interpretarea.</p>
+            </div>
+          </div>
+
+          <div style={{ background: "var(--color-background)", borderRadius: 12, padding: "20px 28px", borderLeft: "3px solid var(--color-secondary)" }}>
             <p style={{ margin: 0, fontSize: 16, lineHeight: 1.7 }}>
-              <strong>Cu alte cuvinte:</strong> amețeala la înălțime e normală. Interpretarea amețelii e cea care face diferența între disconfort și fobie.
+              Amețeala la înălțime e normală. Interpretarea amețelii e cea care face diferența între disconfort și fobie.
             </p>
           </div>
         </div>
