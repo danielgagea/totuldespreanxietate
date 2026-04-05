@@ -78,7 +78,7 @@ export default function FobiiSpecificePage() {
                 Și totuși, corpul tău reacționează ca și cum viața ta ar fi în pericol.
               </p>
               <p style={{ fontSize: 17, color: "var(--color-text)", lineHeight: 1.75 }}>
-                <strong>Nu ești irațional. Nu ești slab. Ai o fobie specifică.</strong>
+                <strong>Nu ești irațional. Nu ești slab.</strong> Ce trăiești poartă un nume.. fobie specifică.
               </p>
             </div>
             {/* Illustration */}

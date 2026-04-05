@@ -69,7 +69,7 @@ export default function ClaustrofobiePage() {
                 Apesi pe buton. Ușa se deschide. Și totul trece. În câteva secunde ești bine. Rămâi cu inima accelerată, cu un gust de rușine în gură, și cu întrebarea pe care ți-o pui de fiecare dată.. &quot;Ce e în neregulă cu mine?&quot;
               </p>
               <p style={{ fontSize: 17, color: "var(--color-text)", lineHeight: 1.75 }}>
-                <strong>Dacă te recunoști, nu ești slab și nu exagerezi.</strong> Ai claustrofobie. Și în acest ghid vei înțelege exact de ce corpul tău reacționează așa, ce se întâmplă de fapt când &quot;rămâi fără aer&quot;, și ce funcționează ca tratament.
+                <strong>Dacă te recunoști, nu ești slab și nu exagerezi.</strong> Ce trăiești se numește claustrofobie. Și în acest ghid vei înțelege exact de ce corpul tău reacționează așa, ce se întâmplă de fapt când &quot;rămâi fără aer&quot;, și ce funcționează ca tratament.
               </p>
             </div>
 

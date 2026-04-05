@@ -69,7 +69,7 @@ export default function FobieSangePage() {
                 Ai încercat să te relaxezi. Să respiri adânc. Să te gândești la altceva. Nu a funcționat. Și nu a funcționat dintr-un motiv precis pe care probabil nimeni nu ți l-a explicat.
               </p>
               <p style={{ fontSize: 17, color: "var(--color-text)", lineHeight: 1.75 }}>
-                <strong>Dacă te recunoști în aceste cuvinte, nu ești slab și nu exagerezi.</strong> Ai o fobie de sânge-injecție-rănire. Corpul tău funcționează diferit de al celorlalți oameni cu fobii. Și în acest ghid vei înțelege exact de ce se întâmplă asta, de ce sfaturile obișnuite nu merg, și ce funcționează în schimb.
+                <strong>Dacă te recunoști în aceste cuvinte, nu ești slab și nu exagerezi.</strong> Ce trăiești se numește fobie de sânge-injecție-rănire. Corpul tău funcționează diferit de al celorlalți oameni cu fobii. Și în acest ghid vei înțelege exact de ce se întâmplă asta, de ce sfaturile obișnuite nu merg, și ce funcționează în schimb.
               </p>
             </div>
 

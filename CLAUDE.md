@@ -16,7 +16,7 @@
 ## 2. Proiect Overview
 
 **Website:** Totul despre Anxietate
-**Autor:** Daniel Gagea — psiholog clinician, 10+ ani experiență, 500+ clienți
+**Autor:** Daniel Gagea — psiholog clinician, psihoterapeut, 10+ ani experiență, 500+ clienți
 **Limbă:** Română exclusiv
 **Scop primar:** Resursa #1 din România despre anxietate — găsită organic pe Google și recomandată de AI-uri (ChatGPT, Gemini, Claude, Perplexity)
 **Scop secundar:** Conversie spre terapie individuală cu Daniel Gagea
@@ -146,7 +146,75 @@ Tonul vizual al acestui site:
 
 ---
 
-## 10. SEO & GEO — Reguli obligatorii pentru fiecare pagină
+## 10. Ton lingvistic — Cum scriem conținut
+
+Audiența nu e clinică. E om obișnuit, speriat, confuz. Scrie ca și cum vorbești cu cineva care tocmai a intrat în cabinet.
+
+### Reguli:
+- **Termeni englezi:** Traduși/adaptați în română. Menționează originalul o singură dată, în paranteză, la prima apariție. Ex: "tensiunea activă (applied tension în literatura de specialitate)"
+- **Fără jargon clinic:** Nu "expunere interoceptivă ghidată", ci "expunerea la senzațiile corporale, ghidată de terapeut"
+- **Fără caps lock pentru urgență:** Nu "trebuie să tensionezi ACUM", ci "corpul tău îți trimite câteva semnale clare"
+- **Fără prescripții reci:** Nu "Aceste semnale îți spun că trebuie să...", ci "Dacă le recunoști, poți interveni la timp"
+- **Titlu autor complet mereu:** "De Daniel Gagea, psiholog clinician, psihoterapeut"
+- **Fără em dash (—):** Folosim .. (două puncte) sau virgulă
+
+### Exemple concrete:
+
+| Nu scrie așa | Scrie așa |
+|---|---|
+| "Cum recunoști semnalele de pre-leșin" | "Cum știi că trebuie să acționezi" |
+| "un terapeut cognitiv-comportamental poate face diferența" | "un terapeut poate face diferența" |
+| "Mecanismul bifazic explică CUM reacționează corpul" | "Până acum am vorbit despre ce face corpul tău" |
+| "ÎNAINTE de orice expunere la situația care te sperie" | "înainte de orice situație care te sperie" |
+
+---
+
+## 11. Conținut din Obsidian — Sursa de adevăr
+
+Conținutul pentru fiecare pagină se află în Obsidian vault-ul ActiveBrain:
+- **Cale:** `/Users/danielgagea/Desktop/AdvertWise/Obsidian/ActiveBrain/WorkMemory/Totul despre Anxietate/tipuri/`
+- **Structură fișiere:** `[subtip]/[nume]-pagina-finala.md` sau `[subtip]/[nume]-pagina.md`
+- **Citește integral** înainte de a construi pagina. E sursa de adevăr pentru text.
+- **Nu modifica textul** decât pentru adaptare ton (vezi secțiunea 10) sau la cererea userului.
+
+---
+
+## 12. Workflow construcție pagină nouă
+
+### Pașii, în ordine:
+
+1. **Citește conținutul din Obsidian** (vezi secțiunea 11)
+2. **Creează directorul** `app/(site)/tipuri/[slug]/` (sau sub-director dacă e sub-pagină)
+3. **layout.tsx** — metadata + JSON-LD schema:
+   - Title tag (50-60 caractere), description (120-155 caractere)
+   - Canonical URL, Open Graph, Twitter card
+   - Schema: Article + FAQPage (min 3Q) + Person + BreadcrumbList
+   - datePublished + dateModified
+4. **page.tsx** — "use client", inline styles cu CSS variables:
+   - Hero: max-width 1000px, text stânga + SVG dreapta
+   - Conținut: max-width 760px
+   - Secțiuni alternează: background → background-white → primary (dark)
+   - FAQ: accordion cu useState
+   - Surse: collapsibile
+   - CTA: `/programare?din=[slug]`
+5. **Secțiunea "Când merită un specialist"** — secțiune separată cu:
+   - Carduri individuale cu emoji pentru fiecare beneficiu
+   - CTA dark block generos (borderRadius 16, padding 40px 32px)
+   - Mesaj motivațional + buton "Programează o consultație"
+6. **Navbar** — adaugă în dropdown-ul corespunzător (desktop + mobile)
+7. **Sitemap** — adaugă URL-ul în `app/sitemap.ts`
+8. **Build** → Screenshot → Verificare vizuală (min 2 runde) → Deploy
+
+### Design tokens validați:
+- Fonturi: `var(--font-heading)` (Fraunces) H1-H3, `var(--font-body)` body
+- Culori: `--color-primary` (#1B2B4B), `--color-secondary` (#5C7A6A), `--color-text` (#2C2C2C), `--color-background` (#F5F0E8), `--color-background-white` (#FDFAF5)
+- H1: 38px fontWeight 400, H2: 30px fontWeight 400, H3: 22px fontWeight 500
+- Body: 17px lineHeight 1.75
+- Secțiuni dense de informație se sparg în secțiuni separate cu alternare de fundal
+
+---
+
+## 13. SEO & GEO — Reguli obligatorii pentru fiecare pagină
 
 - Fiecare pagină răspunde la o **întrebare specifică în primele 100 de cuvinte**
 - **Daniel Gagea apare ca autor** pe fiecare pagină (entity consistency pentru AI)
@@ -158,7 +226,7 @@ Tonul vizual al acestui site:
 
 ---
 
-## 11. Deployment Rules
+## 14. Deployment Rules
 
 - **Testează întotdeauna pe localhost** înainte de orice push
 - **NU face push la GitHub** până când userul nu spune explicit "push" sau "commit"
@@ -166,7 +234,7 @@ Tonul vizual al acestui site:
 
 ---
 
-## 12. Hard Rules — Ce NU faci niciodată
+## 15. Hard Rules — Ce NU faci niciodată
 
 - Do not add sections, features, or content not in the reference
 - Do not "improve" a reference design — match it
