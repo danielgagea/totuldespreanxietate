@@ -179,25 +179,29 @@ export default function FobieDeInaltimePage() {
             Dar nu orice frică de înălțimi e fobie. Un grad de disconfort la înălțime e normal. E un mecanism de protecție pe care evoluția l-a instalat în creierul nostru. Strămoșii care nu se temeau deloc de prăpăstii aveau o problemă serioasă de supraviețuire.
           </p>
 
-          <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 16, marginTop: 32 }}>
+          <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 24, marginTop: 32 }}>
             Toată lumea se teme puțin de înălțimi
           </h3>
-          <p style={{ marginBottom: 16 }}>
-            Diferența dintre frica normală și fobie nu e de natură, ci de grad. Iată cum arată concret:
-          </p>
-          <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 16 }}>
-            <div style={{ display: "flex", gap: 16, padding: "16px 20px", background: "var(--color-background)", borderRadius: 10 }}>
-              <span style={{ fontWeight: 600, color: "var(--color-secondary)", flexShrink: 0 }}>Normal:</span>
-              <span>Stai pe marginea unei stânci și simți un fior. Te dai un pas înapoi. Apoi continui drumul.</span>
+
+          <div style={{ display: "flex", gap: 24, flexWrap: "wrap", marginBottom: 24 }}>
+            <div style={{ flex: 1, minWidth: 280, background: "var(--color-background)", borderRadius: 12, padding: 28, border: "2px solid var(--color-secondary)" }}>
+              <p style={{ fontSize: 13, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--color-secondary)", fontWeight: 600, marginBottom: 12 }}>Frică normală</p>
+              <p style={{ fontSize: 16, marginBottom: 12 }}>Stai pe marginea unei stânci și simți un fior. Te dai un pas înapoi.</p>
+              <p style={{ fontSize: 16, fontWeight: 600, margin: 0 }}>Apoi continui drumul.</p>
             </div>
-            <div style={{ display: "flex", gap: 16, padding: "16px 20px", background: "var(--color-background)", borderRadius: 10 }}>
-              <span style={{ fontWeight: 600, color: "#8B3A3A", flexShrink: 0 }}>Fobie:</span>
-              <span>Refuzi excursia pentru că traseul are un punct cu vedere panoramică. Sau mergi, dar tremuri, transpiri și te agăți de cineva tot drumul. Sau stai în mașină și aștepți pe ceilalți.</span>
+            <div style={{ flex: 1, minWidth: 280, background: "var(--color-background)", borderRadius: 12, padding: 28, border: "2px solid #8B3A3A" }}>
+              <p style={{ fontSize: 13, textTransform: "uppercase", letterSpacing: "0.1em", color: "#8B3A3A", fontWeight: 600, marginBottom: 12 }}>Fobie</p>
+              <p style={{ fontSize: 16, marginBottom: 12 }}>Refuzi excursia pentru că traseul are un punct cu vedere panoramică.</p>
+              <p style={{ fontSize: 16, marginBottom: 12 }}>Sau mergi, dar tremuri, transpiri și te agăți de cineva tot drumul.</p>
+              <p style={{ fontSize: 16, fontWeight: 600, margin: 0 }}>Sau stai în mașină și aștepți pe ceilalți.</p>
             </div>
           </div>
-          <p style={{ marginBottom: 16 }}>
-            Când înălțimea începe să-ți controleze deciziile, când refuzi locuințe, locuri de muncă, vacanțe sau experiențe din cauza ei, nu mai e prudență. E fobie. Și fobia e tratabilă.
-          </p>
+
+          <div style={{ background: "var(--color-primary)", borderRadius: 12, padding: "24px 28px" }}>
+            <p style={{ color: "#ffffff", fontSize: 16, lineHeight: 1.7, margin: 0 }}>
+              Când înălțimea începe să-ți controleze deciziile, când refuzi locuințe, locuri de muncă, vacanțe sau experiențe din cauza ei, nu mai e prudență. E fobie. Și fobia e tratabilă.
+            </p>
+          </div>
         </div>
       </section>
 
