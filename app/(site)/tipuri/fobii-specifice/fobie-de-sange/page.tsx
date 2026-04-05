@@ -508,27 +508,43 @@ export default function FobieSangePage() {
             </div>
           ))}
 
-          <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 12, marginTop: 16 }}>
+        </div>
+      </section>
+
+      {/* ── CÂND MERITĂ UN SPECIALIST ── */}
+      <section style={{ background: "var(--color-background)", padding: "64px 24px" }}>
+        <div style={{ maxWidth: 760, margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: 30, fontWeight: 400, color: "var(--color-primary)", marginBottom: 12 }}>
             Când merită să cauți un specialist
-          </h3>
-          <p style={{ marginBottom: 8 }}>
+          </h2>
+          <p style={{ marginBottom: 32 }}>
             Tensiunea activă e o tehnică pe care o poți practica singur. Dar un terapeut poate face diferența prin:
           </p>
-          <ul style={{ paddingLeft: 20, display: "flex", flexDirection: "column", gap: 6, marginBottom: 24 }}>
-            <li style={{ fontSize: 16 }}>Construirea unei ierarhii de expunere personalizate</li>
-            <li style={{ fontSize: 16 }}>Ghidarea ta prin trepte pe care singur le-ai evita</li>
-            <li style={{ fontSize: 16 }}>Identificarea comportamentelor de siguranță pe care le folosești fără să realizezi</li>
-            <li style={{ fontSize: 16 }}>Adresarea stratului mai profund, dacă e cazul</li>
-          </ul>
 
-          {/* CTA */}
-          <div style={{ background: "var(--color-primary)", borderRadius: 12, padding: "32px 28px", textAlign: "center" }}>
-            <p style={{ color: "#ffffff", fontSize: 18, fontWeight: 500, marginBottom: 16 }}>
-              Vrei să vorbești cu un specialist despre fobia ta?
+          <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 40 }}>
+            {[
+              { icon: "🗺️", text: "Construirea unei ierarhii de expunere personalizate" },
+              { icon: "🪜", text: "Ghidarea ta prin trepte pe care singur le-ai evita" },
+              { icon: "🔍", text: "Identificarea comportamentelor de siguranță pe care le folosești fără să realizezi" },
+              { icon: "🔑", text: "Adresarea stratului mai profund, dacă e cazul" },
+            ].map((item) => (
+              <div key={item.text} style={{ display: "flex", gap: 16, padding: "18px 24px", background: "var(--color-background-white)", borderRadius: 12, border: "1px solid var(--color-border)", alignItems: "center" }}>
+                <span style={{ fontSize: 22, flexShrink: 0 }}>{item.icon}</span>
+                <p style={{ margin: 0, fontSize: 16 }}>{item.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ background: "var(--color-primary)", borderRadius: 16, padding: "40px 32px", textAlign: "center" }}>
+            <p style={{ color: "#ffffff", fontSize: 20, fontWeight: 500, marginBottom: 8, fontFamily: "var(--font-heading)" }}>
+              Fobia de sânge are una dintre cele mai mari rate de succes din psihoterapie.
+            </p>
+            <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 16, marginBottom: 28, maxWidth: 480, margin: "0 auto 28px" }}>
+              Nu e ceva cu care &quot;trebuie să trăiești&quot;. E ceva ce se tratează.
             </p>
             <Link
               href="/programare?din=fobie-de-sange"
-              style={{ display: "inline-block", padding: "14px 36px", background: "var(--color-secondary)", color: "#ffffff", borderRadius: 8, fontWeight: 600, fontSize: 16, textDecoration: "none", transition: "opacity 0.2s" }}
+              style={{ display: "inline-block", padding: "16px 40px", background: "var(--color-secondary)", color: "#ffffff", borderRadius: 8, fontWeight: 600, fontSize: 17, textDecoration: "none", transition: "opacity 0.2s" }}
             >
               Programează o consultație
             </Link>
