@@ -139,6 +139,7 @@ Tonul vizual al acestui site:
 - **Animations:** Only animate `transform` and `opacity`. Never `transition-all`. Use spring-style easing.
 - **Interactive states:** Every clickable element needs hover, focus-visible, and active states. No exceptions.
 - **Images:** Add a gradient overlay (`bg-gradient-to-t from-black/60`) and a color treatment layer with `mix-blend-multiply`.
+- **Text contrast:** Orice text de corp care trebuie citit folosește `var(--color-text)`, nu `var(--color-text-secondary)`. Secondary se folosește DOAR pe elemente decorative: breadcrumbs, label-uri uppercase mici, subtitluri de tip "Ghid complet 2026", iconițe, surse bibliografice. Dacă un paragraf, o descriere de card, un răspuns FAQ sau un exercițiu e greu de citit, culoarea e greșită.
 - **Spacing:** Use intentional, consistent spacing tokens — not random Tailwind steps.
 - **Depth:** Surfaces should have a layering system (base → elevated → floating), not all sit at the same z-plane.
 - Evită: glassmorphism excesiv, purple gradients pe alb, layouts generice AI
