@@ -11,15 +11,25 @@ const atacSublinks = [
   { href: "/atac-de-panica/actioneaza", label: "Ce este de făcut" },
 ];
 
+const fobiiSublinks = [
+  { href: "/tipuri/fobii-specifice", label: "Ghid complet" },
+  { href: "/tipuri/fobii-specifice/fobie-de-sange", label: "Fobia de sânge și ace" },
+  { href: "/tipuri/fobii-specifice/claustrofobie", label: "Claustrofobie" },
+];
+
 export function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [fobiiDropdownOpen, setFobiiDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const [mobileFobiiDropdownOpen, setMobileFobiiDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const fobiiDropdownRef = useRef<HTMLDivElement>(null);
 
   const isAtacPage = pathname.startsWith("/atac-de-panica");
+  const isFobiiPage = pathname.startsWith("/tipuri/fobii-specifice");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -32,7 +42,9 @@ export function Navbar() {
   useEffect(() => {
     setMobileOpen(false);
     setDropdownOpen(false);
+    setFobiiDropdownOpen(false);
     setMobileDropdownOpen(false);
+    setMobileFobiiDropdownOpen(false);
   }, [pathname]);
 
   // Close dropdown on click outside
@@ -40,6 +52,9 @@ export function Navbar() {
     function handleClick(e: MouseEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setDropdownOpen(false);
+      }
+      if (fobiiDropdownRef.current && !fobiiDropdownRef.current.contains(e.target as Node)) {
+        setFobiiDropdownOpen(false);
       }
     }
     document.addEventListener("click", handleClick);
@@ -96,12 +111,30 @@ export function Navbar() {
               Anxietate socială
             </Link>
 
-            <Link
-              href="/tipuri/fobii-specifice"
-              className={`nav-link ${pathname.startsWith("/tipuri/fobii-specifice") ? "nav-link-active" : ""}`}
-            >
-              Fobii specifice
-            </Link>
+            {/* Fobii specifice dropdown */}
+            <div className="nav-dropdown" ref={fobiiDropdownRef}>
+              <button
+                className={`nav-link nav-dropdown-trigger ${isFobiiPage ? "nav-link-active" : ""}`}
+                onClick={() => setFobiiDropdownOpen(!fobiiDropdownOpen)}
+                aria-expanded={fobiiDropdownOpen}
+              >
+                Fobii specifice
+                <svg className={`nav-chevron ${fobiiDropdownOpen ? "nav-chevron-open" : ""}`} width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+              <div className={`nav-dropdown-menu ${fobiiDropdownOpen ? "nav-dropdown-open" : ""}`}>
+                {fobiiSublinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`nav-dropdown-item ${pathname === link.href ? "nav-dropdown-item-active" : ""}`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
 
             <Link
               href="/programare"
@@ -161,12 +194,27 @@ export function Navbar() {
           >
             Anxietate socială
           </Link>
-          <Link
-            href="/tipuri/fobii-specifice"
-            className={`nav-mobile-link ${pathname.startsWith("/tipuri/fobii-specifice") ? "nav-link-active" : ""}`}
+          {/* Mobile fobii dropdown */}
+          <button
+            className={`nav-mobile-link nav-mobile-dropdown-trigger ${isFobiiPage ? "nav-link-active" : ""}`}
+            onClick={() => setMobileFobiiDropdownOpen(!mobileFobiiDropdownOpen)}
           >
             Fobii specifice
-          </Link>
+            <svg className={`nav-chevron ${mobileFobiiDropdownOpen ? "nav-chevron-open" : ""}`} width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+          <div className={`nav-mobile-sub ${mobileFobiiDropdownOpen ? "nav-mobile-sub-open" : ""}`}>
+            {fobiiSublinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`nav-mobile-sublink ${pathname === link.href ? "nav-link-active" : ""}`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
           <Link href="/programare" className="nav-mobile-cta">
             Programare
           </Link>
