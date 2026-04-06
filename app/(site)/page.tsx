@@ -41,8 +41,9 @@ const jsonLd = {
 const tipuri = [
   { title: "Atacul de panică", href: "/atac-de-panica", desc: "Inima bate puternic, simți că nu poți respira, ești convins că faci infarct. Totul durează câteva minute, dar se simte ca o eternitate.", ok: true },
   { title: "Anxietatea socială", href: "/tipuri/anxietate-sociala", desc: "Repeți mental ce vei spune. Analizezi fiecare interacțiune ore sau zile. Eviți situații sociale nu pentru că nu vrei, ci pentru că te temi de judecată.", ok: true },
-  { title: "Anxietatea generalizată", href: "#", desc: "Te îngrijorezi constant. Nu despre un lucru anume, ci despre orice. Mintea ta produce scenarii negative non-stop.", ok: false },
-  { title: "Tulburarea obsesiv-compulsivă", href: "#", desc: "Gânduri intruzive care revin, ritualuri pe care le repeți ca să scapi de anxietate. Un cerc vicios.", ok: false },
+  { title: "Anxietatea generalizată", href: "/tipuri/anxietate-generalizata", desc: "Te îngrijorezi constant. Nu despre un lucru anume, ci despre orice. Mintea ta produce scenarii negative non-stop.", ok: true },
+  { title: "Tulburarea obsesiv-compulsivă", href: "/tipuri/toc", desc: "Gânduri intruzive care revin, ritualuri pe care le repeți ca să scapi de anxietate. Un cerc vicios.", ok: true },
+  { title: "Stresul post-traumatic", href: "/tipuri/tspt", desc: "Tresări la sunete puternice, ai coșmaruri sau eviți anumite locuri de luni de zile. Trecutul se simte ca prezent.", ok: true },
   { title: "Fobii specifice", href: "/tipuri/fobii-specifice", desc: "Frica intensă de ceva concret.. înălțimi, zbor, spații închise. Știi rațional că frica e disproporționată, dar corpul nu ascultă.", ok: true },
 ];
 
