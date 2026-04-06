@@ -127,31 +127,97 @@ export default function HomePage() {
 
       {/* PROBLEMA */}
       <section className="py-16 md:py-20" style={{ backgroundColor: "var(--color-background-white)" }}>
-        <div className="mx-auto max-w-[760px] px-6">
+        <style>{`
+          .hp-journey-container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+          .hp-journey-intro { font-size: 17px; line-height: 1.75; color: var(--color-text); margin-bottom: 40px; }
+          .hp-journey-timeline { position: relative; padding-left: 32px; margin-bottom: 40px; }
+          .hp-journey-timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 8px;
+            bottom: 8px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--color-secondary) 0%, #C4966C 100%);
+            opacity: 0.3;
+            border-radius: 1px;
+          }
+          .hp-journey-step {
+            position: relative;
+            margin-bottom: 28px;
+          }
+          .hp-journey-step:last-child { margin-bottom: 0; }
+          .hp-journey-dot {
+            position: absolute;
+            left: -32px;
+            top: 6px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid var(--color-secondary);
+            background: var(--color-background-white);
+          }
+          .hp-journey-step:last-child .hp-journey-dot {
+            border-color: #C4966C;
+            background: #C4966C;
+          }
+          .hp-journey-label {
+            font-family: var(--font-body), sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-secondary);
+            margin-bottom: 4px;
+          }
+          .hp-journey-step:last-child .hp-journey-label { color: #C4966C; }
+          .hp-journey-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--color-text);
+          }
+          .hp-journey-close {
+            padding: 28px;
+            background: var(--color-background);
+            border-radius: 12px;
+            border-left: 3px solid var(--color-secondary);
+          }
+          .hp-journey-close p {
+            font-size: 17px;
+            line-height: 1.75;
+            color: var(--color-text);
+            margin: 0;
+          }
+        `}</style>
+        <div className="hp-journey-container">
           <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-6" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}>
-            Călătoria pe care probabil ai făcut-o deja
+            Ți se pare cunoscută povestea asta?
           </h2>
-          <p className="text-[17px] leading-[1.75] mb-8" style={{ color: "var(--color-text)" }}>
-            Începe cu o senzație fizică. Poate o palpitație. Poate o presiune în piept. Poate o amețeală care vine din senin.
+          <p className="hp-journey-intro">
+            Începe cu o senzație fizică pe care nu o poți explica. Și de acolo urmează un drum pe care milioane de oameni l-au parcurs deja.
           </p>
-          <div className="space-y-4 mb-8">
+
+          <div className="hp-journey-timeline">
             {[
-              ["Senzații inexplicabile", "palpitații, amețeli, furnicături, presiune în piept, senzația că nu poți respira"],
-              ["Medicul", "urgență sau familie. EKG, analize de sânge. Totul iese normal"],
-              ["Răspunsul care nu ajută", "Nu aveți nimic. Probabil e stresul."],
-              ["Confuzia", "dar tu simți ceva. Senzațiile sunt reale. Dacă nu ai nimic, de ce corpul tău face asta?"],
-              ["Google", "cauți palpitații fără cauză sau de ce îmi bate inima repede fără motiv"],
-              ["Cuvântul", "undeva, într-un articol, citești pentru prima dată cuvântul anxietate"],
-            ].map(([bold, text], i) => (
-              <div key={i} className="flex gap-3 items-start" style={{ color: "var(--color-text)" }}>
-                <span className="shrink-0 w-2 h-2 rounded-full mt-2.5" style={{ backgroundColor: "var(--color-accent)" }} />
-                <p className="text-[17px] leading-[1.75]"><strong style={{ color: "var(--color-primary)" }}>{bold}</strong> .. {text}</p>
+              { label: "Senzația", text: "Palpitații, amețeli, furnicături, presiune în piept, senzația că nu poți respira. Apar din senin, fără un motiv clar." },
+              { label: "Doctorul", text: "Mergi la urgență sau la medicul de familie. EKG, analize de sânge, investigații. Totul iese în parametri normali." },
+              { label: "Răspunsul", text: "\"Nu aveți nimic. Probabil e stresul.\" Dar tu simți ceva. Senzațiile sunt reale. Dacă nu ai nimic, de ce corpul tău face asta?" },
+              { label: "Căutarea", text: "Ajungi pe Google. Cauți \"palpitații fără cauză\" sau \"de ce îmi bate inima repede fără motiv\". Citești zeci de articole." },
+              { label: "Cuvântul", text: "Undeva, într-un articol, citești pentru prima dată cuvântul anxietate. Și ceva se potrivește." },
+            ].map((step, i) => (
+              <div key={i} className="hp-journey-step">
+                <span className="hp-journey-dot" />
+                <p className="hp-journey-label">{step.label}</p>
+                <p className="hp-journey-text">{step.text}</p>
               </div>
             ))}
           </div>
-          <p className="text-[17px] leading-[1.75]" style={{ color: "var(--color-text)" }}>
-            <strong>Dacă ai ajuns aici prin această călătorie, nu ești singur.</strong> Milioane de oameni trec prin exact aceeași secvență. Și majoritatea pierd luni sau ani până găsesc un răspuns clar.
-          </p>
+
+          <div className="hp-journey-close">
+            <p>
+              Dacă ai ajuns aici prin acest drum, ești exact unde trebuie. Aici vei găsi răspunsurile pe care nimeni nu ți le-a dat încă.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -180,81 +246,418 @@ export default function HomePage() {
       </section>
 
       {/* TIPURI */}
-      <section id="tipuri" className="py-16 md:py-20" style={{ backgroundColor: "var(--color-background-white)" }}>
-        <div className="mx-auto max-w-[900px] px-6">
-          <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-4" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}>
-            Tipuri de anxietate
-          </h2>
-          <p className="text-[17px] leading-[1.75] mb-10" style={{ color: "var(--color-text)" }}>
-            Anxietatea nu e un singur lucru. Are forme diferite, cu mecanisme diferite și cu soluții diferite.
-          </p>
+      <section id="tipuri" className="py-16 md:py-24" style={{ backgroundColor: "var(--color-background-white)", position: "relative", overflow: "hidden" }}>
+        {/* Subtle background texture */}
+        <div style={{ position: "absolute", inset: 0, opacity: 0.03, pointerEvents: "none" }} aria-hidden="true">
+          <svg width="100%" height="100%">
+            <filter id="tipuri-grain">
+              <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+              <feColorMatrix type="saturate" values="0" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#tipuri-grain)" />
+          </svg>
+        </div>
+
+        <div className="mx-auto max-w-[1000px] px-6" style={{ position: "relative" }}>
+          <div className="text-center mb-12 md:mb-16">
+            <p className="text-xs font-medium uppercase tracking-[0.18em] mb-4" style={{ color: "var(--color-accent)" }}>
+              Ghiduri complete
+            </p>
+            <h2 className="text-[26px] md:text-[34px] leading-[1.2] mb-5" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)", letterSpacing: "-0.02em" }}>
+              Tipuri de anxietate
+            </h2>
+            <p className="text-[17px] leading-[1.75] mx-auto" style={{ color: "var(--color-text)", maxWidth: 560 }}>
+              Anxietatea nu e un singur lucru. Are forme diferite, cu mecanisme diferite și cu soluții diferite. Alege-o pe cea în care te recunoști.
+            </p>
+          </div>
+
           <style>{`
-            .hp-tipuri-grid {
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              gap: 16px;
-            }
-            @media (max-width: 767px) {
-              .hp-tipuri-grid { grid-template-columns: 1fr; }
-            }
-            .hp-tip-card {
+            /* Featured card */
+            .hp-tip-featured {
               display: flex;
               flex-direction: column;
-              padding: 28px;
-              border-radius: 12px;
-              background: var(--color-background, #F5F0E8);
-              border-left: 4px solid var(--color-secondary, #5C7A6A);
+              position: relative;
+              padding: 36px 32px 32px;
+              border-radius: 16px;
+              background: var(--color-primary);
               text-decoration: none;
-              transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+              overflow: hidden;
+              margin-bottom: 16px;
+              transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s ease-out;
             }
-            .hp-tip-card:hover {
-              transform: translateY(-3px);
-              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            @media (min-width: 768px) {
+              .hp-tip-featured {
+                flex-direction: row;
+                align-items: center;
+                gap: 40px;
+                padding: 48px 44px;
+              }
             }
-            .hp-tip-card:focus-visible {
-              outline: 2px solid var(--color-secondary, #5C7A6A);
+            .hp-tip-featured:hover {
+              transform: translateY(-4px);
+            }
+            .hp-tip-featured:focus-visible {
+              outline: 3px solid var(--color-accent);
+              outline-offset: 3px;
+            }
+            .hp-tip-featured:active { transform: translateY(-1px); }
+            .hp-tip-featured::before {
+              content: '';
+              position: absolute;
+              top: 0; left: 0; right: 0; bottom: 0;
+              background: radial-gradient(ellipse at 80% 20%, rgba(196,150,108,0.15) 0%, transparent 60%),
+                          radial-gradient(ellipse at 20% 80%, rgba(92,122,106,0.1) 0%, transparent 50%);
+              pointer-events: none;
+            }
+            .hp-tip-featured-icon {
+              flex-shrink: 0;
+              width: 120px;
+              height: 120px;
+              margin: 0 auto 20px;
+              opacity: 0.85;
+              transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease-out;
+            }
+            @media (min-width: 768px) {
+              .hp-tip-featured-icon { margin: 0; width: 140px; height: 140px; }
+            }
+            .hp-tip-featured:hover .hp-tip-featured-icon {
+              transform: scale(1.06);
+              opacity: 1;
+            }
+            .hp-tip-featured-content { flex: 1; position: relative; z-index: 1; }
+            .hp-tip-featured-label {
+              display: inline-block;
+              font-size: 11px;
+              font-weight: 600;
+              letter-spacing: 0.12em;
+              text-transform: uppercase;
+              color: #C4966C;
+              margin-bottom: 12px;
+              padding: 4px 12px;
+              border-radius: 20px;
+              background: rgba(196,150,108,0.12);
+            }
+            .hp-tip-featured-title {
+              font-family: var(--font-heading), 'Fraunces', serif;
+              font-size: 24px;
+              font-weight: 400;
+              color: #FAF7F2;
+              margin-bottom: 10px;
+              letter-spacing: -0.02em;
+            }
+            @media (min-width: 768px) {
+              .hp-tip-featured-title { font-size: 28px; }
+            }
+            .hp-tip-featured-desc {
+              font-size: 16px;
+              line-height: 1.7;
+              color: rgba(250,247,242,0.75);
+              margin-bottom: 20px;
+            }
+            .hp-tip-featured-cta {
+              display: inline-flex;
+              align-items: center;
+              gap: 8px;
+              font-size: 15px;
+              font-weight: 600;
+              color: #C4966C;
+              padding: 10px 20px;
+              border-radius: 8px;
+              background: rgba(196,150,108,0.1);
+              border: 1px solid rgba(196,150,108,0.2);
+              transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+            }
+            .hp-tip-featured:hover .hp-tip-featured-cta {
+              transform: translateX(4px);
+            }
+
+            /* Secondary cards grid - 3 top, 2 bottom centered */
+            .hp-tipuri-grid-v2 {
+              display: grid;
+              grid-template-columns: 1fr;
+              gap: 14px;
+            }
+            @media (min-width: 640px) {
+              .hp-tipuri-grid-v2 { grid-template-columns: 1fr 1fr; }
+            }
+            @media (min-width: 900px) {
+              .hp-tipuri-grid-v2 {
+                grid-template-columns: repeat(6, 1fr);
+              }
+              .hp-tipuri-grid-v2 > a:nth-child(1),
+              .hp-tipuri-grid-v2 > a:nth-child(2),
+              .hp-tipuri-grid-v2 > a:nth-child(3) {
+                grid-column: span 2;
+              }
+              .hp-tipuri-grid-v2 > a:nth-child(4) {
+                grid-column: 2 / span 2;
+              }
+              .hp-tipuri-grid-v2 > a:nth-child(5) {
+                grid-column: 4 / span 2;
+              }
+            }
+
+            /* Secondary card */
+            .hp-tip-card-v2 {
+              display: flex;
+              flex-direction: column;
+              padding: 24px 22px 22px;
+              border-radius: 14px;
+              background: var(--color-background);
+              text-decoration: none;
+              position: relative;
+              overflow: hidden;
+              transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s ease-out;
+            }
+            .hp-tip-card-v2::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              height: 3px;
+              border-radius: 14px 14px 0 0;
+              transition: opacity 0.25s ease-out;
+            }
+            .hp-tip-card-v2:hover {
+              transform: translateY(-5px);
+            }
+            .hp-tip-card-v2:focus-visible {
+              outline: 2px solid var(--color-secondary);
               outline-offset: 2px;
             }
-            .hp-tip-card:active { transform: translateY(0); }
-            .hp-tip-title {
-              font-family: var(--font-heading), 'Fraunces', serif;
-              font-size: 20px;
-              font-weight: 500;
-              color: var(--color-primary, #1B2B4B);
-              margin-bottom: 8px;
+            .hp-tip-card-v2:active { transform: translateY(-1px); }
+
+            /* Color accents per card */
+            .hp-tip-card-v2[data-accent="green"]::before { background: #5C7A6A; }
+            .hp-tip-card-v2[data-accent="amber"]::before { background: #C4966C; }
+            .hp-tip-card-v2[data-accent="teal"]::before { background: #4A8B7F; }
+            .hp-tip-card-v2[data-accent="slate"]::before { background: #6B7B8D; }
+            .hp-tip-card-v2[data-accent="rust"]::before { background: #A0735C; }
+
+            .hp-tip-card-v2-icon {
+              width: 44px;
+              height: 44px;
+              margin-bottom: 14px;
+              opacity: 0.7;
+              transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease-out;
             }
-            .hp-tip-desc {
-              font-size: 15px;
-              line-height: 1.7;
-              color: var(--color-text, #2C2C2C);
+            .hp-tip-card-v2:hover .hp-tip-card-v2-icon {
+              transform: scale(1.1) translateY(-2px);
+              opacity: 1;
+            }
+            .hp-tip-card-v2-title {
+              font-family: var(--font-heading), 'Fraunces', serif;
+              font-size: 18px;
+              font-weight: 500;
+              color: var(--color-primary);
+              margin-bottom: 8px;
+              letter-spacing: -0.01em;
+            }
+            .hp-tip-card-v2-desc {
+              font-size: 14px;
+              line-height: 1.65;
+              color: var(--color-text);
               margin-bottom: 16px;
               flex: 1;
             }
-            .hp-tip-cta {
-              font-size: 14px;
+            .hp-tip-card-v2-cta {
+              font-size: 13px;
               font-weight: 600;
-              color: var(--color-secondary, #5C7A6A);
-              display: flex;
+              display: inline-flex;
               align-items: center;
-              gap: 6px;
+              gap: 5px;
+              transition: transform 0.2s ease-out, opacity 0.2s ease-out;
             }
-            .hp-tip-card:hover .hp-tip-cta { gap: 10px; }
-            .hp-tip-cta svg { transition: transform 0.2s ease-out; }
-            .hp-tip-card:hover .hp-tip-cta svg { transform: translateX(3px); }
+            .hp-tip-card-v2:hover .hp-tip-card-v2-cta {
+              transform: translateX(3px);
+            }
+            .hp-tip-card-v2[data-accent="green"] .hp-tip-card-v2-cta { color: #5C7A6A; }
+            .hp-tip-card-v2[data-accent="amber"] .hp-tip-card-v2-cta { color: #B08050; }
+            .hp-tip-card-v2[data-accent="teal"] .hp-tip-card-v2-cta { color: #4A8B7F; }
+            .hp-tip-card-v2[data-accent="slate"] .hp-tip-card-v2-cta { color: #6B7B8D; }
+            .hp-tip-card-v2[data-accent="rust"] .hp-tip-card-v2-cta { color: #A0735C; }
+
+            /* Shadow system for cards */
+            .hp-tip-card-v2 {
+              box-shadow: 0 1px 3px rgba(27,43,75,0.04), 0 4px 12px rgba(27,43,75,0.03);
+            }
+            .hp-tip-card-v2:hover {
+              box-shadow: 0 4px 12px rgba(27,43,75,0.06), 0 12px 32px rgba(27,43,75,0.06);
+            }
+            .hp-tip-featured {
+              box-shadow: 0 4px 16px rgba(0,0,0,0.15), 0 12px 40px rgba(0,0,0,0.1);
+            }
+            .hp-tip-featured:hover {
+              box-shadow: 0 8px 24px rgba(0,0,0,0.18), 0 20px 56px rgba(0,0,0,0.12);
+            }
           `}</style>
-          <div className="hp-tipuri-grid">
-            {tipuri.map((t, i) => (
-              <Link key={i} href={t.href} className="hp-tip-card">
-                <h3 className="hp-tip-title">{t.title}</h3>
-                <p className="hp-tip-desc">{t.desc}</p>
-                <span className="hp-tip-cta">
-                  Citește ghidul
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </span>
-              </Link>
-            ))}
+
+          {/* Featured card: Atacul de panică */}
+          <Link href={tipuri[0].href} className="hp-tip-featured">
+            <div className="hp-tip-featured-icon" aria-hidden="true">
+              <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/* Pulsing circles */}
+                <circle cx="70" cy="70" r="55" stroke="#C4966C" strokeWidth="0.8" opacity="0.15">
+                  <animate attributeName="r" values="50;58;50" dur="3s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" values="0.15;0.05;0.15" dur="3s" repeatCount="indefinite" />
+                </circle>
+                <circle cx="70" cy="70" r="40" stroke="#C4966C" strokeWidth="0.8" opacity="0.2">
+                  <animate attributeName="r" values="38;44;38" dur="2.5s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" values="0.2;0.08;0.2" dur="2.5s" repeatCount="indefinite" />
+                </circle>
+                {/* Heart shape */}
+                <path d="M70 95 C70 95 45 78 45 62 C45 52 53 46 62 48 C67 49 70 54 70 54 C70 54 73 49 78 48 C87 46 95 52 95 62 C95 78 70 95 70 95Z" fill="#C4966C" opacity="0.35">
+                  <animate attributeName="opacity" values="0.35;0.5;0.35" dur="1.8s" repeatCount="indefinite" />
+                </path>
+                <path d="M70 95 C70 95 45 78 45 62 C45 52 53 46 62 48 C67 49 70 54 70 54 C70 54 73 49 78 48 C87 46 95 52 95 62 C95 78 70 95 70 95Z" stroke="#C4966C" strokeWidth="1.2" fill="none" opacity="0.5" />
+                {/* ECG line */}
+                <path d="M20 70 L45 70 L52 70 L56 55 L60 85 L64 60 L68 75 L70 70 L95 70 L120 70" stroke="#FAF7F2" strokeWidth="1.2" opacity="0.25" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+            <div className="hp-tip-featured-content">
+              <span className="hp-tip-featured-label">Cel mai căutat ghid</span>
+              <h3 className="hp-tip-featured-title">{tipuri[0].title}</h3>
+              <p className="hp-tip-featured-desc">{tipuri[0].desc}</p>
+              <span className="hp-tip-featured-cta">
+                Citește ghidul complet
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+            </div>
+          </Link>
+
+          {/* Secondary cards */}
+          <div className="hp-tipuri-grid-v2">
+            {/* Anxietatea socială */}
+            <Link href={tipuri[1].href} className="hp-tip-card-v2" data-accent="green">
+              <div className="hp-tip-card-v2-icon" aria-hidden="true">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Two figures, one faded */}
+                  <circle cx="16" cy="14" r="5" fill="#5C7A6A" opacity="0.5" />
+                  <path d="M8 30 C8 24 12 20 16 20 C20 20 24 24 24 30" fill="#5C7A6A" opacity="0.35" />
+                  <circle cx="30" cy="14" r="5" fill="#5C7A6A" opacity="0.2" />
+                  <path d="M22 30 C22 24 26 20 30 20 C34 20 38 24 38 30" fill="#5C7A6A" opacity="0.12" />
+                  {/* Dividing line */}
+                  <line x1="22" y1="8" x2="22" y2="34" stroke="#5C7A6A" strokeWidth="0.8" opacity="0.15" strokeDasharray="2 2" />
+                </svg>
+              </div>
+              <h3 className="hp-tip-card-v2-title">{tipuri[1].title}</h3>
+              <p className="hp-tip-card-v2-desc">{tipuri[1].desc}</p>
+              <span className="hp-tip-card-v2-cta">
+                Citește ghidul
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+            </Link>
+
+            {/* Anxietatea generalizată */}
+            <Link href={tipuri[2].href} className="hp-tip-card-v2" data-accent="amber">
+              <div className="hp-tip-card-v2-icon" aria-hidden="true">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Thought cloud / spiraling lines */}
+                  <circle cx="22" cy="20" r="10" stroke="#C4966C" strokeWidth="0.8" opacity="0.3" fill="none" />
+                  <circle cx="22" cy="20" r="6" stroke="#C4966C" strokeWidth="0.8" opacity="0.4" fill="none" />
+                  <circle cx="22" cy="20" r="2.5" fill="#C4966C" opacity="0.35" />
+                  {/* Radiating worry lines */}
+                  <path d="M22 6 L22 3" stroke="#C4966C" strokeWidth="0.8" opacity="0.25" strokeLinecap="round" />
+                  <path d="M32 10 L34.5 7.5" stroke="#C4966C" strokeWidth="0.8" opacity="0.25" strokeLinecap="round" />
+                  <path d="M36 20 L39 20" stroke="#C4966C" strokeWidth="0.8" opacity="0.25" strokeLinecap="round" />
+                  <path d="M12 10 L9.5 7.5" stroke="#C4966C" strokeWidth="0.8" opacity="0.25" strokeLinecap="round" />
+                  <path d="M8 20 L5 20" stroke="#C4966C" strokeWidth="0.8" opacity="0.25" strokeLinecap="round" />
+                  {/* Small dots - scattered thoughts */}
+                  <circle cx="15" cy="34" r="1.2" fill="#C4966C" opacity="0.2" />
+                  <circle cx="29" cy="36" r="1" fill="#C4966C" opacity="0.15" />
+                  <circle cx="22" cy="38" r="0.8" fill="#C4966C" opacity="0.1" />
+                </svg>
+              </div>
+              <h3 className="hp-tip-card-v2-title">{tipuri[2].title}</h3>
+              <p className="hp-tip-card-v2-desc">{tipuri[2].desc}</p>
+              <span className="hp-tip-card-v2-cta">
+                Citește ghidul
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+            </Link>
+
+            {/* TOC */}
+            <Link href={tipuri[3].href} className="hp-tip-card-v2" data-accent="teal">
+              <div className="hp-tip-card-v2-icon" aria-hidden="true">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Circular arrows / loop */}
+                  <path d="M22 8 A14 14 0 0 1 36 22" stroke="#4A8B7F" strokeWidth="1.2" opacity="0.4" fill="none" strokeLinecap="round" />
+                  <path d="M36 22 A14 14 0 0 1 22 36" stroke="#4A8B7F" strokeWidth="1.2" opacity="0.3" fill="none" strokeLinecap="round" />
+                  <path d="M22 36 A14 14 0 0 1 8 22" stroke="#4A8B7F" strokeWidth="1.2" opacity="0.4" fill="none" strokeLinecap="round" />
+                  <path d="M8 22 A14 14 0 0 1 22 8" stroke="#4A8B7F" strokeWidth="1.2" opacity="0.3" fill="none" strokeLinecap="round" />
+                  {/* Arrows */}
+                  <polygon points="35,18 37,22 33,22" fill="#4A8B7F" opacity="0.4" />
+                  <polygon points="9,26 7,22 11,22" fill="#4A8B7F" opacity="0.4" />
+                  {/* Center lock */}
+                  <rect x="18" y="19" width="8" height="7" rx="1.5" stroke="#4A8B7F" strokeWidth="1" opacity="0.35" fill="none" />
+                  <path d="M20 19 V16 A2 2 0 0 1 24 16 V19" stroke="#4A8B7F" strokeWidth="1" opacity="0.35" fill="none" />
+                </svg>
+              </div>
+              <h3 className="hp-tip-card-v2-title">{tipuri[3].title}</h3>
+              <p className="hp-tip-card-v2-desc">{tipuri[3].desc}</p>
+              <span className="hp-tip-card-v2-cta">
+                Citește ghidul
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+            </Link>
+
+            {/* TSPT */}
+            <Link href={tipuri[4].href} className="hp-tip-card-v2" data-accent="slate">
+              <div className="hp-tip-card-v2-icon" aria-hidden="true">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Cracked / fractured shape */}
+                  <circle cx="22" cy="22" r="14" stroke="#6B7B8D" strokeWidth="0.8" opacity="0.25" fill="none" />
+                  {/* Lightning crack */}
+                  <path d="M22 8 L20 18 L25 19 L19 36" stroke="#6B7B8D" strokeWidth="1.2" opacity="0.4" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                  {/* Fragment lines */}
+                  <path d="M20 18 L12 15" stroke="#6B7B8D" strokeWidth="0.6" opacity="0.2" strokeLinecap="round" />
+                  <path d="M25 19 L33 16" stroke="#6B7B8D" strokeWidth="0.6" opacity="0.2" strokeLinecap="round" />
+                  <path d="M19 28 L10 30" stroke="#6B7B8D" strokeWidth="0.6" opacity="0.2" strokeLinecap="round" />
+                </svg>
+              </div>
+              <h3 className="hp-tip-card-v2-title">{tipuri[4].title}</h3>
+              <p className="hp-tip-card-v2-desc">{tipuri[4].desc}</p>
+              <span className="hp-tip-card-v2-cta">
+                Citește ghidul
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+            </Link>
+
+            {/* Fobii specifice */}
+            <Link href={tipuri[5].href} className="hp-tip-card-v2" data-accent="rust">
+              <div className="hp-tip-card-v2-icon" aria-hidden="true">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Eye with fearful pupil */}
+                  <path d="M6 22 C6 22 14 12 22 12 C30 12 38 22 38 22 C38 22 30 32 22 32 C14 32 6 22 6 22Z" stroke="#A0735C" strokeWidth="1" opacity="0.35" fill="none" />
+                  <circle cx="22" cy="22" r="6" stroke="#A0735C" strokeWidth="0.8" opacity="0.3" fill="none" />
+                  <circle cx="22" cy="22" r="2.5" fill="#A0735C" opacity="0.4" />
+                  {/* Avoidance - looking away lines */}
+                  <path d="M4 18 L2 16" stroke="#A0735C" strokeWidth="0.8" opacity="0.2" strokeLinecap="round" />
+                  <path d="M4 26 L2 28" stroke="#A0735C" strokeWidth="0.8" opacity="0.2" strokeLinecap="round" />
+                  <path d="M40 18 L42 16" stroke="#A0735C" strokeWidth="0.8" opacity="0.2" strokeLinecap="round" />
+                  <path d="M40 26 L42 28" stroke="#A0735C" strokeWidth="0.8" opacity="0.2" strokeLinecap="round" />
+                </svg>
+              </div>
+              <h3 className="hp-tip-card-v2-title">{tipuri[5].title}</h3>
+              <p className="hp-tip-card-v2-desc">{tipuri[5].desc}</p>
+              <span className="hp-tip-card-v2-cta">
+                Citește ghidul
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+            </Link>
           </div>
         </div>
       </section>
