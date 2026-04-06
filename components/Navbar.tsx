@@ -125,14 +125,14 @@ export function Navbar() {
               href="/tipuri/tspt"
               className={`nav-link ${pathname === "/tipuri/tspt" ? "nav-link-active" : ""}`}
             >
-              TSPT
+              Stres post-traumatic
             </Link>
 
             <Link
               href="/tipuri/toc"
               className={`nav-link ${pathname === "/tipuri/toc" ? "nav-link-active" : ""}`}
             >
-              TOC
+              Tulburare obsesiv-compulsivă
             </Link>
 
             {/* Fobii specifice dropdown */}
@@ -228,13 +228,13 @@ export function Navbar() {
             href="/tipuri/tspt"
             className={`nav-mobile-link ${pathname === "/tipuri/tspt" ? "nav-link-active" : ""}`}
           >
-            TSPT
+            Stres post-traumatic
           </Link>
           <Link
             href="/tipuri/toc"
             className={`nav-mobile-link ${pathname === "/tipuri/toc" ? "nav-link-active" : ""}`}
           >
-            TOC
+            Tulburare obsesiv-compulsivă
           </Link>
           {/* Mobile fobii dropdown */}
           <button
