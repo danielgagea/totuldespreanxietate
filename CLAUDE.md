@@ -10,6 +10,7 @@
 - **Invoke the `frontend-design` skill** before writing any frontend code, every session, no exceptions.
 - **Check `brand_assets/`** before designing. If assets exist, use them. Do not use placeholders where real assets are available.
 - **Citește `SEO-GEO-CHECKLIST.md`** înainte de a publica orice pagină. Nicio pagină nu se publică fără scor minim 32/38. Aplică secțiunile A1-A6 la fiecare pagină nouă.
+- **Citește `PAGE_DESIGN_RULES.md`** înainte de a construi orice pagină nouă. Conține toate regulile vizuale, de structură și de copy validate de user. Parcurge checklist-ul pre-build din secțiunea 9.
 
 ---
 

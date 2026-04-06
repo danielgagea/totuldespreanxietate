@@ -115,6 +115,13 @@ export function Navbar() {
             </Link>
 
             <Link
+              href="/tipuri/anxietate-generalizata"
+              className={`nav-link ${pathname === "/tipuri/anxietate-generalizata" ? "nav-link-active" : ""}`}
+            >
+              Anxietate generalizată
+            </Link>
+
+            <Link
               href="/tipuri/toc"
               className={`nav-link ${pathname === "/tipuri/toc" ? "nav-link-active" : ""}`}
             >
@@ -203,6 +210,12 @@ export function Navbar() {
             className={`nav-mobile-link ${pathname === "/tipuri/anxietate-sociala" ? "nav-link-active" : ""}`}
           >
             Anxietate socială
+          </Link>
+          <Link
+            href="/tipuri/anxietate-generalizata"
+            className={`nav-mobile-link ${pathname === "/tipuri/anxietate-generalizata" ? "nav-link-active" : ""}`}
+          >
+            Anxietate generalizată
           </Link>
           <Link
             href="/tipuri/toc"
