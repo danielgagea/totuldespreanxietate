@@ -39,12 +39,12 @@ const jsonLd = {
 };
 
 const tipuri = [
-  { title: "Atacul de panică", href: "/atac-de-panica", desc: "Inima bate puternic, simți că nu poți respira, ești convins că faci infarct. Totul durează câteva minute, dar se simte ca o eternitate.", ok: true },
-  { title: "Anxietatea socială", href: "/tipuri/anxietate-sociala", desc: "Repeți mental ce vei spune. Analizezi fiecare interacțiune ore sau zile. Eviți situații sociale nu pentru că nu vrei, ci pentru că te temi de judecată.", ok: true },
-  { title: "Anxietatea generalizată", href: "/tipuri/anxietate-generalizata", desc: "Te îngrijorezi constant. Nu despre un lucru anume, ci despre orice. Mintea ta produce scenarii negative non-stop.", ok: true },
-  { title: "Tulburarea obsesiv-compulsivă", href: "/tipuri/toc", desc: "Gânduri intruzive care revin, ritualuri pe care le repeți ca să scapi de anxietate. Un cerc vicios.", ok: true },
-  { title: "Stresul post-traumatic", href: "/tipuri/tspt", desc: "Tresări la sunete puternice, ai coșmaruri sau eviți anumite locuri de luni de zile. Trecutul se simte ca prezent.", ok: true },
-  { title: "Fobii specifice", href: "/tipuri/fobii-specifice", desc: "Frica intensă de ceva concret.. înălțimi, zbor, spații închise. Știi rațional că frica e disproporționată, dar corpul nu ascultă.", ok: true },
+  { title: "Atacul de panică", href: "/atac-de-panica", desc: "Inima bate puternic, simți că nu poți respira, ești convins că faci infarct. Totul durează câteva minute, dar se simte ca o eternitate." },
+  { title: "Anxietatea socială", href: "/tipuri/anxietate-sociala", desc: "Repeți mental ce vei spune. Analizezi fiecare interacțiune ore sau zile. Eviți situații sociale nu pentru că nu vrei, ci pentru că te temi de judecată." },
+  { title: "Anxietatea generalizată", href: "/tipuri/anxietate-generalizata", desc: "Te îngrijorezi constant, nu despre un lucru anume, ci despre orice. Mintea ta produce scenarii negative non-stop." },
+  { title: "Tulburarea obsesiv-compulsivă", href: "/tipuri/toc", desc: "Gânduri intruzive care revin, ritualuri pe care le repeți ca să scapi de anxietate. Un cerc vicios." },
+  { title: "Stresul post-traumatic", href: "/tipuri/tspt", desc: "Tresări la sunete puternice, ai coșmaruri sau eviți anumite locuri de luni de zile. Trecutul se simte ca prezent." },
+  { title: "Fobii specifice", href: "/tipuri/fobii-specifice", desc: "Frica intensă de ceva concret.. înălțimi, zbor, spații închise. Știi rațional că frica e disproporționată, dar corpul nu ascultă." },
 ];
 
 const faqs = [
@@ -181,26 +181,78 @@ export default function HomePage() {
 
       {/* TIPURI */}
       <section id="tipuri" className="py-16 md:py-20" style={{ backgroundColor: "var(--color-background-white)" }}>
-        <div className="mx-auto max-w-[760px] px-6">
+        <div className="mx-auto max-w-[900px] px-6">
           <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-4" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}>
             Tipuri de anxietate
           </h2>
-          <p className="text-[17px] leading-[1.75] mb-10" style={{ color: "var(--color-text-secondary)" }}>
+          <p className="text-[17px] leading-[1.75] mb-10" style={{ color: "var(--color-text)" }}>
             Anxietatea nu e un singur lucru. Are forme diferite, cu mecanisme diferite și cu soluții diferite.
           </p>
-          <div className="space-y-4">
+          <style>{`
+            .hp-tipuri-grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 16px;
+            }
+            @media (max-width: 767px) {
+              .hp-tipuri-grid { grid-template-columns: 1fr; }
+            }
+            .hp-tip-card {
+              display: flex;
+              flex-direction: column;
+              padding: 28px;
+              border-radius: 12px;
+              background: var(--color-background, #F5F0E8);
+              border-left: 4px solid var(--color-secondary, #5C7A6A);
+              text-decoration: none;
+              transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+            }
+            .hp-tip-card:hover {
+              transform: translateY(-3px);
+              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            }
+            .hp-tip-card:focus-visible {
+              outline: 2px solid var(--color-secondary, #5C7A6A);
+              outline-offset: 2px;
+            }
+            .hp-tip-card:active { transform: translateY(0); }
+            .hp-tip-title {
+              font-family: var(--font-heading), 'Fraunces', serif;
+              font-size: 20px;
+              font-weight: 500;
+              color: var(--color-primary, #1B2B4B);
+              margin-bottom: 8px;
+            }
+            .hp-tip-desc {
+              font-size: 15px;
+              line-height: 1.7;
+              color: var(--color-text, #2C2C2C);
+              margin-bottom: 16px;
+              flex: 1;
+            }
+            .hp-tip-cta {
+              font-size: 14px;
+              font-weight: 600;
+              color: var(--color-secondary, #5C7A6A);
+              display: flex;
+              align-items: center;
+              gap: 6px;
+            }
+            .hp-tip-card:hover .hp-tip-cta { gap: 10px; }
+            .hp-tip-cta svg { transition: transform 0.2s ease-out; }
+            .hp-tip-card:hover .hp-tip-cta svg { transform: translateX(3px); }
+          `}</style>
+          <div className="hp-tipuri-grid">
             {tipuri.map((t, i) => (
-              <Link key={i} href={t.href} className={`block p-6 rounded-xl ${t.ok ? "group cursor-pointer" : "opacity-60 pointer-events-none"}`} style={{ backgroundColor: "var(--color-background)", border: "1px solid var(--color-border)" }} tabIndex={t.ok ? 0 : -1}>
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h3 className="text-[20px] mb-2" style={{ fontFamily: "var(--font-heading)", fontWeight: 500, color: "var(--color-primary)" }}>
-                      {t.title}
-                      {!t.ok && <span className="ml-2 text-[12px] font-medium uppercase tracking-wider px-2 py-0.5 rounded" style={{ backgroundColor: "var(--color-border)", color: "var(--color-text-secondary)" }}>în curând</span>}
-                    </h3>
-                    <p className="text-[15px] leading-[1.7]" style={{ color: "var(--color-text-secondary)" }}>{t.desc}</p>
-                  </div>
-                  {t.ok && <span className="shrink-0 mt-1 opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: "var(--color-accent)" }}>&rarr;</span>}
-                </div>
+              <Link key={i} href={t.href} className="hp-tip-card">
+                <h3 className="hp-tip-title">{t.title}</h3>
+                <p className="hp-tip-desc">{t.desc}</p>
+                <span className="hp-tip-cta">
+                  Citește ghidul
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
               </Link>
             ))}
           </div>
