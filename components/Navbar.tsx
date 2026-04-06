@@ -122,6 +122,13 @@ export function Navbar() {
             </Link>
 
             <Link
+              href="/tipuri/tspt"
+              className={`nav-link ${pathname === "/tipuri/tspt" ? "nav-link-active" : ""}`}
+            >
+              TSPT
+            </Link>
+
+            <Link
               href="/tipuri/toc"
               className={`nav-link ${pathname === "/tipuri/toc" ? "nav-link-active" : ""}`}
             >
@@ -216,6 +223,12 @@ export function Navbar() {
             className={`nav-mobile-link ${pathname === "/tipuri/anxietate-generalizata" ? "nav-link-active" : ""}`}
           >
             Anxietate generalizată
+          </Link>
+          <Link
+            href="/tipuri/tspt"
+            className={`nav-mobile-link ${pathname === "/tipuri/tspt" ? "nav-link-active" : ""}`}
+          >
+            TSPT
           </Link>
           <Link
             href="/tipuri/toc"
