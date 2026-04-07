@@ -687,9 +687,19 @@ export default function HomePage() {
               <p className="text-[17px] leading-[1.75] mb-4" style={{ color: "var(--color-text)" }}>
                 Nu a construit acest site ca pe o broșură de promovare. L-a construit din aceeași frustrare pe care o au cei care caută răspunsuri: cele mai multe resurse din România despre anxietate sunt incomplete, superficiale și pline de sfaturi generice.
               </p>
-              <p className="text-[17px] leading-[1.75]" style={{ color: "var(--color-text)" }}>
-                Abordarea lui Daniel este diferită. Nu lucrează pe simptome. <strong>Lucrează pe cauze.</strong> Te ajută să înțelegi de ce corpul și mintea ta au ajuns să funcționeze așa, și ce trebuie să se schimbe la rădăcină.
+              <p className="text-[17px] leading-[1.75] mb-6" style={{ color: "var(--color-text)" }}>
+                Abordarea lui Daniel este diferită.. nu lucrează pe simptome, ci pe cauze. Te ajută să înțelegi de ce corpul și mintea ta au ajuns să funcționeze așa, și ce trebuie să se schimbe la rădăcină.
               </p>
+              <Link
+                href="/despre-daniel"
+                className="inline-flex items-center gap-2 text-[15px] font-semibold"
+                style={{ color: "var(--color-secondary)", textDecoration: "none", transition: "opacity 0.2s ease-out" }}
+              >
+                Află mai multe despre Daniel
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </Link>
             </div>
           </div>
         </div>
