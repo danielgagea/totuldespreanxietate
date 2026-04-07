@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { VideoPlaceholder } from "@/components/sections/VideoPlaceholder";
 
 export const metadata: Metadata = {
   title:
@@ -715,10 +714,6 @@ export default function IntelegePage() {
             </p>
           </div>
 
-          {/* Video */}
-          <div className="mt-10">
-            <VideoPlaceholder title="Daniel Gagea: Ce vrea să spună psihicul prin atacul de panică" />
-          </div>
         </Section>
 
         {/* ═══════════════════════════════════════════════
@@ -911,84 +906,15 @@ export default function IntelegePage() {
             NAVIGATION + AUTHOR FOOTER
         ═══════════════════════════════════════════════ */}
         <Section id="navigare" bg="white">
-          {/* Nav links */}
-          <div className="grid gap-3">
-            {[
-              {
-                label: `← Înapoi la ghid`,
-                href: "/atac-de-panica/",
-              },
-              {
-                label: `Recunoaște.. ce simți`,
-                href: "/atac-de-panica/recunoaste",
-              },
-              {
-                label: `Acționează.. ce poți face`,
-                href: "/atac-de-panica/actioneaza",
-              },
-            ].map(({ label, href }) => (
-              <Link
-                key={href}
-                href={href}
-                className="flex items-center gap-3 rounded-lg px-4 py-3 text-[15px] font-medium cursor-pointer"
-                style={{
-                  color: "var(--color-primary)",
-                  backgroundColor: "var(--color-background)",
-                  border: "1px solid var(--color-border)",
-                  transition: "var(--transition-fast)",
-                }}
-              >
-                <span>→</span>
-                {label}
-              </Link>
-            ))}
-          </div>
-
-          {/* ─── Author footer ─── */}
-          <div
-            className="flex items-center gap-5 mt-12 pt-8"
-            style={{ borderTop: "1px solid var(--color-border)" }}
-          >
-            <div
-              className="shrink-0 w-14 h-14 rounded-full flex items-center justify-center"
-              style={{
-                backgroundColor: "var(--color-secondary-light)",
-                border: "1px solid var(--color-border)",
-              }}
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                style={{ color: "var(--color-secondary)" }}
-              >
-                <circle cx="12" cy="8" r="4" />
-                <path d="M20 21a8 8 0 1 0-16 0" />
-              </svg>
-            </div>
-            <div>
-              <p
-                className="font-medium text-[15px]"
-                style={{ color: "var(--color-primary)" }}
-              >
-                Daniel Gagea
-              </p>
-              <p
-                className="text-[13px]"
-                style={{ color: "var(--color-text-secondary)" }}
-              >
-                Psiholog clinician, psihoterapeut
-              </p>
-              <p
-                className="text-[13px] mt-0.5"
-                style={{ color: "var(--color-text-secondary)" }}
-              >
-                Ultima actualizare: Martie 2026
-              </p>
-            </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginTop: "32px" }}>
+            <Link href="/atac-de-panica" style={{ display: "flex", alignItems: "center", gap: "8px", padding: "16px 20px", borderRadius: "10px", background: "var(--color-background-white)", border: "1px solid var(--color-border)", textDecoration: "none", fontSize: "15px", fontWeight: 500, color: "var(--color-primary)", transition: "transform 0.2s ease-out" }}>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              Înapoi la ghid
+            </Link>
+            <Link href="/atac-de-panica/actioneaza" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "16px 20px", borderRadius: "10px", background: "var(--color-secondary)", textDecoration: "none", fontSize: "15px", fontWeight: 600, color: "#fff", transition: "transform 0.2s ease-out" }}>
+              Următorul pas: Acționează
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </Link>
           </div>
         </Section>
       </main>

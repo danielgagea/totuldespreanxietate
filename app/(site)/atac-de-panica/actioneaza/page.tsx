@@ -630,47 +630,15 @@ export default function ActioneazaPage() {
 
       {/* ─── Navigation ─── */}
       <Section id="navigare" bg="white">
-        <div
-          className="flex flex-col gap-4 rounded-lg p-6"
-          style={{
-            backgroundColor: "var(--color-background-white)",
-            border: "1px solid var(--color-border)",
-          }}
-        >
-          <Link
-            href="/atac-de-panica/"
-            className="flex items-center gap-2 text-[15px] font-medium underline underline-offset-2 hover:opacity-80 transition-opacity"
-            style={{ color: "var(--color-accent)" }}
-          >
-            &larr; Înapoi la ghid
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginTop: "32px" }}>
+          <Link href="/atac-de-panica" style={{ display: "flex", alignItems: "center", gap: "8px", padding: "16px 20px", borderRadius: "10px", background: "var(--color-background-white)", border: "1px solid var(--color-border)", textDecoration: "none", fontSize: "15px", fontWeight: 500, color: "var(--color-primary)", transition: "transform 0.2s ease-out" }}>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            Înapoi la ghid
           </Link>
-          <Link
-            href="/atac-de-panica/recunoaste"
-            className="flex items-center gap-2 text-[15px] font-medium underline underline-offset-2 hover:opacity-80 transition-opacity"
-            style={{ color: "var(--color-accent)" }}
-          >
-            Recunoaște, ce simți &rarr;
+          <Link href="/programare?din=atac-de-panica" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "16px 20px", borderRadius: "10px", background: "var(--color-secondary)", textDecoration: "none", fontSize: "15px", fontWeight: 600, color: "#fff", transition: "transform 0.2s ease-out" }}>
+            Programează o consultație
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </Link>
-          <Link
-            href="/atac-de-panica/intelege"
-            className="flex items-center gap-2 text-[15px] font-medium underline underline-offset-2 hover:opacity-80 transition-opacity"
-            style={{ color: "var(--color-accent)" }}
-          >
-            Înțelege, de ce se întâmplă &rarr;
-          </Link>
-        </div>
-      </Section>
-
-      {/* ─── Author footer ─── */}
-      <Section id="autor" bg="default">
-        <div
-          className="text-center text-sm"
-          style={{ color: "var(--color-text-secondary)" }}
-        >
-          <p className="font-medium" style={{ color: "var(--color-text)" }}>
-            Daniel Gagea
-          </p>
-          <p>psiholog clinician, psihoterapeut</p>
         </div>
       </Section>
     </>

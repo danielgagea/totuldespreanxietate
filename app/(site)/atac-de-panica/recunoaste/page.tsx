@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { VideoPlaceholder } from "@/components/sections/VideoPlaceholder";
 
 export const metadata: Metadata = {
   title: `Atacul de panică. Ce este și ce simți | Totul despre Anxietate`,
@@ -257,12 +256,71 @@ export default function RecunoastePage() {
             </p>
           </div>
 
-          {/* Video placeholder */}
-          <div className="mt-10">
-            <VideoPlaceholder title={`Daniel Gagea explică: Ce este un atac de panică`} />
-          </div>
         </div>
       </section>
+
+      <style>{`
+          .rec-symptoms-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 28px 0;
+          }
+          @media (max-width: 767px) {
+            .rec-symptoms-grid { grid-template-columns: 1fr; }
+          }
+          .rec-symptom-card {
+            padding: 22px;
+            background: var(--color-background-white, #FDFAF5);
+            border-radius: 12px;
+            border-left: 3px solid var(--color-secondary, #5C7A6A);
+            transition: transform 0.2s ease-out;
+          }
+          .rec-symptom-card:hover { transform: translateY(-2px); }
+          .rec-symptom-icon { font-size: 24px; margin-bottom: 8px; display: block; }
+          .rec-symptom-card h4 {
+            font-family: var(--font-heading), 'Fraunces', serif;
+            font-size: 17px;
+            font-weight: 500;
+            color: var(--color-primary, #1B2B4B);
+            margin-bottom: 6px;
+          }
+          .rec-symptom-card p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--color-text, #2C2C2C);
+            margin: 0;
+          }
+          .rec-insight {
+            padding: 24px;
+            background: var(--color-primary, #1B2B4B);
+            border-radius: 12px;
+            margin: 24px 0;
+          }
+          .rec-insight p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: rgba(250, 247, 242, 0.85);
+            margin: 0;
+          }
+          .rec-insight strong { color: #C4966C; }
+          .rec-thoughts-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 24px 0;
+          }
+          .rec-thought {
+            padding: 10px 18px;
+            background: var(--color-background-white, #FDFAF5);
+            border-radius: 20px;
+            border: 1px solid rgba(27, 43, 75, 0.08);
+            font-family: var(--font-heading), 'Fraunces', serif;
+            font-size: 15px;
+            font-style: italic;
+            color: var(--color-primary, #1B2B4B);
+          }
+        `}</style>
 
       {/* ─── SENZAȚIILE FIZICE ─── */}
       <Section id="simptome" bg="default">
@@ -279,104 +337,62 @@ export default function RecunoastePage() {
           Ce simți în timpul unui atac
         </h2>
 
-        <div
-          className="text-[17px] leading-[1.75] space-y-5"
-          style={{ color: "var(--color-text)" }}
+        <p className="text-[17px] leading-[1.75] mb-2" style={{ color: "var(--color-text)" }}>
+          Totul începe brusc. Uneori într-o situație specifică.. un loc aglomerat, o călătorie, o întâlnire. Alteori, aparent din senin.. acasă, la birou, sau chiar în somn.
+        </p>
+
+        <h3
+          className="text-[20px] md:text-[24px] leading-[1.30] pt-6 mb-2"
+          style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}
         >
-          <p>
-            Totul începe brusc. Uneori într-o situație specifică..
-            un loc aglomerat, o călătorie, o întâlnire. Alteori, aparent
-            din senin.. acasă, la birou, sau chiar în somn.
-          </p>
+          Senzațiile fizice
+        </h3>
 
-          {/* H3: Senzațiile fizice */}
-          <h3
-            className="text-[20px] md:text-[24px] leading-[1.30] pt-4"
-            style={{
-              fontFamily: "var(--font-heading)",
-              fontWeight: 400,
-              color: "var(--color-primary)",
-            }}
-          >
-            Senzațiile fizice
-          </h3>
+        <div className="rec-symptoms-grid">
+          {[
+            { icon: "💓", title: "Inima", text: "Bate puternic, repede, de parcă ar vrea să iasă din piept. Simți durere sau presiune în piept." },
+            { icon: "🫁", title: "Respirația", text: "Simți că nu primești destul aer, că te sufoci. Paradoxal, respiri prea mult, nu prea puțin." },
+            { icon: "💫", title: "Amețeala", text: "Vine în val. Simți că te pierzi, că leșini, că solul se mișcă sub tine." },
+            { icon: "🖐️", title: "Furnicăturile", text: "Mâinile și picioarele amorțesc.. senzație ciudată, ca și cum nu ar fi ale tale." },
+            { icon: "🌡️", title: "Temperatura", text: "Alternezi între valuri de căldură și frisoane. Transpiri, simți greață." },
+            { icon: "👁️", title: "Derealizarea", text: "Totul din jur pare ireal, de parcă ai privi un film cu tine. E un simptom frecvent, nu un semn de nebunie." },
+          ].map((s, i) => (
+            <div key={i} className="rec-symptom-card">
+              <span className="rec-symptom-icon">{s.icon}</span>
+              <h4>{s.title}</h4>
+              <p>{s.text}</p>
+            </div>
+          ))}
+        </div>
 
+        <div className="rec-insight">
           <p>
-            Inima începe să bată puternic, repede, de parcă ar vrea să
-            iasă din piept. Simți durere sau presiune în piept și
-            imediat te gândești la ce e mai rău.
-          </p>
-          <p>
-            Respirația se schimbă. Simți că nu primești destul aer, că
-            te sufoci, că ceva îți blochează gâtul. Și iată
-            paradoxul pe care puțini oameni îl știu: în timpul unui atac
-            de panică, respiri <strong>PREA MULT</strong>, nu prea puțin.
-            Senzația de sufocare este produsă de hiperventilație..
-            respirația rapidă și profundă scade brusc presiunea CO2 din
-            sânge (hipocapnie), ceea ce produce amețeală, furnicături și
-            senzație de sufocare.
-          </p>
-          <p>
-            Amețeala vine în val. Simți că te pierzi, că leșini, că
-            solul se mișcă sub tine. Mâinile și picioarele amorțesc sau
-            furnicătură.. senzație ciudată, ca și cum nu ar fi ale
-            tale.
-          </p>
-          <p>
-            Transpiri.. uneori abundent, uneori doar palme umede. Alternezi
-            între valuri de căldură și frisoane. Simți greață, ca
-            și cum ai vomita.
-          </p>
-          <p>
-            Și poate cea mai înspăimântătoare senzație: totul din jur
-            pare ireal. De parcă ai privi un film cu tine însuți. De parcă
-            lumea s-a decuplat. Asta se numește{" "}
-            <strong>derealizare</strong>, și este un simptom frecvent, nu un
-            semn de nebunie.
-          </p>
-
-          {/* H3: Ce se întâmplă în minte */}
-          <h3
-            className="text-[20px] md:text-[24px] leading-[1.30] pt-4"
-            style={{
-              fontFamily: "var(--font-heading)",
-              fontWeight: 400,
-              color: "var(--color-primary)",
-            }}
-          >
-            Ce se întâmplă în minte
-          </h3>
-
-          <p>
-            Senzațiile fizice vin cu gânduri automate.. rapide, intense,
-            și extrem de convingătoare:
+            <strong>Paradoxul pe care puțini oameni îl știu:</strong> senzația de sufocare este produsă de hiperventilație.. respirația rapidă și profundă scade brusc presiunea CO2 din sânge, ceea ce produce amețeală, furnicături și senzație de sufocare.
           </p>
         </div>
 
-        {/* Thought list, italic Fraunces with accent left border */}
-        <div
-          className="my-6 pl-6 space-y-3"
-          style={{ borderLeft: "3px solid var(--color-accent)" }}
+        <h3
+          className="text-[20px] md:text-[24px] leading-[1.30] pt-6 mb-2"
+          style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}
         >
+          Ce se întâmplă în minte
+        </h3>
+
+        <p className="text-[17px] leading-[1.75]" style={{ color: "var(--color-text)" }}>
+          Senzațiile fizice vin cu gânduri automate.. rapide, intense, și extrem de convingătoare:
+        </p>
+
+        <div className="rec-thoughts-grid">
           {[
-            `„Fac infarct.”`,
-            `„Înnebunesc.”`,
-            `„Pierd controlul.”`,
-            `„Nu pot respira, mă sufoc.”`,
-            `„Trebuie să ies de aici.”`,
-            `„Mă voi face de râs.”`,
-            `„Nu se va termina niciodată.”`,
-          ].map((thought) => (
-            <p
-              key={thought}
-              className="text-[17px] italic"
-              style={{
-                fontFamily: "var(--font-heading)",
-                color: "var(--color-primary)",
-              }}
-            >
-              {thought}
-            </p>
+            {t: "Fac infarct."},
+            {t: "Înnebunesc."},
+            {t: "Pierd controlul."},
+            {t: "Nu pot respira."},
+            {t: "Trebuie să ies de aici."},
+            {t: "Mă voi face de râs."},
+            {t: "Nu se va termina niciodată."},
+          ].map((item, i) => (
+            <span key={i} className="rec-thought">&bdquo;{item.t}&rdquo;</span>
           ))}
         </div>
 
@@ -385,7 +401,7 @@ export default function RecunoastePage() {
           style={{ color: "var(--color-text)" }}
         >
           <p>
-            Aceste gânduri nu sunt raționale. Dar în mijlocul atacului, ele
+            Aceste gânduri nu sunt raționale, dar în mijlocul atacului ele
             se simt absolut adevărate.
           </p>
 
@@ -580,10 +596,13 @@ export default function RecunoastePage() {
           </p>
           <p>
             Când corpul tău declanșează răspunsul{" "}
-            {`„luptă sau fugi”`}, inima pompează mai mult sânge.
+            {`„luptă sau fugi"`}, inima pompează mai mult sânge.
             Ritmul cardiac crește. Simți presiune în piept. Aceleași
             senzații ca într-un eveniment cardiac, dar dintr-o cauză
             complet diferită.
+          </p>
+          <p>
+            Tabelul de mai jos te ajută să vezi diferențele concrete între cele două situații. Nu înlocuiește o evaluare medicală, dar îți oferă repere clare pe care le poți folosi în momentul în care te întrebi ce ți se întâmplă.
           </p>
         </div>
 
@@ -704,7 +723,7 @@ export default function RecunoastePage() {
         </div>
 
         <PullQuote>
-          {`Diferența nu este senzația. Diferența este ce-ți spui despre senzație. „Inima bate repede la sala de sport" → normal. „Inima bate repede la metrou" → „Fac infarct!” Aceeași senzație. Interpretare diferită. Rezultat complet diferit.`}
+          {`Diferența nu este senzația. Diferența este ce-ți spui despre senzație. „Inima bate repede la sala de sport" → normal. „Inima bate repede la metrou" → „Fac infarct!" Aceeași senzație. Interpretare diferită. Rezultat complet diferit.`}
         </PullQuote>
       </Section>
 
@@ -725,11 +744,11 @@ export default function RecunoastePage() {
           {[
             {
               q: `Cât durează un atac de panică?`,
-              a: `5-10 minute intensitate maximă, 10-20 minute total (Rachman, 2004). Atacul trece întotdeauna.`,
+              a: `5-10 minute intensitate maximă, 10-20 minute total. Atacul trece întotdeauna.`,
             },
             {
               q: `Pot să mor din cauza unui atac de panică?`,
-              a: `Nu. Un atac de panică nu produce infarct, AVC sau nebunie. Odată confirmat medical că ești sănătos, atacul este, prin definiție, inofensiv (Vickers & McNally, 2004).`,
+              a: `Nu. Un atac de panică nu produce infarct, AVC sau nebunie. Odată confirmat medical că ești sănătos, atacul este, prin definiție, inofensiv.`,
             },
           ].map(({ q, a }) => (
             <details
@@ -758,123 +777,17 @@ export default function RecunoastePage() {
             </details>
           ))}
         </div>
-      </Section>
-
-      {/* ─── NAVIGATION LINKS ─── */}
-      <Section bg="white">
-        <div className="space-y-4">
-          <Link
-            href="/atac-de-panica/"
-            className="flex items-center gap-3 rounded-xl p-5 group"
-            style={{
-              backgroundColor: "var(--color-background)",
-              border: "1px solid var(--color-border)",
-              transition: "var(--transition-fast)",
-            }}
-          >
-            <span
-              className="text-lg"
-              style={{ color: "var(--color-text-secondary)" }}
-            >
-              &larr;
-            </span>
-            <div>
-              <p
-                className="text-[15px] font-medium"
-                style={{ color: "var(--color-primary)" }}
-              >
-                Înapoi la ghid
-              </p>
-            </div>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginTop: "40px" }}>
+          <Link href="/atac-de-panica" style={{ display: "flex", alignItems: "center", gap: "8px", padding: "16px 20px", borderRadius: "10px", background: "var(--color-background-white)", border: "1px solid var(--color-border)", textDecoration: "none", fontSize: "15px", fontWeight: 500, color: "var(--color-primary)", transition: "transform 0.2s ease-out" }}>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            Înapoi la ghid
           </Link>
-
-          <Link
-            href="/atac-de-panica/intelege"
-            className="flex items-center justify-between rounded-xl p-5 group"
-            style={{
-              backgroundColor: "var(--color-background)",
-              border: "1px solid var(--color-border)",
-              transition: "var(--transition-fast)",
-            }}
-          >
-            <div>
-              <p
-                className="text-[15px] font-medium"
-                style={{ color: "var(--color-primary)" }}
-              >
-                Înțelege: de ce se întâmplă
-              </p>
-            </div>
-            <span
-              className="text-lg"
-              style={{ color: "var(--color-text-secondary)" }}
-            >
-              &rarr;
-            </span>
-          </Link>
-
-          <Link
-            href="/atac-de-panica/actioneaza"
-            className="flex items-center justify-between rounded-xl p-5 group"
-            style={{
-              backgroundColor: "var(--color-accent)",
-              transition: "var(--transition-fast)",
-            }}
-          >
-            <div>
-              <p className="text-[15px] font-medium text-white">
-                Acționează: ce poți face
-              </p>
-            </div>
-            <span className="text-lg text-white">&rarr;</span>
+          <Link href="/atac-de-panica/intelege" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "16px 20px", borderRadius: "10px", background: "var(--color-secondary)", textDecoration: "none", fontSize: "15px", fontWeight: 600, color: "#fff", transition: "transform 0.2s ease-out" }}>
+            Următorul pas: Înțelege
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </Link>
         </div>
       </Section>
-
-      {/* ─── AUTHOR FOOTER ─── */}
-      <section style={{ backgroundColor: "var(--color-background-white)" }} className="py-8">
-        <div className="mx-auto max-w-[760px] px-6">
-          <div
-            className="flex items-center gap-5 py-6"
-            style={{ borderTop: "1px solid var(--color-border)" }}
-          >
-            <div
-              className="shrink-0 w-14 h-14 rounded-full flex items-center justify-center"
-              style={{
-                backgroundColor: "var(--color-secondary-light)",
-                border: "1px solid var(--color-border)",
-              }}
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                style={{ color: "var(--color-secondary)" }}
-              >
-                <circle cx="12" cy="8" r="4" />
-                <path d="M20 21a8 8 0 1 0-16 0" />
-              </svg>
-            </div>
-            <div>
-              <p
-                className="font-medium text-[15px]"
-                style={{ color: "var(--color-primary)" }}
-              >
-                Daniel Gagea
-              </p>
-              <p
-                className="text-[13px]"
-                style={{ color: "var(--color-text-secondary)" }}
-              >
-                Psiholog clinician, psihoterapeut
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
