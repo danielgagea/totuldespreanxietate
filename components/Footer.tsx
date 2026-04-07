@@ -34,6 +34,7 @@ export function Footer() {
               <h4>Informații</h4>
               <Link href="/programare">Programare</Link>
               <Link href="/termeni-si-conditii">Termeni și condiții</Link>
+              <Link href="/politica-de-confidentialitate">Politica de confidențialitate</Link>
               <button
                 className="site-footer-cookie-btn"
                 onClick={() => window.dispatchEvent(new CustomEvent("open-cookie-settings"))}
