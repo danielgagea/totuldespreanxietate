@@ -29,6 +29,23 @@ function ProgramareForm() {
 
     try {
       await submitContact({ ...form, pagina: sursa });
+
+      // Track Lead event if consent was given
+      try {
+        const consent = JSON.parse(localStorage.getItem("cookie-consent") || "{}");
+        if (consent.analytics && typeof window.gtag === "function") {
+          window.gtag("event", "generate_lead", {
+            event_category: "conversion",
+            event_label: sursa,
+          });
+        }
+        if (consent.marketing && typeof window.fbq === "function") {
+          window.fbq("track", "Lead", { content_name: sursa });
+        }
+      } catch {
+        // consent tracking failed silently
+      }
+
       router.push("/programare/multumesc");
     } catch {
       setError("Ceva nu a mers. Te rog încearcă din nou.");

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { CookieSettingsButton } from "@/components/CookieConsent";
 
 export const metadata: Metadata = {
   title: "Anxietate: ce este, simptome, cauze și tratament | Totul despre Anxietate",
@@ -81,45 +82,17 @@ export default function HomePage() {
                 Descoperă ce tip de anxietate ai &rarr;
               </Link>
             </div>
-            {/* Illustration */}
-            <div className="shrink-0 w-[280px] md:w-[340px]" aria-hidden="true">
-              <style>{`
-                @keyframes hp-wave1{0%,100%{d:path("M40 100 Q70 80 100 100 Q130 120 160 100 Q190 80 220 100")}50%{d:path("M40 100 Q70 120 100 100 Q130 80 160 100 Q190 120 220 100")}}
-                @keyframes hp-wave2{0%,100%{d:path("M40 120 Q70 100 100 120 Q130 140 160 120 Q190 100 220 120")}50%{d:path("M40 120 Q70 140 100 120 Q130 100 160 120 Q190 140 220 120")}}
-                @keyframes hp-glow{0%,100%{opacity:0.15}50%{opacity:0.3}}
-                @keyframes hp-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
-                .hp-wave1{animation:hp-wave1 4s ease-in-out infinite}
-                .hp-wave2{animation:hp-wave2 4s ease-in-out 0.5s infinite}
-                .hp-glow{animation:hp-glow 3s ease-in-out infinite}
-                .hp-breathe{animation:hp-breathe 4s ease-in-out infinite}
-              `}</style>
-              <svg viewBox="0 0 260 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-                {/* Soft background circle */}
-                <circle cx="130" cy="130" r="120" fill="#5C7A6A" opacity="0.04" className="hp-breathe" />
-                <circle cx="130" cy="130" r="90" fill="#5C7A6A" opacity="0.06" className="hp-breathe" />
-
-                {/* Person silhouette */}
-                <circle cx="130" cy="85" r="26" fill="#1B2B4B" opacity="0.35" />
-                <path d="M130 111 C108 111 90 133 90 158 L90 185 L170 185 L170 158 C170 133 152 111 130 111Z" fill="#1B2B4B" opacity="0.25" />
-
-                {/* Hand on chest */}
-                <ellipse cx="145" cy="148" rx="10" ry="7" fill="#1B2B4B" opacity="0.25" transform="rotate(-10 145 148)" />
-
-                {/* Heart glow */}
-                <circle cx="130" cy="145" r="12" fill="#C4614A" opacity="0.12" className="hp-glow" />
-                <circle cx="130" cy="145" r="6" fill="#C4614A" opacity="0.2" className="hp-glow" />
-
-                {/* Calm waves below */}
-                <path d="M40 100 Q70 80 100 100 Q130 120 160 100 Q190 80 220 100" stroke="#5C7A6A" strokeWidth="1.5" opacity="0.2" fill="none" className="hp-wave1" />
-                <path d="M40 120 Q70 100 100 120 Q130 140 160 120 Q190 100 220 120" stroke="#5C7A6A" strokeWidth="1" opacity="0.15" fill="none" className="hp-wave2" />
-
-                {/* Safety/understanding arc */}
-                <path d="M60 200 Q130 170 200 200" stroke="#5C7A6A" strokeWidth="2" opacity="0.15" fill="none" strokeLinecap="round" />
-                <path d="M75 215 Q130 190 185 215" stroke="#5C7A6A" strokeWidth="1.5" opacity="0.1" fill="none" strokeLinecap="round" />
-
-                {/* Small text */}
-                <text x="130" y="250" textAnchor="middle" fill="#5C7A6A" fontSize="10" fontWeight="500" opacity="0.4">înțelege. acționează.</text>
-              </svg>
+            {/* Hero image */}
+            <div className="shrink-0 w-[280px] md:w-[360px]">
+              <Image
+                src="/images/homepage-hero.png"
+                alt="Persoană pe un fotoliu, privind pe fereastră într-o dimineață liniștită"
+                width={720}
+                height={720}
+                className="rounded-2xl"
+                style={{ width: "100%", height: "auto", boxShadow: "0 8px 32px rgba(27, 43, 75, 0.08)" }}
+                priority
+              />
             </div>
           </div>
         </div>
@@ -792,6 +765,9 @@ export default function HomePage() {
         <p className="text-[13px]" style={{ color: "var(--color-text-secondary)" }}>
           &copy; 2026 Totul despre Anxietate. Daniel Gagea, psiholog clinician, psihoterapeut.
         </p>
+        <div className="mt-3">
+          <CookieSettingsButton />
+        </div>
       </footer>
     </>
   );
