@@ -3,6 +3,7 @@ import { Inter, Fraunces, Playfair_Display, Source_Sans_3 } from "next/font/goog
 import "./globals.css";
 import { CookieConsent } from "@/components/CookieConsent";
 import { AnalyticsLoader } from "@/components/AnalyticsLoader";
+import { Footer } from "@/components/Footer";
 
 const inter = Inter({
   variable: "--font-body",
@@ -58,6 +59,7 @@ export default function RootLayout({
     <html lang="ro">
       <body className={`${inter.variable} ${fraunces.variable} ${playfair.variable} ${sourceSans.variable} antialiased`}>
         {children}
+        <Footer />
         <CookieConsent />
         <AnalyticsLoader />
       </body>
