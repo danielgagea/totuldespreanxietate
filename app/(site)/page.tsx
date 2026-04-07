@@ -163,16 +163,15 @@ export default function HomePage() {
             Ți se pare cunoscută povestea asta?
           </h2>
           <p className="hp-journey-intro">
-            Începe cu o senzație fizică pe care nu o poți explica. Și de acolo urmează un drum pe care milioane de oameni l-au parcurs deja.
+            Începi să simți o senzație pe care nu o poți explica. Și de acolo urmează un drum pe care milioane de oameni l-au parcurs deja.
           </p>
 
           <div className="hp-journey-timeline">
             {[
-              { label: "Senzația", text: "Palpitații, amețeli, furnicături, presiune în piept, senzația că nu poți respira. Apar din senin, fără un motiv clar." },
-              { label: "Doctorul", text: "Mergi la urgență sau la medicul de familie. EKG, analize de sânge, investigații. Totul iese în parametri normali." },
-              { label: "Răspunsul", text: "\"Nu aveți nimic. Probabil e stresul.\" Dar tu simți ceva. Senzațiile sunt reale. Dacă nu ai nimic, de ce corpul tău face asta?" },
-              { label: "Căutarea", text: "Ajungi pe Google. Cauți \"palpitații fără cauză\" sau \"de ce îmi bate inima repede fără motiv\". Citești zeci de articole." },
-              { label: "Cuvântul", text: "Undeva, într-un articol, citești pentru prima dată cuvântul anxietate. Și ceva se potrivește." },
+              { label: "Simți", text: "Palpitații, amețeli, furnicături, presiune în piept, senzația că nu poți respira. Apar din senin, fără un motiv clar." },
+              { label: "Mergi la doctor", text: "Urgență sau medicul de familie. EKG, analize de sânge, investigații. Totul iese în parametri normali." },
+              { label: "Ce spune doctorul", text: "\"Nu aveți nimic. Probabil e stresul.\" Dar tu simți ceva. Senzațiile sunt reale. Dacă nu ai nimic, de ce corpul tău face asta?" },
+              { label: "Ce faci după", text: "Ajungi pe Google. Cauți \"palpitații fără cauză\" sau \"de ce îmi bate inima repede fără motiv\". Citești zeci de articole." },
             ].map((step, i) => (
               <div key={i} className="hp-journey-step">
                 <span className="hp-journey-dot" />
@@ -197,7 +196,7 @@ export default function HomePage() {
             Ce găsești pe acest site
           </h2>
           <p className="text-[17px] leading-[1.75] mb-10" style={{ color: "var(--color-text-secondary)" }}>
-            Acest site nu este o enciclopedie medicală. Vei găsi trei lucruri pe care, împreună, nu le oferă nicio altă resursă.
+            Acest site nu este o enciclopedie medicală. Vei găsi trei lucruri pe care, împreună, nu le găsești în altă parte.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -236,7 +235,7 @@ export default function HomePage() {
               Tipuri de anxietate
             </h2>
             <p className="text-[17px] leading-[1.75] mx-auto" style={{ color: "var(--color-text)", maxWidth: 560 }}>
-              Anxietatea nu e un singur lucru. Are forme diferite, cu mecanisme diferite și cu soluții diferite. Alege-o pe cea în care te recunoști.
+              Anxietatea are forme diferite, cu mecanisme diferite și cu soluții diferite. Alege-o pe cea în care te recunoști.
             </p>
           </div>
 
@@ -633,58 +632,118 @@ export default function HomePage() {
 
       {/* CE VREA SA SPUNA CORPUL */}
       <section className="py-16 md:py-20" style={{ backgroundColor: "var(--color-primary)", color: "#FAF7F2" }}>
-        <div className="mx-auto max-w-[760px] px-6">
-          <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-6" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "#FAF7F2" }}>
+        <style>{`
+          .hp-body-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 32px 0;
+          }
+          @media (max-width: 767px) {
+            .hp-body-grid { grid-template-columns: 1fr; }
+          }
+          .hp-body-card {
+            padding: 24px;
+            background: rgba(250, 247, 242, 0.06);
+            border-radius: 12px;
+            border: 1px solid rgba(250, 247, 242, 0.08);
+            transition: transform 0.2s ease-out, background 0.2s ease-out;
+          }
+          .hp-body-card:hover {
+            transform: translateY(-2px);
+            background: rgba(250, 247, 242, 0.1);
+          }
+          .hp-body-icon {
+            font-size: 28px;
+            margin-bottom: 12px;
+            display: block;
+          }
+          .hp-body-card h3 {
+            font-family: var(--font-heading), 'Fraunces', serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: #FAF7F2;
+            margin-bottom: 6px;
+          }
+          .hp-body-card p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: rgba(250, 247, 242, 0.7);
+            margin: 0;
+          }
+          .hp-body-conclusion {
+            padding: 28px;
+            background: rgba(196, 150, 108, 0.12);
+            border-radius: 12px;
+            border-left: 3px solid #C4966C;
+            margin-top: 32px;
+          }
+          .hp-body-conclusion p {
+            font-family: var(--font-heading), 'Fraunces', serif;
+            font-size: 19px;
+            line-height: 1.6;
+            color: #FAF7F2;
+            margin: 0;
+          }
+        `}</style>
+        <div className="mx-auto max-w-[900px] px-6">
+          <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-4" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "#FAF7F2" }}>
             Ce vrea să-ți spună corpul tău
           </h2>
-          <p className="text-[17px] leading-[1.75] mb-8" style={{ color: "rgba(250,247,242,0.8)" }}>
-            Fiecare simptom de anxietate este o formă de comunicare. Corpul tău nu se defectează. El încearcă să-ți transmită ceva prin singurele mijloace pe care le are.. senzații fizice.
+          <p className="text-[17px] leading-[1.75] mb-2" style={{ color: "rgba(250,247,242,0.7)" }}>
+            Fiecare simptom de anxietate este o formă de comunicare. Corpul tău încearcă să-ți transmită ceva prin singurele mijloace pe care le are.. senzații fizice.
           </p>
-          <div className="space-y-4 mb-10">
+
+          <div className="hp-body-grid">
             {[
-              ["Palpitațiile", "corpul tău se pregătește pentru ceva pe care mintea ta nu a procesat încă"],
-              ["Respirația blocată", "senzația de sufocare reflectă adesea un spațiu emoțional în care simți că nu ai loc"],
-              ["Nodul din stomac", "o tensiune pe care o porți, dar pe care nu ai pus-o în cuvinte"],
-              ["Tensiunea din maxilar, gât, umeri", "lucruri pe care le înghiți în loc să le spui"],
-            ].map(([bold, text], i) => (
-              <div key={i} className="flex gap-3 items-start">
-                <span className="shrink-0 w-2 h-2 rounded-full mt-2.5" style={{ backgroundColor: "#C4966C" }} />
-                <p className="text-[17px] leading-[1.75]"><strong style={{ color: "#FAF7F2" }}>{bold}</strong> .. {text}</p>
+              { icon: "💓", title: "Palpitațiile", text: "Corpul tău se pregătește pentru ceva pe care mintea ta nu a procesat încă" },
+              { icon: "🫁", title: "Respirația blocată", text: "Senzația de sufocare reflectă adesea un spațiu emoțional în care simți că nu ai loc" },
+              { icon: "🫄", title: "Nodul din stomac", text: "O tensiune pe care o porți, dar pe care nu ai pus-o în cuvinte" },
+              { icon: "🪨", title: "Tensiunea din maxilar, gât, umeri", text: "Lucruri pe care le înghiți în loc să le spui" },
+            ].map((item, i) => (
+              <div key={i} className="hp-body-card">
+                <span className="hp-body-icon">{item.icon}</span>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
               </div>
             ))}
           </div>
-          <p className="text-[17px] leading-[1.75]" style={{ color: "rgba(250,247,242,0.8)" }}>
-            <strong style={{ color: "#FAF7F2" }}>Anxietatea nu este dușmanul tău. Este un mesaj.</strong> Când înțelegi mesajul, simptomul începe să aibă sens. Și când are sens, încetează să mai fie atât de înfricoșător.
-          </p>
+
+          <div className="hp-body-conclusion">
+            <p>
+              Anxietatea nu este dușmanul tău, ci un mesaj. Când înțelegi mesajul, simptomul începe să aibă sens. Și când are sens, încetează să mai fie atât de înfricoșător.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* DESPRE DANIEL */}
       <section className="py-16 md:py-20" style={{ backgroundColor: "var(--color-background)" }}>
-        <div className="mx-auto max-w-[760px] px-6">
-          <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-8" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}>
-            Cine scrie acest site
-          </h2>
-          <div className="flex flex-col md:flex-row gap-8 items-start">
+        <div className="mx-auto max-w-[900px] px-6">
+          <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="shrink-0 mx-auto md:mx-0">
               <Image
                 src="/images/daniel-gagea.jpg"
                 alt="Daniel Gagea, psiholog clinician, psihoterapeut"
-                width={200}
-                height={200}
-                className="rounded-xl object-cover"
-                style={{ width: 200, height: 200, border: "1px solid var(--color-border)" }}
+                width={560}
+                height={560}
+                className="rounded-2xl object-cover"
+                style={{ width: 280, height: 340, border: "1px solid var(--color-border)", boxShadow: "0 8px 32px rgba(27, 43, 75, 0.08)" }}
               />
             </div>
             <div className="flex-1">
+              <p className="text-xs font-medium uppercase tracking-[0.12em] mb-3" style={{ color: "var(--color-text-secondary)" }}>Cine scrie acest site</p>
+              <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-6" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}>
+                Daniel Gagea
+              </h2>
               <p className="text-[17px] leading-[1.75] mb-4" style={{ color: "var(--color-text)" }}>
-                <strong>Daniel Gagea</strong> este psiholog clinician și psihoterapeut cu peste 10 ani de experiență.
+                Psiholog clinician și psihoterapeut cu peste 10 ani de experiență și peste 500 de clienți.
               </p>
               <p className="text-[17px] leading-[1.75] mb-4" style={{ color: "var(--color-text)" }}>
-                Nu a construit acest site ca pe o broșură de promovare. L-a construit din aceeași frustrare pe care o au cei care caută răspunsuri: cele mai multe resurse din România despre anxietate sunt incomplete, superficiale și pline de sfaturi generice.
+                A construit acest site din aceeași frustrare pe care o au cei care caută răspunsuri.. cele mai multe resurse din România despre anxietate sunt incomplete, superficiale și pline de sfaturi generice.
               </p>
               <p className="text-[17px] leading-[1.75] mb-6" style={{ color: "var(--color-text)" }}>
-                Abordarea lui Daniel este diferită.. nu lucrează pe simptome, ci pe cauze. Te ajută să înțelegi de ce corpul și mintea ta au ajuns să funcționeze așa, și ce trebuie să se schimbe la rădăcină.
+                Abordarea lui este diferită.. nu lucrează pe simptome, ci pe cauze. Te ajută să înțelegi de ce corpul și mintea ta au ajuns să funcționeze așa, și ce trebuie să se schimbe la rădăcină.
               </p>
               <Link
                 href="/despre-daniel"
