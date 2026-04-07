@@ -210,8 +210,6 @@ export default function IntelegePage() {
             </span>
           </nav>
 
-          <SectionLabel>01 &middot; Mecanismul</SectionLabel>
-
           <h1
             className="text-[28px] md:text-[38px] leading-[1.25] mb-3"
             style={{
@@ -410,8 +408,16 @@ export default function IntelegePage() {
             PART 2 · CE ARATĂ CERCETAREA
         ═══════════════════════════════════════════════ */}
         <Section id="cercetarea" bg="default">
-          <SectionLabel>02 · Cercetarea</SectionLabel>
-
+          <h2
+            className="text-[24px] md:text-[30px] leading-[1.30] mb-6"
+            style={{
+              fontFamily: "var(--font-heading)",
+              fontWeight: 400,
+              color: "var(--color-primary)",
+            }}
+          >
+            Ce arată cercetarea
+          </h2>
           <div
             className="space-y-5 text-[17px] leading-[1.75]"
             style={{ color: "var(--color-text)" }}
@@ -442,61 +448,12 @@ export default function IntelegePage() {
             </p>
           </div>
 
-          {/* Declanșatorii */}
-          <h3
-            className="text-[20px] md:text-[24px] leading-[1.35] mt-12 mb-6"
-            style={{
-              fontFamily: "var(--font-heading)",
-              fontWeight: 400,
-              color: "var(--color-primary)",
-            }}
-          >
-            Declanșatorii, nu doar situații externe
-          </h3>
-
-          <div
-            className="space-y-5 text-[17px] leading-[1.75]"
-            style={{ color: "var(--color-text)" }}
-          >
-            <p>
-              Locurile devin problematice nu pentru ceea ce sunt, ci pentru că
-              induc o anumită senzație internă. 80%
-              dintre persoanele cu tulburare de panică evită activ substanțele și
-              activitățile care ar putea produce senzații similare panicii.
-            </p>
-          </div>
-
-          {/* Vulnerabilitate */}
-          <h3
-            className="text-[20px] md:text-[24px] leading-[1.35] mt-12 mb-6"
-            style={{
-              fontFamily: "var(--font-heading)",
-              fontWeight: 400,
-              color: "var(--color-primary)",
-            }}
-          >
-            Vulnerabilitate, nu defect
-          </h3>
-
-          <div
-            className="space-y-5 text-[17px] leading-[1.75]"
-            style={{ color: "var(--color-text)" }}
-          >
-            <p>
-              Vârsta medie de debut: 24 de ani. Adesea
-              precedate de un eveniment de viață stresant. Concordanța la gemeni
-              monozigoți: 31% vs 0% dizigoți. Nu este o
-              alegere. Nu este o slăbiciune. Poate fi reprogramat.
-            </p>
-          </div>
         </Section>
 
         {/* ═══════════════════════════════════════════════
             PART 3 · CE VREA SĂ SPUNĂ PSIHICUL
         ═══════════════════════════════════════════════ */}
         <Section id="perspectiva-daniel" bg="white">
-          <SectionLabel>03 · Perspectiva lui Daniel</SectionLabel>
-
           <h2
             className="text-[24px] md:text-[30px] leading-[1.30] mb-6"
             style={{
@@ -507,59 +464,6 @@ export default function IntelegePage() {
           >
             Ce vrea să spună psihicul
           </h2>
-
-          {/* Author card */}
-          <div
-            className="flex items-start gap-4 rounded-lg p-5 mb-8"
-            style={{
-              backgroundColor: "var(--color-background)",
-              border: "1px solid var(--color-border)",
-            }}
-          >
-            {/* Photo placeholder */}
-            <div
-              className="shrink-0 flex items-center justify-center rounded-md"
-              style={{
-                width: 64,
-                height: 80,
-                backgroundColor: "var(--color-secondary-light)",
-                border: "1px solid var(--color-border)",
-              }}
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                style={{ color: "var(--color-secondary)" }}
-              >
-                <circle cx="12" cy="8" r="4" />
-                <path d="M20 21a8 8 0 1 0-16 0" />
-              </svg>
-            </div>
-            <div>
-              <p
-                className="font-medium text-[15px]"
-                style={{ color: "var(--color-primary)" }}
-              >
-                Daniel Gagea
-              </p>
-              <p
-                className="text-[13px]"
-                style={{ color: "var(--color-text-secondary)" }}
-              >
-                Psiholog clinician, psihoterapeut
-              </p>
-              <p
-                className="text-[14px] leading-[1.65] mt-2 italic"
-                style={{ color: "var(--color-text-secondary)" }}
-              >
-                {`„Această secțiune reflectă perspectiva mea clinică, dezvoltată din lucrul direct cu sute de persoane cu atacuri de panică.”`}
-              </p>
-            </div>
-          </div>
 
           <div
             className="space-y-5 text-[17px] leading-[1.75]"
@@ -572,7 +476,7 @@ export default function IntelegePage() {
             </p>
 
             <PullQuote>
-              {`Mulți dintre clienții mei au descoperit ceva neașteptat: sub frică era furie. Furie pe care nu și-o permiteau. Pe un părinte. Pe un partener. Pe o situație. Furie înghițită de ani de zile, care și-a găsit un alt drum de exprimare.. prin corp.`}
+              {`Mulți dintre clienții mei au descoperit ceva neașteptat: sub frică era furie. Furie pe care nu și-o permiteau.. pe un părinte, pe un partener, pe o situație. Furie înghițită de ani de zile, care și-a găsit un alt drum de exprimare.. prin corp.`}
             </PullQuote>
 
             <p>
@@ -720,8 +624,6 @@ export default function IntelegePage() {
             PART 4 · FRICA DE URMĂTORUL ATAC
         ═══════════════════════════════════════════════ */}
         <Section id="ciclul-fricii" bg="default">
-          <SectionLabel>04 · Ciclul fricii</SectionLabel>
-
           <h2
             className="text-[24px] md:text-[30px] leading-[1.30] mb-6"
             style={{
