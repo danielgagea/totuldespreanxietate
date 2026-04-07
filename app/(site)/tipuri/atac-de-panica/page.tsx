@@ -497,45 +497,6 @@ export default function AtacDePanicaHub() {
         style={{ backgroundColor: "var(--color-background-white)" }}
       >
         <div className="mx-auto max-w-[760px] px-6">
-          <div
-            className="flex items-center gap-5 py-6"
-            style={{ borderTop: "1px solid var(--color-border)" }}
-          >
-            <div
-              className="shrink-0 w-14 h-14 rounded-full flex items-center justify-center"
-              style={{
-                backgroundColor: "var(--color-secondary-light)",
-                border: "1px solid var(--color-border)",
-              }}
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                style={{ color: "var(--color-secondary)" }}
-              >
-                <circle cx="12" cy="8" r="4" />
-                <path d="M20 21a8 8 0 1 0-16 0" />
-              </svg>
-            </div>
-            <div>
-              <p
-                className="font-medium text-[15px]"
-                style={{ color: "var(--color-primary)" }}
-              >
-                Daniel Gagea
-              </p>
-              <p
-                className="text-[13px]"
-                style={{ color: "var(--color-text-secondary)" }}
-              >
-                Psiholog clinician · 10+ ani experiență · 500+ clienți
-              </p>
-            </div>
-          </div>
         </div>
       </section>
     </>
