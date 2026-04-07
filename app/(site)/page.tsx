@@ -81,16 +81,13 @@ export default function HomePage() {
                 Descoperă ce tip de anxietate ai &rarr;
               </Link>
             </div>
-            {/* Hero image */}
+            {/* Hero illustration */}
             <div className="shrink-0 w-[280px] md:w-[360px]">
-              <Image
-                src="/images/homepage-hero.png"
-                alt="Persoană pe un fotoliu, privind pe fereastră într-o dimineață liniștită"
-                width={720}
-                height={720}
-                className="rounded-2xl"
-                style={{ width: "100%", height: "auto", boxShadow: "0 8px 32px rgba(27, 43, 75, 0.08)" }}
-                priority
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/homepage-hero.svg"
+                alt="Ilustrație persoană într-un moment de reflecție"
+                style={{ width: "100%", height: "auto" }}
               />
             </div>
           </div>
