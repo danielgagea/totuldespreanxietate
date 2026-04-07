@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { CookieSettingsButton } from "@/components/CookieConsent";
 
 export const metadata: Metadata = {
   title: "Anxietate: ce este, simptome, cauze și tratament | Totul despre Anxietate",
@@ -770,15 +769,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="py-8 text-center" style={{ backgroundColor: "var(--color-background)" }}>
-        <p className="text-[13px]" style={{ color: "var(--color-text-secondary)" }}>
-          &copy; 2026 Totul despre Anxietate. Daniel Gagea, psiholog clinician, psihoterapeut.
-        </p>
-        <div className="mt-3">
-          <CookieSettingsButton />
-        </div>
-      </footer>
     </>
   );
 }
