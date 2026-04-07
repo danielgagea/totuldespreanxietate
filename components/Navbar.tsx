@@ -161,6 +161,13 @@ export function Navbar() {
             </div>
 
             <Link
+              href="/despre-daniel"
+              className={`nav-link ${pathname === "/despre-daniel" ? "nav-link-active" : ""}`}
+            >
+              Despre Daniel
+            </Link>
+
+            <Link
               href="/programare"
               className={`nav-cta ${pathname === "/programare" ? "nav-cta-active" : ""}`}
             >
@@ -257,6 +264,12 @@ export function Navbar() {
               </Link>
             ))}
           </div>
+          <Link
+            href="/despre-daniel"
+            className={`nav-mobile-link ${pathname === "/despre-daniel" ? "nav-link-active" : ""}`}
+          >
+            Despre Daniel
+          </Link>
           <Link href="/programare" className="nav-mobile-cta">
             Programare
           </Link>

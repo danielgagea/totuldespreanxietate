@@ -32,6 +32,7 @@ export function Footer() {
 
             <div className="site-footer-links">
               <h4>Informații</h4>
+              <Link href="/despre-daniel">Despre Daniel</Link>
               <Link href="/programare">Programare</Link>
               <Link href="/termeni-si-conditii">Termeni și condiții</Link>
               <Link href="/politica-de-confidentialitate">Politica de confidențialitate</Link>
