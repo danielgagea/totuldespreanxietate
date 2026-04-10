@@ -11,13 +11,12 @@ const atacSublinks = [
   { href: "/atac-de-panica/actioneaza", label: "Ce este de făcut" },
 ];
 
-const fobiiSublinks = [
-  { href: "/tipuri/fobii-specifice", label: "Ghid complet" },
-  { href: "/tipuri/fobii-specifice/fobie-de-sange", label: "Fobia de sânge și ace" },
-  { href: "/tipuri/fobii-specifice/claustrofobie", label: "Claustrofobie" },
-  { href: "/tipuri/fobii-specifice/fobie-de-animale", label: "Fobia de animale" },
-  { href: "/tipuri/fobii-specifice/fobie-de-zbor", label: "Fobia de zbor" },
-  { href: "/tipuri/fobii-specifice/fobie-de-inaltime", label: "Fobia de înălțimi" },
+const tipuriSublinks = [
+  { href: "/tipuri/anxietate-sociala", label: "Anxietatea socială" },
+  { href: "/tipuri/anxietate-generalizata", label: "Anxietatea generalizată" },
+  { href: "/tipuri/tspt", label: "Stresul post-traumatic" },
+  { href: "/tipuri/toc", label: "Tulburarea obsesiv-compulsivă" },
+  { href: "/tipuri/fobii-specifice", label: "Fobii specifice" },
 ];
 
 export function Navbar() {
@@ -25,14 +24,14 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [fobiiDropdownOpen, setFobiiDropdownOpen] = useState(false);
+  const [tipuriDropdownOpen, setTipuriDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
-  const [mobileFobiiDropdownOpen, setMobileFobiiDropdownOpen] = useState(false);
+  const [mobileTipuriDropdownOpen, setMobileTipuriDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const fobiiDropdownRef = useRef<HTMLDivElement>(null);
+  const tipuriDropdownRef = useRef<HTMLDivElement>(null);
 
   const isAtacPage = pathname.startsWith("/atac-de-panica");
-  const isFobiiPage = pathname.startsWith("/tipuri/fobii-specifice");
+  const isTipuriPage = pathname.startsWith("/tipuri/");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -45,9 +44,9 @@ export function Navbar() {
   useEffect(() => {
     setMobileOpen(false);
     setDropdownOpen(false);
-    setFobiiDropdownOpen(false);
+    setTipuriDropdownOpen(false);
     setMobileDropdownOpen(false);
-    setMobileFobiiDropdownOpen(false);
+    setMobileTipuriDropdownOpen(false);
   }, [pathname]);
 
   // Close dropdown on click outside
@@ -56,8 +55,8 @@ export function Navbar() {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setDropdownOpen(false);
       }
-      if (fobiiDropdownRef.current && !fobiiDropdownRef.current.contains(e.target as Node)) {
-        setFobiiDropdownOpen(false);
+      if (tipuriDropdownRef.current && !tipuriDropdownRef.current.contains(e.target as Node)) {
+        setTipuriDropdownOpen(false);
       }
     }
     document.addEventListener("click", handleClick);
@@ -107,52 +106,24 @@ export function Navbar() {
               </div>
             </div>
 
-            <Link
-              href="/tipuri/anxietate-sociala"
-              className={`nav-link ${pathname === "/tipuri/anxietate-sociala" ? "nav-link-active" : ""}`}
-            >
-              Anxietate socială
-            </Link>
-
-            <Link
-              href="/tipuri/anxietate-generalizata"
-              className={`nav-link ${pathname === "/tipuri/anxietate-generalizata" ? "nav-link-active" : ""}`}
-            >
-              Anxietate generalizată
-            </Link>
-
-            <Link
-              href="/tipuri/tspt"
-              className={`nav-link ${pathname === "/tipuri/tspt" ? "nav-link-active" : ""}`}
-            >
-              Stres post-traumatic
-            </Link>
-
-            <Link
-              href="/tipuri/toc"
-              className={`nav-link ${pathname === "/tipuri/toc" ? "nav-link-active" : ""}`}
-            >
-              Tulburare obsesiv-compulsivă
-            </Link>
-
-            {/* Fobii specifice dropdown */}
-            <div className="nav-dropdown" ref={fobiiDropdownRef}>
+            {/* Tipuri de anxietate dropdown */}
+            <div className="nav-dropdown" ref={tipuriDropdownRef}>
               <button
-                className={`nav-link nav-dropdown-trigger ${isFobiiPage ? "nav-link-active" : ""}`}
-                onClick={() => setFobiiDropdownOpen(!fobiiDropdownOpen)}
-                aria-expanded={fobiiDropdownOpen}
+                className={`nav-link nav-dropdown-trigger ${isTipuriPage ? "nav-link-active" : ""}`}
+                onClick={() => setTipuriDropdownOpen(!tipuriDropdownOpen)}
+                aria-expanded={tipuriDropdownOpen}
               >
-                Fobii specifice
-                <svg className={`nav-chevron ${fobiiDropdownOpen ? "nav-chevron-open" : ""}`} width="12" height="12" viewBox="0 0 12 12" fill="none">
+                Tipuri de anxietate
+                <svg className={`nav-chevron ${tipuriDropdownOpen ? "nav-chevron-open" : ""}`} width="12" height="12" viewBox="0 0 12 12" fill="none">
                   <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </button>
-              <div className={`nav-dropdown-menu ${fobiiDropdownOpen ? "nav-dropdown-open" : ""}`}>
-                {fobiiSublinks.map((link) => (
+              <div className={`nav-dropdown-menu ${tipuriDropdownOpen ? "nav-dropdown-open" : ""}`}>
+                {tipuriSublinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`nav-dropdown-item ${pathname === link.href ? "nav-dropdown-item-active" : ""}`}
+                    className={`nav-dropdown-item ${pathname === link.href || pathname.startsWith(link.href + "/") ? "nav-dropdown-item-active" : ""}`}
                   >
                     {link.label}
                   </Link>
@@ -219,42 +190,18 @@ export function Navbar() {
             ))}
           </div>
 
-          <Link
-            href="/tipuri/anxietate-sociala"
-            className={`nav-mobile-link ${pathname === "/tipuri/anxietate-sociala" ? "nav-link-active" : ""}`}
-          >
-            Anxietate socială
-          </Link>
-          <Link
-            href="/tipuri/anxietate-generalizata"
-            className={`nav-mobile-link ${pathname === "/tipuri/anxietate-generalizata" ? "nav-link-active" : ""}`}
-          >
-            Anxietate generalizată
-          </Link>
-          <Link
-            href="/tipuri/tspt"
-            className={`nav-mobile-link ${pathname === "/tipuri/tspt" ? "nav-link-active" : ""}`}
-          >
-            Stres post-traumatic
-          </Link>
-          <Link
-            href="/tipuri/toc"
-            className={`nav-mobile-link ${pathname === "/tipuri/toc" ? "nav-link-active" : ""}`}
-          >
-            Tulburare obsesiv-compulsivă
-          </Link>
-          {/* Mobile fobii dropdown */}
+          {/* Mobile tipuri dropdown */}
           <button
-            className={`nav-mobile-link nav-mobile-dropdown-trigger ${isFobiiPage ? "nav-link-active" : ""}`}
-            onClick={() => setMobileFobiiDropdownOpen(!mobileFobiiDropdownOpen)}
+            className={`nav-mobile-link nav-mobile-dropdown-trigger ${isTipuriPage ? "nav-link-active" : ""}`}
+            onClick={() => setMobileTipuriDropdownOpen(!mobileTipuriDropdownOpen)}
           >
-            Fobii specifice
-            <svg className={`nav-chevron ${mobileFobiiDropdownOpen ? "nav-chevron-open" : ""}`} width="12" height="12" viewBox="0 0 12 12" fill="none">
+            Tipuri de anxietate
+            <svg className={`nav-chevron ${mobileTipuriDropdownOpen ? "nav-chevron-open" : ""}`} width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
-          <div className={`nav-mobile-sub ${mobileFobiiDropdownOpen ? "nav-mobile-sub-open" : ""}`}>
-            {fobiiSublinks.map((link) => (
+          <div className={`nav-mobile-sub ${mobileTipuriDropdownOpen ? "nav-mobile-sub-open" : ""}`}>
+            {tipuriSublinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
