@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title:
     "Ce faci la un atac de panică + Când ceri ajutor | Totul despre Anxietate",
   description:
-    "5 pași concreți pentru momentul unui atac de panică și când să ceri ajutor profesionist. 85-90% se recuperează în 12-15 ședințe. De Daniel Gagea.",
+    "5 pași concreți pentru momentul unui atac de panică și când să ceri ajutor profesionist. Ghid complet de Daniel Gagea, psiholog clinician, psihoterapeut. De Daniel Gagea.",
   authors: [{ name: "Daniel Gagea" }],
   openGraph: {
     title: "Ce faci la un atac de panică + Când ceri ajutor",
     description:
-      "5 pași concreți pentru momentul unui atac de panică și când să ceri ajutor profesionist. 85-90% se recuperează în 12-15 ședințe.",
+      "5 pași concreți pentru momentul unui atac de panică și când să ceri ajutor profesionist. Ghid complet de Daniel Gagea, psiholog clinician, psihoterapeut.",
     type: "article",
   },
 };
@@ -20,7 +20,7 @@ const jsonLd = {
   "@type": "Article",
   headline: "Ce faci la un atac de panică + Când ceri ajutor",
   description:
-    "5 pași concreți pentru momentul unui atac de panică și când să ceri ajutor profesionist. 85-90% se recuperează în 12-15 ședințe. De Daniel Gagea.",
+    "5 pași concreți pentru momentul unui atac de panică și când să ceri ajutor profesionist. Ghid complet de Daniel Gagea, psiholog clinician, psihoterapeut. De Daniel Gagea.",
   author: {
     "@type": "Person",
     name: "Daniel Gagea",
@@ -368,15 +368,11 @@ export default function ActioneazaPage() {
             number={2}
             title="Amintește-ți: nu mori, nu înnebunești, nu pierzi controlul."
           >
-            Gândurile tale de panică au un track record de 0%. De câte ori ai
-            crezut că mori și de câte ori s-a întâmplat? Răspunsul este
-            zero. De fiecare dată.
+            Corpul tău a trecut prin asta de fiecare dată și de fiecare dată a fost ok. Inima a bătut repede și s-a oprit. Amețeala a venit și a trecut. Senzația de sufocare s-a dizolvat. Niciodată nu s-a întâmplat ce te-ai temut.
           </StepCard>
 
           <StepCard number={3} title="Observă, nu lupta.">
-            Nu încerca să oprești senzațiile cu forța. Privește-le ca un
-            observator: {`„Inima bate repede. Interesant. Mâinile tremură. Ok.”`}{" "}
-            Când observi în loc să lupți, senzațiile își pierd puterea.
+            În loc să lupți cu senzațiile, încearcă să le observi fără să reacționezi.. notează mental ce simți, unde simți, și cât durează. Când observi în loc să lupți, senzațiile își pierd din intensitate.
           </StepCard>
 
           <StepCard number={4} title="Expiră lung și lent.">
@@ -410,11 +406,7 @@ export default function ActioneazaPage() {
 
         <div className="flex flex-col gap-5">
           <WarningCard title="Respirația adâncă ca ritual">
-            Un studiu controlat a arătat că adăugarea trainingului respirației
-            la psihoterapie a scăzut rata de recuperare de la 57% la 37% la 12 luni
-            (Schmidt et al., 2000). Dacă respiri adânc pentru că crezi{" "}
-            {`„fără tehnica mea pierd controlul”`}.. respirația devine
-            parte din problemă.
+            Dacă respiri adânc doar pentru că simți că fără tehnica ta pierzi controlul, respirația devine parte din problemă. Scopul nu e să controlezi panica cu o tehnică, ci să înveți că panica trece singură.
           </WarningCard>
 
           <WarningCard title="Fuga din situație">
@@ -422,8 +414,7 @@ export default function ActioneazaPage() {
           </WarningCard>
 
           <WarningCard title="Căutarea repetată de reasigurare">
-            {`„Spune-mi că sunt ok”`} funcționează 5 minute. Apoi
-            nevoia revine, mai puternică.
+            Când ceri cuiva să te asigure că ești ok, ușurarea durează câteva minute, dar apoi nevoia revine mai puternică. Cu cât primești mai multă reasigurare, cu atât ai nevoie de mai multă.
           </WarningCard>
 
           <WarningCard title="Monitorizarea obsesivă a corpului">
@@ -496,20 +487,16 @@ export default function ActioneazaPage() {
 
         <div className="flex flex-col gap-6">
           <MythRealityCard
-            myth={`„Nu am nevoie de ani de terapie.”`}
-            reality="Nu ai nevoie. Protocolul standard este 12-15 ședințe. Structurat. Practic."
+            myth={`„Nu am nevoie de ani de terapie."`}
+            reality="Terapia durează cât are nevoie să dureze.. până înțelegi mesajul pe care corpul și psihicul tău încearcă să ți-l transmită. La unii oameni e mai scurt, la alții mai lung."
           />
           <MythRealityCard
-            myth={`„Terapia înseamnă să stau pe divan și să vorbesc despre copilărie.”`}
+            myth={`„Terapia înseamnă să stau pe divan și să vorbesc despre copilărie."`}
             reality="Psihoterapia pentru panică este complet diferită. Cu teme de casă, exerciții concrete, rezultate măsurabile."
           />
           <MythRealityCard
-            myth={`„E mai bine să iau pastile.”`}
+            myth={`„E mai bine să iau pastile."`}
             reality="Psihoterapia este la fel de eficientă ca medicația, cu un avantaj major: efectele se mențin pe termen lung."
-          />
-          <MythRealityCard
-            myth={`„La mine nu funcționează.. am panică de ani de zile.”`}
-            reality="Helen avea 27 de ani și 11 ani de tulburare de panică.. 8 atacuri pe zi. După 12 ședințe, frecvența s-a redus semnificativ (Clark & Beck, 2010)."
           />
         </div>
 
@@ -550,23 +537,6 @@ export default function ActioneazaPage() {
         </ul>
 
         {/* Callout */}
-        <div className="mt-10">
-          <Callout>
-            <p
-              className="text-[15px] font-semibold mb-2"
-              style={{ color: "var(--color-secondary)" }}
-            >
-              Comparația care contează
-            </p>
-            <p
-              className="text-[15px] leading-relaxed"
-              style={{ color: "var(--color-text)" }}
-            >
-              Fără tratament.. 12% remisie la 5 ani. Cu terapie.. 85%
-              recuperare la 15 luni. Diferența nu este noroc. Este o decizie.
-            </p>
-          </Callout>
-        </div>
       </Section>
 
       {/* ─── CTA ─── */}
@@ -619,18 +589,11 @@ export default function ActioneazaPage() {
 
         <FAQItem question="Funcționează terapia pentru atacuri de panică?">
           <p>
-            Da. Psihoterapia are rată de eficacitate de 85-90% după 12-15 ședințe
-            (Clark et al., 1994; Beck et al., 1992). Cel mai studiat și
-            eficient tratament, cu efecte pe termen lung. În peste 25 de studii
-            clinice independente, 40-90% dintre pacienți nu mai prezentau
-            tulburarea la sfârșitul tratamentului.
+            Da. Psihoterapia pentru atacurile de panică este unul dintre cele mai studiate și eficiente tratamente din psihologie, cu efecte pe termen lung. Durata variază de la persoană la persoană, în funcție de complexitatea și profunzimea problemei.
           </p>
         </FAQItem>
-      </Section>
 
-      {/* ─── Navigation ─── */}
-      <Section id="navigare" bg="white">
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginTop: "32px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginTop: "40px" }}>
           <Link href="/atac-de-panica" style={{ display: "flex", alignItems: "center", gap: "8px", padding: "16px 20px", borderRadius: "10px", background: "var(--color-background-white)", border: "1px solid var(--color-border)", textDecoration: "none", fontSize: "15px", fontWeight: 500, color: "var(--color-primary)", transition: "transform 0.2s ease-out" }}>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             Înapoi la ghid
