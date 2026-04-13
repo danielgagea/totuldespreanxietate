@@ -62,7 +62,7 @@ export default function TOCPage() {
                 Ești prins într-un ritual care nu se mai termină? <Link href="#ce-poti-face-acum" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>Mergi direct la Ce poți face acum</Link>
               </p>
               <p style={{ fontSize: 17, color: "var(--color-text)", lineHeight: 1.75, marginBottom: 16 }}>
-                Gândul apare din senin. Poate e o imagine. Poate e o frază. Poate e un impuls pe care nu l-ai cerut și nu l-ai vrut. &quot;Ce-ar fi dacă am lăsat aragazul aprins?&quot; &quot;Ce-ar fi dacă fac rău cuiva?&quot; &quot;Ce-ar fi dacă ating ceva contaminat?&quot;
+                Gândul apare din senin. Poate e o imagine, poate e o frază, poate e un impuls pe care nu l-ai cerut și nu l-ai vrut.. ce-ar fi dacă am lăsat aragazul aprins, ce-ar fi dacă fac rău cuiva, ce-ar fi dacă ating ceva contaminat.
               </p>
               <p style={{ fontSize: 17, color: "var(--color-text)", lineHeight: 1.75, marginBottom: 16 }}>
                 Și știi că nu are sens. Știi că ai verificat deja. Știi că gândul e absurd. Dar corpul tău nu a primit mesajul. Tensiunea crește. Neliniștea nu trece. Și faci singurul lucru care pare că ajută.. verifici încă o dată. Speli încă o dată. Repeți în minte încă o dată.
@@ -167,7 +167,7 @@ export default function TOCPage() {
             Tulburarea obsesiv-compulsivă (TOC) este o condiție psihologică în care persoana experimentează gânduri, imagini sau impulsuri nedorite și recurente (obsesii) care provoacă anxietate intensă, și răspunde la ele prin comportamente repetitive sau acte mentale (compulsii/ritualuri) menite să reducă acea anxietate. Afectează aproximativ 2-3% din populație și este una dintre cele mai invalidante tulburări psihologice, fiind clasată de Organizația Mondială a Sănătății printre primele 10 cauze de dizabilitate.
           </p>
           <p style={{ marginBottom: 16 }}>
-            Dar TOC-ul nu e &quot;mania de curățenie&quot; sau &quot;nevoia de ordine&quot; pe care o vezi în filme. Majoritatea oamenilor cu TOC nu sunt ordonați sau curați. Mulți au gânduri violente, sexuale sau blasfemiatoare care îi terorizează. Alții verifică, numără, repetă, ating, aranjează sau cer confirmare de zeci de ori pe zi.
+            Dar TOC-ul nu e mania de curățenie sau nevoia de ordine pe care o vezi în filme. Majoritatea oamenilor cu TOC nu sunt ordonați sau curați. Mulți au gânduri violente, sexuale sau blasfemiatoare care îi terorizează. Alții verifică, numără, repetă, ating, aranjează sau cer confirmare de zeci de ori pe zi.
           </p>
           <p style={{ marginBottom: 32 }}>
             Ce au toți în comun: un gând care nu pleacă și un ritual care nu ajută.
@@ -195,7 +195,7 @@ export default function TOCPage() {
 
           <p style={{ fontWeight: 600, color: "var(--color-primary)", marginBottom: 12 }}>Compulsiile:</p>
           <p style={{ marginBottom: 16 }}>
-            Compulsiile sunt ritualurile pe care le faci ca să scapi de anxietatea produsă de obsesie. Unele sunt vizibile (spălat, verificat, aranjat). Altele sunt invizibile (număratul mental, repetarea unor fraze în minte, &quot;anularea&quot; unui gând cu alt gând, căutarea reasigurării).
+            Compulsiile sunt ritualurile pe care le faci ca să scapi de anxietatea produsă de obsesie. Unele sunt vizibile (spălat, verificat, aranjat). Altele sunt invizibile (număratul mental, repetarea unor fraze în minte, anularea unui gând cu alt gând, căutarea reasigurării).
           </p>
           <p>
             Compulsia funcționează ca un analgesic.. ia durerea temporar, dar nu tratează cauza. Și ca orice analgesic folosit excesiv, necesită doze tot mai mari.
@@ -216,13 +216,13 @@ export default function TOCPage() {
 
           <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 32 }}>
             {[
-              { nr: 1, text: `Gândul intruziv apare ("Ce-ar fi dacă nu am încuiat ușa?")` },
-              { nr: 2, text: `Mintea îi atribuie o semnificație exagerată ("Dacă nu am încuiat, va intra cineva în casă și va fi vina mea")` },
+              { nr: 1, text: `Gândul intruziv apare.. ce-ar fi dacă nu am încuiat ușa?` },
+              { nr: 2, text: `Mintea îi atribuie o semnificație exagerată.. dacă nu am încuiat, va intra cineva în casă și va fi vina mea` },
               { nr: 3, text: "Anxietatea crește (tensiune, neliniște, urgență)" },
               { nr: 4, text: "Faci ritualul (verifici ușa)" },
               { nr: 5, text: "Ușurare imediată (anxietatea scade pentru 30 de secunde)" },
-              { nr: 6, text: `Creierul învață: "Ritualul funcționează! Data viitoare, fă-l iar."` },
-              { nr: 7, text: `Gândul revine.. mai insistent, pentru că tocmai l-ai "confirmat" ca important` },
+              { nr: 6, text: `Creierul învață că ritualul funcționează, și data viitoare va cere să-l faci iar` },
+              { nr: 7, text: `Gândul revine.. mai insistent, pentru că tocmai l-ai confirmat ca important` },
             ].map((step) => (
               <div key={step.nr} style={{ display: "flex", gap: 16, alignItems: "flex-start", padding: "16px 20px", background: "var(--color-background-white)", borderRadius: 10, border: "1px solid var(--color-border)" }}>
                 <div style={{ flexShrink: 0, width: 36, height: 36, borderRadius: "50%", background: "var(--color-primary)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 15 }}>
@@ -253,7 +253,7 @@ export default function TOCPage() {
             <div style={{ flex: 1, minWidth: 280, background: "var(--color-background-white)", borderRadius: 12, padding: 28, border: "1px solid var(--color-border)" }}>
               <p style={{ fontSize: 13, textTransform: "uppercase", letterSpacing: "0.1em", color: "#8B3A3A", fontWeight: 600, marginBottom: 10 }}>Catastrofizarea</p>
               <p style={{ fontSize: 16, margin: 0 }}>
-                Mintea face un salt direct la cel mai rău scenariu posibil. Nu &quot;poate o să fie neplăcut&quot;, ci &quot;casa va lua foc, familia va muri, și va fi vina mea&quot;.
+                Mintea face un salt direct la cel mai rău scenariu posibil.. nu că poate o să fie neplăcut, ci că casa va lua foc, familia va muri, și va fi vina mea.
               </p>
             </div>
           </div>
@@ -265,7 +265,7 @@ export default function TOCPage() {
             Nucleul real al TOC-ului este incapacitatea de a tolera incertitudinea. Faci ritualuri pentru a obține certitudinea că ușa e încuiată, mâinile sunt curate, nimeni nu va fi rănit. Dar certitudinea absolută nu există. Niciodată. Pentru nimeni.
           </p>
           <p style={{ marginBottom: 16 }}>
-            Tratamentul eficient nu încearcă să te convingă că &quot;nu se va întâmpla nimic rău&quot;. Te învață să tolerezi faptul că nu știi și să funcționezi în ciuda incertitudinii.
+            Tratamentul eficient nu încearcă să te convingă că nu se va întâmpla nimic rău. Te învață să tolerezi faptul că nu știi și să funcționezi în ciuda incertitudinii.
           </p>
           <p style={{ marginBottom: 24 }}>
             Acest nucleu, intoleranța la incertitudine, leagă TOC-ul de <Link href="/tipuri/anxietate-generalizata" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>tulburarea de anxietate generalizată</Link>.
@@ -290,15 +290,15 @@ export default function TOCPage() {
             {[
               {
                 title: "La muncă",
-                text: `Recitești email-ul de 5 ori înainte să-l trimiți. Verifici prezentarea încă o dată. Și încă o dată. Colegii au plecat de o oră. Tu ești încă la birou, nu pentru că ai mai mult de lucru, ci pentru că nu ești sigur că ce ai făcut e destul de bine.`,
+                text: `Recitești email-ul de 5 ori înainte să-l trimiți, verifici prezentarea încă o dată, și încă o dată. Colegii au plecat de o oră. Tu ești încă la birou, deși nu ai mai mult de lucru, doar că nu ești sigur că ce ai făcut e destul de bine.`,
               },
               {
                 title: "În relații",
-                text: `Partenerul tău e obosit. Nu de tine, ci de întrebările care nu se termină. "Mă iubești cu adevărat?" "Ești sigur că nu te-am supărat?" Fiecare reasigurare durează 30 de secunde. Apoi îndoiala revine.`,
+                text: `Partenerul tău e obosit, nu de tine, ci de întrebările care nu se termină.. mă iubești cu adevărat, ești sigur că nu te-am supărat. Fiecare reasigurare durează 30 de secunde, apoi îndoiala revine.`,
               },
               {
                 title: "Ca părinte",
-                text: `Gândul apare: "Ce-ar fi dacă fac rău copilului meu?" Și te îngheață. Nu pentru că ai vrea vreodată așa ceva. Ci tocmai pentru că nu ai vrea. Multe mame cu TOC postpartum trăiesc acest coșmar în tăcere, convinse că sunt monștri. Nu sunt.`,
+                text: `Gândul apare.. ce-ar fi dacă fac rău copilului meu. Și te îngheață, tocmai pentru că nu ai vrea vreodată așa ceva. Multe mame cu TOC postpartum trăiesc acest coșmar în tăcere, convinse că sunt monștri, deși nu sunt.`,
               },
               {
                 title: "Timp pierdut",
@@ -325,28 +325,28 @@ export default function TOCPage() {
             Paradoxul ritualului
           </h3>
           <p style={{ marginBottom: 32 }}>
-            Cu cât faci mai multe ritualuri de verificare, cu atât crește incertitudinea și nevoia de a le repeta. Fiecare ritual îi spune creierului &quot;ai dreptate să te temi&quot;.
+            Cu cât faci mai multe ritualuri de verificare, cu atât crește incertitudinea și nevoia de a le repeta. Fiecare ritual îi spune creierului că ai dreptate să te temi.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 12 }}>
             Reasigurarea ca ritual invizibil
           </h3>
           <p style={{ marginBottom: 32 }}>
-            Multe persoane cu TOC nu fac ritualuri vizibile. Fac altceva: cer confirmare. &quot;Ești sigur că am încuiat?&quot; &quot;Nu ți se pare că arăt bolnav?&quot; &quot;Crezi că am greșit?&quot; Reasigurarea funcționează identic cu verificarea. Oferă o ușurare scurtă și întărește ciclul.
+            Multe persoane cu TOC nu fac ritualuri vizibile. Fac altceva: cer confirmare.. ești sigur că am încuiat, nu ți se pare că arăt bolnav, crezi că am greșit. Reasigurarea funcționează identic cu verificarea. Oferă o ușurare scurtă și întărește ciclul.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 12 }}>
             Ritualurile mentale
           </h3>
           <p style={{ marginBottom: 32 }}>
-            Există o categorie întreagă de ritualuri care se întâmplă exclusiv în minte: repetarea unei fraze, număratul, &quot;anularea&quot; unui gând rău cu un gând bun, revizuirea mentală a unor situații, rugăciuni repetate. Sunt la fel de puternice ca ritualurile vizibile, dar nimeni din jur nu le observă.
+            Există o categorie întreagă de ritualuri care se întâmplă exclusiv în minte: repetarea unei fraze, număratul, anularea unui gând rău cu un gând bun, revizuirea mentală a unor situații, rugăciuni repetate. Sunt la fel de puternice ca ritualurile vizibile, dar nimeni din jur nu le observă.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 12 }}>
             TOC-ul pe care nimeni nu-l vede
           </h3>
           <p>
-            Există o formă de TOC pe care nimeni din jurul tău nu o observă. Persoana nu se spală pe mâini, nu verifică ușa. Dar în mintea ei, ritualurile sunt non-stop. Gânduri care vin, gânduri care &quot;anulează&quot;, analize interminabile, verificări mentale. Afară, totul pare normal. Înăuntru, epuizarea e totală. Dacă nu ai ritualuri vizibile dar mintea ta nu se oprește, dacă te &quot;testezi&quot; constant sau &quot;analizezi&quot; ore întregi.. ai ritualuri. Doar că sunt invizibile.
+            Există o formă de TOC pe care nimeni din jurul tău nu o observă. Persoana nu se spală pe mâini, nu verifică ușa. Dar în mintea ei, ritualurile sunt non-stop.. gânduri care vin, gânduri care anulează, analize interminabile, verificări mentale. Afară, totul pare normal. Înăuntru, epuizarea e totală. Dacă nu ai ritualuri vizibile dar mintea ta nu se oprește, dacă te testezi constant sau analizezi ore întregi.. ai ritualuri. Doar că sunt invizibile.
           </p>
         </div>
       </section>
@@ -379,19 +379,19 @@ export default function TOCPage() {
             <div style={{ background: "var(--color-background)", borderRadius: 12, padding: 28, border: "1px solid var(--color-border)" }}>
               <p style={{ fontWeight: 600, color: "var(--color-secondary)", marginBottom: 8, fontSize: 17 }}>Gândul influențează realitatea</p>
               <p style={{ fontSize: 16, marginBottom: 8 }}>
-                &quot;Dacă mă gândesc că se va întâmpla ceva rău, crește probabilitatea să se întâmple cu adevărat.&quot;
+                Dacă mă gândesc că se va întâmpla ceva rău, crește probabilitatea să se întâmple cu adevărat.
               </p>
               <p style={{ fontSize: 15, color: "var(--color-text)", margin: 0 }}>
-                Ca și cum gândul ar avea putere magică de a influența ce se întâmplă în lume. Mintea spune: &quot;M-am gândit la un accident, deci acum e mai probabil să se întâmple.&quot;
+                Ca și cum gândul ar avea putere magică de a influența ce se întâmplă în lume. Mintea spune că m-am gândit la un accident, deci acum e mai probabil să se întâmple.
               </p>
             </div>
             <div style={{ background: "var(--color-background)", borderRadius: 12, padding: 28, border: "1px solid var(--color-border)" }}>
               <p style={{ fontWeight: 600, color: "#8B3A3A", marginBottom: 8, fontSize: 17 }}>Gândul egal cu fapta</p>
               <p style={{ fontSize: 16, marginBottom: 8 }}>
-                &quot;A gândi ceva rău este la fel de grav ca și cum ai fi făcut acel lucru.&quot;
+                A gândi ceva rău este la fel de grav ca și cum ai fi făcut acel lucru.
               </p>
               <p style={{ fontSize: 15, color: "var(--color-text)", margin: 0 }}>
-                Mama care are un gând intruziv despre a face rău copilului se simte ca și cum ar fi făcut-o deja. Nu e un gând. E o crimă în mintea ei. Deși în realitate, nu a făcut nimic.
+                Mama care are un gând intruziv despre a face rău copilului se simte ca și cum ar fi făcut-o deja.. nu mai e un simplu gând, ci o crimă în mintea ei. Deși în realitate, nu a făcut nimic.
               </p>
             </div>
           </div>
@@ -403,7 +403,7 @@ export default function TOCPage() {
             Dacă te gândești la ceva rău și nu faci nimic să-l previi, iar acel lucru se întâmplă.. simți că e vina ta. Nu verifici aragazul pentru că ești neglijent. Verifici pentru că simți o responsabilitate copleșitoare pentru siguranța tuturor.
           </p>
           <p>
-            Această senzație că &quot;trebuie să previn orice rău posibil&quot; transformă fiecare gând intruziv într-o urgență. Nu poți lăsa gândul să treacă, pentru că a-l lăsa să treacă ar însemna că nu îți pasă. Și ție îți pasă enorm. De fapt, tocmai asta e problema.. îți pasă prea mult.
+            Această senzație că trebuie să previi orice rău posibil transformă fiecare gând intruziv într-o urgență. Nu poți lăsa gândul să treacă, pentru că a-l lăsa să treacă ar însemna că nu îți pasă. Și ție îți pasă enorm. De fapt, tocmai asta e problema.. îți pasă prea mult.
           </p>
         </div>
       </section>
@@ -423,10 +423,10 @@ export default function TOCPage() {
             De ce ritualul nu e un gest absurd
           </h3>
           <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 16 }}>
-            Ritualul pare irațional văzut din exterior. Dar psihicul nu face nimic la întâmplare. Ritualul e cel mai bun răspuns pe care mintea ta l-a găsit pentru ceva ce simți dar nu poți numi. Nu e problema. E soluția.. doar că una care te costă prea mult.
+            Ritualul pare irațional văzut din exterior. Dar psihicul nu face nimic la întâmplare. Ritualul e cel mai bun răspuns pe care mintea ta l-a găsit pentru ceva ce simți dar nu poți numi.. nu e problema în sine, ci soluția, doar că una care te costă prea mult.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 32 }}>
-            Cineva care se spală compulsiv pe mâini, de exemplu, poate exprima prin asta nevoia de a se &quot;curăța&quot; de gânduri pe care le consideră inacceptabile. Ritualul ține locul unei conversații pe care persoana nu o poate avea cu sine.
+            Cineva care se spală compulsiv pe mâini, de exemplu, poate exprima prin asta nevoia de a se curăța de gânduri pe care le consideră inacceptabile. Ritualul ține locul unei conversații pe care persoana nu o poate avea cu sine.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "#ffffff", marginBottom: 16 }}>
@@ -443,16 +443,16 @@ export default function TOCPage() {
             </div>
             <div style={{ background: "rgba(255,255,255,0.08)", borderRadius: 12, padding: "20px 24px", border: "1px solid rgba(255,255,255,0.1)" }}>
               <p style={{ color: "var(--color-secondary)", fontWeight: 600, marginBottom: 6, fontSize: 16 }}>Ce simți tu</p>
-              <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 15, margin: 0, lineHeight: 1.65 }}>Îndoieli constante, nesiguranță, senzația că nu ești destul de bun. O tensiune permanentă între cine &quot;ar trebui&quot; să fii și cine ești de fapt.</p>
+              <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 15, margin: 0, lineHeight: 1.65 }}>Îndoieli constante, nesiguranță, senzația că nu ești destul de bun. O tensiune permanentă între cine ar trebui să fii și cine ești de fapt.</p>
             </div>
             <div style={{ background: "rgba(255,255,255,0.08)", borderRadius: 12, padding: "20px 24px", border: "1px solid rgba(255,255,255,0.1)" }}>
               <p style={{ color: "var(--color-secondary)", fontWeight: 600, marginBottom: 6, fontSize: 16 }}>Ce te sperie cel mai tare</p>
-              <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 15, margin: 0, lineHeight: 1.65 }}>Gândurile pe care le consideri inacceptabile.. exact cele care alimentează obsesiile. Nu pentru că sunt adevărate, ci pentru că te temi de ce ar spune despre tine.</p>
+              <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 15, margin: 0, lineHeight: 1.65 }}>Gândurile pe care le consideri inacceptabile.. exact cele care alimentează obsesiile. Te temi de ce ar spune despre tine, nu de faptul că ar fi adevărate.</p>
             </div>
           </div>
 
           <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 32 }}>
-            Tocmai această prăpastie face TOC-ul atât de chinuitor. Persoana cu TOC e adesea cea mai conștiincioasă din anturaj. Și exact acest exces de conștiinciozitate o face vulnerabilă: orice gând &quot;greșit&quot; devine o criză.
+            Tocmai această prăpastie face TOC-ul atât de chinuitor. Persoana cu TOC e adesea cea mai conștiincioasă din anturaj. Și exact acest exces de conștiinciozitate o face vulnerabilă: orice gând greșit devine o criză.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "#ffffff", marginBottom: 12 }}>
@@ -474,7 +474,7 @@ export default function TOCPage() {
             88,2% din rudele pacienților cu TOC recunosc că și-au modificat comportamentul pentru a se acomoda la ritualurile persoanei. Familia participă la ritual: verifică împreună, reasigură, modifică rutine. Nu din slăbiciune, ci din dragoste. Dar această acomodare întărește ciclul.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)" }}>
-            Tratamentul eficient include frecvent și familia, nu pentru că familia e &quot;vinovată&quot;, ci pentru că familia e parte din sistem. Și schimbarea sistemului accelerează vindecarea.
+            Tratamentul eficient include frecvent și familia, care nu e vinovată, dar e parte din sistem. Și schimbarea sistemului accelerează vindecarea.
           </p>
         </div>
       </section>
@@ -499,7 +499,7 @@ export default function TOCPage() {
             Principiul e simplu, chiar dacă execuția e dificilă: te expui deliberat la gândul sau situația care îți provoacă anxietatea, dar fără să faci ritualul. Stai cu anxietatea. Și descoperi că anxietatea scade de la sine, fără ritual.
           </p>
           <p style={{ marginBottom: 32 }}>
-            Nu e vorba de a-ți face curaj. E vorba de a-ți oferi creierului o experiență nouă. Ritualul i-a spus creierului &quot;frica ta era justificată&quot;. ERP-ul îi spune creierului &quot;ai supraviețuit fără ritual, deci amenințarea nu era reală&quot;.
+            Scopul nu e să-ți faci curaj, ci să-i oferi creierului o experiență nouă. Ritualul i-a spus creierului că frica ta era justificată. ERP-ul îi spune creierului că ai supraviețuit fără ritual, deci amenințarea nu era reală.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 16 }}>
@@ -550,10 +550,10 @@ export default function TOCPage() {
             Curba anxietății
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Când te expui fără să faci ritualul, anxietatea crește. Atinge un vârf în primele 15-20 de minute. Totul în tine urlă &quot;fă ritualul!&quot;. Dacă faci ritualul, anxietatea scade instant, dar s-a întărit. Dacă nu faci ritualul, ceva neașteptat se întâmplă: anxietatea începe să scadă de la sine.
+            Când te expui fără să faci ritualul, anxietatea crește. Atinge un vârf în primele 15-20 de minute. Totul în tine urlă să faci ritualul. Dacă îl faci, anxietatea scade instant, dar s-a întărit. Dacă nu îl faci, ceva neașteptat se întâmplă: anxietatea începe să scadă de la sine.
           </p>
           <p style={{ marginBottom: 32 }}>
-            Corpul tău nu poate menține acel nivel de activare la infinit. După 30-45 de minute, senzațiile se domolesc. Și creierul tău învață ceva nou: &quot;Am stat cu gândul și nu s-a întâmplat nimic. Pot tolera incertitudinea.&quot;
+            Corpul tău nu poate menține acel nivel de activare la infinit. După 30-45 de minute, senzațiile se domolesc. Și creierul tău învață ceva nou.. am stat cu gândul și nu s-a întâmplat nimic, pot tolera incertitudinea.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 12 }}>
@@ -563,7 +563,7 @@ export default function TOCPage() {
             Defuziunea este o tehnică din terapia ACT (Acceptance and Commitment Therapy) care te învață să schimbi relația cu gândul, nu conținutul gândului.
           </p>
           <p style={{ marginBottom: 16 }}>
-            În loc de &quot;Ușa e deschisă!&quot; (fuziune cu gândul, gândul e realitate), spui &quot;Am gândul că ușa e deschisă&quot; (defuziune, observi gândul ca pe un eveniment mental, nu ca pe un fapt).
+            În loc să spui că ușa e deschisă (fuziune cu gândul, gândul e realitate), spui că ai gândul că ușa e deschisă (defuziune, observi gândul ca pe un eveniment mental, nu ca pe un fapt).
           </p>
           <p style={{ marginBottom: 32 }}>
             Această distanță mică, aparent banală, schimbă modul în care creierul procesează informația. Gândul nu mai e o amenințare care necesită acțiune imediată. E un eveniment mental care poate fi observat și lăsat să treacă.
@@ -580,7 +580,7 @@ export default function TOCPage() {
               Apoi a început un program structurat de ERP. Pas cu pas, treptat, cu un terapeut specializat. După câteva luni de tratament, scorul lui la scala Yale-Brown (instrumentul standard de măsurare a severității TOC) a ajuns la 0.
             </p>
             <p style={{ margin: 0, fontWeight: 600, color: "var(--color-primary)" }}>
-              35 de ani de TOC. Apoi scor 0. Nu pentru că a fost ușor, ci pentru că tratamentul funcționează.
+              35 de ani de TOC, apoi scor 0. Nu a fost ușor, dar tratamentul funcționează.
             </p>
           </div>
 
@@ -615,17 +615,17 @@ export default function TOCPage() {
             {
               nr: "2",
               title: "Amânarea ritualului",
-              text: "Când simți nevoia de a face ritualul, nu încerca să o oprești complet. Amân-o. Spune-ți: \"Voi face ritualul, dar peste 5 minute.\" Stai cu anxietatea 5 minute. Apoi, dacă tot mai simți nevoia, fă-l. Săptămâna viitoare, crește la 10 minute. Apoi la 15. Scopul nu e să elimini ritualul dintr-o dată, ci să descoperi că anxietatea scade și fără el.",
+              text: "Când simți nevoia de a face ritualul, nu încerca să o oprești complet. Amân-o. Spune-ți că vei face ritualul, dar peste 5 minute. Stai cu anxietatea 5 minute. Apoi, dacă tot mai simți nevoia, fă-l. Săptămâna viitoare, crește la 10 minute, apoi la 15. Scopul nu e să elimini ritualul dintr-o dată, ci să descoperi că anxietatea scade și fără el.",
             },
             {
               nr: "3",
               title: "Antrenament de incertitudine",
-              text: `Alege zilnic o situație mică în care tolerezi incertitudinea: trimite un email fără să-l recitești, ia un traseu fără GPS, comandă ceva nou la restaurant fără să citești recenzii. Nu sunt exerciții despre email-uri sau restaurante. Sunt exerciții despre a trăi cu "nu știu sigur" și a descoperi că e suportabil.`,
+              text: `Alege zilnic o situație mică în care tolerezi incertitudinea: trimite un email fără să-l recitești, ia un traseu fără GPS, comandă ceva nou la restaurant fără să citești recenzii. Nu sunt exerciții despre email-uri sau restaurante, ci despre a trăi cu incertitudinea și a descoperi că e suportabil.`,
             },
             {
               nr: "4",
               title: "Etichetează gândul",
-              text: `Când gândul intruziv apare, pune-i o etichetă: "Am gândul că ușa e deschisă" în loc de "Ușa e deschisă!" sau "Am gândul că voi face rău cuiva" în loc de "Voi face rău cuiva." Această distanță mică schimbă modul în care creierul procesează informația. Gândul devine ceva ce observi, nu ceva ce ești.`,
+              text: `Când gândul intruziv apare, pune-i o etichetă.. în loc să spui că ușa e deschisă, spune-ți că ai gândul că ușa e deschisă. În loc să spui că vei face rău cuiva, spune-ți că ai gândul că vei face rău cuiva. Această distanță mică schimbă modul în care creierul procesează informația. Gândul devine ceva ce observi, nu ceva ce ești.`,
             },
             {
               nr: "5",
@@ -676,7 +676,7 @@ export default function TOCPage() {
               TOC-ul răspunde excelent la tratament specializat.
             </p>
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 16, marginBottom: 28, maxWidth: 480, margin: "0 auto 28px" }}>
-              Nu e ceva cu care &quot;trebuie să trăiești&quot;. E ceva ce se tratează.
+              Nu e ceva cu care trebuie să trăiești, ci ceva ce se tratează.
             </p>
             <Link
               href="/programare?din=toc"
@@ -695,7 +695,7 @@ export default function TOCPage() {
             Întrebări frecvente
           </h2>
           <FAQ q="TOC-ul se vindecă complet?">
-            <p style={{ marginBottom: 8 }}>TOC-ul poate fi adus în remisiune completă. Mulți oameni care fac ERP ajung la un punct în care gândurile intruzive încă apar ocazional, dar nu mai produc anxietate semnificativă și nu mai declanșează ritualuri. Diferența dintre &quot;vindecare&quot; și &quot;remisiune&quot; este subtilă, dar practică: gândurile pot reveni în perioade de stres, iar recunoașterea lor rapidă și aplicarea instrumentelor învățate în terapie previne recăderea.</p>
+            <p style={{ marginBottom: 8 }}>TOC-ul poate fi adus în remisiune completă. Mulți oameni care fac ERP ajung la un punct în care gândurile intruzive încă apar ocazional, dar nu mai produc anxietate semnificativă și nu mai declanșează ritualuri. Diferența dintre vindecare și remisiune este subtilă, dar practică: gândurile pot reveni în perioade de stres, iar recunoașterea lor rapidă și aplicarea instrumentelor învățate în terapie previne recăderea.</p>
           </FAQ>
           <FAQ q="Dacă am gânduri violente, înseamnă că sunt periculos?">
             <p style={{ marginBottom: 8 }}>Nu. Cercetările arată că persoanele cu TOC au exact aceeași probabilitate de a comite acte violente ca și populația generală. De fapt, tocmai pentru că aceste gânduri te îngrozesc atât de tare, ele sunt un semn că valorile tale sunt opuse conținutului gândului. O persoană cu adevărat periculoasă nu ar fi tulburată de acele gânduri.</p>
@@ -704,10 +704,10 @@ export default function TOCPage() {
             <p style={{ marginBottom: 8 }}>Multe ritualuri sunt normale în copilărie (aranjatul jucăriilor, rutine de culcare stricte). Devin problematice când produc suferință, consumă timp semnificativ (peste 30 de minute pe zi) sau interferează cu activitățile zilnice. Dacă ești îngrijorat, o evaluare cu un specialist în TOC pediatric poate clarifica situația.</p>
           </FAQ>
           <FAQ q="Partenerul meu are TOC. Cum îl pot ajuta?">
-            <p style={{ marginBottom: 8 }}>Cel mai important lucru: nu participa la ritualuri. Știu că e greu, pentru că refuzul tău va crește temporar anxietatea partenerului. Dar participarea ta la ritual întărește ciclul. Nu reasigura (&quot;da, ai încuiat&quot;, &quot;nu, nu ești bolnav&quot;). Nu verifica în locul lui. Spune-i, cu blândețe: &quot;Te iubesc, dar nu te pot ajuta făcând asta pentru tine.&quot; Și încurajează-l să lucreze cu un terapeut specializat în ERP.</p>
+            <p style={{ marginBottom: 8 }}>Cel mai important lucru: nu participa la ritualuri. Știu că e greu, pentru că refuzul tău va crește temporar anxietatea partenerului. Dar participarea ta la ritual întărește ciclul. Nu reasigura, nu verifica în locul lui. Spune-i, cu blândețe, că îl iubești dar nu îl poți ajuta făcând asta pentru el. Și încurajează-l să lucreze cu un terapeut specializat în ERP.</p>
           </FAQ>
-          <FAQ q={`Am TOC "ușor". Merită să merg la terapie?`}>
-            <p>{`Tocmai formele "ușoare" răspund cel mai bine la tratament. Nu aștepta ca TOC-ul să devină sever ca să ceri ajutor. Cu cât ciclul e mai scurt și ritualurile mai puțin înrădăcinate, cu atât ERP-ul funcționează mai rapid. Mulți oameni cu TOC "ușor" se descurcă în 8-12 ședințe.`}</p>
+          <FAQ q="Am TOC ușor. Merită să merg la terapie?">
+            <p>Tocmai formele ușoare răspund cel mai bine la tratament. Nu aștepta ca TOC-ul să devină sever ca să ceri ajutor. Cu cât ciclul e mai scurt și ritualurile mai puțin înrădăcinate, cu atât ERP-ul funcționează mai rapid. Mulți oameni cu TOC ușor se descurcă în 8-12 ședințe.</p>
           </FAQ>
         </div>
       </section>

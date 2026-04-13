@@ -257,7 +257,7 @@ export default function AnxietateSocialaPage() {
             </Reveal>
             <Reveal delay={400}>
               <p className="as-hero-sub">
-                Nu ești timid. Nu ești ciudat. Și nu ești singur.
+                Nu ești nici timid, nici ciudat, și cu siguranță nu ești singur.
               </p>
             </Reveal>
             <Reveal delay={600}>
@@ -284,7 +284,7 @@ export default function AnxietateSocialaPage() {
           {[
             {
               label: "Înainte",
-              monolog: "Mâine am ședința. O să trebuiască să vorbesc. Vor vedea că mă bâlbâi. Poate pot să spun că sunt bolnav. Da, o să scriu un mesaj.. \"Nu mă simt bine, nu pot veni.\" Dar dacă realizează că mint? Poate e mai bine să merg și să stau în spate, să nu mă observe nimeni.",
+              monolog: "Mâine am ședința. O să trebuiască să vorbesc. Vor vedea că mă bâlbâi. Poate pot să spun că sunt bolnav. Da, o să scriu un mesaj.. nu mă simt bine, nu pot veni. Dar dacă realizează că mint? Poate e mai bine să merg și să stau în spate, să nu mă observe nimeni.",
               Scene: SceneBefore,
             },
             {
@@ -294,7 +294,7 @@ export default function AnxietateSocialaPage() {
             },
             {
               label: "După",
-              monolog: "Acasă. Liniște. Dar în capul tău e zgomot continuu. \"De ce am spus asta? Cine spune așa ceva? Sigur au crezut că sunt ciudat. Modul în care m-au privit.. da, au observat. Ar fi fost mai bine să nu fi mers.\"",
+              monolog: "Acasă. Liniște. Dar în capul tău e zgomot continuu. De ce am spus asta? Cine spune așa ceva? Sigur au crezut că sunt ciudat. Modul în care m-au privit.. da, au observat. Ar fi fost mai bine să nu fi mers.",
               Scene: SceneAfter,
             },
           ].map((act, i) => (
@@ -314,7 +314,7 @@ export default function AnxietateSocialaPage() {
           <Reveal>
             <div className="as-act-conclusion">
               <p>
-                Dacă ai recunoscut ceva din ce ai citit, nu ești timid. Nu ești ciudat. Și nu ești singur.
+                Dacă ai recunoscut ceva din ce ai citit, nu ești nici timid, nici ciudat, și cu siguranță nu ești singur.
               </p>
               <p>
                 Ce tocmai ai citit este experiența trăită de aproximativ <strong>1 din 8 oameni</strong> la un moment dat în viața lor. Și are un nume.
@@ -334,12 +334,12 @@ export default function AnxietateSocialaPage() {
               </Reveal>
               <Reveal delay={150}>
                 <p>
-                  Anxietatea socială (numită și fobia socială) este o frică intensă și persistentă de situațiile sociale în care te simți observat, evaluat sau judecat de ceilalți. Nu este vorba despre timiditate sau introversiune. Este o tulburare reală, frecventă și tratabilă.
+                  Anxietatea socială (numită și fobia socială) este o frică intensă și persistentă de situațiile sociale în care te simți observat, evaluat sau judecat de ceilalți. Nu are legătură cu timiditatea sau introversiunea, ci este o tulburare reală, frecventă și tratabilă.
                 </p>
               </Reveal>
               <Reveal delay={300}>
                 <p>
-                  Frica își are originea într-o convingere profundă.. că ceilalți vor observa ceva &quot;greșit&quot; la tine și te vor respinge, umili sau ridiculiza. Această convingere activează un lanț de reacții cognitive, emoționale și fizice care îți sabotează exact ceea ce îți dorești cel mai mult.. să funcționezi normal printre oameni.
+                  Frica își are originea într-o convingere profundă.. că ceilalți vor observa ceva greșit la tine și te vor respinge, umili sau ridiculiza. Această convingere activează un lanț de reacții cognitive, emoționale și fizice care îți sabotează exact ceea ce îți dorești cel mai mult.. să funcționezi normal printre oameni.
                 </p>
               </Reveal>
             </div>
@@ -407,7 +407,7 @@ export default function AnxietateSocialaPage() {
                 <strong>Omul timid</strong> merge la petrecere și după 20 de minute se simte OK, începe să vorbească, se relaxează.
               </p>
               <p>
-                <strong>Omul cu anxietate socială</strong> petrece 3 ore monitorizându-se (&quot;Am spus ceva greșit?&quot;, &quot;Se vede că transpir?&quot;), apoi 2 zile analizând fiecare moment.
+                <strong>Omul cu anxietate socială</strong> petrece 3 ore monitorizându-se.. am spus ceva greșit, se vede că transpir.. apoi 2 zile analizând fiecare moment.
               </p>
             </div>
           </Reveal>
@@ -422,18 +422,18 @@ export default function AnxietateSocialaPage() {
           </Reveal>
           <Reveal delay={100}>
             <p className="as-recognize-intro">
-              Nu îți voi cere să bifezi un checklist. Dacă ai anxietate socială, simpla idee de a fi &quot;catalogat&quot; produce exact acel sentiment. În schimb, îți voi descrie câteva situații. Tu doar citește.
+              Nu îți voi cere să bifezi un checklist. Dacă ai anxietate socială, simpla idee de a fi catalogat produce exact acel sentiment. În schimb, îți voi descrie câteva situații. Tu doar citește.
             </p>
           </Reveal>
 
           {[
-            { bold: "Telefonul sună.", text: "Cineva te caută. Îl lași să sune până se oprește. Apoi îi scrii un mesaj: \"Scuze, nu am putut răspunde.\" Știi că ai putut. Dar a răspunde însemna să vorbești nepregătit, și asta e prea mult." },
-            { bold: "Ești la masă cu colegi.", text: "Toți comandă la fel de repede, natural. Tu citești meniul de 3 ori, nu pentru că nu știi ce vrei, ci pentru că îți repeți în cap cum să comanzi fără să te bâlbâi." },
-            { bold: "O ședință de lucru.", text: "Ai o idee bună. O știi. Dar în capul tău se derulează scenariul: \"Dacă spun o prostie? Dacă toți se uită la mine?\" Așa că taci. Altcineva spune aceeași idee, 10 minute mai târziu. Primește felicitări." },
+            { bold: "Telefonul sună.", text: "Cineva te caută. Îl lași să sune până se oprește. Apoi îi scrii un mesaj.. scuze, nu am putut răspunde. Știi că ai putut. Dar a răspunde însemna să vorbești nepregătit, și asta e prea mult." },
+            { bold: "Ești la masă cu colegi.", text: "Toți comandă la fel de repede, natural. Tu citești meniul de 3 ori, dar nu fiindcă nu știi ce vrei, ci fiindcă îți repeți în cap cum să comanzi fără să te bâlbâi." },
+            { bold: "O ședință de lucru.", text: "Ai o idee bună. O știi. Dar în capul tău se derulează scenariul.. dacă spun o prostie, dacă toți se uită la mine. Așa că taci. Altcineva spune aceeași idee, 10 minute mai târziu. Primește felicitări." },
             { bold: "O petrecere.", text: "Te-ai pregătit o oră. Ai repetat mental câteva subiecte de conversație. Ajungi acolo și primele 20 de minute le petreci lângă perete, cu telefonul în mână, prefăcându-te că verifici ceva important." },
-            { bold: "Cineva îți face un compliment.", text: "În loc să simți bucurie, simți disconfort. \"Sigur nu vorbește serios.\" Sau \"Dacă acum așteaptă ceva de la mine și eu nu mă ridic la nivelul așteptărilor?\"" },
-            { bold: "După orice interacțiune socială.", text: "Nu te gândești la ce a mers bine. Derulezi filmul doar pe momentele în care ai simțit că ai greșit. Un cuvânt spus greșit. O pauză prea lungă. Un zâmbet care poate a părut forțat. Le analizezi ore întregi." },
-            { bold: "Succesul te sperie la fel de tare ca eșecul.", text: "Ai fost lăudat într-o ședință. În loc să te simți bine, simți o presiune enormă. \"Acum așteaptă și mai mult de la mine. Data viitoare, dacă nu performez la fel, vor vedea că de fapt nu sunt așa de bun.\"" },
+            { bold: "Cineva îți face un compliment.", text: "În loc să simți bucurie, simți disconfort.. sigur nu vorbește serios. Sau dacă acum așteaptă ceva de la mine și eu nu mă ridic la nivelul așteptărilor?" },
+            { bold: "După orice interacțiune socială.", text: "Nu te gândești la ce a mers bine. Derulezi filmul doar pe momentele în care ai simțit că ai greșit. Un cuvânt spus greșit, o pauză prea lungă, un zâmbet care poate a părut forțat.. le analizezi ore întregi." },
+            { bold: "Succesul te sperie la fel de tare ca eșecul.", text: "Ai fost lăudat într-o ședință. În loc să te simți bine, simți o presiune enormă. Acum așteaptă și mai mult de la mine, și data viitoare, dacă nu performez la fel, vor vedea că de fapt nu sunt așa de bun." },
           ].map((item, i) => (
             <Reveal key={i} delay={i * 120}>
               <div className="as-situation">
@@ -470,18 +470,18 @@ export default function AnxietateSocialaPage() {
           {[
             {
               label: "Faza 1",
-              title: "Predicția negativă (ÎNAINTE)",
-              text: "Totul începe înainte ca situația socială să aibă loc. Creierul tău lansează o serie de predicții automate: \"Vor vedea că sunt anxios.\" \"O să mă bâlbâi și toată lumea o să observe.\" Aceste predicții nu sunt \"gânduri negative\" în sensul banal. Sunt estimări automate ale amenințării pe care creierul tău le generează fără voia ta. Studiile arată că persoanele cu anxietate socială estimează probabilitatea unui rezultat social negativ de 2-3 ori mai mare decât realitatea."
+              title: "Predicția negativă (înainte)",
+              text: "Totul începe înainte ca situația socială să aibă loc. Creierul tău lansează o serie de predicții automate.. vor vedea că sunt anxios, o să mă bâlbâi și toată lumea o să observe. Aceste predicții nu sunt simple gânduri negative în sensul banal, ci estimări automate ale amenințării pe care creierul tău le generează fără voia ta. Studiile arată că persoanele cu anxietate socială estimează probabilitatea unui rezultat social negativ de 2-3 ori mai mare decât realitatea."
             },
             {
               label: "Faza 2",
-              title: "Auto-monitorizarea excesivă (ÎN TIMPUL)",
-              text: "Odată ce ești în situația socială, atenția ta face ceva paradoxal. În loc să se îndrepte către exterior, se întoarce către interior. Începi să te observi pe tine: \"Îmi tremură mâna?\" \"Am transpirat pe frunte?\" Această auto-monitorizare funcționează ca o cameră de supraveghere întoarsă spre tine. Nu mai ești în conversație.. ești în evaluare. Ironia e brutală: tocmai încercarea de a nu părea anxios te face să pari și să fii mai anxios."
+              title: "Auto-monitorizarea excesivă (în timpul)",
+              text: "Odată ce ești în situația socială, atenția ta face ceva paradoxal. În loc să se îndrepte către exterior, se întoarce către interior. Începi să te observi pe tine.. îmi tremură mâna, am transpirat pe frunte. Această auto-monitorizare funcționează ca o cameră de supraveghere întoarsă spre tine. Nu mai ești în conversație, ci în evaluare. Ironia e brutală: tocmai încercarea de a nu părea anxios te face să pari și să fii mai anxios."
             },
             {
               label: "Faza 3",
-              title: "Ruminația post-eveniment (DUPĂ)",
-              text: "După interacțiunea socială, creierul tău nu se oprește. Pornește procesul de \"revizie\", dar cu un filtru sistematic negativ. Derulezi filmul doar pe momentele în care ai simțit că ceva a mers prost. Ignori tot ce a mers bine. Amplifici semnificația fiecărui mic \"eșec\". Această ruminație confirmă predicția negativă inițială. \"Am știut eu că va fi rău.\" Și astfel, cercul se închide."
+              title: "Ruminația post-eveniment (după)",
+              text: "După interacțiunea socială, creierul tău nu se oprește. Pornește procesul de revizie, dar cu un filtru sistematic negativ.. derulezi filmul doar pe momentele în care ai simțit că ceva a mers prost, ignori tot ce a mers bine, amplifici semnificația fiecărui mic eșec. Această ruminație confirmă predicția negativă inițială, acel sentiment familiar de am știut eu că va fi rău. Și astfel, cercul se închide."
             },
           ].map((phase, i) => (
             <Reveal key={i} delay={i * 200}>
@@ -496,7 +496,7 @@ export default function AnxietateSocialaPage() {
           <Reveal delay={600}>
             <div className="as-mechanism-loop">
               <p>
-                <strong>Asta este capcana:</strong> fiecare fază o alimentează pe următoarea. Predicția negativă crește auto-monitorizarea. Auto-monitorizarea degradează performanța. Performanța degradată alimentează ruminația. Ruminația confirmă predicția. Și totul se repetă, tot mai intens.
+                <strong>Asta este capcana:</strong> fiecare fază o alimentează pe următoarea.. predicția negativă crește auto-monitorizarea, care degradează performanța, care alimentează ruminația, care confirmă predicția. Și totul se repetă, tot mai intens.
               </p>
             </div>
           </Reveal>
@@ -519,7 +519,7 @@ export default function AnxietateSocialaPage() {
             {[
               {
                 title: "Cariera",
-                text: "Nu vorbești în ședințe. Refuzi promovările care implică management. Nu negociezi salariul. Rămâi sub potențialul tău, nu pentru că nu ai competență, ci pentru că nu suporți să fii văzut.",
+                text: "Nu vorbești în ședințe, refuzi promovările care implică management și nu negociezi salariul. Rămâi sub potențialul tău, deși ai competența, doar că nu suporți să fii văzut.",
                 stat: "92%",
                 statLabel: "raportează impact asupra carierei"
               },
@@ -551,9 +551,9 @@ export default function AnxietateSocialaPage() {
 
           <Reveal delay={600}>
             <div className="as-myth">
-              <h3>De ce &quot;trece de la sine&quot; e un mit</h3>
+              <h3>De ce ideea că trece de la sine e un mit</h3>
               <p>
-                Spre deosebire de alte tulburări de anxietate, anxietatea socială netratată are un curs cronic. Nu se ameliorează cu vârsta. Nu dispare când &quot;te obișnuiești&quot;. Fără intervenție, se agravează, pentru că fiecare evitare confirmă convingerea că nu poți face față.
+                Spre deosebire de alte tulburări de anxietate, anxietatea socială netratată are un curs cronic.. nu se ameliorează cu vârsta și nu dispare când te obișnuiești. Fără intervenție, se agravează, pentru că fiecare evitare confirmă convingerea că nu poți face față.
               </p>
             </div>
           </Reveal>
@@ -578,23 +578,23 @@ export default function AnxietateSocialaPage() {
           {[
             {
               title: "Rușinea de bază",
-              subtitle: "\"Nu am greșit. Sunt greșit.\"",
-              text: "Există o diferență fundamentală între vinovăție și rușine. Vinovăția spune: \"Am făcut ceva rău.\" Rușinea spune: \"Sunt ceva rău.\" Vinovăția e o pată pe haine. O poți curăța. Rușinea e ca și cum tu ai fi pata. Persoanele cu anxietate socială nu se tem că vor face o greșeală. Se tem că sunt o greșeală. Că există ceva fundamental greșit la ele, ceva pe care ceilalți îl vor vedea dacă se uită suficient de atent."
+              subtitle: "Nu am greșit, ci sunt greșit",
+              text: "Există o diferență fundamentală între vinovăție și rușine. Vinovăția spune că ai făcut ceva rău, pe când rușinea spune că ești ceva rău. Vinovăția e o pată pe haine, o poți curăța. Rușinea e ca și cum tu ai fi pata. Persoanele cu anxietate socială nu se tem că vor face o greșeală, ci că sunt o greșeală.. că există ceva fundamental greșit la ele, ceva pe care ceilalți îl vor vedea dacă se uită suficient de atent."
             },
             {
               title: "Părintele interior critic",
-              subtitle: "\"Vocea din capul tău nu e a ta\"",
-              text: "Fiecare persoană cu anxietate socială are un critic interior extrem de vocal. Vocea care spune: \"Nu te da mare. Cine te crezi? O să te faci de râs.\" Această voce nu s-a născut în capul tău. A fost internalizată. Ai înghițit vocile critice din copilărie și le-ai instalat ca un software care rulează automat."
+              subtitle: "Vocea din capul tău nu e a ta",
+              text: "Fiecare persoană cu anxietate socială are un critic interior extrem de vocal.. vocea care spune că nu trebuie să te dai mare, cine te crezi, o să te faci de râs. Această voce nu s-a născut în capul tău, ci a fost internalizată. Ai înghițit vocile critice din copilărie și le-ai instalat ca un software care rulează automat."
             },
             {
               title: "Dorința vs. teama",
               subtitle: "Conflictul central",
-              text: "Stai în fața unei uși. Știi că în spate e ceva ce vrei.. conexiune, aprobare, apartenență. Dar ești convins că ușa te va lovi când încerci să o deschizi. Nu ești o persoană care nu vrea relații. Ești o persoană care le vrea disperat, dar care a învățat că prețul conexiunii este riscul umilirii."
+              text: "Stai în fața unei uși. Știi că în spate e ceva ce vrei.. conexiune, aprobare, apartenență. Dar ești convins că ușa te va lovi când încerci să o deschizi. Ești de fapt o persoană care vrea relații disperat, dar care a învățat că prețul conexiunii este riscul umilirii."
             },
             {
               title: "Succesul amenințător",
-              subtitle: "\"Nu te da mare\"",
-              text: "Una dintre cele mai contra-intuitive descoperiri din practica clinică este că pentru persoanele cu anxietate socială, succesul poate fi la fel de amenințător ca eșecul. O pacientă de 24 de ani nu putea socializa fără alcool. În terapie, s-a descoperit că tatăl ei o critica constant. Când a fost aleasă majoretă la școală, tatăl a numit-o \"încrezută și răsfățată\". Mesajul pe care l-a internalizat: succes = afișare = rușine."
+              subtitle: "Nu te da mare",
+              text: "Una dintre cele mai contra-intuitive descoperiri din practica clinică este că pentru persoanele cu anxietate socială, succesul poate fi la fel de amenințător ca eșecul. O pacientă de 24 de ani nu putea socializa fără alcool. În terapie, s-a descoperit că tatăl ei o critica constant. Când a fost aleasă majoretă la școală, tatăl a numit-o încrezută și răsfățată. Mesajul pe care l-a internalizat: succes = afișare = rușine."
             },
           ].map((sub, i) => (
             <Reveal key={i} delay={i * 150}>
@@ -611,12 +611,12 @@ export default function AnxietateSocialaPage() {
               <h3>Cele șase mesaje ale psihicului</h3>
               <p className="as-messages-intro">Dacă ar putea vorbi, anxietatea ta socială ți-ar spune:</p>
               {[
-                "\"Am nevoie de siguranță, nu de curaj.\" Nu îți lipsește curajul. Îți lipsește senzația că ești în siguranță printre oameni.",
-                "\"Cineva mi-a spus că sunt greșit și am crezut.\" Convingerea ta despre tine nu e un adevăr. Este o internalizare.",
-                "\"Vreau să fiu văzut, dar mă tem de ce vor vedea.\" Nu eviți oamenii. Eviți judecata.",
-                "\"Încerc să te protejez de o durere veche.\" Evitarea nu e slăbiciune. Este un mecanism de apărare care a funcționat cândva.",
-                "\"Nu mai vreau să mă prefac.\" Mulți clienți descriu senzația de \"impostor\".. că se prefac că sunt adulți, că sunt competenți.",
-                "\"Am nevoie să fiu acceptat, nu reparat.\" Primul pas nu este să te schimbi. Este să înțelegi că nu ești defect.",
+                "Am nevoie de siguranță, nu de curaj.. nu îți lipsește curajul, ci senzația că ești în siguranță printre oameni.",
+                "Cineva mi-a spus că sunt greșit și am crezut.. convingerea ta despre tine nu e un adevăr, e o internalizare.",
+                "Vreau să fiu văzut, dar mă tem de ce vor vedea.. nu eviți oamenii, ci judecata.",
+                "Încerc să te protejez de o durere veche.. evitarea nu e slăbiciune, e un mecanism de apărare care a funcționat cândva.",
+                "Nu mai vreau să mă prefac.. mulți clienți descriu senzația de impostor, că se prefac că sunt adulți, că sunt competenți.",
+                "Am nevoie să fiu acceptat, nu reparat.. primul pas nu este să te schimbi, ci să înțelegi că nu ești defect.",
               ].map((msg, i) => (
                 <Reveal key={i} delay={i * 150}>
                   <div className="as-message">{msg}</div>
@@ -635,7 +635,7 @@ export default function AnxietateSocialaPage() {
           </Reveal>
           <Reveal delay={100}>
             <p className="as-action-intro">
-              Nu îți voi spune &quot;fii curajos&quot; sau &quot;ieși din zona de confort&quot;. Dacă ai citit până aici, știi deja că problema nu e lipsa de curaj. Îți voi oferi în schimb câteva lucruri practice, validate științific.
+              Nu îți voi spune să fii curajos sau să ieși din zona de confort. Dacă ai citit până aici, știi deja că problema nu e lipsa de curaj. Îți voi oferi în schimb câteva lucruri practice, validate științific.
             </p>
           </Reveal>
 
@@ -644,17 +644,17 @@ export default function AnxietateSocialaPage() {
               {
                 num: "1",
                 title: "Mută atenția de la interior la exterior",
-                text: "Data viitoare când ești într-o conversație și simți că te pierzi în auto-monitorizare, concentrează-te pe ce spune cealaltă persoană. Nu pe cum arăți tu. Pe cuvintele lor. Pe expresia lor. Cercetările arată că simpla redirecționare a atenției reduce semnificativ anxietatea percepută."
+                text: "Data viitoare când ești într-o conversație și simți că te pierzi în auto-monitorizare, concentrează-te pe ce spune cealaltă persoană. Nu pe cum arăți tu, ci pe cuvintele și expresia lor. Cercetările arată că simpla redirecționare a atenției reduce semnificativ anxietatea percepută."
               },
               {
                 num: "2",
                 title: "Renunță la un comportament de siguranță (unul singur)",
-                text: "Alege cel mai mic comportament de siguranță pe care îl folosești și renunță la el intenționat. Dacă eviți contactul vizual, privește în ochii celuilalt 2-3 secunde mai mult. Nu toate odată. Unul singur. Și observă ce se întâmplă. În cele mai multe cazuri.. nimic."
+                text: "Alege cel mai mic comportament de siguranță pe care îl folosești și renunță la el intenționat. Dacă eviți contactul vizual, privește în ochii celuilalt 2-3 secunde mai mult. Nu toate odată, doar unul singur, și observă ce se întâmplă. În cele mai multe cazuri.. nimic."
               },
               {
                 num: "3",
                 title: "Testează-ți predicțiile",
-                text: "Înainte de o situație socială, notează-ți predicția. Exact, pe hârtie: \"Cred că voi roși și toată lumea va observa.\" Apoi, după situație, verifică: s-a întâmplat? Cu timpul, această practică demolează o iluzie fundamentală.. că predicțiile tale sunt fapte."
+                text: "Înainte de o situație socială, notează-ți predicția. Exact, pe hârtie.. cred că voi roși și toată lumea va observa. Apoi, după situație, verifică: s-a întâmplat? Cu timpul, această practică demolează o iluzie fundamentală.. că predicțiile tale sunt fapte."
               },
               {
                 num: "4",
@@ -681,13 +681,13 @@ export default function AnxietateSocialaPage() {
 
           <Reveal delay={800}>
             <div className="as-not-working">
-              <h3>Ce NU funcționează (deși pare logic)</h3>
+              <h3>Ce nu funcționează (deși pare logic)</h3>
               <ul>
-                <li><strong>&quot;Relaxează-te&quot;</strong> .. Dacă ai putea să te relaxezi, ai face-o. Relaxarea nu e o decizie, e un rezultat.</li>
+                <li><strong>Relaxează-te</strong> .. Dacă ai putea să te relaxezi, ai face-o. Relaxarea nu e o decizie, e un rezultat.</li>
                 <li><strong>Evitarea</strong> .. Reduce anxietatea pe termen scurt, o amplifică pe termen lung.</li>
-                <li><strong>Alcoolul ca &quot;lubrifiant social&quot;</strong> .. Funcționează temporar, dar împiedică învățarea. Creierul atribuie succesul social alcoolului, nu ție.</li>
+                <li><strong>Alcoolul ca lubrifiant social</strong> .. Funcționează temporar, dar împiedică învățarea. Creierul atribuie succesul social alcoolului, nu ție.</li>
                 <li><strong>Autoperfecționarea</strong> .. Problema nu e performanța ta. Problema e standardul imposibil pe care ți l-ai fixat.</li>
-                <li><strong>Căutarea de reasigurare</strong> .. &quot;A fost OK?&quot; oferă alinare pentru 5 minute. Apoi revine îndoiala.</li>
+                <li><strong>Căutarea de reasigurare</strong> .. întrebarea a fost OK oferă alinare pentru 5 minute, apoi revine îndoiala.</li>
               </ul>
             </div>
           </Reveal>
@@ -708,9 +708,9 @@ export default function AnxietateSocialaPage() {
 
           <div className="as-demystify">
             {[
-              { bold: "Nu trebuie să vorbești la telefon.", text: "Poți scrie. Un mesaj, un email, un formular. Primele cuvinte pot fi: \"Am citit pagina și mă recunosc.\" Atât. E suficient." },
-              { bold: "Nu trebuie să fii \"pregătit\" pentru terapie.", text: "Nu există un nivel de pregătire necesar. Vii așa cum ești. Cu anxietatea, cu îndoielile, cu senzația că poate exagerezi." },
-              { bold: "Nu te voi judeca.", text: "Lucrez cu oameni care trăiesc exact ce trăiești tu de peste 10 ani. Am auzit fiecare variantă a acestei povești. Nimic nu te va face să pari \"ciudat\" în ochii mei." },
+              { bold: "Nu trebuie să vorbești la telefon.", text: "Poți scrie. Un mesaj, un email, un formular. Primele cuvinte pot fi.. am citit pagina și mă recunosc. Atât, e suficient." },
+              { bold: "Nu trebuie să fii pregătit pentru terapie.", text: "Nu există un nivel de pregătire necesar. Vii așa cum ești. Cu anxietatea, cu îndoielile, cu senzația că poate exagerezi." },
+              { bold: "Nu te voi judeca.", text: "Lucrez cu oameni care trăiesc exact ce trăiești tu de peste 10 ani. Am auzit fiecare variantă a acestei povești. Nimic nu te va face să pari ciudat în ochii mei." },
               { bold: "Nu va fi un interogatoriu.", text: "Terapia nu înseamnă să răspunzi la întrebări inconfortabile în prima ședință. Înseamnă să construim, în ritmul tău, un spațiu în care poți fi văzut fără să te temi." },
             ].map((item, i) => (
               <Reveal key={i} delay={300 + i * 100}>
@@ -739,7 +739,7 @@ export default function AnxietateSocialaPage() {
             <div className="as-faq-list">
               <FAQ
                 question="Anxietatea socială se vindecă complet?"
-                answer={`În majoritatea cazurilor, da. 75% dintre persoanele care urmează terapia au ameliorare durabilă. "Vindecare" nu înseamnă că nu vei mai simți niciodată anxietate în situații sociale.. înseamnă că anxietatea nu îți va mai controla viața și deciziile.`}
+                answer={`În majoritatea cazurilor, da. 75% dintre persoanele care urmează terapia au ameliorare durabilă. Vindecare nu înseamnă că nu vei mai simți niciodată anxietate în situații sociale.. înseamnă că anxietatea nu îți va mai controla viața și deciziile.`}
               />
               <FAQ
                 question="Cât durează tratamentul?"
@@ -750,8 +750,8 @@ export default function AnxietateSocialaPage() {
                 answer="Nu neapărat. Psihoterapia singură este eficientă în cele mai multe cazuri. Medicația poate fi utilă în cazuri severe, dar cercetarea arată că beneficiile se pierd adesea după oprirea tratamentului."
               />
               <FAQ
-                question={`Dar dacă e "doar timiditate"?`}
-                answer={`Doar 36% dintre persoanele foarte timide au fobia socială. Dar dacă "timiditatea" ta te face să eviți situații, să refuzi oportunități și să ruminezi după fiecare interacțiune, nu e timiditate.`}
+                question={`Dar dacă e doar timiditate?`}
+                answer={`Doar 36% dintre persoanele foarte timide au fobia socială. Dar dacă timiditatea ta te face să eviți situații, să refuzi oportunități și să ruminezi după fiecare interacțiune, nu e timiditate.`}
               />
               <FAQ
                 question="De ce mi-e frică să contactez un psiholog când am anxietate socială?"
@@ -759,7 +759,7 @@ export default function AnxietateSocialaPage() {
               />
               <FAQ
                 question="Anxietatea socială afectează și oamenii care par încrezători?"
-                answer={`Da. Mulți oameni cu anxietate socială au învățat să "performeze" normalitatea. Sunt cei care par cei mai dezinvolți la petrecere și apoi petrec 3 zile analizând fiecare cuvânt.`}
+                answer={`Da. Mulți oameni cu anxietate socială au învățat să performeze normalitatea. Sunt cei care par cei mai dezinvolți la petrecere și apoi petrec 3 zile analizând fiecare cuvânt.`}
               />
               <FAQ
                 question="De ce am anxietate socială dacă nu am avut o copilărie traumatică?"
