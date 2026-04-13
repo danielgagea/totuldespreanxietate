@@ -70,7 +70,7 @@ export default function FobieDeInaltimePage() {
                 Ai nevoie de ajutor imediat? <Link href="#ce-poti-face-acum" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>Mergi direct la Ce poți face acum</Link>
               </p>
               <p style={{ fontSize: 17, color: "var(--color-text)", lineHeight: 1.75, marginBottom: 16 }}>
-                Ești pe balconul unui hotel. Al patrulea etaj. Te apropii de balustradă și pui mâinile pe ea. Și în acel moment, ceva se întâmplă. Picioarele se înmoaie. Stomacul se ridică. O amețeală bruscă te face să te dai înapoi. Și apoi vine gândul, cel pe care nu l-ai spus nimănui.. &quot;dacă sar?&quot;
+                Ești pe balconul unui hotel. Al patrulea etaj. Te apropii de balustradă și pui mâinile pe ea. Și în acel moment, ceva se întâmplă. Picioarele se înmoaie. Stomacul se ridică. O amețeală bruscă te face să te dai înapoi. Și apoi vine gândul, cel pe care nu l-ai spus nimănui.. dacă sar?
               </p>
               <p style={{ fontSize: 17, color: "var(--color-text)", lineHeight: 1.75, marginBottom: 16 }}>
                 Rușinea e imediată. Te întrebi ce e în neregulă cu tine. De ce ai gândi așa ceva. Te simți defect, periculos, nebun. Și din acel moment eviți balcoanele, etajele înalte, scările deschise, podurile, platformele de observație. Lumea ta se micșorează cu fiecare loc de care te ferești.
@@ -212,7 +212,7 @@ export default function FobieDeInaltimePage() {
             Amețeala ta nu e imaginară
           </h2>
           <p style={{ marginBottom: 32 }}>
-            Mulți oameni cred că amețeala pe care o simt la înălțime e &quot;doar în capul lor&quot;. Nu e. E un fenomen real, fiziologic, și are o explicație clară.
+            Mulți oameni cred că amețeala pe care o simt la înălțime e doar în capul lor. Nu e. E un fenomen real, fiziologic, și are o explicație clară.
           </p>
 
           <p style={{ fontSize: 15, fontWeight: 600, color: "var(--color-primary)", marginBottom: 20 }}>
@@ -236,7 +236,7 @@ export default function FobieDeInaltimePage() {
 
           <div style={{ background: "var(--color-primary)", borderRadius: 12, padding: "24px 28px" }}>
             <p style={{ color: "#ffffff", fontSize: 17, fontWeight: 500, lineHeight: 1.65, margin: 0 }}>
-              Când cele trei sisteme trimit mesaje contradictorii, creierul primește un conflict pe care nu-l poate rezolva. Și acel conflict se simte ca amețeală. Nu e panică. Nu e slăbiciune. E un fenomen fiziologic real.
+              Când cele trei sisteme trimit mesaje contradictorii, creierul primește un conflict pe care nu-l poate rezolva. Și acel conflict se simte ca amețeală. Nu e panică, nu e slăbiciune, ci un fenomen fiziologic real.
             </p>
           </div>
         </div>
@@ -256,7 +256,7 @@ export default function FobieDeInaltimePage() {
             </div>
             <div style={{ flex: 1, minWidth: 280, background: "var(--color-background)", borderRadius: 12, padding: 28, border: "1px solid var(--color-border)" }}>
               <p style={{ fontSize: 13, textTransform: "uppercase", letterSpacing: "0.1em", color: "#8B3A3A", fontWeight: 600, marginBottom: 10 }}>Cu fobie</p>
-              <p style={{ fontSize: 16, margin: 0 }}>Simți amețeala și o interpretezi catastrofic: &quot;O să cad. O să leșin. O să pierd controlul.&quot; Interpretarea declanșează anxietatea, care amplifică amețeala, care confirmă interpretarea.</p>
+              <p style={{ fontSize: 16, margin: 0 }}>Simți amețeala și o interpretezi catastrofic: o să cad, o să leșin, o să pierd controlul. Interpretarea declanșează anxietatea, care amplifică amețeala, care confirmă interpretarea.</p>
             </div>
           </div>
 
@@ -275,7 +275,7 @@ export default function FobieDeInaltimePage() {
             Gândul pe care nu l-ai spus nimănui
           </h2>
           <p style={{ marginBottom: 16 }}>
-            Ești pe un balcon, pe un pod sau pe marginea unei stânci. Și brusc, apare gândul: &quot;Dacă sar?&quot;
+            Ești pe un balcon, pe un pod sau pe marginea unei stânci. Și brusc, apare gândul.. dacă sar?
           </p>
           <p style={{ marginBottom: 16 }}>
             Nu l-ai chemat. Nu l-ai vrut. Dar e acolo, clar și intens. Și te sperie mai tare decât înălțimea în sine. Te întrebi dacă ești periculos. Dacă o parte din tine vrea cu adevărat să sară. Dacă ești suicidar fără să știi.
@@ -287,12 +287,12 @@ export default function FobieDeInaltimePage() {
             Cercetările arată că peste 50% dintre oameni au acest gând la înălțime, inclusiv cei fără nicio problemă psihică și fără nicio tendință suicidară. Un studiu publicat în <em>Journal of Affective Disorders</em> a constatat că experiența e chiar mai frecventă la persoanele cu sensibilitate anxioasă ridicată, nu la cele cu ideație suicidară.
           </p>
           <p style={{ marginBottom: 24 }}>
-            Ce se întâmplă de fapt: creierul tău detectează pericolul (marginea, golul) și trimite un semnal rapid de retragere.. &quot;Dă-te înapoi!&quot;. Dar partea conștientă, care procesează mai lent, primește semnalul cu o fracțiune de secundă întârziere. Și în acea fracțiune, creierul caută o explicație pentru impulsul de retragere. Explicația pe care o găsește e: &quot;Trebuie că am vrut să sar, de aceea m-am retras.&quot; Logica e inversată, dar creierul o acceptă.
+            Ce se întâmplă de fapt: creierul tău detectează pericolul (marginea, golul) și trimite un semnal rapid de retragere.. dă-te înapoi! Dar partea conștientă, care procesează mai lent, primește semnalul cu o fracțiune de secundă întârziere. Și în acea fracțiune, creierul caută o explicație pentru impulsul de retragere. Explicația pe care o găsește e că trebuie că a vrut să sară, de aceea s-a retras. Logica e inversată, dar creierul o acceptă.
           </p>
 
           <div style={{ background: "var(--color-secondary)", borderRadius: 12, padding: "28px 32px" }}>
             <p style={{ margin: 0, fontSize: 17, lineHeight: 1.75, color: "#ffffff", fontWeight: 500 }}>
-              Nu ești periculos. Ai un creier care își face treaba prea bine. Gândul &quot;dacă sar&quot; nu e o dorință. E un semnal de protecție interpretat greșit. Și cu cât îl ții secret și te rușinezi de el, cu atât pare mai amenințător.
+              Nu ești periculos. Ai un creier care își face treaba prea bine. Gândul dacă sar nu e o dorință. E un semnal de protecție interpretat greșit. Și cu cât îl ții secret și te rușinezi de el, cu atât pare mai amenințător.
             </p>
           </div>
         </div>
@@ -357,11 +357,11 @@ export default function FobieDeInaltimePage() {
             {[
               { step: "1", text: "Te apropii de o situație cu înălțime (balcon, pod, etaj înalt)" },
               { step: "2", text: "Apare amețeala (conflictul senzorial real)" },
-              { step: "3", text: "Interpretezi catastrofic: \"O să cad. O să leșin. O să pierd controlul.\"" },
+              { step: "3", text: "Interpretezi catastrofic.. o să cad, o să leșin, o să pierd controlul" },
               { step: "4", text: "Anxietatea crește rapid: inimă, transpirație, tremur, respirație" },
-              { step: "5", text: "Senzațiile fizice amplifică amețeala (confirmă \"dovada\" că ești în pericol)" },
+              { step: "5", text: "Senzațiile fizice amplifică amețeala (confirmă dovada că ești în pericol)" },
               { step: "6", text: "Te retragi sau eviți complet" },
-              { step: "7", text: "Anxietatea scade imediat. Creierul învață: \"Evitarea m-a salvat.\"" },
+              { step: "7", text: "Anxietatea scade imediat. Creierul învață: evitarea m-a salvat." },
             ].map((s) => (
               <div key={s.step} style={{ display: "flex", gap: 16, padding: "12px 0", borderBottom: s.step === "7" ? "none" : "1px solid var(--color-border)" }}>
                 <div style={{ flexShrink: 0, width: 32, height: 32, borderRadius: "50%", background: "var(--color-primary)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14, fontFamily: "var(--font-heading)" }}>
@@ -376,7 +376,7 @@ export default function FobieDeInaltimePage() {
             Comportamente de siguranță
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Pe lângă evitare, fobia creează o rețea de comportamente de siguranță, lucruri pe care le faci &quot;ca să faci față&quot; dar care mențin fobia activă:
+            Pe lângă evitare, fobia creează o rețea de comportamente de siguranță, lucruri pe care le faci ca să faci față dar care mențin fobia activă:
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 32 }}>
             {[
@@ -417,10 +417,10 @@ export default function FobieDeInaltimePage() {
             Glen Gabbard, unul dintre cei mai importanți psihiatri psihodinamici, observă un pattern interesant la pacienții cu fobie de înălțimi: pentru mulți, înălțimea simbolizează altceva. Distanța. Căderea. Pierderea.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 16 }}>
-            Înălțimea înseamnă distanță față de sol, de siguranță, de ceea ce e familiar. Pentru unele persoane, această distanță rezonează cu o experiență internă.. de a fi departe de ceva sau cineva de care depind, de a fi &quot;suspendat&quot; fără sprijin, de a nu avea pe ce te baza.
+            Înălțimea înseamnă distanță față de sol, de siguranță, de ceea ce e familiar. Pentru unele persoane, această distanță rezonează cu o experiență internă.. de a fi departe de ceva sau cineva de care depind, de a fi suspendat fără sprijin, de a nu avea pe ce te baza.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 16 }}>
-            Căderea, la rândul ei, nu e doar fizică. Căderea poate fi eșec, pierderea statutului, prăbușirea a ceva construit cu grijă. Unii oameni dezvoltă fobia de înălțimi tocmai în perioade în care simt că &quot;pot cădea&quot; din altceva.. dintr-o relație, dintr-o carieră, din propria imagine de sine.
+            Căderea, la rândul ei, nu e doar fizică. Căderea poate fi eșec, pierderea statutului, prăbușirea a ceva construit cu grijă. Unii oameni dezvoltă fobia de înălțimi tocmai în perioade în care simt că pot cădea din altceva.. dintr-o relație, dintr-o carieră, din propria imagine de sine.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 32 }}>
             Freud nota ceva profund: atunci când un pericol intern devine intolerabil, mintea îl mută pe un obiect extern. E mai ușor să-ți fie frică de un balcon decât de faptul că relația ta se destramă. E mai ușor să eviți etajele înalte decât să admiți că te simți nesigur în propria viață.
@@ -430,7 +430,7 @@ export default function FobieDeInaltimePage() {
             Ce înseamnă asta pentru tine
           </h3>
           <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 16 }}>
-            Nu înseamnă că fobia ta &quot;nu e reală&quot; sau că e &quot;doar simbolică&quot;. Fobia e reală, amețeala e reală, suferința e reală. Dar merită să te întrebi: ce se întâmpla în viața mea când a apărut sau s-a agravat? Mă simt nesigur undeva? Am pierdut un sprijin important?
+            Nu înseamnă că fobia ta nu e reală sau că e doar simbolică. Fobia e reală, amețeala e reală, suferința e reală. Dar merită să te întrebi: ce se întâmpla în viața mea când a apărut sau s-a agravat? Mă simt nesigur undeva? Am pierdut un sprijin important?
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)" }}>
             Perspectiva psihodinamică nu înlocuiește expunerea. O completează. Uneori, fobia se tratează mai repede când înțelegi nu doar mecanismul, ci și semnificația ei.
@@ -445,7 +445,7 @@ export default function FobieDeInaltimePage() {
             Tratament
           </h2>
           <p style={{ marginBottom: 16 }}>
-            Fobia de înălțimi se tratează prin expunere terapeutică, nu prin medicamente. Principiul e simplu: rămâi în situația temută suficient de mult încât creierul să învețe că nu se întâmplă nimic rău. Anxietatea atinge un vârf, apoi scade de la sine. Iar această experiență de &quot;am rămas și nu s-a întâmplat nimic&quot; e cea care rescrie fobia.
+            Fobia de înălțimi se tratează prin expunere terapeutică, nu prin medicamente. Principiul e simplu: rămâi în situația temută suficient de mult încât creierul să învețe că nu se întâmplă nimic rău. Anxietatea atinge un vârf, apoi scade de la sine. Iar această experiență de am rămas și nu s-a întâmplat nimic e cea care rescrie fobia.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 16, marginTop: 32 }}>
@@ -497,7 +497,7 @@ export default function FobieDeInaltimePage() {
             Expunerea interoceptivă (antrenamentul de amețeală)
           </h3>
           <p style={{ marginBottom: 16 }}>
-            O componentă unică a tratamentului fobiei de înălțimi. Amețeala e unul dintre simptomele cele mai temute, și mulți oameni o interpretează ca semn de pericol iminent.. &quot;O să leșin. O să cad.&quot;
+            O componentă unică a tratamentului fobiei de înălțimi. Amețeala e unul dintre simptomele cele mai temute, și mulți oameni o interpretează ca semn de pericol iminent.. o să leșin, o să cad.
           </p>
           <p style={{ marginBottom: 16 }}>
             Expunerea interoceptivă înseamnă să produci amețeala intenționat, în condiții controlate. Te rotești pe scaun. Stai cu capul în jos și te ridici rapid. Te uiți la un punct fix și întorci capul brusc. Scopul: creierul tău învață că amețeala nu e periculoasă. Nu duce la leșin. Nu duce la cădere. E doar o senzație neplăcută care trece.
@@ -510,7 +510,7 @@ export default function FobieDeInaltimePage() {
             Realitatea virtuală
           </h3>
           <p style={{ marginBottom: 16 }}>
-            VR-ul oferă un pas intermediar valoros. Cu un set de ochelari, poți &quot;sta&quot; pe balconul de la etajul 20, pe o platformă de observație sau pe marginea unei stânci, totul fără să pleci din cabinetul terapeutului.
+            VR-ul oferă un pas intermediar valoros. Cu un set de ochelari, poți sta pe balconul de la etajul 20, pe o platformă de observație sau pe marginea unei stânci, totul fără să pleci din cabinetul terapeutului.
           </p>
           <p style={{ marginBottom: 32 }}>
             Studiile arată rezultate comparabile cu expunerea reală. Avantajul: poți repeta aceeași situație de zeci de ori, poți controla intensitatea, și poți opri oricând. E deosebit de util pentru persoanele care refuză complet să se expună la înălțimi reale.
@@ -553,12 +553,12 @@ export default function FobieDeInaltimePage() {
             {
               nr: "2",
               title: "Testează predicțiile",
-              text: "Fobia funcționează pe predicții catastrofice: \"Dacă mă uit în jos, o să leșin.\" \"Dacă stau pe balcon, o să cad.\" Scrie predicția pe hârtie. Apoi testează-o, treptat. Uită-te pe geam de la etajul 2. Ai leșinat? Nu. Stai pe balconul de la etajul 1 pentru 30 de secunde. Ai căzut? Nu. Fiecare predicție infirmată slăbește fobia. Nu trebuie să sari la etajul 10. Începe cu ceea ce simți că e la limita suportabilului, nu dincolo de ea.",
+              text: "Fobia funcționează pe predicții catastrofice: dacă mă uit în jos, o să leșin sau dacă stau pe balcon, o să cad. Scrie predicția pe hârtie. Apoi testează-o, treptat. Uită-te pe geam de la etajul 2. Ai leșinat? Nu. Stai pe balconul de la etajul 1 pentru 30 de secunde. Ai căzut? Nu. Fiecare predicție infirmată slăbește fobia. Nu trebuie să sari la etajul 10. Începe cu ceea ce simți că e la limita suportabilului, nu dincolo de ea.",
             },
             {
               nr: "3",
               title: "Scannerul de siguranță",
-              text: "Când ești într-o situație cu înălțime și simți panică, oprește-te și fă un inventar concret: \"Balustrada e solidă? Da. Podeaua e stabilă? Da. Am spațiu suficient? Da. Alți oameni stau aici fără probleme? Da.\" Nu încerci să te convingi că e sigur. Verifici, concret, element cu element. E o diferență importantă. Convingerea nu funcționează. Verificarea, da.",
+              text: "Când ești într-o situație cu înălțime și simți panică, oprește-te și fă un inventar concret: Balustrada e solidă? Da. Podeaua e stabilă? Da. Am spațiu suficient? Da. Alți oameni stau aici fără probleme? Da. Nu încerci să te convingi că e sigur. Verifici, concret, element cu element. E o diferență importantă. Convingerea nu funcționează. Verificarea, da.",
             },
           ].map((ex) => (
             <div key={ex.nr} style={{ display: "flex", gap: 20, marginBottom: 20, padding: "20px 24px", background: "var(--color-background)", borderRadius: 12 }}>
@@ -610,7 +610,7 @@ export default function FobieDeInaltimePage() {
               Fobia de înălțimi răspunde excelent la tratament.
             </p>
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 16, marginBottom: 28, maxWidth: 480, margin: "0 auto 28px" }}>
-              Nu e ceva cu care &quot;trebuie să trăiești&quot;. E ceva ce se tratează.
+              Nu e ceva cu care trebuie să trăiești, ci ceva ce se tratează.
             </p>
             <Link
               href="/programare?din=fobie-de-inaltime"
@@ -635,7 +635,7 @@ export default function FobieDeInaltimePage() {
             <p>Când înălțimea începe să-ți controleze deciziile și să-ți restrângă viața, nu mai e doar prudență. E fobie. Și fobia e tratabilă.</p>
           </FAQ>
 
-          <FAQ q="Gândul &quot;voi sări&quot; înseamnă că sunt suicidar?">
+          <FAQ q="Gândul voi sări înseamnă că sunt suicidar?">
             <p style={{ marginBottom: 8 }}>Nu. Acest gând se numește chemarea vidului (l&apos;appel du vide) și apare la peste 50% din oameni, inclusiv la cei fără nicio problemă psihică și fără nicio tendință suicidară.</p>
             <p style={{ marginBottom: 8 }}>E un artefact al modului în care creierul procesează pericolul. Detectează marginea, trimite un semnal de retragere, iar partea conștientă interpretează greșit impulsul ca pe o dorință. Logica e inversată, dar fenomenul e universal.</p>
             <p>Dacă gândul te sperie, asta e de fapt dovada că NU vrei să sari. Persoanele cu risc suicidar real nu se sperie de acest gând. Sperierea e semnul că valorile tale sunt intacte.</p>
@@ -644,7 +644,7 @@ export default function FobieDeInaltimePage() {
           <FAQ q="Se agravează cu vârsta?">
             <p style={{ marginBottom: 8 }}>Poate. Fără tratament, fobia de înălțimi tinde să se extindă treptat. Situații care înainte erau tolerabile devin intolerabile. Lista locurilor evitate crește. Lumea se micșorează ușor, de la an la an, fără ca persoana să observe cât de mult a renunțat.</p>
             <p style={{ marginBottom: 8 }}>În plus, odată cu vârsta, echilibrul fizic scade natural, ceea ce poate amplifica amețeala reală la înălțime și poate hrăni fobia.</p>
-            <p>Vestea bună: tratamentul funcționează la orice vârstă. Expunerea terapeutică are rate de succes de 80-95% indiferent de cât timp a durat fobia. Nu e &quot;prea târziu&quot;.</p>
+            <p>Vestea bună: tratamentul funcționează la orice vârstă. Expunerea terapeutică are rate de succes de 80-95% indiferent de cât timp a durat fobia. Nu e prea târziu.</p>
           </FAQ>
 
           <FAQ q="Vertijul e același lucru cu fobia de înălțimi?">
@@ -655,8 +655,8 @@ export default function FobieDeInaltimePage() {
 
           <FAQ q="Pot scăpa complet de fobia de înălțimi?">
             <p style={{ marginBottom: 8 }}>Da. Expunerea terapeutică are o rată de succes de 80-95% pentru fobiile specifice. Majoritatea pacienților ajung să funcționeze normal în situații care înainte păreau imposibile.</p>
-            <p style={{ marginBottom: 8 }}>&quot;Complet&quot; nu înseamnă că nu vei mai simți niciodată nimic la înălțime. Un grad de precauție e sănătos și normal. Înseamnă că înălțimea nu-ți mai controlează viața, nu mai eviți, nu mai planifici totul în funcție de ea, și poți face lucrurile care contează pentru tine fără ca frica să decidă în locul tău.</p>
-            <p>Tratamentul durează de obicei 4-12 ședințe. Unele cercetări arată rezultate excelente chiar și după o singură sesiune prelungită de expunere (75-90% succes). Nu e un proces lung sau complicat. E unul dintre cele mai bine studiate și mai eficiente tratamente din psihologie.</p>
+            <p style={{ marginBottom: 8 }}>Complet nu înseamnă că nu vei mai simți niciodată nimic la înălțime. Un grad de precauție e sănătos și normal. Înseamnă că înălțimea nu-ți mai controlează viața, nu mai eviți, nu mai planifici totul în funcție de ea, și poți face lucrurile care contează pentru tine fără ca frica să decidă în locul tău.</p>
+            <p>Tratamentul durează de obicei 4-12 ședințe. Unele cercetări arată rezultate excelente chiar și după o singură sesiune prelungită de expunere (75-90% succes). Nu e un proces lung sau complicat, ci unul dintre cele mai bine studiate și mai eficiente tratamente din psihologie.</p>
           </FAQ>
         </div>
       </section>

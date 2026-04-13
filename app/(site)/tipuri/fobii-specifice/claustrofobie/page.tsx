@@ -66,10 +66,10 @@ export default function ClaustrofobiePage() {
                 Ușa liftului se închide. În primele două secunde nu simți nimic. Apoi apare. O strângere în piept, de parcă cineva a pus o greutate pe tine. Respirația se accelerează. Gâtul se strânge. Simți că aerul nu mai ajunge. Pereții par că se apropie. Mintea îți spune un singur lucru, foarte tare: trebuie să ieși. Acum.
               </p>
               <p style={{ fontSize: 17, color: "var(--color-text)", lineHeight: 1.75, marginBottom: 16 }}>
-                Apesi pe buton. Ușa se deschide. Și totul trece. În câteva secunde ești bine. Rămâi cu inima accelerată, cu un gust de rușine în gură, și cu întrebarea pe care ți-o pui de fiecare dată.. &quot;Ce e în neregulă cu mine?&quot;
+                Apesi pe buton. Ușa se deschide. Și totul trece. În câteva secunde ești bine. Rămâi cu inima accelerată, cu un gust de rușine în gură, și cu întrebarea pe care ți-o pui de fiecare dată.. ce e în neregulă cu mine?
               </p>
               <p style={{ fontSize: 17, color: "var(--color-text)", lineHeight: 1.75 }}>
-                <strong>Dacă te recunoști, nu ești slab și nu exagerezi.</strong> Ce trăiești se numește claustrofobie. Și în acest ghid vei înțelege exact de ce corpul tău reacționează așa, ce se întâmplă de fapt când &quot;rămâi fără aer&quot;, și ce funcționează ca tratament.
+                <strong>Dacă te recunoști, nu ești slab și nu exagerezi.</strong> Ce trăiești se numește claustrofobie. Și în acest ghid vei înțelege exact de ce corpul tău reacționează așa, ce se întâmplă de fapt când simți că rămâi fără aer, și ce funcționează ca tratament.
               </p>
             </div>
 
@@ -148,7 +148,7 @@ export default function ClaustrofobiePage() {
             Debutul apare frecvent în jurul vârstei de 25 de ani, mai târziu decât majoritatea celorlalte fobii, deși poate apărea și după o experiență negativă concretă, de exemplu un blocaj într-un lift sau o experiență stresantă într-un spațiu mic.
           </p>
           <p style={{ marginBottom: 16 }}>
-            Dar claustrofobia nu e doar &quot;frica de spații mici&quot;. Și tocmai asta face diferența între a o înțelege și a rămâne prizonier în ea.
+            Dar claustrofobia nu e doar frica de spații mici. Și tocmai asta face diferența între a o înțelege și a rămâne prizonier în ea.
           </p>
           <p style={{ marginBottom: 16 }}>
             Unii oameni cu claustrofobie nu au nicio problemă într-o cameră mică, dar intră în panică într-un lift. Alții tolerează liftul dar nu suportă un aparat de RMN. Alții nu au nicio problemă cu niciunul din acestea, dar nu pot purta o cravată strânsă pe gât sau nu pot dormi sub o pătură grea.
@@ -204,7 +204,7 @@ export default function ClaustrofobiePage() {
       <section id="senzatia-de-sufocare" style={{ background: "var(--color-background-white)", padding: "64px 24px" }}>
         <div style={{ maxWidth: 760, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: 30, fontWeight: 400, color: "var(--color-primary)", marginBottom: 24 }}>
-            &quot;Nu rămân fără aer. Dar corpul meu crede că da.&quot;
+            Nu rămân fără aer, dar corpul meu crede că da
           </h2>
           <p style={{ marginBottom: 16 }}>
             Cea mai frecventă senzație în claustrofobie e senzația de sufocare. Simți că nu mai poți respira. Că gâtul se strânge. Că aerul nu mai intră.
@@ -220,7 +220,7 @@ export default function ClaustrofobiePage() {
             Hiperventilația: paradoxul claustrofobiei
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Când frica se activează, corpul tău accelerează respirația.. e parte din răspunsul de &quot;luptă sau fugi&quot;, pregătire pentru efort fizic. Dar tu nu fugi și nu lupți. Stai pe loc, într-un lift. Și continui să respiri rapid.
+            Când frica se activează, corpul tău accelerează respirația.. e parte din răspunsul de luptă sau fugi, pregătire pentru efort fizic. Dar tu nu fugi și nu lupți. Stai pe loc, într-un lift. Și continui să respiri rapid.
           </p>
           <p style={{ marginBottom: 16 }}>
             Rezultatul e hiperventilația. Scoți prea mult dioxid de carbon din sânge. Iar scăderea dioxidului de carbon produce exact senzațiile de care te temi: senzația de lipsă de aer, amețeală, furnicături în degete și buze, senzație de strângere în gât. <strong>Senzația că nu poți respira nu e cauzată de lipsa de aer, ci de excesul de respirație.</strong>
@@ -240,13 +240,13 @@ export default function ClaustrofobiePage() {
             Globus: nodul din gât care nu e nod
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Mulți oameni cu claustrofobie descriu o senzație specifică.. un nod în gât, o strângere, ca și cum ceva blochează calea aerului. Această senzație se numește globus și e o manifestare a anxietății. Tensiunea musculară din zona gâtului, provocată de starea de alertă, creează senzația fizică reală de &quot;ceva blocat acolo&quot;.
+            Mulți oameni cu claustrofobie descriu o senzație specifică.. un nod în gât, o strângere, ca și cum ceva blochează calea aerului. Această senzație se numește globus și e o manifestare a anxietății. Tensiunea musculară din zona gâtului, provocată de starea de alertă, creează senzația fizică reală că ceva e blocat acolo.
           </p>
           <p style={{ marginBottom: 16 }}>
             Nu e imaginație. Senzația e reală. Dar cauza ei e tensiunea musculară, nu o obstrucție a căilor respiratorii.
           </p>
           <p>
-            Când un pacient îmi spune &quot;simt că nu pot respira&quot;, ce simte e autentic. Dar senzația vine din mecanismul anxietății, nu din lipsa de aer. Și înțelegerea asta, deși nu oprește senzația, îi ia puterea de a convinge.
+            Când un pacient îmi spune că simte că nu poate respira, ce simte e autentic. Dar senzația vine din mecanismul anxietății, nu din lipsa de aer. Și înțelegerea asta, deși nu oprește senzația, îi ia puterea de a convinge.
           </p>
         </div>
       </section>
@@ -262,7 +262,7 @@ export default function ClaustrofobiePage() {
             Catalogul claustrofobiei
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Acestea sunt lucrurile pe care le faci &quot;ca să faci față&quot;. Fiecare în parte pare rezonabil. Dar pune-le pe toate la un loc și vei vedea costul real:
+            Acestea sunt lucrurile pe care le faci ca să faci față. Fiecare în parte pare rezonabil. Dar pune-le pe toate la un loc și vei vedea costul real:
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 32 }}>
             {[
@@ -291,13 +291,13 @@ export default function ClaustrofobiePage() {
             Strategiile tale de coping sunt probabil evitare deghizată
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Stai lângă ușă &quot;ca să ai aer&quot;? E un comportament de siguranță. Verifici ieșirile? Un ritual de scanare. Ții telefonul în mână &quot;la caz&quot;? O plasă de siguranță.
+            Stai lângă ușă ca să ai aer? E un comportament de siguranță. Verifici ieșirile? Un ritual de scanare. Ții telefonul în mână la caz? O plasă de siguranță.
           </p>
           <p style={{ marginBottom: 16 }}>
-            Testul e simplu: ai putea sta în acel spațiu fără aceste comportamente? Dacă răspunsul e &quot;nu&quot;, atunci nu ai depășit frica. Ai găsit o modalitate de a coexista cu ea. Iar comportamentele de siguranță împiedică exact învățarea care ți-ar reduce frica.
+            Testul e simplu: ai putea sta în acel spațiu fără aceste comportamente? Dacă răspunsul e nu, atunci nu ai depășit frica. Ai găsit o modalitate de a coexista cu ea. Iar comportamentele de siguranță împiedică exact învățarea care ți-ar reduce frica.
           </p>
           <p style={{ marginBottom: 32 }}>
-            O persoană care ia liftul dar stă lângă butonul de urgență, cu telefonul în mână, numărând secundele, nu învață niciodată că liftul e sigur. Creierul ei învață: &quot;Am supraviețuit doar pentru că am stat lângă buton.&quot; Și data viitoare, frica e la fel.
+            O persoană care ia liftul dar stă lângă butonul de urgență, cu telefonul în mână, numărând secundele, nu învață niciodată că liftul e sigur. Creierul ei învață că a supraviețuit doar pentru că a stat lângă buton. Și data viitoare, frica e la fel.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 16 }}>
@@ -342,16 +342,16 @@ export default function ClaustrofobiePage() {
             Jim avea 35 de ani și se temea de avioane, metrouri și lifturi. Toate aveau un numitor comun pe care Jim nu-l conștientiza inițial: erau situații în care se simțea captiv, prins, fără ieșire.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 16 }}>
-            Prin terapie, s-a descoperit că tema &quot;prins fără ieșire&quot; nu era doar despre transportul public. Rădăcina era în relația cu mama sa, o femeie dominantă. Jim învățase de mic că nu își poate exprima furia sau dezacordul fără să fie umilit. Când mama lua o decizie, nu exista contestație.
+            Prin terapie, s-a descoperit că tema prins fără ieșire nu era doar despre transportul public. Rădăcina era în relația cu mama sa, o femeie dominantă. Jim învățase de mic că nu își poate exprima furia sau dezacordul fără să fie umilit. Când mama lua o decizie, nu exista contestație.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 16 }}>
-            Totul ducea înapoi la vârsta de 8 ani. Mama sa l-a mințit despre destinația unui zbor. Jim a fost furios dar complet neputincios. Când ușile avionului s-au închis, a avut primul atac de panică. &quot;Prins fără ieșire&quot; era tema vieții lui.
+            Totul ducea înapoi la vârsta de 8 ani. Mama sa l-a mințit despre destinația unui zbor. Jim a fost furios dar complet neputincios. Când ușile avionului s-au închis, a avut primul atac de panică. Prins fără ieșire era tema vieții lui.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 16 }}>
-            Aceeași senzație de captivitate apărea când o relație romantică devenea prea intimă. Jim se temea de angajament, de apropierea emoțională, de momentul în care simțea că nu mai poate ieși fără consecințe. Ușile care se închid în lift erau aceleași cu ușile care se închid când spui &quot;te iubesc&quot;.
+            Aceeași senzație de captivitate apărea când o relație romantică devenea prea intimă. Jim se temea de angajament, de apropierea emoțională, de momentul în care simțea că nu mai poate ieși fără consecințe. Ușile care se închid în lift erau aceleași cu ușile care se închid când spui te iubesc.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)" }}>
-            Nu spun că orice claustrofobie ascunde o relație sufocantă. Dar merită să te întrebi: unde altundeva în viața mea mă simt &quot;prins&quot;? Unde simt că nu pot ieși?
+            Nu spun că orice claustrofobie ascunde o relație sufocantă. Dar merită să te întrebi: unde altundeva în viața mea mă simt prins? Unde simt că nu pot ieși?
           </p>
         </div>
       </section>
@@ -370,7 +370,7 @@ export default function ClaustrofobiePage() {
             Expunere graduală: cum arată concret
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Tratamentul nu înseamnă să fii închis într-un lift și &quot;forțat&quot; să suporți. Înseamnă un progres treptat, calibrat, în care tu controlezi fiecare pas:
+            Tratamentul nu înseamnă să fii închis într-un lift și forțat să suporți. Înseamnă un progres treptat, calibrat, în care tu controlezi fiecare pas:
           </p>
           <div style={{ background: "var(--color-background)", borderRadius: 12, padding: 24, marginBottom: 24 }}>
             <ol style={{ margin: 0, paddingLeft: 20, display: "flex", flexDirection: "column", gap: 10 }}>
@@ -402,10 +402,10 @@ export default function ClaustrofobiePage() {
             De ce contează să rămâi
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Când intri în liftul de care te temi, frica crește rapid. Atinge un vârf în primele 10-15 minute. În acel moment totul în tine urlă &quot;ieși!&quot;. Dacă ieși, frica scade instant, dar s-a întărit. Dacă rămâi, se întâmplă ceva pe care nu l-ai crezut posibil: frica începe să scadă de la sine. Fără ca tu să faci nimic special.
+            Când intri în liftul de care te temi, frica crește rapid. Atinge un vârf în primele 10-15 minute. În acel moment totul în tine urlă să ieși. Dacă ieși, frica scade instant, dar s-a întărit. Dacă rămâi, se întâmplă ceva pe care nu l-ai crezut posibil: frica începe să scadă de la sine. Fără ca tu să faci nimic special.
           </p>
           <p style={{ marginBottom: 32 }}>
-            Corpul tău nu poate menține acel nivel de activare la infinit. După 20-30 de minute, senzațiile se domolesc. Și în acel moment, creierul tău învață ceva nou: &quot;Am stat aici și nu s-a întâmplat nimic. Pot supraviețui asta.&quot;
+            Corpul tău nu poate menține acel nivel de activare la infinit. După 20-30 de minute, senzațiile se domolesc. Și în acel moment, creierul tău învață ceva nou: am stat aici și nu s-a întâmplat nimic, pot supraviețui asta.
           </p>
 
           <div style={{ display: "flex", gap: 24, flexWrap: "wrap", marginBottom: 32 }}>
@@ -437,7 +437,7 @@ export default function ClaustrofobiePage() {
             De ce medicamentele nu sunt prima opțiune
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Claustrofobia, ca toate fobiile specifice, se tratează prin psihoterapie, nu prin medicamente. Benzodiazepinele pot reduce temporar anxietatea, dar blochează exact procesul de învățare care face expunerea să funcționeze. Dacă iei un calmant înainte de a intra în lift, creierul tău nu învață că liftul e sigur. Învață că &quot;am supraviețuit doar pentru că am luat pastila&quot;.
+            Claustrofobia, ca toate fobiile specifice, se tratează prin psihoterapie, nu prin medicamente. Benzodiazepinele pot reduce temporar anxietatea, dar blochează exact procesul de învățare care face expunerea să funcționeze. Dacă iei un calmant înainte de a intra în lift, creierul tău nu învață că liftul e sigur. Învață că a supraviețuit doar pentru că a luat pastila.
           </p>
 
           <div style={{ background: "var(--color-primary)", borderRadius: 12, padding: "24px 28px" }}>
@@ -462,12 +462,12 @@ export default function ClaustrofobiePage() {
             {
               nr: "1",
               title: "Respirația controlată",
-              text: "Hiperventilația produce senzația de sufocare care alimentează frica. Când simți furnicături, amețeală sau lipsă de aer, încetinește deliberat respirația. Inspiră lent pe nas în 4 secunde, ține 2 secunde, expiră lent pe gură în 6 secunde. Nu respira adânc, ci lent. Scopul e să readuci dioxidul de carbon la normal, nu să \"bagi mai mult aer\".",
+              text: "Hiperventilația produce senzația de sufocare care alimentează frica. Când simți furnicături, amețeală sau lipsă de aer, încetinește deliberat respirația. Inspiră lent pe nas în 4 secunde, ține 2 secunde, expiră lent pe gură în 6 secunde. Nu respira adânc, ci lent. Scopul e să readuci dioxidul de carbon la normal, nu să bagi mai mult aer.",
             },
             {
               nr: "2",
               title: "Identifică-ți predicțiile",
-              text: "Scrie pe hârtie, cât mai specific: \"Ce cred eu că se va întâmpla dacă rămân în lift?\" Nu accepta răspunsuri vagi. Forțează-te să fii precis: \"Voi rămâne fără aer.\" \"Liftul se va bloca și nimeni nu va veni.\" Apoi întreabă-te: câte din aceste predicții s-au adeverit vreodată?",
+              text: "Scrie pe hârtie, cât mai specific: ce cred eu că se va întâmpla dacă rămân în lift? Nu accepta răspunsuri vagi. Forțează-te să fii precis.. voi rămâne fără aer, liftul se va bloca și nimeni nu va veni. Apoi întreabă-te: câte din aceste predicții s-au adeverit vreodată?",
             },
             {
               nr: "3",
@@ -482,7 +482,7 @@ export default function ClaustrofobiePage() {
             {
               nr: "5",
               title: "Expunere interoceptivă acasă",
-              text: "Respiră prin pai timp de 60 de secunde. Vei simți exact senzația de \"lipsă de aer\" de care te temi în spații închise. Dar ești acasă, în siguranță. Observă cum crește, atinge un vârf, și apoi coboară. Repetă de 3 ori. Scopul nu e să te simți confortabil. Scopul e să descoperi că senzația trece.",
+              text: "Respiră prin pai timp de 60 de secunde. Vei simți exact senzația de lipsă de aer de care te temi în spații închise. Dar ești acasă, în siguranță. Observă cum crește, atinge un vârf, și apoi coboară. Repetă de 3 ori. Scopul nu e să te simți confortabil. Scopul e să descoperi că senzația trece.",
             },
           ].map((ex) => (
             <div key={ex.nr} style={{ display: "flex", gap: 20, marginBottom: 20, padding: "20px 24px", background: "var(--color-background)", borderRadius: 12 }}>
@@ -529,7 +529,7 @@ export default function ClaustrofobiePage() {
               Claustrofobia are una dintre cele mai mari rate de succes din psihoterapie.
             </p>
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 16, marginBottom: 28, maxWidth: 480, margin: "0 auto 28px" }}>
-              Nu e ceva cu care &quot;trebuie să trăiești&quot;. E ceva ce se tratează.
+              Nu e ceva cu care trebuie să trăiești, ci ceva ce se tratează.
             </p>
             <Link
               href="/programare?din=claustrofobie"
@@ -553,7 +553,7 @@ export default function ClaustrofobiePage() {
             <p>Aparatul de RMN are ventilație activă și comunicare permanentă cu operatorul, care te poate auzi și îți poate vorbi pe tot parcursul. Nu ești singur acolo, chiar dacă senzația e că ești.</p>
           </FAQ>
           <FAQ q="Claustrofobia se agravează cu vârsta?">
-            <p>Nu e o regulă. Dar fără tratament, evitarea tinde să se extindă în timp. Ceea ce a început ca &quot;nu iau liftul mic&quot; poate ajunge, în câțiva ani, la &quot;niciun lift&quot;, &quot;niciun metrou&quot;, &quot;nicio cameră cu ușa închisă&quot;. Nu e că frica crește, ci că strategia de evitare își urmează logica naturală. Cu cât eviți mai mult, cu atât teritoriul sigur se micșorează. Cu tratament, tendința se inversează.</p>
+            <p>Nu e o regulă. Dar fără tratament, evitarea tinde să se extindă în timp. Ceea ce a început ca nu iau liftul mic poate ajunge, în câțiva ani, la niciun lift, niciun metrou, nicio cameră cu ușa închisă. Nu e că frica crește, ci că strategia de evitare își urmează logica naturală. Cu cât eviți mai mult, cu atât teritoriul sigur se micșorează. Cu tratament, tendința se inversează.</p>
           </FAQ>
           <FAQ q="E periculos să rămâi blocat în lift?">
             <p>Din punct de vedere al siguranței fizice, nu. Lifturile moderne au multiple sisteme de siguranță, ventilație pasivă (aerul circulă prin goluri structurale) și buton de alarmă conectat la un dispecerat. Blocajele se rezolvă de obicei în 15-30 de minute. Cantitatea de aer dintr-un lift e suficientă pentru ore întregi. Pericolul pe care îl simți nu vine din situație, ci din predicția pe care o face creierul tău în acea situație.</p>

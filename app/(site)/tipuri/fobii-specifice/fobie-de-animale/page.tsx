@@ -62,7 +62,7 @@ export default function FobieDeAnimalePage() {
                 Ai nevoie de ajutor imediat? <Link href="#ce-poti-face-acum" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>Mergi direct la Ce poți face acum</Link>
               </p>
               <p style={{ fontSize: 17, color: "var(--color-text)", lineHeight: 1.75, marginBottom: 16 }}>
-                Câinele vecinului aleargă spre tine și totul se oprește. Nu contează că e mic, că dă din coadă, că stăpânul îți spune &quot;nu face nimic&quot;. Inima bate în gât. Mâinile se ridică instinctiv. Corpul tău deja a luat decizia înainte ca mintea să fi apucat să gândească: fugi.
+                Câinele vecinului aleargă spre tine și totul se oprește. Nu contează că e mic, că dă din coadă, că stăpânul îți spune că nu face nimic. Inima bate în gât. Mâinile se ridică instinctiv. Corpul tău deja a luat decizia înainte ca mintea să fi apucat să gândească: fugi.
               </p>
               <p style={{ fontSize: 17, color: "var(--color-text)", lineHeight: 1.75, marginBottom: 16 }}>
                 Sau poate nu e un câine. Poate e un păianjen pe peretele din baie. Poate e o insectă pe masă. Poate e un șarpe pe care l-ai văzut într-un documentar și care ți-a stricat seara. Poate e doar gândul că ar putea fi un păianjen undeva în cameră, și asta e suficient ca să nu poți dormi.
@@ -187,7 +187,7 @@ export default function FobieDeAnimalePage() {
             Debutul apare de obicei în copilărie, în jurul vârstei de 7-9 ani, mai devreme decât majoritatea celorlalte fobii. Multe persoane nu-și amintesc un moment precis în care a început. Pare că a fost acolo dintotdeauna.
           </p>
           <p style={{ marginBottom: 32 }}>
-            Fobia de animale e mai frecventă la femei, într-un raport de aproximativ 2:1 față de bărbați. Dar bărbații cu fobie de animale suferă la fel de mult, cu un strat suplimentar de rușine.. &quot;un bărbat nu se teme de un păianjen&quot;.
+            Fobia de animale e mai frecventă la femei, într-un raport de aproximativ 2:1 față de bărbați. Dar bărbații cu fobie de animale suferă la fel de mult, cu un strat suplimentar de rușine.. un bărbat nu se teme de un păianjen.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 16 }}>
@@ -250,13 +250,13 @@ export default function FobieDeAnimalePage() {
             O priză electrică poate fi letală. Un șarpe de grădină, nu. Și totuși, aproape nimeni nu are fobie de prize, dar milioane de oameni au fobie de șerpi. De ce?
           </p>
           <p style={{ marginBottom: 16 }}>
-            Psihologul Martin Seligman a propus conceptul de frici pregătite (prepared fears). Ideea e că creierul uman vine &quot;din fabrică&quot; cu o predispoziție de a învăța rapid frica față de anumite lucruri.. animale, înălțimi, întuneric, spații închise. Sunt lucruri care au fost periculoase pentru strămoșii noștri timp de sute de mii de ani.
+            Psihologul Martin Seligman a propus conceptul de frici pregătite (prepared fears). Ideea e că creierul uman vine din fabrică cu o predispoziție de a învăța rapid frica față de anumite lucruri.. animale, înălțimi, întuneric, spații închise. Sunt lucruri care au fost periculoase pentru strămoșii noștri timp de sute de mii de ani.
           </p>
           <p style={{ marginBottom: 16 }}>
             Prizele electrice există de 150 de ani. Creierul nu a avut timp să le includă în lista de pericole prestabilite. Dar șerpii, păianjenii, câinii sălbatici au fost acolo de la început.
           </p>
           <p>
-            De aceea fobiile de animale se învață mai ușor, mai rapid și sunt mai rezistente la stingere decât fricile de obiecte moderne. Nu e o defecțiune a creierului tău. E un software vechi care încă rulează.
+            De aceea fobiile de animale se învață mai ușor, mai rapid și sunt mai rezistente la stingere decât fricile de obiecte moderne. Nu e o defecțiune a creierului tău, ci un software vechi care încă rulează.
           </p>
         </div>
       </section>
@@ -268,7 +268,7 @@ export default function FobieDeAnimalePage() {
             De ce corpul nu ascultă de rațiune
           </h2>
           <p style={{ marginBottom: 16 }}>
-            &quot;Știu că păianjenul nu-mi face nimic. Dar nu pot. Nu pot.&quot; Această frază o aud de la aproape fiecare persoană cu fobie de animale. Și are o explicație foarte concretă.
+            Știu că păianjenul nu-mi face nimic, dar nu pot. Această frază o aud de la aproape fiecare persoană cu fobie de animale. Și are o explicație foarte concretă.
           </p>
           <p style={{ marginBottom: 32 }}>
             Creierul tău procesează frica pe două căi diferite, care funcționează în paralel dar cu viteze diferite.
@@ -281,7 +281,7 @@ export default function FobieDeAnimalePage() {
             <strong>Calea rapidă</strong> trece prin amigdală (centrul de alarmă al creierului). E veche, automată și foarte rapidă. Vede ceva care seamănă cu un șarpe și declanșează alarma în milisecunde. Nu analizează, nu judecă, nu gândește. Reacționează.
           </p>
           <p style={{ marginBottom: 16 }}>
-            <strong>Calea lentă</strong> trece prin cortexul prefrontal (partea rațională). Analizează, compară, evaluează. Și ajunge la concluzia corectă: &quot;E doar un furtun de grădină, nu un șarpe.&quot; Dar ajunge acolo cu câteva sute de milisecunde mai târziu.
+            <strong>Calea lentă</strong> trece prin cortexul prefrontal (partea rațională). Analizează, compară, evaluează. Și ajunge la concluzia corectă: e doar un furtun de grădină, nu un șarpe. Dar ajunge acolo cu câteva sute de milisecunde mai târziu.
           </p>
           <p style={{ marginBottom: 32 }}>
             Când ai fobie de animale, calea rapidă câștigă de fiecare dată. Corpul tău a reacționat deja înainte ca mintea să fi apucat să analizeze. Și odată ce alarma a sunat, e foarte greu să o oprești, chiar dacă știi rațional că nu e pericol.
@@ -323,7 +323,7 @@ export default function FobieDeAnimalePage() {
             Comportamente de siguranță
           </h2>
           <p style={{ marginBottom: 16 }}>
-            Acestea sunt lucrurile pe care le faci &quot;ca să faci față&quot;. Fiecare în parte pare rezonabil. Dar pune-le pe toate la un loc și vei vedea costul real:
+            Acestea sunt lucrurile pe care le faci ca să faci față. Fiecare în parte pare rezonabil. Dar pune-le pe toate la un loc și vei vedea costul real:
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 32 }}>
             {[
@@ -480,20 +480,20 @@ export default function FobieDeAnimalePage() {
       <section style={{ background: "var(--color-background)", padding: "64px 24px" }}>
         <div style={{ maxWidth: 760, margin: "0 auto" }}>
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 16 }}>
-            De ce &quot;a ajunge&quot; nu e suficient
+            De ce a ajunge nu e suficient
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Mulți oameni fac un lucru curajos.. ajung până la treapta care îi sperie, o trec, și se opresc. &quot;Am reușit, gata, am terminat.&quot; Dar cercetările arată că oprirea la pragul minim crește riscul de revenire a fobiei.
+            Mulți oameni fac un lucru curajos.. ajung până la treapta care îi sperie, o trec, și se opresc. Am reușit, gata, am terminat. Dar cercetările arată că oprirea la pragul minim crește riscul de revenire a fobiei.
           </p>
           <p style={{ marginBottom: 16 }}>
-            Conceptul se numește supra-expunere (overlearning). Nu e suficient să atingi păianjenul o dată. Trebuie să-l atingi de 10 ori. Să-l ții în mână 5 minute, nu 5 secunde. Să te expui mai mult decât &quot;trebuie&quot;. Cu cât ești mai departe de linia de start, cu atât riscul de revenire e mai mic.
+            Conceptul se numește supra-expunere (overlearning). Nu e suficient să atingi păianjenul o dată. Trebuie să-l atingi de 10 ori. Să-l ții în mână 5 minute, nu 5 secunde. Să te expui mai mult decât trebuie. Cu cât ești mai departe de linia de start, cu atât riscul de revenire e mai mic.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 16, marginTop: 32 }}>
             Expunerea ca experiment
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Abordarea modernă a expunerii nu e &quot;stai acolo până trece frica&quot;. E &quot;hai să testăm o predicție&quot;. Înainte de fiecare pas, identifici ce crezi că se va întâmpla: &quot;Dacă ating cutia cu păianjenul, voi avea un atac de panică și nu voi putea suporta.&quot;
+            Abordarea modernă a expunerii nu e stai acolo până trece frica, ci hai să testăm o predicție. Înainte de fiecare pas, identifici ce crezi că se va întâmpla.. dacă ating cutia cu păianjenul, voi avea un atac de panică și nu voi putea suporta.
           </p>
           <p style={{ marginBottom: 16 }}>
             Apoi faci pasul. Și verifici: s-a adeverit predicția? De obicei, nu. Și acea verificare e mai puternică decât orice explicație rațională. Nu te conving eu că ești în siguranță. Te convingi singur, prin experiență directă.
@@ -503,7 +503,7 @@ export default function FobieDeAnimalePage() {
             De ce medicamentele nu sunt prima opțiune
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Fobia de animale, ca toate fobiile specifice, se tratează prin psihoterapie, nu prin medicamente. Benzodiazepinele pot reduce temporar anxietatea, dar blochează exact procesul de învățare care face expunerea să funcționeze. Dacă iei un calmant înainte de a te expune la animal, creierul tău nu învață că animalul e sigur. Învață că &quot;am supraviețuit doar pentru că am luat pastila&quot;.
+            Fobia de animale, ca toate fobiile specifice, se tratează prin psihoterapie, nu prin medicamente. Benzodiazepinele pot reduce temporar anxietatea, dar blochează exact procesul de învățare care face expunerea să funcționeze. Dacă iei un calmant înainte de a te expune la animal, creierul tău nu învață că animalul e sigur. Învață că a supraviețuit doar pentru că a luat pastila.
           </p>
 
           <div style={{ background: "var(--color-primary)", borderRadius: 12, padding: "24px 28px" }}>
@@ -528,7 +528,7 @@ export default function FobieDeAnimalePage() {
             {
               nr: "1",
               title: "Construiește-ți propria ierarhie",
-              text: "Scrie pe hârtie 10 situații legate de animalul de care te temi, de la cea mai puțin înfricoșătoare la cea mai grea. Fii specific: nu \"câini\" ci \"un câine mic, în lesă, la 5 metri\". Apoi începe de la prima treaptă. Rămâi acolo până frica scade, chiar și puțin. Nu trece la următoarea până nu o stăpânești pe aceasta.",
+              text: "Scrie pe hârtie 10 situații legate de animalul de care te temi, de la cea mai puțin înfricoșătoare la cea mai grea. Fii specific: nu câini în general, ci un câine mic, în lesă, la 5 metri. Apoi începe de la prima treaptă. Rămâi acolo până frica scade, chiar și puțin. Nu trece la următoarea până nu o stăpânești pe aceasta.",
             },
             {
               nr: "2",
@@ -538,7 +538,7 @@ export default function FobieDeAnimalePage() {
             {
               nr: "3",
               title: "Identifică-ți predicțiile",
-              text: "Scrie pe hârtie, cât mai specific: \"Ce cred eu că se va întâmpla dacă stau lângă un câine?\" Forțează-te să fii precis: \"Mă va mușca.\" \"Voi face un atac de panică.\" \"Dezgustul nu va trece niciodată.\" Apoi întreabă-te: câte din aceste predicții s-au adeverit vreodată? Și dacă s-au adeverit, cât de grav a fost de fapt?",
+              text: "Scrie pe hârtie, cât mai specific: ce cred eu că se va întâmpla dacă stau lângă un câine? Forțează-te să fii precis.. mă va mușca, voi face un atac de panică, dezgustul nu va trece niciodată. Apoi întreabă-te: câte din aceste predicții s-au adeverit vreodată? Și dacă s-au adeverit, cât de grav a fost de fapt?",
             },
           ].map((ex) => (
             <div key={ex.nr} style={{ display: "flex", gap: 20, marginBottom: 20, padding: "20px 24px", background: "var(--color-background)", borderRadius: 12 }}>
@@ -584,7 +584,7 @@ export default function FobieDeAnimalePage() {
               Fobia de animale are una dintre cele mai mari rate de succes din psihoterapie.
             </p>
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 16, marginBottom: 28, maxWidth: 480, margin: "0 auto 28px" }}>
-              Nu e ceva cu care &quot;trebuie să trăiești&quot;. E ceva ce se tratează.
+              Nu e ceva cu care trebuie să trăiești, ci ceva ce se tratează.
             </p>
             <Link
               href="/programare?din=fobie-de-animale"
@@ -610,7 +610,7 @@ export default function FobieDeAnimalePage() {
           </FAQ>
 
           <FAQ q="Copilul meu se teme de câini. Ce pot face?">
-            <p style={{ marginBottom: 8 }}>Nu forțați contactul cu animalul. Nu-i spuneți &quot;nu e nimic&quot; sau &quot;nu fi fricos&quot;. Aceste reacții, deși bine intenționate, invalidează ce simte copilul și pot agrava fobia.</p>
+            <p style={{ marginBottom: 8 }}>Nu forțați contactul cu animalul. Nu-i spuneți că nu e nimic sau că nu trebuie să fie fricos. Aceste reacții, deși bine intenționate, invalidează ce simte copilul și pot agrava fobia.</p>
             <p style={{ marginBottom: 8 }}>Cel mai important lucru pe care îl puteți face e să vă gestionați propria reacție. Copiii învață frica observându-și părinții. Dacă voi sunteți calmi în prezența câinilor, copilul preia acest model în timp.</p>
             <p>Expunerea graduală funcționează excelent la copii, adesea mai bine decât la adulți. Începeți cu cărți cu imagini, apoi videoclipuri, apoi observarea unui câine de la distanță. Lăsați copilul să controleze ritmul. Și dacă fobia persistă sau se agravează, un psiholog specializat pe copii poate ajuta foarte mult.</p>
           </FAQ>
@@ -618,7 +618,7 @@ export default function FobieDeAnimalePage() {
           <FAQ q="Se poate vindeca complet o fobie de animale?">
             <p style={{ marginBottom: 8 }}>Da. Fobiile de animale au cel mai bun prognostic din toate fobiile specifice, care la rândul lor sunt cea mai tratabilă condiție din psihologia clinică.</p>
             <p style={{ marginBottom: 8 }}>Cu expunere graduală, 80-95% dintre persoane obțin îmbunătățiri semnificative. Multe studii arată că o singură sesiune prelungită de 2-3 ore poate fi suficientă, cu rate de succes de 75-90%.</p>
-            <p>&quot;Vindecare completă&quot; înseamnă că poți funcționa normal în prezența animalului, fără evitare, fără anxietate semnificativă. Nu înseamnă neapărat că vei adora păianjenii. Dar înseamnă că nu-ți vor mai controla viața.</p>
+            <p>Vindecare completă înseamnă că poți funcționa normal în prezența animalului, fără evitare, fără anxietate semnificativă. Nu înseamnă neapărat că vei adora păianjenii. Dar înseamnă că nu-ți vor mai controla viața.</p>
           </FAQ>
 
           <FAQ q="De ce am dezgust, nu frică?">

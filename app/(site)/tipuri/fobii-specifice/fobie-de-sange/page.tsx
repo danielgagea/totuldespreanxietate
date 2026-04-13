@@ -126,7 +126,7 @@ export default function FobieSangePage() {
             Are cel mai timpuriu debut dintre fobii, apărând frecvent între 5 și 9 ani, și o componentă genetică remarcabilă.. 61% dintre persoanele cu această fobie au cel puțin o rudă de gradul I cu aceeași problemă.
           </p>
           <p style={{ marginBottom: 16 }}>
-            Spre deosebire de majoritatea celorlalte fobii, distribuția pe gen este relativ echilibrată. Nu e o problemă &quot;de femei&quot; sau &quot;de bărbați&quot;. Apare la toți, indiferent de vârstă, profesie sau personalitate.
+            Spre deosebire de majoritatea celorlalte fobii, distribuția pe gen este relativ echilibrată. Nu e o problemă de femei sau de bărbați. Apare la toți, indiferent de vârstă, profesie sau personalitate.
           </p>
           <p>
             Și are o particularitate pe care nicio altă fobie nu o are. Un mecanism fiziologic complet diferit, care face ca aproape tot ce știi despre gestionarea fricii să nu se aplice aici.
@@ -148,7 +148,7 @@ export default function FobieSangePage() {
             Ce se întâmplă în orice altă fobie
           </h3>
           <p style={{ marginBottom: 24 }}>
-            Când o persoană cu fobie de câini vede un câine, corpul ei face exact ce face corpul oricui în pericol.. activează sistemul de &quot;luptă sau fugi&quot;. Inima bate mai repede, tensiunea arterială crește, adrenalina se eliberează, mușchii se tensionează. Senzațiile sunt neplăcute, dar corpul rămâne în stare de alertă maximă. Nu leșini. Rămâi conștient, gata să fugi.
+            Când o persoană cu fobie de câini vede un câine, corpul ei face exact ce face corpul oricui în pericol.. activează sistemul de luptă sau fugi. Inima bate mai repede, tensiunea arterială crește, adrenalina se eliberează, mușchii se tensionează. Senzațiile sunt neplăcute, dar corpul rămâne în stare de alertă maximă. Nu leșini. Rămâi conștient, gata să fugi.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 16 }}>
@@ -163,7 +163,7 @@ export default function FobieSangePage() {
             <div style={{ flex: 1, minWidth: 280, background: "var(--color-background-white)", borderRadius: 12, padding: 24, border: "1px solid var(--color-border)" }}>
               <p style={{ fontSize: 13, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--color-secondary)", fontWeight: 600, marginBottom: 8 }}>Faza 1: Activare</p>
               <p style={{ fontSize: 16 }}>
-                La vederea sângelui, a unui ac, sau a unei răni, corpul tău reacționează inițial la fel ca în orice altă fobie. Tensiunea arterială crește. Pulsul se accelerează. Transpiri. Simți frică. Totul pare &quot;normal&quot; pentru o fobie.
+                La vederea sângelui, a unui ac, sau a unei răni, corpul tău reacționează inițial la fel ca în orice altă fobie. Tensiunea arterială crește. Pulsul se accelerează. Transpiri. Simți frică. Totul pare normal pentru o fobie.
               </p>
             </div>
             <div style={{ flex: 1, minWidth: 280, background: "var(--color-background-white)", borderRadius: 12, padding: 24, border: "1px solid var(--color-border)" }}>
@@ -175,7 +175,7 @@ export default function FobieSangePage() {
           </div>
 
           <p style={{ marginBottom: 16 }}>
-            Acest mecanism se numește <strong>răspuns vasovagal bifazic</strong>. &quot;Bifazic&quot; pentru că are două faze opuse. &quot;Vasovagal&quot; pentru că nervul vag, cel mai lung nerv din corpul tău, preia controlul și produce o scădere bruscă a tensiunii și a pulsului.
+            Acest mecanism se numește <strong>răspuns vasovagal bifazic</strong>. Bifazic pentru că are două faze opuse. Vasovagal pentru că nervul vag, cel mai lung nerv din corpul tău, preia controlul și produce o scădere bruscă a tensiunii și a pulsului.
           </p>
           <p style={{ marginBottom: 16 }}>
             70-80% dintre persoanele cu această fobie au leșinat cel puțin o dată. Nu din cauza fricii excesive. Nu din cauza slăbiciunii. Din cauza unui mecanism fiziologic concret, măsurabil, pe care corpul lor îl execută automat.
@@ -194,7 +194,7 @@ export default function FobieSangePage() {
       <section style={{ background: "var(--color-background-white)", padding: "64px 24px" }}>
         <div style={{ maxWidth: 760, margin: "0 auto" }}>
           <h2 id="relaxarea-periculoasa" style={{ fontFamily: "var(--font-heading)", fontSize: 30, fontWeight: 400, color: "var(--color-primary)", marginBottom: 24 }}>
-            De ce &quot;relaxează-te&quot; e cel mai prost sfat
+            De ce relaxează-te e cel mai prost sfat
           </h2>
           <p style={{ marginBottom: 16 }}>
             Gândește-te la ce înseamnă relaxarea. Respirație lentă, mușchi relaxați, puls care coboară, tensiune arterială care scade. Exact ce prescrie orice ghid de anxietate de pe internet.
@@ -203,7 +203,7 @@ export default function FobieSangePage() {
             Acum gândește-te la ce face corpul tău în fobia de sânge.. deja scade tensiunea arterială, deja încetinește pulsul, deja reduce fluxul sanguin către creier. Și cineva îți spune să te relaxezi.
           </p>
           <p style={{ marginBottom: 16 }}>
-            E ca și cum ai turna apă pe un foc care deja se stinge. Doar că aici &quot;focul&quot; e conștiința ta. Relaxarea nu te ajută. <strong>Relaxarea accelerează drumul spre leșin.</strong>
+            E ca și cum ai turna apă pe un foc care deja se stinge. Doar că aici focul e conștiința ta. Relaxarea nu te ajută. <strong>Relaxarea accelerează drumul spre leșin.</strong>
           </p>
           <p style={{ marginBottom: 24 }}>
             De aceea ai încercat de zeci de ori tehnicile standard și nu au funcționat. Nu pentru că le-ai făcut greșit. Pentru că sunt greșite pentru tine. Toate tehnicile de management al anxietății sunt construite pe presupunerea că corpul tău e supra-activat și trebuie calmat. Dar în fobia de sânge, problema nu e supra-activarea. Problema e prăbușirea care vine după ea.
@@ -216,10 +216,10 @@ export default function FobieSangePage() {
             Fobia de sânge are cea mai puternică componentă genetică din toate fobiile. 61% dintre persoanele cu această fobie au cel puțin o rudă de gradul I, un părinte, un frate sau o soră, cu aceeași problemă.
           </p>
           <p style={{ marginBottom: 16 }}>
-            Asta înseamnă că dacă mama ta leșina la vederea sângelui, sau tatăl tău evita cabinetul medical, șansele ca tu să ai aceeași reacție sunt semnificativ mai mari. Nu pentru că ai învățat de la ei. Ci pentru că sistemul tău nervos autonom funcționează într-un anumit fel, moștenit genetic.
+            Asta înseamnă că dacă mama ta leșina la vederea sângelui, sau tatăl tău evita cabinetul medical, șansele ca tu să ai aceeași reacție sunt semnificativ mai mari. Nu pentru că ai învățat de la ei, ci pentru că sistemul tău nervos autonom funcționează într-un anumit fel, moștenit genetic.
           </p>
           <p>
-            Știu că poate ai crescut crezând că e o slăbiciune de caracter. Că &quot;trebuie să te obișnuiești&quot;. Că &quot;dacă te-ai forța, ar trece&quot;. Nu e o slăbiciune. E un mecanism fiziologic la fel de real ca grupul tău sanguin. Și la fel de puțin controlabil prin voință.
+            Știu că poate ai crescut crezând că e o slăbiciune de caracter. Că trebuie să te obișnuiești. Că dacă te-ai forța, ar trece. Nu e o slăbiciune, ci un mecanism fiziologic la fel de real ca grupul tău sanguin. Și la fel de puțin controlabil prin voință.
           </p>
         </div>
       </section>
@@ -260,7 +260,7 @@ export default function FobieSangePage() {
             {[
               { step: "1", title: "Tensionare", text: "Strânge simultan mușchii brațelor, picioarelor și trunchiului. Ca și cum ai încerca să ridici un obiect foarte greu de pe podea. Nu ține respirația, doar tensionează mușchii." },
               { step: "2", title: "Menținere", text: "Ține tensiunea timp de 10-15 secunde. Vei simți o senzație de căldură în față și în urechi. Asta e semnul că sângele ajunge din nou la creier." },
-              { step: "3", title: "Relaxare parțială", text: "Relaxează mușchii timp de 20-30 de secunde. Nu relaxare completă, ci doar revenire la normal. Nu te \"lăsa moale\"." },
+              { step: "3", title: "Relaxare parțială", text: "Relaxează mușchii timp de 20-30 de secunde. Nu relaxare completă, ci doar revenire la normal. Nu te lăsa moale." },
               { step: "4", title: "Repetare", text: "Repetă ciclul de 5 ori consecutiv." },
               { step: "5", title: "Practică", text: "Exersează asta de 5 ori pe zi, timp de o săptămână, înainte de orice situație care te sperie. Vrei ca mișcarea să devină automată, să nu mai trebuiască să te gândești la ea." },
             ].map((s) => (
@@ -315,7 +315,7 @@ export default function FobieSangePage() {
           </p>
 
           <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginBottom: 24 }}>
-            {["Amețeală", "Vedere încețoșată sau \"tunel\"", "Greață", "Căldură urmată brusc de frig", "Amorțeală în degete sau buze", "Senzația că \"se face negru\""].map((s) => (
+            {["Amețeală", "Vedere încețoșată sau în tunel", "Greață", "Căldură urmată brusc de frig", "Amorțeală în degete sau buze", "Senzația că se face negru"].map((s) => (
               <span key={s} style={{ display: "inline-block", padding: "10px 18px", background: "var(--color-background)", borderRadius: 8, fontSize: 15, color: "var(--color-text)", border: "1px solid var(--color-border)" }}>{s}</span>
             ))}
           </div>
@@ -353,9 +353,9 @@ export default function FobieSangePage() {
           </p>
 
           {[
-            { title: "Analizele de sânge", text: "Le amâni luni întregi. Doctorul ți le prescrie, tu le pui pe \"mai târziu\". Când ajungi la laborator, corpul tău a intrat deja în alertă cu ore înainte. Nu din cauza durerii, ci din cauza anticipării.. a acelei senzații că pierzi controlul." },
+            { title: "Analizele de sânge", text: "Le amâni luni întregi. Doctorul ți le prescrie, tu le pui pe mai târziu. Când ajungi la laborator, corpul tău a intrat deja în alertă cu ore înainte. Nu din cauza durerii, ci din cauza anticipării.. a acelei senzații că pierzi controlul." },
             { title: "Vaccinurile", text: "Pandemia a făcut vizibilă problema multor oameni cu această fobie. Nu refuzau vaccinul din convingere. Îl refuzau pentru că ideea de ac într-un braț le producea o reacție pe care nu o puteau gestiona." },
-            { title: "Sarcina", text: "Femeile cu fobie de sânge care rămân însărcinate se confruntă cu o situație imposibilă. Analizele de sânge repetate, consultațiile, nașterea, sunt toate situații în care nu poți \"evita\". Și rușinea de a spune \"mi-e frică de o simplă analiză\" când ar trebui să fii \"fericită și puternică\" face totul și mai greu." },
+            { title: "Sarcina", text: "Femeile cu fobie de sânge care rămân însărcinate se confruntă cu o situație imposibilă. Analizele de sânge repetate, consultațiile, nașterea, sunt toate situații în care nu poți evita. Și rușinea de a spune că ți-e frică de o simplă analiză când ar trebui să fii fericită și puternică face totul și mai greu." },
             { title: "Dentistul", text: "Evitat ani de zile. Nu din cauza durerii. Din cauza instrumentelor, a sângelui din gingii, a mirosului de cabinet medical care declanșează întregul mecanism." },
             { title: "Donarea de sânge", text: "Mulți oameni cu fobie de sânge ar vrea să doneze. Înțeleg importanța. Dar corpul lor produce exact reacția opusă." },
           ].map((item) => (
@@ -367,7 +367,7 @@ export default function FobieSangePage() {
 
           <div style={{ background: "var(--color-background)", borderRadius: 12, padding: "24px 28px", marginTop: 16 }}>
             <p style={{ margin: 0, fontSize: 16, lineHeight: 1.7 }}>
-              Și deasupra tuturor.. <strong>rușinea</strong>. &quot;Sunt un adult funcțional care leșină la o analiză de sânge. Ce e în neregulă cu mine?&quot; Răspunsul e: nimic nu e în neregulă cu tine. Ai un mecanism fiziologic diferit. La fel cum unii oameni au tensiunea mai mică natural, la tine nervul vag reacționează mai puternic la stimulii legați de sânge și rănire. E biologie, nu caracter.
+              Și deasupra tuturor.. <strong>rușinea</strong>. Sunt un adult funcțional care leșină la o analiză de sânge, ce e în neregulă cu mine? Răspunsul e: nimic nu e în neregulă cu tine. Ai un mecanism fiziologic diferit. La fel cum unii oameni au tensiunea mai mică natural, la tine nervul vag reacționează mai puternic la stimulii legați de sânge și rănire. E biologie, nu caracter.
             </p>
           </div>
         </div>
@@ -383,10 +383,10 @@ export default function FobieSangePage() {
             Până acum am vorbit despre ce face corpul tău. Dar nu despre de ce. Nu toți oamenii cu predispoziție genetică dezvoltă o fobie. Ceva activează această predispoziție și o transformă în problemă.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 16 }}>
-            Perspectiva psihodinamică privește fobia din alt unghi. Nu ca pe o &quot;eroare de programare&quot; pe care trebuie s-o corectezi, ci ca pe un mesaj pe care psihicul tău încearcă să ți-l transmită.
+            Perspectiva psihodinamică privește fobia din alt unghi. Nu ca pe o eroare de programare pe care trebuie s-o corectezi, ci ca pe un mesaj pe care psihicul tău încearcă să ți-l transmită.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 16 }}>
-            Fobia de sânge poate purta semnificații diferite pentru persoane diferite. Pentru cineva, sângele poate fi legat de o experiență medicală timpurie care a fost trăită ca amenințare. Pentru altcineva, de un moment în care a văzut un părinte speriat sau rănit. Pentru altcineva, de senzația de vulnerabilitate a propriului corp, de convingerea profundă că &quot;corpul meu mă va trăda&quot;.
+            Fobia de sânge poate purta semnificații diferite pentru persoane diferite. Pentru cineva, sângele poate fi legat de o experiență medicală timpurie care a fost trăită ca amenințare. Pentru altcineva, de un moment în care a văzut un părinte speriat sau rănit. Pentru altcineva, de senzația de vulnerabilitate a propriului corp, de convingerea profundă că corpul meu mă va trăda.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 16 }}>
             Psihicul alege obiectul fobic nu la întâmplare. Sângele, rănile, acele.. toate ating ceva profund uman.. fragilitatea corpului, limita dintre control și pierderea controlului, momentul în care pielea se deschide și ceea ce e interior devine exterior.
@@ -465,7 +465,7 @@ export default function FobieSangePage() {
             De ce medicamentele nu sunt prima opțiune
           </h3>
           <p>
-            Fobia de sânge, ca toate fobiile specifice, se tratează prin psihoterapie, nu prin medicamente. Benzodiazepinele pot chiar să blocheze procesul de învățare care face ca expunerea să funcționeze. Dacă iei un calmant înainte de recoltare, creierul tău nu învață că recoltarea e suportabilă. Învață că &quot;am supraviețuit doar pentru că am luat pastila&quot;. Și data viitoare, frica e la fel.
+            Fobia de sânge, ca toate fobiile specifice, se tratează prin psihoterapie, nu prin medicamente. Benzodiazepinele pot chiar să blocheze procesul de învățare care face ca expunerea să funcționeze. Dacă iei un calmant înainte de recoltare, creierul tău nu învață că recoltarea e suportabilă. Învață că a supraviețuit doar pentru că a luat pastila. Și data viitoare, frica e la fel.
           </p>
         </div>
       </section>
@@ -540,7 +540,7 @@ export default function FobieSangePage() {
               Fobia de sânge are una dintre cele mai mari rate de succes din psihoterapie.
             </p>
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 16, marginBottom: 28, maxWidth: 480, margin: "0 auto 28px" }}>
-              Nu e ceva cu care &quot;trebuie să trăiești&quot;. E ceva ce se tratează.
+              Nu e ceva cu care trebuie să trăiești, ci ceva ce se tratează.
             </p>
             <Link
               href="/programare?din=fobie-de-sange"

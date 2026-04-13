@@ -145,7 +145,7 @@ export default function FobiiSpecificePage() {
           <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 32 }}>
             {[
               ["Tipul animal", "Frica de câini, păianjeni, șerpi, insecte. Debutează frecvent în copilărie, între 5 și 9 ani. La multe persoane, nu e doar frică, ci și un dezgust intens."],
-              ["Tipul mediu natural", "Frica de înălțimi, apă, furtuni, întuneric. În cazul fobiei de înălțimi, există o componentă vestibulară reală.. amețeala nu e doar \"în capul tău\"."],
+              ["Tipul mediu natural", "Frica de înălțimi, apă, furtuni, întuneric. În cazul fobiei de înălțimi, există o componentă vestibulară reală.. amețeala nu e doar în capul tău."],
               ["Tipul sânge-injecție-rănire", "Singura fobie cu mecanism fiziologic diferit: în loc de puls accelerat, produce o cădere bruscă a tensiunii, ceea ce poate duce la leșin. 61% au cel puțin o rudă de gradul I cu aceeași frică."],
               ["Tipul situațional", "Frica de avion, lift, spații închise, tuneluri, poduri. Debutează mai târziu, frecvent în jurul vârstei de 25 de ani."],
               ["Alt tip", "Orice fobie care nu se încadrează.. frica de a vomita, de sufocare, de personaje costumate, de sunete puternice."],
@@ -161,7 +161,7 @@ export default function FobiiSpecificePage() {
             Frică normală vs. fobie specifică
           </h3>
           <p style={{ marginBottom: 24 }}>
-            Diferența nu e de intensitate. Nu e vorba că ți-e mai frică. E o diferență de tip, nu de grad.
+            Diferența nu e de intensitate, ci de tip. Nu e vorba că ți-e mai frică, ci că frica funcționează altfel.
           </p>
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 24 }}>
@@ -193,7 +193,7 @@ export default function FobiiSpecificePage() {
           </h2>
 
           <p style={{ color: "rgba(250,247,242,0.8)", marginBottom: 24, fontSize: 18 }}>
-            Sistemul tău de alarmă intern funcționează perfect. Problema e că <strong style={{ color: "#FAF7F2" }}>reacționează la fel de intens</strong> și la un pericol real, și la ceva inofensiv. Nu e defect. E calibrat prea sensibil. Și pentru că reacția e atât de neplăcută, ai învățat să eviți orice ar putea-o declanșa.
+            Sistemul tău de alarmă intern funcționează perfect. Problema e că <strong style={{ color: "#FAF7F2" }}>reacționează la fel de intens</strong> și la un pericol real, și la ceva inofensiv. Nu e un defect, doar e calibrat prea sensibil. Și pentru că reacția e atât de neplăcută, ai învățat să eviți orice ar putea-o declanșa.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "#FAF7F2", marginBottom: 16, marginTop: 40 }}>
@@ -205,7 +205,7 @@ export default function FobiiSpecificePage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16, marginBottom: 32 }}>
             {[
               ["Corpul", "Inima bate repede, palmele transpiră, amețești, simți presiune în piept, tremuri. Corpul se pregătește să fugă de un pericol care nu există."],
-              ["Mintea", "Gânduri automate: \"ceva rău se va întâmpla\", \"nu voi putea face față\", \"voi pierde controlul\". Nu le alegi. Apar singure."],
+              ["Mintea", "Gânduri automate care vin de la sine.. ceva rău se va întâmpla, nu voi putea face față, voi pierde controlul. Nu le alegi, pur și simplu apar."],
               ["Comportamentul", "Fugi, eviți, cauți scăpare. Fiecare evitare reduce frica pe moment, dar o crește pe termen lung."],
             ].map(([title, text], i) => (
               <div key={i} style={{ padding: 24, background: "rgba(250,247,242,0.06)", borderRadius: 12, borderTop: "3px solid #C4966C" }}>
@@ -250,10 +250,10 @@ export default function FobiiSpecificePage() {
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
             {[
               ["1", "Frica de obiect", "Mi-e frică de câini.", "Stratul vizibil. Ce spui lumii. Ce știi tu însuți despre frica ta."],
-              ["2", "Frica de propria reacție", "Mi-e frică de ce voi simți când voi vedea un câine.", "Nu câinele e problema. Ci avalanșa de senzații pe care o declanșează."],
+              ["2", "Frica de propria reacție", "Mi-e frică de ce voi simți când voi vedea un câine.", "Câinele nu e problema în sine, ci avalanșa de senzații pe care o declanșează."],
               ["3", "Frica de pierderea controlului", "Mi-e frică că nu voi putea controla ce simt.", "Voi țipa? Voi îngheța? Mă voi face de rușine? Voi pierde controlul complet?"],
               ["4", "Frica că nu se va opri", "Mi-e frică că odată ce începe, frica nu se va termina.", "Asta explică de ce mulți oameni evită total. Nu se tem de situație, ci de starea care nu se mai oprește."],
-              ["5", "Frica de moarte", "La nivelul cel mai profund, corpul crede că e în pericol de moarte.", "Aici ajunge corpul. De aceea reacția e atât de intensă. Nu e dramă. E biologie."],
+              ["5", "Frica de moarte", "La nivelul cel mai profund, corpul crede că e în pericol de moarte.", "Aici ajunge corpul. De aceea reacția e atât de intensă. Nu e dramă, e pur și simplu biologie."],
             ].map(([num, title, quote, explain], i) => (
               <div key={i} style={{ display: "flex", gap: 16, alignItems: "flex-start", padding: "16px", background: i === 4 ? "var(--color-secondary-light)" : "var(--color-background-white)", borderRadius: 8, border: "1px solid var(--color-border)" }}>
                 <span style={{ fontFamily: "var(--font-heading)", fontSize: 28, fontWeight: 400, color: "var(--color-secondary)", opacity: 0.4, lineHeight: 1, flexShrink: 0, width: 28, textAlign: "center" }}>{num}</span>
@@ -282,7 +282,7 @@ export default function FobiiSpecificePage() {
             Fobia ca soluție, nu ca defecțiune
           </h3>
           <p style={{ marginBottom: 32 }}>
-            Psihicul ia un pericol intern, ceva pe care nu-l poți evita pentru că vine din tine, un conflict emoțional, o furie neexprimată, o pierdere neprocesată, și îl mută pe un obiect extern pe care POȚI să-l eviți. Pierzi libertate de mișcare, câștigi eliminarea anxietății.
+            Psihicul ia un pericol intern, ceva pe care nu-l poți evita pentru că vine din tine, un conflict emoțional, o furie neexprimată, o pierdere neprocesată, și îl mută pe un obiect extern pe care poți să-l eviți. Pierzi libertate de mișcare, câștigi eliminarea anxietății.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 12 }}>
@@ -383,8 +383,8 @@ export default function FobiiSpecificePage() {
           </h3>
           <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 32 }}>
             {[
-              ["Pasul 1", "Identifici predicția exactă pe care o face creierul tău. Nu \"o să fie rău\", ci ceva specific și testabil."],
-              ["Pasul 2", "Intri în situația temută FĂRĂ comportamente de siguranță. Fără alcool. Fără telefonul în mână. Fără persoana de siguranță."],
+              ["Pasul 1", "Identifici predicția exactă pe care o face creierul tău. Nu ceva vag precum o să fie rău, ci ceva specific și testabil."],
+              ["Pasul 2", "Intri în situația temută fără comportamente de siguranță.. fără alcool, fără telefonul în mână, fără persoana de siguranță."],
               ["Pasul 3", "Observi activ ce se întâmplă. Compari predicția cu realitatea. Cu fiecare experiment care infirmă predicția, schema de amenințare se actualizează."],
             ].map(([step, text], i) => (
               <div key={i} style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>
@@ -404,9 +404,9 @@ export default function FobiiSpecificePage() {
           </h2>
 
           {[
-            ["1. Scannerul de siguranță", "În orice situație care îți provoacă frică, răspunde la trei întrebări: Ce anume din această situație este SIGUR? Ce dovezi concrete există că lucrurile ar putea merge bine? Când în trecut o situație similară s-a rezolvat fără probleme?"],
-            ["2. Lista evitărilor tale", "Ia o foaie de hârtie și notează TOT ce eviți din cauza fobiei. Nu doar obiectul central, ci tot ce eviți indirect: parcuri, călătorii, analize medicale. Lista completă îți arată costul real al fobiei."],
-            ["3. Separarea nivelurilor", "Când simți frica, fă distincția: Ce simt? (descriere neutră) Ce-mi spun DESPRE ce simt? (meta-evaluarea) Este această evaluare un fapt sau o interpretare? Scopul nu e să elimini frica. Scopul e să oprești amplificarea ei."],
+            ["1. Scannerul de siguranță", "În orice situație care îți provoacă frică, răspunde la trei întrebări: Ce anume din această situație este sigur? Ce dovezi concrete există că lucrurile ar putea merge bine? Când în trecut o situație similară s-a rezolvat fără probleme?"],
+            ["2. Lista evitărilor tale", "Ia o foaie de hârtie și notează tot ce eviți din cauza fobiei. Nu doar obiectul central, ci tot ce eviți indirect: parcuri, călătorii, analize medicale. Lista completă îți arată costul real al fobiei."],
+            ["3. Separarea nivelurilor", "Când simți frica, fă distincția: Ce simt? (descriere neutră) Ce-mi spun despre ce simt? (meta-evaluarea) Este această evaluare un fapt sau o interpretare? Scopul nu e să elimini frica. Scopul e să oprești amplificarea ei."],
           ].map(([title, text], i) => (
             <div key={i} style={{ marginBottom: 32 }}>
               <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 12 }}>{title}</h3>
@@ -431,7 +431,7 @@ export default function FobiiSpecificePage() {
             ["Dacă ai scăpat de o fobie și a apărut alta, nu e întâmplare.", "Imaginează-ți apa care curge prin grădină. Dacă blochezi un canal, apa nu dispare. Găsește alt drum. La fel funcționează și fobia: dacă tratezi doar simptomul (evitarea câinilor) fără să înțelegi ce se ascunde dedesubt (poate o frică de vulnerabilitate), energia aceea emoțională se mută pe alt obiect. Acum nu mai e câinele, e liftul. Obiectul se schimbă, dar senzația din corp rămâne aceeași."],
             ["40% dintre atacurile de frică nu sunt însoțite de nicio creștere reală a pulsului.", "Într-un studiu cu monitorizare cardiacă 24 de ore, cercetătorii au descoperit ceva surprinzător: în 40% din cazuri, persoanele raportau frică intensă, dar inima lor nu bătea mai repede. Doar credeau că bate. Și invers: multe episoade de puls ridicat real nu au fost percepute ca frică. Ce înseamnă asta? Că experiența fricii e construită de mintea ta, nu doar de corp. Percepția e mai puternică decât fiziologia."],
             ["Oamenii inteligenți sunt adesea cei mai frustrați de fobiile lor.", "Știu că nu e logic. Știu că un păianjen de 2 cm nu mă poate omorî. Am citit statisticile. Și totuși, corpul meu reacționează. Exact asta e frustrarea: problema nu e la nivel de informație. E la nivel de învățare emoțională, un tip de memorie la care mintea rațională nu are acces direct. Un medic cardiolog poate avea atacuri de panică. Cunoștințele lui sunt perfecte. Dar în momentul atacului, cunoștințele nu contează."],
-            ["Unele frici sunt programate în noi de mii de ani.", "Psihologul Martin Seligman a demonstrat în 1971 că anumite obiecte au probabilitate mult mai mare de a deveni temute: șerpi, păianjeni, înălțimi, întunericul, spații închise. De ce? Pentru că în istoria speciei umane, acestea au fost amenințări reale. Creierul tău e mai pregătit să învețe frica de un șarpe decât frica de o priză electrică, deși priza e obiectiv mai periculoasă în lumea modernă. Nu e defect. E moștenire biologică."],
+            ["Unele frici sunt programate în noi de mii de ani.", "Psihologul Martin Seligman a demonstrat în 1971 că anumite obiecte au probabilitate mult mai mare de a deveni temute: șerpi, păianjeni, înălțimi, întunericul, spații închise. De ce? Pentru că în istoria speciei umane, acestea au fost amenințări reale. Creierul tău e mai pregătit să învețe frica de un șarpe decât frica de o priză electrică, deși priza e obiectiv mai periculoasă în lumea modernă. Nu e un defect, ci moștenire biologică."],
             ["Atacul de anxietate atinge maximul în 10 minute și durează sub 20.", "Corpul tău nu poate menține alarma maximă la infinit. Fiziologic, sistemul nervos simpatic (cel care produce palpitațiile, transpirația, tremuratul) se epuizează. După 10-20 de minute, sistemul parasimpatic preia controlul și totul coboară. Această informație, aparent simplă, este unul dintre cele mai puternice instrumente: transformă experiența din ceva ce pare pericol de moarte în disconfort intens cu durată cunoscută și limitată."],
             ["Un bărbat avea fobie de maioneză. Și nu era nebun.", "Maioneza era pe masă în momentul în care părinții lui au avut cearta care a dus la divorț. El avea 6 ani. Nu înțelegea ce se întâmpla, dar simțea catastrofa. Și tot ce mintea lui de 6 ani a putut face a fost să lege haosul de ce era prezent în acel moment: mirosul, textura, imaginea maionezei. Maioneza nu era periculoasă. Era portalul senzorial către momentul în care lumea lui s-a desfăcut. Dacă ai o fobie care pare ciudată, nu ești ciudat. Ai doar un cod pe care încă nu l-ai descifrat."],
             ["Fobia ta protejează pe cineva. Poate chiar pe tine.", "Orice fobie are o funcție în viața ta, chiar dacă nu o vezi. Uneori te protejează de un conflict intern pe care nu-l poți rezolva direct. Alteori protejează o relație: partenerul care conduce mereu pentru că tu nu poți, familia care evită parcurile pentru tine. Întrebarea de ce am această fobie e utilă. Dar o întrebare și mai utilă: pe cine sau ce protejează fobia asta? Și ce s-ar schimba dacă ar dispărea mâine?"],

@@ -195,7 +195,7 @@ export default function FobieDeZborPage() {
             Fobia de zbor nu e doar disconfort. E o constrângere care se ramifică în toate zonele vieții. Cariera care stagnează pentru că refuzi deplasările. Familia pe care n-o vizitezi. Vacanțele care nu se întâmplă. Oportunitățile pe care le lași să treacă.
           </p>
           <p style={{ marginBottom: 16 }}>
-            Și pe lângă toate acestea, rușinea. Pentru că toți ceilalți par să zboare fără probleme. Pentru că &quot;e irațional&quot; și tu știi asta. Pentru că ai 35 de ani și nu poți face ceva ce face un copil de 5 ani fără să clipească. Rușinea asta e poate mai grea decât fobia în sine.
+            Și pe lângă toate acestea, rușinea. Pentru că toți ceilalți par să zboare fără probleme. Pentru că e irațional și tu știi asta. Pentru că ai 35 de ani și nu poți face ceva ce face un copil de 5 ani fără să clipească. Rușinea asta e poate mai grea decât fobia în sine.
           </p>
         </div>
       </section>
@@ -263,7 +263,7 @@ export default function FobieDeZborPage() {
               {
                 nr: "3",
                 title: "Frica de spații închise",
-                text: <>Componenta de <Link href="/tipuri/fobii-specifice/claustrofobie" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>claustrofobie</Link>. Ușa e închisă și nu o poți deschide. Nu poți ieși. Nu poți opri. Nu poți spune &quot;vreau să cobor&quot;. Ești blocat într-un tub de metal pentru următoarele ore, și senzația de captivitate poate fi copleșitoare.</>,
+                text: <>Componenta de <Link href="/tipuri/fobii-specifice/claustrofobie" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>claustrofobie</Link>. Ușa e închisă și nu o poți deschide. Nu poți ieși. Nu poți opri. Nu poți spune că vrei să cobori. Ești blocat într-un tub de metal pentru următoarele ore, și senzația de captivitate poate fi copleșitoare.</>,
               },
               {
                 nr: "4",
@@ -345,7 +345,7 @@ export default function FobieDeZborPage() {
             Comportamente de siguranță
           </h2>
           <p style={{ marginBottom: 16 }}>
-            Sunt lucrurile pe care le faci &quot;ca să faci față&quot;. Fiecare în parte pare rezonabil. Dar pune-le pe toate la un loc și vei vedea ce fac cu adevărat: mențin fobia activă.
+            Sunt lucrurile pe care le faci ca să faci față. Fiecare în parte pare rezonabil. Dar pune-le pe toate la un loc și vei vedea ce fac cu adevărat: mențin fobia activă.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 32 }}>
             {[
@@ -373,7 +373,7 @@ export default function FobieDeZborPage() {
             Julia zbura de 15 ani cu același ritual: un Xanax cu o oră înainte, un pahar de vin la bord, muzică în căști, loc pe culoar, ochii închiși la decolare și aterizare. Și funcționa. Ajungea la destinație. Dar fobia nu se micșora. Ba chiar creștea, ușor, de la an la an.
           </p>
           <p style={{ marginBottom: 32 }}>
-            Pentru că creierul Juliei nu învăța niciodată că poate zbura fără aceste lucruri. De fiecare dată, concluzia era aceeași: &quot;Am supraviețuit pentru că am luat pastila, pentru că am băut vinul, pentru că am stat pe culoar.&quot; Nu &quot;Am supraviețuit pentru că zborul e sigur.&quot;
+            Pentru că creierul Juliei nu învăța niciodată că poate zbura fără aceste lucruri. De fiecare dată, concluzia era aceeași: am supraviețuit pentru că am luat pastila, pentru că am băut vinul, pentru că am stat pe culoar. Nu: am supraviețuit pentru că zborul e sigur.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "var(--color-primary)", marginBottom: 16 }}>
@@ -430,7 +430,7 @@ export default function FobieDeZborPage() {
             De ce expunerea, nu pastilele
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Fobia de zbor, ca toate fobiile specifice, se tratează prin psihoterapie, nu prin medicamente. Benzodiazepinele pot reduce temporar anxietatea, dar blochează exact procesul de învățare care face expunerea să funcționeze. Dacă iei un calmant înainte de zbor, creierul tău nu învață că zborul e sigur. Învață că &quot;am supraviețuit doar pentru că am luat pastila&quot;.
+            Fobia de zbor, ca toate fobiile specifice, se tratează prin psihoterapie, nu prin medicamente. Benzodiazepinele pot reduce temporar anxietatea, dar blochează exact procesul de învățare care face expunerea să funcționeze. Dacă iei un calmant înainte de zbor, creierul tău nu învață că zborul e sigur. Învață că a supraviețuit doar pentru că a luat pastila.
           </p>
           <p style={{ marginBottom: 32 }}>
             Expunerea funcționează diferit. Nu-ți spune că zborul e sigur. Te lasă să descoperi singur, prin experiență directă, că poți tolera disconfortul fără niciun ajutor extern. Și acea descoperire e cea care schimbă totul.
@@ -493,7 +493,7 @@ export default function FobieDeZborPage() {
             Realitatea virtuală
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Tehnologia de realitate virtuală (RV) oferă un pas intermediar între imaginație și realitate. Cu un set de ochelari VR, poți &quot;zbura&quot; într-un mediu controlat.. poți experimenta decolarea, turbulențele, aterizarea, totul fără să pleci din cabinetul terapeutului.
+            Tehnologia de realitate virtuală (RV) oferă un pas intermediar între imaginație și realitate. Cu un set de ochelari VR, poți zbura într-un mediu controlat.. poți experimenta decolarea, turbulențele, aterizarea, totul fără să pleci din cabinetul terapeutului.
           </p>
           <p style={{ marginBottom: 32 }}>
             Studiile arată rezultate comparabile cu expunerea reală pentru fobia de zbor. Avantajul e că poți repeta același scenariu de zeci de ori, poți controla intensitatea, și poți opri oricând. E un instrument excelent, mai ales pentru persoanele care refuză complet să zboare.
@@ -503,7 +503,7 @@ export default function FobieDeZborPage() {
             Supra-expunerea
           </h3>
           <p style={{ marginBottom: 16 }}>
-            Nu e suficient să zbori o dată și să spui &quot;gata, am reușit&quot;. Cercetările arată că oprirea la pragul minim crește riscul de revenire a fobiei. Conceptul se numește supra-expunere (overlearning).. te expui mai mult decât &quot;trebuie&quot;, pentru ca creierul să consolideze noua învățare.
+            Nu e suficient să zbori o dată și să spui gata, am reușit. Cercetările arată că oprirea la pragul minim crește riscul de revenire a fobiei. Conceptul se numește supra-expunere (overlearning).. te expui mai mult decât trebuie, pentru ca creierul să consolideze noua învățare.
           </p>
           <p style={{ marginBottom: 32 }}>
             Concret, asta înseamnă: nu un zbor, ci mai multe. Nu doar zboruri scurte, ci și lungi. Nu doar în condiții ideale, ci și cu turbulențe. Cu cât ești mai departe de linia de start, cu atât riscul de revenire e mai mic.
@@ -546,7 +546,7 @@ export default function FobieDeZborPage() {
             {
               nr: "2",
               title: "Inventarul comportamentelor de siguranță",
-              text: "Scrie pe hârtie tot ce faci ca să \"supraviețuiești\" un zbor sau ca să eviți unul. Alcoolul, pastilele, muzica, locul pe culoar, verificarea meteo-ului, rugăciunile. Fii onest. Nu există răspunsuri greșite. Scopul nu e să le elimini pe toate acum, ci să le vezi. Să realizezi câte sunt. Și să înțelegi că fiecare dintre ele e un semnal că fobia e activă.",
+              text: "Scrie pe hârtie tot ce faci ca să supraviețuiești un zbor sau ca să eviți unul. Alcoolul, pastilele, muzica, locul pe culoar, verificarea meteo-ului, rugăciunile. Fii onest. Nu există răspunsuri greșite. Scopul nu e să le elimini pe toate acum, ci să le vezi. Să realizezi câte sunt. Și să înțelegi că fiecare dintre ele e un semnal că fobia e activă.",
             },
             {
               nr: "3",
@@ -556,7 +556,7 @@ export default function FobieDeZborPage() {
             {
               nr: "4",
               title: "Informația concretă: mecanica zborului",
-              text: "Caută un curs de tip \"Fear of Flying\" de la o companie aeriană. Multe oferă cursuri gratuite sau la cost redus. Învață cum funcționează turbulențele, ce fac piloții în diferite scenarii, ce sunt zgomotele pe care le auzi. Informația singură nu vindecă, dar reduce componenta de necunoscut, care alimentează catastrofizarea.",
+              text: "Caută un curs de tip Fear of Flying de la o companie aeriană. Multe oferă cursuri gratuite sau la cost redus. Învață cum funcționează turbulențele, ce fac piloții în diferite scenarii, ce sunt zgomotele pe care le auzi. Informația singură nu vindecă, dar reduce componenta de necunoscut, care alimentează catastrofizarea.",
             },
           ].map((ex) => (
             <div key={ex.nr} style={{ display: "flex", gap: 20, marginBottom: 20, padding: "20px 24px", background: "var(--color-background)", borderRadius: 12 }}>
@@ -602,7 +602,7 @@ export default function FobieDeZborPage() {
               Fobia de zbor răspunde excelent la tratament.
             </p>
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 16, marginBottom: 28, maxWidth: 480, margin: "0 auto 28px" }}>
-              Nu e ceva cu care &quot;trebuie să trăiești&quot;. E ceva ce se tratează.
+              Nu e ceva cu care trebuie să trăiești, ci ceva ce se tratează.
             </p>
             <Link
               href="/programare?din=fobie-de-zbor"
@@ -624,18 +624,18 @@ export default function FobieDeZborPage() {
           <FAQ q="Pot muri de frică în avion?">
             <p style={{ marginBottom: 8 }}>Nu. Senzațiile pe care le trăiești în timpul unui episod de panică nu sunt periculoase medical. Inima care bate repede, dificultatea de a respira, senzația de leșin.. toate sunt răspunsuri normale ale sistemului nervos simpatic.</p>
             <p style={{ marginBottom: 8 }}>Corpul tău nu poate susține acel nivel de activare mai mult de 20 de minute. Chiar dacă nu faci nimic, chiar dacă nu folosești nicio tehnică, panica va scădea de la sine. E o limitare fiziologică, nu o decizie pe care trebuie s-o iei tu.</p>
-            <p>Nimeni nu a murit de panică într-un avion. Senzația de &quot;voi muri&quot; e parte din panică, nu un semnal real de pericol.</p>
+            <p>Nimeni nu a murit de panică într-un avion. Senzația că voi muri e parte din panică, nu un semnal real de pericol.</p>
           </FAQ>
 
           <FAQ q="De ce mi-e frică de avion dar nu de mașină?">
             <p style={{ marginBottom: 8 }}>Pentru că frica nu e despre probabilitatea reală a pericolului. E despre percepția controlului. În mașină, tu conduci. Ai volanul. Poți opri oricând. Poți schimba direcția. Ai iluzia controlului total, chiar dacă statistic mașina e mult mai periculoasă.</p>
             <p style={{ marginBottom: 8 }}>În avion, nu ai niciun control. Nu poți opri. Nu poți ieși. Nu poți decide nimic. Și această neputință activează sistemul de alarmă mult mai puternic decât orice probabilitate statistică.</p>
-            <p>E aceeași logică care explică de ce mulți oameni se simt mai în siguranță conducând decât fiind pasageri. Nu e despre pericol. E despre control.</p>
+            <p>E aceeași logică care explică de ce mulți oameni se simt mai în siguranță conducând decât fiind pasageri. Nu e despre pericol, ci despre control.</p>
           </FAQ>
 
           <FAQ q="Am zburat de 100 de ori cu alcool și pastile. De ce nu mi-a trecut?">
             <p style={{ marginBottom: 8 }}>Pentru că alcoolul și pastilele sunt comportamente de siguranță. Ele te ajută să supraviețuiești zborul, dar împiedică creierul să învețe că poți zbura fără ele.</p>
-            <p style={{ marginBottom: 8 }}>De fiecare dată când zbori cu ajutor extern, creierul trage concluzia: &quot;Am supraviețuit pentru că am luat pastila.&quot; Nu: &quot;Am supraviețuit pentru că zborul e sigur.&quot; Și fobia rămâne intactă, indiferent de câte zboruri faci.</p>
+            <p style={{ marginBottom: 8 }}>De fiecare dată când zbori cu ajutor extern, creierul trage concluzia: am supraviețuit pentru că am luat pastila. Nu: am supraviețuit pentru că zborul e sigur. Și fobia rămâne intactă, indiferent de câte zboruri faci.</p>
             <p>Tratamentul eficient presupune, la un moment dat, să zbori fără aceste ajutoare. Nu de la început, nu brusc, ci treptat, în cadrul unei ierarhii de expunere. Dar fără acest pas, 100 de zboruri sau 1000 nu vor schimba nimic.</p>
           </FAQ>
 
@@ -648,7 +648,7 @@ export default function FobieDeZborPage() {
           <FAQ q="Trebuie neapărat să zbor ca să scap de fobie?">
             <p style={{ marginBottom: 8 }}>Nu de la început. Tratamentul începe mult înainte de zbor. Expunere imaginală (vizualizarea zborului în detaliu), vizite la aeroport fără să zbori, simulatoare de zbor, realitate virtuală.. toate sunt pași valizi și eficienți.</p>
             <p style={{ marginBottom: 8 }}>Zborul real vine treptat, ca ultimul pas dintr-o ierarhie în care ai construit deja rezistență și încredere. Și când ajungi acolo, nu va fi un salt în gol. Va fi o continuare naturală a ceea ce ai practicat deja.</p>
-            <p>Mulți oameni descoperă că, ajunși la pasul zborului real, anxietatea e mult mai mică decât se așteptau. Pentru că nu mai e necunoscut. L-au &quot;trăit&quot; deja de zeci de ori în imaginație și în simulare.</p>
+            <p>Mulți oameni descoperă că, ajunși la pasul zborului real, anxietatea e mult mai mică decât se așteptau. Pentru că nu mai e necunoscut. L-au trăit deja de zeci de ori în imaginație și în simulare.</p>
           </FAQ>
         </div>
       </section>
