@@ -170,8 +170,8 @@ export default function HomePage() {
             {[
               { label: "Simți", text: "Palpitații, amețeli, furnicături, presiune în piept, senzația că nu poți respira. Apar din senin, fără un motiv clar." },
               { label: "Mergi la doctor", text: "Urgență sau medicul de familie. EKG, analize de sânge, investigații. Totul iese în parametri normali." },
-              { label: "Ce spune doctorul", text: "\"Nu aveți nimic. Probabil e stresul.\" Dar tu simți ceva. Senzațiile sunt reale. Dacă nu ai nimic, de ce corpul tău face asta?" },
-              { label: "Ce faci după", text: "Ajungi pe Google. Cauți \"palpitații fără cauză\" sau \"de ce îmi bate inima repede fără motiv\". Citești zeci de articole." },
+              { label: "Ce spune doctorul", text: "\"Nu aveți nimic. Probabil e stresul.\" Dar tu simți ceva, senzațiile sunt reale, și dacă nu ai nimic, de ce corpul tău face asta?" },
+              { label: "Ce faci după", text: "Ajungi pe Google. Cauți palpitații fără cauză sau de ce îmi bate inima repede fără motiv. Citești zeci de articole." },
             ].map((step, i) => (
               <div key={i} className="hp-journey-step">
                 <span className="hp-journey-dot" />

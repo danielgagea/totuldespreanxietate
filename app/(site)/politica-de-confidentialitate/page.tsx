@@ -47,7 +47,7 @@ export default function PoliticaDeConfidentialitate() {
                 <li><strong>Meta Pixel (Facebook)</strong> .. pagini vizitate, acțiuni pe site (ex: trimiterea formularului de programare). Aceste date sunt folosite pentru a afișa reclame relevante pe platformele Meta.</li>
               </ul>
               <p>
-                Aceste instrumente se activează doar după ce apeși &quot;Acceptă toate&quot; sau activezi manual categoriile &quot;Analytics&quot; și &quot;Marketing&quot; în setările de cookie. Dacă alegi &quot;Doar esențiale&quot;, aceste instrumente nu se încarcă.
+                Aceste instrumente se activează doar după ce apeși Acceptă toate sau activezi manual categoriile Analytics și Marketing în setările de cookie. Dacă alegi Doar esențiale, aceste instrumente nu se încarcă.
               </p>
 
               <h3>2.3. Date tehnice</h3>
@@ -176,7 +176,7 @@ export default function PoliticaDeConfidentialitate() {
               </div>
 
               <p>
-                Poți modifica preferințele de cookie oricând prin butonul &quot;Setări cookie&quot; din footer-ul site-ului.
+                Poți modifica preferințele de cookie oricând prin butonul Setări cookie din footer-ul site-ului.
               </p>
             </section>
 

@@ -304,7 +304,7 @@ export default function DespreDesignPage() {
           <h2 className="about-h2">De ce anxietatea</h2>
           <p className="about-body">
             Majoritatea oamenilor care ajung la mine vin cu aceleași întrebări..
-            „De ce îmi bate inima așa?", „Am ceva grav?", „De ce nu trece?".
+            de ce îmi bate inima așa, am ceva grav, de ce nu trece.
             Au fost la cardiolog, la neurolog, la urgențe. Analizele sunt
             normale, dar ei se simt tot rău.
           </p>
@@ -318,9 +318,9 @@ export default function DespreDesignPage() {
           <div className="about-insight-box">
             <p className="about-insight-text">
               Abordarea mea e diferită de ce găsești în majoritatea resurselor
-              din România. Nu mă opresc la „ce este anxietatea". Merg mai
-              departe, spre „ce vrea să îți spună psihicul tău prin acest
-              simptom". Fiecare senzație fizică, fiecare gând recurent, fiecare
+              din România. Nu mă opresc la ce este anxietatea. Merg mai
+              departe, spre ce vrea să îți spună psihicul tău prin acest
+              simptom. Fiecare senzație fizică, fiecare gând recurent, fiecare
               evitare are o logică. Când o descoperi, simptomul nu mai trebuie
               să strige ca să fie auzit.
             </p>
