@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "Tratament atac de panică — Când și cum să ceri ajutor | Totul despre Anxietate",
+    "Tratament atac de panică. Când și cum să ceri ajutor | Totul despre Anxietate",
   description:
     "85-90% rată de recuperare cu TCC în 12-15 ședințe. Când să ceri ajutor, ce te oprește, și ce funcționează. De Daniel Gagea, psiholog clinician.",
   authors: [{ name: "Daniel Gagea" }],
   openGraph: {
-    title: "Tratament atac de panică — Când și cum să ceri ajutor",
+    title: "Tratament atac de panică. Când și cum să ceri ajutor",
     description:
       "85-90% rată de recuperare cu TCC în 12-15 ședințe. Când să ceri ajutor, ce te oprește, și ce funcționează.",
     type: "article",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Tratament atac de panică — Când și cum să ceri ajutor",
+  headline: "Tratament atac de panică. Când și cum să ceri ajutor",
   description:
     "85-90% rată de recuperare cu TCC în 12-15 ședințe. Când să ceri ajutor, ce te oprește, și ce funcționează. De Daniel Gagea, psiholog clinician.",
   author: {
@@ -275,7 +275,7 @@ export default function TratamentPage() {
             color: "var(--color-primary)",
           }}
         >
-          Ce te oprește — și de ce nu ar trebui
+          Ce te oprește, și de ce nu ar trebui
         </h2>
 
         <div className="flex flex-col gap-6">
@@ -292,8 +292,8 @@ export default function TratamentPage() {
             reality="TCC este la fel de eficientă ca medicația, cu un avantaj major: efectele se mențin pe termen lung (Hollon et al., 2006)."
           />
           <MythRealityCard
-            myth={`\u201ELa mine nu funcționează — am panică de ani de zile.\u201D`}
-            reality="Helen avea 27 de ani și 11 ani de tulburare de panică — 8 atacuri pe zi. După 12 ședințe de terapie cognitivă, frecvența atacurilor s-a redus semnificativ (Clark & Beck, 2010)."
+            myth={`\u201ELa mine nu funcționează, am panică de ani de zile.\u201D`}
+            reality="Helen avea 27 de ani și 11 ani de tulburare de panică, cu 8 atacuri pe zi. După 12 ședințe de terapie cognitivă, frecvența atacurilor s-a redus semnificativ (Clark & Beck, 2010)."
           />
         </div>
       </Section>
@@ -314,9 +314,8 @@ export default function TratamentPage() {
           className="text-[15px] leading-relaxed mb-4"
           style={{ color: "var(--color-text)" }}
         >
-          Caracteristica principală a tulburării de panică — nu atacul în sine,
-          ci teama persistentă de a-l retrăi (DSM-IV-TR, APA, 2000).{" "}
-          {`\u201EFrica de frică.\u201D`}
+          Caracteristica principală a tulburării de panică nu este atacul în sine,
+          ci teama persistentă de a-l retrăi, frica de frică (DSM-IV-TR, APA, 2000).
         </p>
 
         {/* Mechanism cards */}
@@ -422,8 +421,8 @@ export default function TratamentPage() {
             className="text-[15px] leading-relaxed"
             style={{ color: "var(--color-text)" }}
           >
-            Fără tratament — 12% remisie la 5 ani. Cu terapie — 85% recuperare
-            la 15 luni. Diferența nu este noroc. Este o decizie.
+            Fără tratament, 12% remisie la 5 ani. Cu terapie, 85% recuperare
+            la 15 luni. Diferența nu este noroc, ci o decizie.
           </p>
         </div>
       </Section>
@@ -482,7 +481,7 @@ export default function TratamentPage() {
             className="text-[15px] leading-relaxed mb-8 max-w-lg mx-auto"
             style={{ color: "var(--color-text)" }}
           >
-            Primul pas este o conversație. Nu un angajament, nu o promisiune —
+            Primul pas este o conversație. Nu un angajament, nu o promisiune,
             doar o discuție în care înțelegem împreună ce ți se întâmplă și ce
             poți face.
           </p>

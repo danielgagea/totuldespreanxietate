@@ -156,7 +156,7 @@ export default function PanicaSauInfarctPage() {
             }}
           >
             Aceasta este, de departe, cea mai frecventă teamă. Și este
-            perfect înțeleasă — simptomele sunt înspăimântător de
+            perfect înțeleasă, simptomele sunt înspăimântător de
             asemănătoare.
           </p>
 
@@ -167,7 +167,7 @@ export default function PanicaSauInfarctPage() {
               color: "var(--color-text)",
             }}
           >
-            {`Iată de ce: Când corpul tău declanșează răspunsul \u201Eluptă sau fugi\u201D, inima pompează mai mult sânge ca să-ți ofere energia necesară să fugi sau să lupți. Ritmul cardiac crește. Simți presiune în piept. Aceleași senzații ca într-un eveniment cardiac — dar dintr-o cauză complet diferită.`}
+            {`Iată de ce: Când corpul tău declanșează răspunsul \u201Eluptă sau fugi\u201D, inima pompează mai mult sânge ca să-ți ofere energia necesară să fugi sau să lupți. Ritmul cardiac crește. Simți presiune în piept. Aceleași senzații ca într-un eveniment cardiac, dar dintr-o cauză complet diferită.`}
           </p>
         </div>
       </header>
@@ -379,7 +379,7 @@ export default function PanicaSauInfarctPage() {
           }}
         >
           Dacă nu ai fost niciodată evaluat medical, mergi la medic. Serios.
-          Exclude mai întâi cauzele fizice — hipertiroidismul, consumul
+          Exclude mai întâi cauzele fizice.. hipertiroidismul, consumul
           excesiv de cofeină, prolapsul de valvă mitrală, sau alte afecțiuni
           care pot mima simptomele panicii{" "}
           <span style={{ color: "var(--color-text-secondary)" }}>
@@ -427,16 +427,11 @@ export default function PanicaSauInfarctPage() {
 
         <PullQuote>
           <p className="mb-4">
-            Diferența nu este senzația. Diferența este ce-ți spui despre
-            senzație.
+            Diferența nu este senzația, ci ce-ți spui despre ea.
+            Inima bate repede la sala de sport și ți se pare normal.
+            Inima bate repede la metrou și imediat crezi că faci infarct.
+            Aceeași senzație, interpretare diferită, rezultat complet diferit.
           </p>
-          <p className="mb-4">
-            {`\u201EInima bate repede la sala de sport\u201D → normal.`}
-          </p>
-          <p className="mb-4">
-            {`\u201EInima bate repede la metrou\u201D → \u201EFac infarct!\u201D`}
-          </p>
-          <p>Aceeași senzație. Interpretare diferită. Rezultat complet diferit.</p>
         </PullQuote>
       </Section>
 
@@ -544,7 +539,7 @@ export default function PanicaSauInfarctPage() {
             >
               Daniel Gagea
             </span>{" "}
-            — psiholog clinician, 10+ ani experiență, 500+ clienți
+            , psiholog clinician, 10+ ani experiență, 500+ clienți
           </p>
         </div>
       </footer>

@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "De ce se întâmplă atacurile de panică — Mecanismul explicat | Totul despre Anxietate",
+    "De ce se întâmplă atacurile de panică. Mecanismul explicat | Totul despre Anxietate",
   description:
     "De ce ai atacuri de panică: alarma falsă, cercul vicios, declanșatori și vulnerabilitate. Explicat pe bază de cercetare de Daniel Gagea.",
   authors: [{ name: "Daniel Gagea" }],
   openGraph: {
-    title: "De ce se întâmplă atacurile de panică — Mecanismul explicat",
+    title: "De ce se întâmplă atacurile de panică. Mecanismul explicat",
     description:
       "De ce ai atacuri de panică: alarma falsă, cercul vicios, declanșatori și vulnerabilitate. Explicat pe bază de cercetare.",
     type: "article",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "De ce se întâmplă atacurile de panică — Mecanismul explicat",
+  headline: "De ce se întâmplă atacurile de panică. Mecanismul explicat",
   description:
     "De ce ai atacuri de panică: alarma falsă, cercul vicios, declanșatori și vulnerabilitate. Explicat pe bază de cercetare de Daniel Gagea.",
   author: {
@@ -154,7 +154,7 @@ export default function DeCeSeIntamplaPage() {
               color: "var(--color-primary)",
             }}
           >
-            De ce se întâmplă — mecanismul atacului de panică
+            De ce se întâmplă. Mecanismul atacului de panică
           </h1>
 
           <p
@@ -201,7 +201,7 @@ export default function DeCeSeIntamplaPage() {
             </p>
 
             <p>
-              {`Asta face creierul tău în timpul unui atac de panică. Declanșează o alarmă de urgență — completă, cu toate sirenele și luminile — pentru o amenințare care nu există.`}
+              {`Asta face creierul tău în timpul unui atac de panică. Declanșează o alarmă de urgență, completă, cu toate sirenele și luminile, pentru o amenințare care nu există.`}
             </p>
 
             <p>
@@ -230,7 +230,7 @@ export default function DeCeSeIntamplaPage() {
               color: "var(--color-primary)",
             }}
           >
-            Cercul vicios — pas cu pas
+            Cercul vicios, pas cu pas
           </h2>
           <p
             className="text-[13px] mb-8"
@@ -241,11 +241,11 @@ export default function DeCeSeIntamplaPage() {
 
           <div className="space-y-5">
             {[
-              `O senzație fizică apare — cauzată de stres, oboseală, emoții, cafea, sau funcționarea normală a corpului.`,
+              `O senzație fizică apare.. cauzată de stres, oboseală, emoții, cafea, sau funcționarea normală a corpului.`,
               `Creierul o detectează și o interpretează catastrofic`,
-              `Interpretarea produce frică — și frica intensifică senzațiile fizice`,
+              `Interpretarea produce frică, și frica intensifică senzațiile fizice`,
               `Senzațiile mai intense confirmă interpretarea`,
-              `Se pierde capacitatea de reevaluare — creierul nu mai poate genera o explicație alternativă (Beck, 1988)`,
+              `Se pierde capacitatea de reevaluare.. creierul nu mai poate genera o explicație alternativă (Beck, 1988)`,
             ].map((step, i) => (
               <div key={i} className="flex items-start gap-4">
                 <StepCircle number={i + 1} />
@@ -289,7 +289,7 @@ export default function DeCeSeIntamplaPage() {
             </Callout>
 
             <p>
-              {`Într-un alt studiu, persoanele cu risc de panică au primit informații false despre ritmul lor cardiac. Au raportat semnificativ mai multe simptome de panică — deși ritmul cardiac real era identic între grupuri (Story & Craske, 2008).`}
+              {`Într-un alt studiu, persoanele cu risc de panică au primit informații false despre ritmul lor cardiac. Au raportat semnificativ mai multe simptome de panică deși ritmul cardiac real era identic între grupuri (Story & Craske, 2008).`}
             </p>
 
             <PullQuote>
@@ -301,7 +301,7 @@ export default function DeCeSeIntamplaPage() {
               Persoanele cu tulburare de panică nu au un corp defect. Studiile
               arată că nu sunt mai reactive fiziologic la stres decât persoanele
               fără panică (Taylor, 2000). Ceea ce diferă este modul în care
-              interpretează senzațiile — și asta este ceva ce se poate schimba.
+              interpretează senzațiile, și asta este ceva ce se poate schimba.
             </p>
           </div>
         </Section>
@@ -318,7 +318,7 @@ export default function DeCeSeIntamplaPage() {
               color: "var(--color-primary)",
             }}
           >
-            Declanșatorii — nu doar situații externe
+            Declanșatorii.. nu doar situații externe
           </h2>
 
           <div
@@ -357,13 +357,13 @@ export default function DeCeSeIntamplaPage() {
             style={{ color: "var(--color-text)" }}
           >
             <p>
-              Vârsta medie de debut este 24 de ani (Burke et al., 1990) — adesea
+              Vârsta medie de debut este 24 de ani (Burke et al., 1990), adesea
               precedate de un eveniment de viață stresant.
             </p>
             <p>
               Concordanța la gemeni monozigoți: 31% vs 0% dizigoți (Torgersen,
-              1983). Nu este o alegere. Nu este o slăbiciune. Este un mod în care
-              creierul tău a învățat să proceseze senzațiile — și poate fi
+              1983). Nu este nici alegere, nici slăbiciune, ci un mod în care
+              creierul tău a învățat să proceseze senzațiile, și poate fi
               reprogramat.
             </p>
           </div>

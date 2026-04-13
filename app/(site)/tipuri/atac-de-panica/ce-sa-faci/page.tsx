@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "Ce faci în momentul unui atac de panică — 5 pași | Totul despre Anxietate",
+    "Ce faci în momentul unui atac de panică. 5 pași | Totul despre Anxietate",
   description:
     "5 pași concreți pentru momentul unui atac de panică. Ce ajută și ce NU ajută. Ghid practic de Daniel Gagea, psiholog clinician.",
   authors: [{ name: "Daniel Gagea" }],
   openGraph: {
-    title: "Ce faci în momentul unui atac de panică — 5 pași",
+    title: "Ce faci în momentul unui atac de panică. 5 pași",
     description:
       "5 pași concreți pentru momentul unui atac de panică. Ce ajută și ce NU ajută. Ghid practic.",
     type: "article",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Ce faci în momentul unui atac de panică — 5 pași",
+  headline: "Ce faci în momentul unui atac de panică. 5 pași",
   description:
     "5 pași concreți pentru momentul unui atac de panică. Ce ajută și ce NU ajută. Ghid practic de Daniel Gagea, psiholog clinician.",
   author: {
@@ -202,7 +202,7 @@ export default function CeSaFaciPage() {
           <StepCard number={1} title="Oprește-te. Nu fugi.">
             Impulsul de a fugi este puternic. Dar fuga confirmă creierului că
             pericolul este real. Rămâi unde ești. Dacă ești într-un loc sigur
-            — și ești, chiar dacă nu simți asta acum — rămâi.
+            , și ești, chiar dacă nu simți asta acum, rămâi.
           </StepCard>
 
           <StepCard
@@ -210,20 +210,20 @@ export default function CeSaFaciPage() {
             title="Amintește-ți: nu mori, nu înnebunești, nu pierzi controlul."
           >
             Gândurile tale de panică au un track record de 0%. De câte ori ai
-            crezut că mori — și de câte ori s-a întâmplat? Răspunsul este
+            crezut că mori, și de câte ori s-a întâmplat? Răspunsul este
             zero. De fiecare dată.
           </StepCard>
 
           <StepCard number={3} title="Observă, nu lupta.">
             Nu încerca să oprești senzațiile cu forța. Privește-le ca un
-            observator: {`\u201EInima bate repede. Interesant. Mâinile tremură. Ok.\u201D`}{" "}
+            observator: inima bate repede, interesant, mâinile tremură, ok.{" "}
             Când observi în loc să lupți, senzațiile își pierd puterea.
           </StepCard>
 
           <StepCard number={4} title="Expiră lung și lent.">
-            NU respira adânc și repede — asta este hiperventilație. În schimb:
+            Nu respira adânc și repede, asta este hiperventilație. În schimb:
             inspiră ușor pe nas, 4 secunde. Apoi expiră lent pe gură, 6
-            secunde — ca și cum ai sufla printr-un pai. Repetă de 5-6 ori.
+            secunde, ca și cum ai sufla printr-un pai. Repetă de 5-6 ori.
           </StepCard>
 
           <StepCard number={5} title="Rămâi în situație.">
@@ -258,7 +258,7 @@ export default function CeSaFaciPage() {
           </WarningCard>
 
           <WarningCard title="Căutarea repetată de reasigurare">
-            {`\u201ESpune-mi că sunt ok\u201D`} funcționează 5 minute. Apoi
+            Nevoia de a auzi că ești ok funcționează 5 minute. Apoi
             nevoia revine, mai puternică.
           </WarningCard>
 

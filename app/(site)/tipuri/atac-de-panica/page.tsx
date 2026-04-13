@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Atacul de panică — Ghid complet | Totul despre Anxietate",
+  title: "Atacul de panică. Ghid complet | Totul despre Anxietate",
   description:
     "Ce este un atac de panică, de ce se întâmplă, ce simți, și ce poți face. Ghid complet bazat pe cercetare, de Daniel Gagea, psiholog clinician.",
   authors: [{ name: "Daniel Gagea" }],
   openGraph: {
-    title: "Atacul de panică — Ghid complet",
+    title: "Atacul de panică. Ghid complet",
     description:
       "Ce este un atac de panică, de ce se întâmplă, ce simți, și ce poți face.",
     type: "article",
@@ -19,7 +19,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Article",
-      headline: "Atacul de panică — Ghid complet",
+      headline: "Atacul de panică. Ghid complet",
       description:
         "Ce este un atac de panică, de ce se întâmplă, ce simți, și ce poți face. Ghid complet bazat pe cercetare, de Daniel Gagea, psiholog clinician.",
       author: {
@@ -203,7 +203,7 @@ export default function AtacDePanicaHub() {
               color: "var(--color-primary)",
             }}
           >
-            Atacul de panică — Ghid complet
+            Atacul de panică. Ghid complet
           </h1>
           <p
             className="text-sm mb-10"
@@ -217,7 +217,7 @@ export default function AtacDePanicaHub() {
             >
               Daniel Gagea
             </Link>
-            , psiholog clinician — 10+ ani experiență, 500+ clienți
+            , psiholog clinician, 10+ ani experiență, 500+ clienți
           </p>
 
           {/* Empathic intro */}
@@ -227,8 +227,8 @@ export default function AtacDePanicaHub() {
           >
             <p>
               Inima bate atât de tare că o simți în gât. Simți că nu mai poți
-              respira — de parcă cineva ți-ar apăsa pieptul. Mâinile tremură.
-              Amețești. Totul din jur pare ireal, ca și cum ai privi prin
+              respira, de parcă cineva ți-ar apăsa pieptul. Mâinile tremură,
+              amețești, totul din jur pare ireal, ca și cum ai privi prin
               sticlă.
             </p>
             <p>
@@ -286,17 +286,17 @@ export default function AtacDePanicaHub() {
             <p>
               <strong>
                 Un atac de panică este un episod brusc de frică intensă în care
-                corpul tău reacționează ca și cum ai fi în pericol de moarte —
+                corpul tău reacționează ca și cum ai fi în pericol de moarte
                 deși nu există niciun pericol real.
               </strong>{" "}
               Durează de obicei între 5 și 20 de minute. Senzațiile fizice sunt
-              reale. Pericolul nu este.
+              reale, dar pericolul nu este.
             </p>
             <p>
               Gândește-te la o alarmă de incendiu care pornește într-o clădire
               în care nu există niciun foc. Alarma urlă la fel de tare. Toată
               lumea reacționează la fel de intens. Singura diferență: nu arde
-              nimic. Asta face corpul tău — activează sistemul de alarmă fără
+              nimic. Asta face corpul tău.. activează sistemul de alarmă fără
               pericol real.
             </p>
             <p>
@@ -304,7 +304,7 @@ export default function AtacDePanicaHub() {
                 A avea un atac de panică NU înseamnă că ai o tulburare.
               </strong>{" "}
               Un atac izolat este extrem de comun. Ceea ce transformă un atac
-              izolat în tulburare nu este senzația în sine — ci{" "}
+              izolat în tulburare este{" "}
               <strong>interpretarea</strong> pe care i-o dai și{" "}
               <strong>frica</strong> de a-l retrăi.
             </p>
@@ -339,7 +339,7 @@ export default function AtacDePanicaHub() {
             <GuideCard
               number="1"
               title="Ce simți în timpul unui atac"
-              description="Senzațiile fizice, gândurile automate, și cum escaladează totul — cercul vicios explicat pas cu pas."
+              description="Senzațiile fizice, gândurile automate, și cum escaladează totul. Cercul vicios explicat pas cu pas."
               href="/tipuri/atac-de-panica/simptome"
             />
             <GuideCard
@@ -357,7 +357,7 @@ export default function AtacDePanicaHub() {
             <GuideCard
               number="4"
               title="Ce vrea să spună psihicul"
-              description="Perspectiva clinică a lui Daniel Gagea — mesajul din spatele atacului de panică. Conținut unic."
+              description="Perspectiva clinică a lui Daniel Gagea, mesajul din spatele atacului de panică. Conținut unic."
               href="/tipuri/atac-de-panica/ce-vrea-sa-spuna-psihicul"
             />
             <GuideCard
@@ -402,7 +402,7 @@ export default function AtacDePanicaHub() {
               },
               {
                 q: "Pot să mor din cauza unui atac de panică?",
-                a: "Nu. Un atac de panică nu este periculos din punct de vedere medical. Nu produce infarct, nu produce AVC, nu produce nebunie. Este important să excluzi mai întâi cauzele medicale, dar odată confirmat că ești sănătos fizic, atacul de panică este — prin definiție — inofensiv.",
+                a: "Nu. Un atac de panică nu este periculos din punct de vedere medical. Nu produce infarct, nu produce AVC, nu produce nebunie. Este important să excluzi mai întâi cauzele medicale, dar odată confirmat că ești sănătos fizic, atacul de panică este, prin definiție, inofensiv.",
               },
               {
                 q: "De ce am atacuri de panică noaptea?",
@@ -474,7 +474,7 @@ export default function AtacDePanicaHub() {
               style={{ color: "var(--color-text)" }}
             >
               Am lucrat cu sute de persoane care au trecut prin exact ce treci tu
-              acum. Știu cum arată. Știu cum se simte. Și știu că se poate
+              acum. Știu cum arată, știu cum se simte, și știu că se poate
               schimba.
             </p>
             <Link

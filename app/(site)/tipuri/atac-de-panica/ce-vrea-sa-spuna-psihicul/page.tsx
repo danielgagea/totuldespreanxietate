@@ -177,7 +177,7 @@ export default function CeVreaSaSpunaPsihiculPage() {
           style={{ color: "var(--color-text)" }}
         >
           Majoritatea abordărilor tratează atacul de panică ca pe o eroare de
-          sistem — creierul s-a {`\u201Estricat\u201D`} și trebuie reparat. Și
+          sistem.. creierul s-a stricat și trebuie reparat. Și
           în mare parte, au dreptate. Dar în cabinetul meu, lucrul cu sute de
           persoane cu atacuri de panică mi-a arătat și altceva.
         </p>
@@ -200,7 +200,7 @@ export default function CeVreaSaSpunaPsihiculPage() {
             Mulți dintre clienții mei au descoperit ceva neașteptat: sub frică
             era furie. Furie pe care nu și-o permiteau. Pe un părinte. Pe un
             partener. Pe o situație. Furie înghițită de ani de zile, care și-a
-            găsit un alt drum de exprimare — prin corp.
+            găsit un alt drum de exprimare.. prin corp.
           </p>
         </blockquote>
 
@@ -239,7 +239,7 @@ export default function CeVreaSaSpunaPsihiculPage() {
           {[
             `\u201ETrebuie s\u0103 am grij\u0103 de toat\u0103 lumea \u00EEnainte de mine.\u201D`,
             `\u201EDac\u0103 sunt fericit, urmeaz\u0103 ceva r\u0103u.\u201D`,
-            `\u201ENu am voie s\u0103 fiu furios \u2014 furia distruge rela\u021Biile.\u201D`,
+            `\u201ENu am voie s\u0103 fiu furios, furia distruge rela\u021Biile.\u201D`,
             `\u201EDac\u0103 cer ajutor, voi fi controlat sau voi datora ceva.\u201D`,
             `\u201EDac\u0103 devin independent, voi fi singur.\u201D`,
           ].map((belief) => (
@@ -297,8 +297,8 @@ export default function CeVreaSaSpunaPsihiculPage() {
           className="text-[17px] leading-relaxed mb-6"
           style={{ color: "var(--color-text)" }}
         >
-          O femeie a avut primul atac de panică nu într-un moment de pericol — ci
-          într-o după-amiază în care era entuziasmată și fericită, așteptând
+          O femeie a avut primul atac de panică într-o după-amiază în care
+          era entuziasmată și fericită, așteptând
           să-și revadă soțul (Gassner, 2004). Ani mai târziu, în terapie,
           furnicăturile s-au oprit. Femeia a spus:{" "}
           {`\u201EAm nevoie doar s\u0103 pl\u00E2ng.\u201D`}
@@ -329,7 +329,7 @@ export default function CeVreaSaSpunaPsihiculPage() {
           className="text-[17px] leading-relaxed mb-6"
           style={{ color: "var(--color-text)" }}
         >
-          Te apropii de cineva — te simți sufocat. Te îndepărtezi — te simți
+          Te apropii de cineva și te simți sufocat. Te îndepărtezi și te simți
           abandonat. Nu există direcție sigură. Și corpul exprimă ce mintea nu
           poate: panică.
         </p>
@@ -338,7 +338,7 @@ export default function CeVreaSaSpunaPsihiculPage() {
           className="text-[15px] leading-relaxed italic"
           style={{ color: "var(--color-text-secondary)" }}
         >
-          Atașamentul rezistent (insecurizat) — {`\u201Eunic legat de tulbur\u0103rile de anxietate\u201D`}{" "}
+          Atașamentul rezistent (insecurizat), descris ca unic legat de tulburările de anxietate{" "}
           (Stroufe, 1997, citat în Gassner, 2004).
         </p>
       </Section>
@@ -360,7 +360,7 @@ export default function CeVreaSaSpunaPsihiculPage() {
           style={{ color: "var(--color-text)" }}
         >
           Nu toată lumea cu atacuri de panică are o poveste din copilărie în
-          spatele lor. Dar dacă te recunoști — un terapeut te poate ajuta să
+          spatele lor. Dar dacă te recunoști, un terapeut te poate ajuta să
           asculți mesajul, într-un spațiu sigur, fără grabă.
         </p>
       </Section>

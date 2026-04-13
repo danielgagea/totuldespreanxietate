@@ -640,7 +640,7 @@ export default function IntelegePage() {
             style={{ color: "var(--color-text)" }}
           >
             <p>
-              {`Poate atacul în sine a durat 15 minute. Dar frica că va reveni durează zile, săptămâni, luni. Aceasta este caracteristica principală a tulburării de panică.. teama persistentă de a-l retrăi. „Frica de frică.”`}
+              {`Poate atacul în sine a durat 15 minute. Dar frica că va reveni durează zile, săptămâni, luni. Aceasta este caracteristica principală a tulburării de panică.. teama persistentă de a-l retrăi, frica de frică.`}
             </p>
           </div>
 
@@ -738,7 +738,7 @@ export default function IntelegePage() {
             style={{ color: "var(--color-text)" }}
           >
             <p>
-              {`Panica nu „trece de la sine” ci se cronicizează. Dar există o veste bună, și vine pe pagina următoare.`}
+              {`Panica nu trece de la sine, ci se cronicizează. Dar există o veste bună, și vine pe pagina următoare.`}
             </p>
           </div>
         </Section>

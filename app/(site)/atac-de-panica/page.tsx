@@ -596,7 +596,7 @@ export default function AtacDePanicaHub() {
               style={{ color: "var(--color-text)" }}
             >
               Am lucrat cu sute de persoane care au trecut prin exact ce treci tu
-              acum. Știu cum arată. Știu cum se simte. Și știu că se poate
+              acum. Știu cum arată, știu cum se simte, și știu că se poate
               schimba.
             </p>
             <Link

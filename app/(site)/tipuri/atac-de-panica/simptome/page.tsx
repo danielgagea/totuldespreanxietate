@@ -103,9 +103,9 @@ export default function SimptomePage() {
             color: "var(--color-text)",
           }}
         >
-          Totul \u00EEncepe brusc. Uneori \u00EEntr-o situa\u021Bie specific\u0103 &mdash; un loc
+          Totul \u00EEncepe brusc. Uneori \u00EEntr-o situa\u021Bie specific\u0103 .. un loc
           aglomerat, o c\u0103l\u0103torie, o \u00EEnt\u00E2lnire. Alteori, aparent din senin
-          &mdash; acas\u0103, la birou, sau chiar \u00EEn somn.
+          .. acas\u0103, la birou, sau chiar \u00EEn somn.
         </p>
       </Section>
 
@@ -130,7 +130,7 @@ export default function SimptomePage() {
         >
           <p>
             Inima \u00EEncepe s\u0103 bat\u0103 puternic, repede, de parc\u0103 ar vrea s\u0103 ias\u0103
-            din piept. Sim\u021Bi durere sau presiune \u00EEn piept &mdash; \u0219i imediat te
+            din piept. Sim\u021Bi durere sau presiune \u00EEn piept .. \u0219i imediat te
             g\u00E2nde\u0219ti la ce e mai r\u0103u.
           </p>
 
@@ -138,8 +138,8 @@ export default function SimptomePage() {
             Respira\u021Bia se schimb\u0103. Sim\u021Bi c\u0103 nu prime\u0219ti destul aer, c\u0103 te
             sufoci, c\u0103 ceva \u00EE\u021Bi blocheaz\u0103 g\u00E2tul. \u0218i iat\u0103 paradoxul pe care
             pu\u021Bini oameni \u00EEl \u0219tiu: \u00EEn timpul unui atac de panic\u0103, respiri{" "}
-            <strong>PREA MULT</strong>, nu prea pu\u021Bin. Senza\u021Bia de sufocare este
-            produs\u0103 de hiperventila\u021Bie &mdash; respira\u021Bia rapid\u0103 \u0219i profund\u0103
+            <strong>prea mult</strong>, nu prea pu\u021Bin. Senza\u021Bia de sufocare este
+            produs\u0103 de hiperventila\u021Bie .. respira\u021Bia rapid\u0103 \u0219i profund\u0103
             scade brusc presiunea CO2 din s\u00E2nge (hipocapnie), ceea ce produce
             ame\u021Beal\u0103, furnic\u0103turi \u0219i senza\u021Bie de sufocare{" "}
             <span style={{ color: "var(--color-text-secondary)" }}>
@@ -151,11 +151,11 @@ export default function SimptomePage() {
           <p>
             Ame\u021Beala vine \u00EEn val. Sim\u021Bi c\u0103 te pierzi, c\u0103 le\u0219ini, c\u0103 solul se
             mi\u0219c\u0103 sub tine. M\u00E2inile \u0219i picioarele amor\u021Besc sau furnic\u0103tur\u0103
-            &mdash; senza\u021Bie ciudat\u0103, ca \u0219i cum nu ar fi ale tale.
+            .. senza\u021Bie ciudat\u0103, ca \u0219i cum nu ar fi ale tale.
           </p>
 
           <p>
-            Transpiri &mdash; uneori abundent, uneori doar palme umede.
+            Transpiri .. uneori abundent, uneori doar palme umede.
             Alternezi \u00EEntre valuri de c\u0103ldur\u0103 \u0219i frisoane. Sim\u021Bi grea\u021B\u0103, ca \u0219i
             cum ai vomita.
           </p>
@@ -189,7 +189,7 @@ export default function SimptomePage() {
             color: "var(--color-text)",
           }}
         >
-          Senza\u021Biile fizice vin cu g\u00E2nduri automate &mdash; rapide, intense, \u0219i
+          Senza\u021Biile fizice vin cu g\u00E2nduri automate .. rapide, intense, \u0219i
           extrem de conving\u0103toare \u00EEn acel moment:
         </p>
 
@@ -199,7 +199,7 @@ export default function SimptomePage() {
             `\u201EFac infarct.\u201D`,
             `\u201E\u00CEnnebunesc.\u201D`,
             `\u201EPierd controlul.\u201D`,
-            `\u201ENu pot respira \u2014 m\u0103 sufoc.\u201D`,
+            `\u201ENu pot respira, m\u0103 sufoc.\u201D`,
             `\u201ETrebuie s\u0103 ies de aici.\u201D`,
             `\u201EM\u0103 voi face de r\u00E2s.\u201D`,
             `\u201ENu se va termina niciodat\u0103.\u201D`,
@@ -259,11 +259,11 @@ export default function SimptomePage() {
         {/* Numbered cascade steps */}
         <ol className="space-y-6 mb-10">
           {[
-            `Apare o senza\u021Bie fizic\u0103 \u2014 poate o palpita\u021Bie, o ame\u021Beal\u0103, o u\u0219oar\u0103 dificultate de respira\u021Bie. Poate fi cauzat\u0103 de stres, oboseal\u0103, cafea, sau pur \u0219i simplu de corpul t\u0103u func\u021Bion\u00E2nd normal.`,
-            `Creierul interpreteaz\u0103 senza\u021Bia ca pericol: \u201EInima bate repede \u2014 probabil fac infarct.\u201D`,
-            `Interpretarea produce fric\u0103. Frica intensific\u0103 senza\u021Biile fizice \u2014 inima bate \u0219i mai repede, respira\u021Bia se accelereaz\u0103 \u0219i mai mult.`,
+            `Apare o senza\u021Bie fizic\u0103.. poate o palpita\u021Bie, o ame\u021Beal\u0103, o u\u0219oar\u0103 dificultate de respira\u021Bie. Poate fi cauzat\u0103 de stres, oboseal\u0103, cafea, sau pur \u0219i simplu de corpul t\u0103u func\u021Bion\u00E2nd normal.`,
+            `Creierul interpreteaz\u0103 senza\u021Bia ca pericol: \u201EInima bate repede, probabil fac infarct.\u201D`,
+            `Interpretarea produce fric\u0103. Frica intensific\u0103 senza\u021Biile fizice.. inima bate \u0219i mai repede, respira\u021Bia se accelereaz\u0103 \u0219i mai mult.`,
             `Senza\u021Biile intensificate confirm\u0103 interpretarea: \u201EVede\u021Bi? E \u0219i mai r\u0103u. Chiar e ceva grav.\u201D`,
-            `Ciclul se repet\u0103 \u2014 \u0219i \u00EEn c\u00E2teva secunde, e\u0219ti \u00EEn mijlocul unui atac de panic\u0103 complet.`,
+            `Ciclul se repet\u0103, \u0219i \u00EEn c\u00E2teva secunde, e\u0219ti \u00EEn mijlocul unui atac de panic\u0103 complet.`,
           ].map((step, i) => (
             <li key={i} className="flex gap-4 items-start">
               <span
@@ -304,7 +304,7 @@ export default function SimptomePage() {
               (Clark, 1986; Beck, 1988)
             </span>
             . Nu senza\u021Bia fizic\u0103 produce atacul. Interpretarea catastrofic\u0103 a
-            senza\u021Biei &mdash; aceea produce atacul.
+            senza\u021Biei .. aceea produce atacul.
           </p>
         </Callout>
 

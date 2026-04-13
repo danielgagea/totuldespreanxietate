@@ -723,7 +723,7 @@ export default function RecunoastePage() {
         </div>
 
         <PullQuote>
-          {`Diferența nu este senzația. Diferența este ce-ți spui despre senzație. „Inima bate repede la sala de sport" → normal. „Inima bate repede la metrou" → „Fac infarct!" Aceeași senzație. Interpretare diferită. Rezultat complet diferit.`}
+          {`Diferența nu este senzația, ci ce-ți spui despre ea. Inima bate repede la sala de sport și ți se pare normal. Inima bate repede la metrou și imediat crezi că faci infarct. Aceeași senzație, interpretare diferită, rezultat complet diferit.`}
         </PullQuote>
       </Section>
 
