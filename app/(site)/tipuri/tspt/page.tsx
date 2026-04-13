@@ -302,7 +302,7 @@ export default function TSPTPage() {
                 Vei înțelege de ce corpul tău reacționează ca și cum pericolul e încă prezent, de ce anumite lucruri te trimit înapoi în acel moment, și ce poți face concret ca să ieși din ciclul în care te afli.
               </p>
               <p className="tspt-opening-conclusion">
-                <strong>Nu ești &quot;slab&quot; și nu ești &quot;blocat în trecut&quot; din alegere.</strong> Ce trăiești are un nume, are mecanisme specifice identificabile și, cel mai important, are tratament care funcționează.
+                <strong>Nu ești slab și nu ești blocat în trecut din alegere.</strong> Ce trăiești are un nume, are mecanisme specifice identificabile și, cel mai important, are tratament care funcționează.
               </p>
             </div>
           </Reveal>
@@ -375,7 +375,7 @@ export default function TSPTPage() {
                     items: [
                       "Credința că lumea e complet periculoasă sau că tu ești complet vinovat",
                       "Incapacitatea de a simți emoții pozitive",
-                      `Detașare față de ceilalți, senzația de a fi „diferit"`,
+                      `Detașare față de ceilalți, senzația de a fi diferit`,
                       "Pierderi de memorie legate de părți ale evenimentului",
                     ],
                   },
@@ -456,7 +456,7 @@ export default function TSPTPage() {
             <div className="tspt-dissociative">
               <h3>Când reacția nu e intensă, ci opusul</h3>
               <p>
-                Unele persoane cu stres post-traumatic nu reacționează prin hiperactivare, ci prin detașare.. se simt „în afara corpului", ca într-un vis, ca și cum privesc totul de la distanță. Emoțiile par oprite, lumea pare ireală.
+                Unele persoane cu stres post-traumatic nu reacționează prin hiperactivare, ci prin detașare.. se simt în afara corpului, ca într-un vis, ca și cum privesc totul de la distanță. Emoțiile par oprite, lumea pare ireală.
               </p>
               <p>
                 Aceasta nu e o formă mai ușoară, ci o formă diferită în care creierul a învățat să se protejeze prin deconectare. Apare mai frecvent la persoane care au experimentat traumă repetată sau cronică, mai ales în copilărie.
@@ -505,7 +505,7 @@ export default function TSPTPage() {
                   </svg>
                 ),
                 text: "Partenerul tău vrea apropiere, dar tu simți un zid invizibil. Nu ești supărat pe el sau pe ea. Pur și simplu nu ajungi la emoție. Ești prezent fizic, dar absent emoțional.",
-                detail: `Oamenii din jurul tău spun „s-a schimbat" sau „nu mai e ca înainte". Au dreptate. Dar nu de asta crezi tu.`,
+                detail: `Oamenii din jurul tău observă că te-ai schimbat, că nu mai ești ca înainte. Au dreptate. Dar nu de asta crezi tu.`,
               },
               {
                 title: "La muncă",
@@ -543,7 +543,7 @@ export default function TSPTPage() {
                     <text x="36" y="15" fill="#C4966C" opacity="0.4" fontSize="8" textAnchor="middle" fontWeight="700">!</text>
                   </svg>
                 ),
-                text: `Lucrezi 12 ore pe zi. Toată lumea te admiră pentru „dedicare". Nimeni nu vede că de fapt fugi. Cât timp ești ocupat, amintirile nu au loc să intre.`,
+                text: `Lucrezi 12 ore pe zi. Toată lumea te admiră pentru dedicare. Nimeni nu vede că de fapt fugi. Cât timp ești ocupat, amintirile nu au loc să intre.`,
                 detail: "Weekendurile sunt mai grele decât zilele de muncă, pentru că nu ai unde să te ascunzi de propriile gânduri.",
               },
               {
@@ -598,7 +598,7 @@ export default function TSPTPage() {
                 <li><strong>Evitarea se instalează</strong>.. eviți locul, persoana, conversația, gândul</li>
                 <li><strong>Ușurarea pe termen scurt:</strong> anxietatea scade</li>
                 <li><strong>Creierul învață:</strong> „Evitarea funcționează!"</li>
-                <li><strong>Amintirea nu e procesată</strong> și rămâne la fel de „proaspătă"</li>
+                <li><strong>Amintirea nu e procesată</strong> și rămâne la fel de proaspătă</li>
                 <li><strong>Următorul trigger</strong> declanșează același ciclu, cu aceeași intensitate</li>
               </ol>
             </div>
@@ -606,7 +606,7 @@ export default function TSPTPage() {
 
           <Reveal delay={300}>
             <PullQuote dark>
-              Evitarea e cea mai naturală reacție la durere. Și e exact mecanismul care împiedică vindecarea. Nu pentru că ești „slab", ci pentru că creierul tău face ce știe mai bine: te protejează de disconfort pe termen scurt.
+              Evitarea e cea mai naturală reacție la durere. Și e exact mecanismul care împiedică vindecarea. Nu pentru că ești slab, ci pentru că creierul tău face ce știe mai bine: te protejează de disconfort pe termen scurt.
             </PullQuote>
           </Reveal>
 
@@ -620,14 +620,14 @@ export default function TSPTPage() {
                   <span className="tspt-maintain-icon">🍷</span>
                   <h4>Alcoolul și substanțele</h4>
                   <p>
-                    Multe persoane cu stres post-traumatic folosesc alcoolul sau alte substanțe ca să „oprească" gândurile, să adoarmă sau să anestezicze emoțiile. Funcționează temporar. Pe termen lung, amplifică simptomele și adaugă o problemă peste alta.
+                    Multe persoane cu stres post-traumatic folosesc alcoolul sau alte substanțe ca să oprească gândurile, să adoarmă sau să anestezicze emoțiile. Funcționează temporar. Pe termen lung, amplifică simptomele și adaugă o problemă peste alta.
                   </p>
                 </div>
                 <div className="tspt-maintain-card">
                   <span className="tspt-maintain-icon">🔒</span>
-                  <h4>Credința „e vina mea"</h4>
+                  <h4>Credința că e vina ta</h4>
                   <p>
-                    Una dintre cele mai distructive consecințe ale traumei este convingerea că ai fi putut preveni ce s-a întâmplat. „Dacă nu mergeam acolo." „Dacă reacționam altfel." Această credință te ține blocat în rușine și autoculpabilizare, și împiedică procesarea reală a traumei.
+                    Una dintre cele mai distructive consecințe ale traumei este convingerea că ai fi putut preveni ce s-a întâmplat, că dacă nu mergeai acolo sau dacă reacționai altfel, nimic din toate astea nu s-ar fi întâmplat. Această credință te ține blocat în rușine și autoculpabilizare, și împiedică procesarea reală a traumei.
                   </p>
                 </div>
                 <div className="tspt-maintain-card">
@@ -673,7 +673,7 @@ export default function TSPTPage() {
             <div className="tspt-body-knows">
               <h3>Corpul știe înainte de minte</h3>
               <p>
-                Bessel van der Kolk a formulat ideea în modul cel mai direct posibil: corpul ține scorul. Creierul poate „uita" trauma, poate să o pună deoparte, poate să o minimizeze. Corpul nu face asta. Corpul păstrează amintirea în tensiunea musculară, în patterns-ul de respirație, în reactivitatea la atingere.
+                Bessel van der Kolk a formulat ideea în modul cel mai direct posibil: corpul ține scorul. Creierul poate uita trauma, poate să o pună deoparte, poate să o minimizeze. Corpul nu face asta. Corpul păstrează amintirea în tensiunea musculară, în patterns-ul de respirație, în reactivitatea la atingere.
               </p>
               <p>
                 De aceea multe persoane cu stres post-traumatic ajung mai întâi la medic cu simptome fizice: dureri cronice fără cauză aparentă, probleme gastrointestinale, dureri de cap, oboseală care nu se explică prin nimic medical. Corpul vorbește despre trauma pe care mintea nu o poate articula încă.
@@ -687,7 +687,7 @@ export default function TSPTPage() {
             <div className="tspt-shame">
               <h3>Rușinea ca motor ascuns</h3>
               <p>
-                În spatele multora dintre simptomele stresului post-traumatic se află o emoție care rareori e numită: rușinea. Nu vinovăția („am făcut ceva greșit"), ci rușinea („sunt ceva greșit", „sunt stricat", „sunt murdar").
+                În spatele multora dintre simptomele stresului post-traumatic se află o emoție care rareori e numită: rușinea. Vinovăția e despre ceva ce ai făcut, iar rușinea e despre cine ești. E convingerea interioară că ești stricat, că ești murdar, că e ceva greșit cu tine la nivel fundamental.
               </p>
               <p>
                 Rușinea e emoția care te face să nu vorbești. Care te face să crezi că nimeni nu poate înțelege. Care te face să te ascunzi, nu din frică, ci din convingerea profundă că dacă cineva ar vedea ce s-a întâmplat cu adevărat, te-ar respinge.
@@ -698,12 +698,12 @@ export default function TSPTPage() {
           <Reveal delay={400}>
             <div className="tspt-case">
               <div className="tspt-case-label">Studiu de caz</div>
-              <h3>Jill: când corpul vorbește pentru minte</h3>
+              <h3>Cristina: când corpul vorbește pentru minte</h3>
               <p>
-                Jill a venit în terapie la 34 de ani, cu atacuri de panică „din senin" și o tensiune musculară cronică în umeri și gât pe care niciun masaj nu o rezolva. A făcut toate analizele, totul era în parametri normali.
+                Cristina a venit în terapie la 34 de ani, cu atacuri de panică aparent din senin și o tensiune musculară cronică în umeri și gât pe care niciun masaj nu o rezolva. A făcut toate analizele, totul era în parametri normali.
               </p>
               <p>
-                În ședința a patra, povestind despre copilărie, a menționat „în treacăt" că tatăl ei „se enerva uneori". Corpul ei s-a tensionat vizibil în acel moment, dar vocea a rămas calmă, detașată.
+                În ședința a patra, povestind despre copilărie, a menționat în treacăt că tatăl ei se enerva uneori. Corpul ei s-a tensionat vizibil în acel moment, dar vocea a rămas calmă, detașată.
               </p>
               <p>
                 Pe parcursul terapiei, a ieșit la suprafață un pattern clar: atacurile de panică apăreau de fiecare dată când cineva din jurul ei ridica vocea. Corpul ei recunoștea semnalul pe care mintea ei încă nu era pregătită să-l numească.
@@ -752,7 +752,7 @@ export default function TSPTPage() {
                     num: "2",
                     title: "Procesarea cognitivă",
                     abbr: "(Cognitive Processing Therapy)",
-                    text: `Se focalizează pe gândurile și credințele legate de traumă: „e vina mea", „lumea e complet periculoasă", „nu pot avea încredere în nimeni". Aceste credințe se formează în momentul traumei și se autoperpetuează. Terapia te ajută să le examinezi și să le modifici.`,
+                    text: `Se focalizează pe gândurile și credințele rigide care se formează în momentul traumei, convingeri despre vina ta în ce s-a întâmplat, despre cât de periculoasă e lumea, despre imposibilitatea de a mai avea încredere în cineva. Odată formate, aceste credințe se autoperpetuează și distorsionează felul în care interpretezi tot ce urmează. Terapia te ajută să le examinezi și să le modifici.`,
                   },
                   {
                     num: "3",
@@ -780,10 +780,10 @@ export default function TSPTPage() {
             <div className="tspt-shame-flashbacks">
               <h3>Compasiunea în fața flashback-urilor de rușine</h3>
               <p>
-                Flashback-urile nu sunt doar vizuale. Există flashback-uri emoționale, în care brusc te inundă rușine, vinovăție sau neputință, fără o amintire vizuală clară. Le-ai putea numi „flashback-uri de rușine".
+                Flashback-urile nu sunt doar vizuale. Există și flashback-uri emoționale, în care brusc te inundă rușine, vinovăție sau neputință, fără o amintire vizuală clară.
               </p>
               <p>
-                Tratamentul eficient include dezvoltarea unei atitudini de compasiune față de sine în aceste momente. Nu e vorba de „gândire pozitivă". E vorba de a învăța să te tratezi în momentele de vulnerabilitate extremă cu aceeași grijă cu care ai trata pe altcineva care trece prin aceeași situație.
+                Tratamentul eficient include dezvoltarea unei atitudini de compasiune față de sine în aceste momente. Nu are legătură cu gândirea pozitivă, ci cu capacitatea de a te trata în momentele de vulnerabilitate extremă cu aceeași grijă cu care ai trata pe altcineva care trece prin aceeași situație.
               </p>
             </div>
           </Reveal>
@@ -845,7 +845,7 @@ export default function TSPTPage() {
                 num: "1",
                 title: "Grounding 5-4-3-2-1",
                 text: "Când simți că te pierzi în flashback sau că prezentul devine neclar, folosește această tehnică de ancorare senzorială: numește 5 lucruri pe care le vezi, 4 pe care le auzi, 3 pe care le poți atinge, 2 pe care le miroși, 1 pe care îl guști.",
-                result: `Nu încerci să „oprești" flashback-ul. Îi oferi creierului tău dovezi senzoriale că ești în prezent, nu în trecut.`,
+                result: `Nu încerci să oprești flashback-ul. Îi oferi creierului tău dovezi senzoriale că ești în prezent, nu în trecut.`,
               },
               {
                 num: "2",
@@ -856,7 +856,7 @@ export default function TSPTPage() {
               {
                 num: "3",
                 title: "Containerul mental",
-                text: `Imaginează-ți un container solid, cu capac greu, în care poți pune amintirile intruzive când nu ești pregătit să le procesezi. Nu le arunci, nu le distrugi, doar le pui într-un loc sigur pentru moment. „Știu că ești acolo. Mă voi ocupa de tine, dar nu acum."`,
+                text: `Imaginează-ți un container solid, cu capac greu, în care poți pune amintirile intruzive când nu ești pregătit să le procesezi. Nu le arunci, nu le distrugi, doar le pui într-un loc sigur pentru moment, știind că sunt acolo și că te vei ocupa de ele, dar nu acum.`,
                 result: "Aceasta nu e evitare. E amânare deliberată, o abilitate de autoreglare care îți permite să funcționezi în timpul zilei.",
               },
               {
@@ -923,7 +923,7 @@ export default function TSPTPage() {
                 { emoji: "🗺️", text: "Un terapeut te ajută să navighezi amintirea traumatică într-un spațiu sigur" },
                 { emoji: "🪜", text: "Procesarea se face treptat, la ritmul tău, nu forțat" },
                 { emoji: "🔍", text: "Identifici triggerii și înțelegi de ce corpul tău reacționează cum reacționează" },
-                { emoji: "🔑", text: `Credințele formate în traumă („e vina mea", „lumea e periculoasă") sunt examinate și modificate` },
+                { emoji: "🔑", text: `Credințele rigide formate în traumă, despre vina ta sau despre cât de periculoasă e lumea, sunt examinate și modificate` },
                 { emoji: "💨", text: "Amintirea traumatică pierde din intensitatea emoțională și devine, în sfârșit, trecut" },
               ].map((card, i) => (
                 <div key={i} className="tspt-specialist-card">

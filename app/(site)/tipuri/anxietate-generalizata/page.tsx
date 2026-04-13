@@ -292,7 +292,7 @@ export default function AnxietateGeneralizataPage() {
                 Lumea din jur pare relaxată. Partenerul tău doarme liniștit. Colegii tăi nu par să aibă aceleași griji. Și te întrebi de ce tu nu poți, pur și simplu, să te oprești din gândit.
               </p>
               <p className="tag-opening-conclusion">
-                <strong>Dacă te recunoști, nu ești &quot;stresat&quot; și nu ești &quot;prea sensibil&quot;.</strong> Ce trăiești se numește tulburare de anxietate generalizată. Și în acest ghid vei înțelege de ce mintea ta nu se oprește, de ce îngrijorarea e mai complicată decât crezi, și ce funcționează ca tratament.
+                <strong>Dacă te recunoști, nu ești stresat și nu ești prea sensibil.</strong> Ce trăiești se numește tulburare de anxietate generalizată. Și în acest ghid vei înțelege de ce mintea ta nu se oprește, de ce îngrijorarea e mai complicată decât crezi, și ce funcționează ca tratament.
               </p>
             </div>
           </Reveal>
@@ -321,12 +321,12 @@ export default function AnxietateGeneralizataPage() {
           <Reveal delay={250}>
             <div className="tag-distinction">
               <div className="tag-distinction-card">
-                <h3>Nu e &quot;stres&quot;</h3>
+                <h3>Nu e stres</h3>
                 <p>Stresul are o cauză identificabilă și se oprește când cauza dispare. Anxietatea generalizată nu are o cauză specifică. Sau, mai precis, cauza se schimbă.. azi e sănătatea, mâine sunt banii, poimâine e relația.</p>
                 <p className="tag-distinction-key">Conținutul variază. Mecanismul rămâne același.</p>
               </div>
               <div className="tag-distinction-card">
-                <h3>Nu e &quot;a fi anxios din fire&quot;</h3>
+                <h3>Nu e a fi anxios din fire</h3>
                 <p>E o tulburare cu mecanisme specifice, identificabile și tratabile.. nu personalitatea ta, ci ceva ce se întâmplă minții tale.</p>
               </div>
             </div>
@@ -385,7 +385,7 @@ export default function AnxietateGeneralizataPage() {
                     <path d="M14 36H34" stroke="#1B2B4B" strokeWidth="1.5" strokeLinecap="round" opacity="0.2"/>
                   </svg>
                 ),
-                text: "Alarmele sună și gândurile pornesc înainte să deschizi ochii.. nu ceva concret, mai degrabă o stare difuză care spune \"azi va fi greu\".",
+                text: "Alarmele sună și gândurile pornesc înainte să deschizi ochii.. nu ceva concret, mai degrabă o stare difuză de anticipare că ziua va fi grea.",
                 detail: "Verifici telefonul imediat, căutând semne că totul e ok. Niciun email urgent. Nicio veste proastă. Și totuși, neliniștea nu scade.",
               },
               {
@@ -400,7 +400,7 @@ export default function AnxietateGeneralizataPage() {
                   </svg>
                 ),
                 text: "Te concentrezi greu, deși ești la fel de capabil ca oricând.. doar că o parte din mintea ta rulează scenarii în fundal.",
-                detail: "\"Am trimis emailul corect?\" \"Ce-a vrut să spună șeful cu acel ton?\" Colegii tăi par relaxați. Tu faci aceeași muncă dar cu de 3 ori mai mult efort mental.",
+                detail: "Analizezi dacă ai trimis emailul corect, ce a vrut să spună șeful cu un anumit ton. Colegii tăi par relaxați. Tu faci aceeași muncă dar cu de 3 ori mai mult efort mental.",
               },
               {
                 time: "Seara",
@@ -412,7 +412,7 @@ export default function AnxietateGeneralizataPage() {
                     <circle cx="14" cy="20" r="1" fill="#C4966C" opacity="0.2"/>
                   </svg>
                 ),
-                text: "Ar trebui să te relaxezi. Dar \"relaxare\" înseamnă că nu mai ai ce ocupa mintea. Și când mintea e liberă, grijile vin.",
+                text: "Ar trebui să te relaxezi. Dar relaxarea înseamnă că nu mai ai ce ocupa mintea. Și când mintea e liberă, grijile vin.",
                 detail: "Poate deschizi telefonul ca să le ții la distanță. Poate pui un serial. Orice ca să nu rămâi singur cu gândurile.",
               },
               {
@@ -427,7 +427,7 @@ export default function AnxietateGeneralizataPage() {
                   </svg>
                 ),
                 text: "Partenerul tău nu a răspuns la mesaj de 2 ore. Mintea ta a generat deja 4 scenarii catastrofice.",
-                detail: "Sau partenerul tău e bine, dar tu îl întrebi de 3 ori \"ești sigur?\" pentru că prima confirmare nu a fost suficientă.",
+                detail: "Sau partenerul tău e bine, dar tu îl întrebi de 3 ori dacă e sigur, pentru că prima confirmare nu a fost suficientă.",
               },
               {
                 time: "Somnul",
@@ -454,8 +454,8 @@ export default function AnxietateGeneralizataPage() {
                     <circle cx="24" cy="24" r="10" fill="none" stroke="#C4966C" strokeWidth="1" opacity="0.12" strokeDasharray="3 3"/>
                   </svg>
                 ),
-                text: "Tensiune musculară cronică pe care nici nu o mai observi, pentru că a devenit normală. Maxilarul încleștat. Umerii ridicați. Stomacul strâns.",
-                detail: "Corpul tău trăiește într-o stare permanentă de \"pregătire pentru pericol\" care consumă resurse fizice reale.",
+                text: "Tensiune musculară cronică pe care nici nu o mai observi, pentru că a devenit normală.. maxilarul încleștat, umerii ridicați, stomacul strâns.",
+                detail: "Corpul tău trăiește într-o stare permanentă de pregătire pentru pericol care consumă resurse fizice reale.",
               },
             ].map((scene, i) => (
               <Reveal key={i} delay={i * 100}>
@@ -490,7 +490,7 @@ export default function AnxietateGeneralizataPage() {
                 Cercetătorul Thomas Borkovec a descoperit că îngrijorarea cronică nu apare pentru că simți prea mult, ci tocmai pentru că mintea ta încearcă să evite să simtă.
               </p>
               <p>
-                Gândește-te la ce se întâmplă când te îngrijorezi de sănătate. Rulezi în cap fraze vagi: &quot;dar dacă am ceva?&quot;, &quot;dar dacă nu e bine?&quot;. Sunt gânduri, nu imagini. Și tocmai de asta nu simți nimic foarte intens.. doar acea neliniște difuză de fond.
+                Gândește-te la ce se întâmplă când te îngrijorezi de sănătate. Rulezi în cap fraze vagi despre posibile probleme, despre ce ar putea să nu fie în regulă cu tine. Sunt gânduri, nu imagini. Și tocmai de asta nu simți nimic foarte intens.. doar acea neliniște difuză de fond.
               </p>
             </div>
           </Reveal>
@@ -536,10 +536,10 @@ export default function AnxietateGeneralizataPage() {
               <h3>Cercul vicios al anxietății generalizate</h3>
               <ol className="tag-cycle-list">
                 <li><strong>Un stimul ambiguu apare</strong> (un email neclar, o senzație fizică, o veste)</li>
-                <li><strong>Mintea îl interpretează ca potențial pericol</strong> (&quot;poate e ceva grav&quot;)</li>
-                <li><strong>Îngrijorarea pornește</strong> (scenarii abstracte, &quot;dar dacă...&quot;)</li>
+                <li><strong>Mintea îl interpretează ca potențial pericol</strong> (ar putea fi ceva grav)</li>
+                <li><strong>Îngrijorarea pornește</strong> (scenarii abstracte despre ce ar putea să meargă prost)</li>
                 <li><strong>Îngrijorarea reduce temporar activarea emoțională</strong></li>
-                <li><strong>Creierul învață:</strong> &quot;Îngrijorarea funcționează!&quot;</li>
+                <li><strong>Creierul învață că îngrijorarea funcționează</strong></li>
                 <li><strong>Îngrijorarea devine strategie automată</strong></li>
                 <li><strong>Procesarea emoțională reală nu se produce</strong> niciodată</li>
                 <li><strong>Problema subiacentă rămâne nerezolvată</strong> → mai multă îngrijorare</li>
@@ -625,19 +625,19 @@ export default function AnxietateGeneralizataPage() {
                 <div className="tag-belief-col tag-belief-pos">
                   <h4>Credințe pozitive</h4>
                   <ul>
-                    <li>&quot;Dacă mă îngrijorez, sunt pregătit&quot;</li>
-                    <li>&quot;Îngrijorarea mă ajută să evit surprizele&quot;</li>
-                    <li>&quot;Dacă nu m-aș îngrijora, ar fi neglijent&quot;</li>
-                    <li>&quot;Îngrijorarea arată că îmi pasă&quot;</li>
+                    <li>Dacă mă îngrijorez, sunt pregătit</li>
+                    <li>Îngrijorarea mă ajută să evit surprizele</li>
+                    <li>Dacă nu m-aș îngrijora, ar fi neglijent</li>
+                    <li>Îngrijorarea arată că îmi pasă</li>
                   </ul>
                 </div>
                 <div className="tag-belief-col tag-belief-neg">
                   <h4>Credințe negative</h4>
                   <ul>
-                    <li>&quot;Îngrijorarea mea e incontrolabilă&quot;</li>
-                    <li>&quot;Îmi va face rău fizic&quot;</li>
-                    <li>&quot;O să mă înnebunească&quot;</li>
-                    <li>&quot;Nu sunt în stare să o opresc&quot;</li>
+                    <li>Îngrijorarea mea e incontrolabilă</li>
+                    <li>Îmi va face rău fizic</li>
+                    <li>O să mă înnebunească</li>
+                    <li>Nu sunt în stare să o opresc</li>
                   </ul>
                 </div>
               </div>
@@ -701,15 +701,15 @@ export default function AnxietateGeneralizataPage() {
               <div className="tag-exercise-levels">
                 <div className="tag-exercise-level">
                   <span className="tag-level-label">Nivel 1</span>
-                  <p>&quot;Despre ce mă îngrijorez?&quot; (problema concretă)</p>
+                  <p>Despre ce mă îngrijorez? (problema concretă)</p>
                 </div>
                 <div className="tag-exercise-level">
                   <span className="tag-level-label">Nivel 2</span>
-                  <p>&quot;Ce cred DESPRE faptul că mă îngrijorez?&quot; (meta-convingerea)</p>
+                  <p>Ce cred despre faptul că mă îngrijorez? (meta-convingerea)</p>
                 </div>
               </div>
               <p className="tag-exercise-note">
-                Apoi întreabă-te: &quot;Îngrijorarea mea e cu adevărat incontrolabilă? Am reușit vreodată să mă opresc?&quot; De cele mai multe ori, meta-convingerile nu rezistă la examinare directă.
+                Apoi întreabă-te dacă îngrijorarea ta e cu adevărat incontrolabilă, dacă ai reușit vreodată să te oprești. De cele mai multe ori, meta-convingerile nu rezistă la examinare directă.
               </p>
             </div>
           </Reveal>
@@ -725,7 +725,7 @@ export default function AnxietateGeneralizataPage() {
           </Reveal>
           <Reveal delay={100}>
             <p>
-              Se crede că anxietatea generalizată e &quot;despre griji&quot;. Nu e. Nucleul real e incapacitatea de a tolera faptul că nu știi.
+              Se crede adesea că anxietatea generalizată e despre griji, când de fapt nucleul real e incapacitatea de a tolera faptul că nu știi.
             </p>
           </Reveal>
 
@@ -742,12 +742,12 @@ export default function AnxietateGeneralizataPage() {
 
           <Reveal delay={300}>
             <div className="tag-insight-box">
-              <h3>Îngrijorarea ca &quot;soluție&quot; la incertitudine</h3>
+              <h3>Îngrijorarea ca soluție la incertitudine</h3>
               <p>
-                Îngrijorarea cronică e o tentativă de a elimina incertitudinea din viață. &quot;Dacă mă gândesc la toate scenariile posibile, nu voi fi surprins.&quot; Dar incertitudinea nu poate fi eliminată. E parte din viață.
+                Îngrijorarea cronică e o tentativă de a elimina incertitudinea din viață, convingerea că dacă te gândești la toate scenariile posibile nu vei fi surprins. Dar incertitudinea nu poate fi eliminată. E parte din viață.
               </p>
               <p className="tag-insight-key">
-                Tratamentul eficient nu încearcă să te convingă că &quot;nu se va întâmpla nimic rău&quot;. Te învață să tolerezi faptul că nu știi și să funcționezi în ciuda incertitudinii.
+                Tratamentul eficient nu încearcă să te convingă că nu se va întâmpla nimic rău. Te învață să tolerezi faptul că nu știi și să funcționezi în ciuda incertitudinii.
               </p>
             </div>
           </Reveal>
@@ -759,7 +759,7 @@ export default function AnxietateGeneralizataPage() {
         <div className="tag-container tag-container-narrow">
           <Reveal>
             <h2>Comportamentele de siguranță</h2>
-            <p className="tag-behaviors-subtitle">Ce faci &quot;ca să faci față&quot; și de fapt menții anxietatea activă</p>
+            <p className="tag-behaviors-subtitle">Ce faci ca să faci față și de fapt menții anxietatea activă</p>
           </Reveal>
 
           <div className="tag-behaviors-grid">
@@ -775,7 +775,7 @@ export default function AnxietateGeneralizataPage() {
                   </svg>
                 ),
                 title: "Căutarea reasigurării",
-                text: "\"Ești sigur că e ok?\" Fiecare confirmare aduce ușurare pentru câteva secunde. Apoi îndoiala revine.",
+                text: "Întrebi constant dacă totul e în regulă, dacă ceva nu e grav. Fiecare confirmare aduce ușurare pentru câteva secunde, apoi îndoiala revine.",
                 key: "Cu cât primești mai multă reasigurare, cu atât ai nevoie de mai multă.",
               },
               {
@@ -800,7 +800,7 @@ export default function AnxietateGeneralizataPage() {
                 ),
                 title: "Verificarea obsesivă",
                 text: "Recitești email-ul de 5 ori. Verifici contul bancar de 3 ori pe zi. Cauți pe Google fiecare simptom fizic.",
-                key: "\"Doar ca să fiu sigur.\" Dar niciodată nu ești destul de sigur.",
+                key: "Îți spui că e doar ca să fii sigur, dar niciodată nu ești destul de sigur.",
               },
               {
                 icon: (
@@ -813,7 +813,7 @@ export default function AnxietateGeneralizataPage() {
                   </svg>
                 ),
                 title: "Evitarea deciziilor",
-                text: "Amâni orice decizie care conține incertitudine. \"Mai gândesc.\" \"Mai vedem.\"",
+                text: "Amâni orice decizie care conține incertitudine, mereu pe motiv că mai trebuie să te gândești, că mai vrei să vezi.",
                 key: "Lista de decizii neluate devine ea însăși sursă de îngrijorare.",
               },
               {
@@ -826,7 +826,7 @@ export default function AnxietateGeneralizataPage() {
                   </svg>
                 ),
                 title: "Supraanaliza retroactivă",
-                text: "Derulezi mental conversațiile de ieri. \"Ce-a vrut să spună?\" \"Am spus ceva greșit?\"",
+                text: "Derulezi mental conversațiile de ieri, analizând ce a vrut să spună cealaltă persoană sau dacă nu cumva ai spus ceva greșit.",
                 key: "Ore de procesare retroactivă care nu produce nicio concluzie.",
               },
               {
@@ -839,7 +839,7 @@ export default function AnxietateGeneralizataPage() {
                 ),
                 title: "Îngrijorarea în sine",
                 text: "Paradoxal, îngrijorarea e ea însăși un comportament de siguranță.",
-                key: "\"Dacă mă îngrijorez, sunt pregătit.\" Creierul tratează îngrijorarea ca pe o formă de protecție.",
+                key: "Crezi că dacă te îngrijorezi ești pregătit. Creierul tratează îngrijorarea ca pe o formă de protecție.",
               },
             ].map((b, i) => (
               <Reveal key={i} delay={i * 80}>
@@ -898,7 +898,7 @@ export default function AnxietateGeneralizataPage() {
                   Gabbard propune o imagine care merită reținută: îngrijorarea difuză, cronică, pe care o simți la suprafață ascunde conflicte mai specifice și mai profunde sub apă.
                 </p>
                 <p>
-                  Întrebările care contează nu sunt &quot;cum reduc îngrijorarea?&quot; ci &quot;ce funcție are îngrijorarea?&quot; și &quot;ce s-ar întâmpla dacă m-aș opri?&quot;
+                  Întrebările care contează sunt despre ce funcție are îngrijorarea în viața ta și ce s-ar întâmpla dacă te-ai opri, mai degrabă decât despre cum s-o reduci.
                 </p>
               </div>
             </div>
@@ -910,7 +910,7 @@ export default function AnxietateGeneralizataPage() {
             <div className="tag-under">
               <h3>Sub îngrijorare: furia, tristețea, rușinea</h3>
               <p>
-                Când întreb un pacient cu anxietate generalizată &quot;dacă nu te-ai mai îngrijora deloc, ce ai simți?&quot;, răspunsul rareori e &quot;aș fi bine&quot;.
+                Când întreb un pacient cu anxietate generalizată ce ar simți dacă nu s-ar mai îngrijora deloc, răspunsul rareori e că s-ar simți bine.
               </p>
               <p>
                 Cel mai des e un moment de confuzie, urmat de ceva neașteptat: furie. Sau tristețe. Sau rușine. Sau un gol pe care nu-l pot numi.
@@ -921,12 +921,12 @@ export default function AnxietateGeneralizataPage() {
           <Reveal delay={350}>
             <div className="tag-case">
               <div className="tag-case-label">Studiu de caz</div>
-              <h3>Pierre: banii nu erau despre bani</h3>
+              <h3>Anton: banii nu erau despre bani</h3>
               <p>
-                Pierre era funcționar public, proaspăt pensionat, cu îngrijorare cronică despre finanțe. A încercat soluția logică: a deschis o mică afacere. Îngrijorarea nu a scăzut. A crescut.
+                Anton era funcționar public, proaspăt pensionat, cu îngrijorare cronică despre finanțe. A încercat soluția logică: a deschis o mică afacere. Îngrijorarea nu a scăzut. A crescut.
               </p>
               <p>
-                Motivul: îngrijorarea lui Pierre nu era despre bani. Era despre incertitudinea existențială a pensionării. Pierderea identității profesionale, a structurii zilnice, a rolului social. Banii erau vehiculul. Sub ei era întrebarea pe care Pierre nu o putea pune cu voce tare: &quot;Cine mai sunt eu dacă nu mai lucrez?&quot;
+                Motivul: îngrijorarea lui Anton nu era despre bani. Era despre incertitudinea existențială a pensionării. Pierderea identității profesionale, a structurii zilnice, a rolului social. Banii erau vehiculul. Sub ei era întrebarea pe care Anton nu o putea pune cu voce tare: &quot;Cine mai sunt eu dacă nu mai lucrez?&quot;
               </p>
               <p className="tag-case-key">
                 A trata banii fără a adresa identitatea e ca și cum ai trata febra fără a căuta infecția.
@@ -945,7 +945,7 @@ export default function AnxietateGeneralizataPage() {
                   {
                     emoji: "🛡️",
                     title: "Părinți supra-protectivi",
-                    text: "\"Ai grijă!\", \"E periculos!\" Copilul învață că lumea e un loc periculos și că trebuie să fie mereu pregătit.",
+                    text: "Părinții îi repetă constant să fie atent, că totul e periculos. Copilul învață că lumea e un loc periculos și că trebuie să fie mereu pregătit.",
                   },
                   {
                     emoji: "🔄",
@@ -955,7 +955,7 @@ export default function AnxietateGeneralizataPage() {
                   {
                     emoji: "⚡",
                     title: "Pedepse imprevizibile",
-                    text: "Când copilul nu poate anticipa ce va declanșa furia părintelui, dezvoltă un sistem de \"scanare permanentă\". Hipervigilența rămâne activă și la 30, 40, 50 de ani.",
+                    text: "Când copilul nu poate anticipa ce va declanșa furia părintelui, dezvoltă un sistem de scanare permanentă. Hipervigilența rămâne activă și la 30, 40, 50 de ani.",
                   },
                   {
                     emoji: "💔",
@@ -999,7 +999,7 @@ export default function AnxietateGeneralizataPage() {
           <Reveal delay={200}>
             <div className="tag-treatment-components">
               <h3>Restructurarea relației cu îngrijorarea</h3>
-              <p>Tratamentul anxietății generalizate nu înseamnă &quot;să nu te mai îngrijorezi&quot;. Înseamnă să schimbi relația cu îngrijorarea.</p>
+              <p>Tratamentul anxietății generalizate schimbă relația ta cu îngrijorarea. Nu încearcă să o facă să dispară, pentru că îngrijorarea în sine nu e problema.</p>
               <div className="tag-treatment-grid">
                 {[
                   {
@@ -1010,7 +1010,7 @@ export default function AnxietateGeneralizataPage() {
                   {
                     num: "2",
                     title: "Adresarea meta-convingerilor",
-                    text: "Examinezi direct credințele despre îngrijorare: \"E cu adevărat incontrolabilă? Mi-a făcut vreodată rău fizic?\"",
+                    text: "Examinezi direct credințele despre îngrijorare.. dacă e cu adevărat incontrolabilă și dacă ți-a făcut vreodată rău fizic.",
                   },
                   {
                     num: "3",
@@ -1048,9 +1048,9 @@ export default function AnxietateGeneralizataPage() {
                 {[
                   { step: "Aloci 15 minute pe zi, la aceeași oră, în același loc" },
                   { step: "Te îngrijorezi deliberat și complet despre un singur subiect" },
-                  { step: "Urmezi firul catastrofic până la capăt: \"Ce e cel mai rău care se poate întâmpla?\"" },
+                  { step: "Urmezi firul catastrofic până la capăt, întrebându-te care e cel mai rău scenariu care s-ar putea întâmpla" },
                   { step: "Continui până ajungi la un plan, oricât de rudimentar" },
-                  { step: "Restul zilei, când apare o îngrijorare, o notezi și o amâni: \"Am slot la 18:00\"" },
+                  { step: "Restul zilei, când apare o îngrijorare, o notezi și o amâni până la slotul de mai târziu" },
                 ].map((s, i) => (
                   <div key={i} className="tag-wt-step">
                     <span className="tag-wt-step-num">{i + 1}</span>
@@ -1061,7 +1061,7 @@ export default function AnxietateGeneralizataPage() {
               <div className="tag-wt-why">
                 <h4>De ce funcționează:</h4>
                 <ul>
-                  <li>Demonstrează că îngrijorarea NU e incontrolabilă (ai reușit să o amâni)</li>
+                  <li>Demonstrează că îngrijorarea nu e incontrolabilă (ai reușit să o amâni)</li>
                   <li>Transformă procesul cronic difuz în activitate delimitată</li>
                   <li>Forțează vizualizarea completă a scenariului</li>
                   <li>Permite elaborarea unui plan de coping</li>
@@ -1076,7 +1076,7 @@ export default function AnxietateGeneralizataPage() {
             <div className="tag-meds">
               <h3>De ce medicamentele singure nu sunt suficiente</h3>
               <p>
-                SSRI-urile pot reduce simptomele anxietății generalizate. Dar beneficiile se mențin doar cât iei medicamentul. La oprire, simptomele pot reveni.
+                Antidepresivele din clasa SSRI (inhibitori selectivi ai recaptării serotoninei) pot reduce simptomele anxietății generalizate. Dar beneficiile se mențin doar cât iei medicamentul. La oprire, simptomele pot reveni.
               </p>
               <p>
                 Medicamentul reduce anxietatea fără să te învețe să tolerezi incertitudinea sau să procesezi emoțiile evitate. Combinația optimă: terapia cognitiv-comportamentală ca bază, cu SSRI ca adjuvant dacă simptomele sunt foarte severe.
@@ -1101,8 +1101,8 @@ export default function AnxietateGeneralizataPage() {
               {
                 num: "1",
                 title: "Jurnalul P/N (productiv / neproductiv)",
-                text: "Timp de o săptămână, de fiecare dată când te prinzi îngrijorat, notează subiectul și pune eticheta P sau N folosind testul celor 4 întrebări.",
-                result: "Dacă peste 70% din îngrijorări sunt N, problema ta nu e conținutul grijilor, ci intoleranța la incertitudine.",
+                text: "Timp de o săptămână, de fiecare dată când te prinzi îngrijorat, notează subiectul și pune eticheta productivă sau neproductivă folosind testul celor 4 întrebări.",
+                result: "Dacă peste 70% din îngrijorări sunt neproductive, problema ta nu e conținutul grijilor, ci intoleranța la incertitudine.",
               },
               {
                 num: "2",
@@ -1113,20 +1113,20 @@ export default function AnxietateGeneralizataPage() {
               {
                 num: "3",
                 title: "Ce e sub îngrijorare?",
-                text: "Când te prinzi în spirala de griji, oprește-te și pune-ți întrebarea: \"Dacă nu m-aș mai îngrijora deloc, ce aș simți acum?\"",
+                text: "Când te prinzi în spirala de griji, oprește-te și întreabă-te ce ai simți dacă nu te-ai mai îngrijora deloc.",
                 result: "Nu căuta un răspuns logic. Observă ce apare în corp. Permite-ți 2 minute să simți acea emoție brută.",
               },
               {
                 num: "4",
                 title: "Scannerul de siguranță",
                 text: "Anxietatea generalizată produce un filtru care vede doar amenințarea. Când observi că scanezi mediul pentru pericole, inversează deliberat.",
-                result: "\"Ce e sigur acum? Ce funcționează bine? Ce nu e în pericol?\" Nu confunda asta cu gândirea pozitivă.. e o corecție a unui filtru calibrat greșit.",
+                result: "Caută activ ce e sigur acum, ce funcționează bine, ce nu e în pericol. Nu confunda asta cu gândirea pozitivă.. e o corecție a unui filtru calibrat greșit.",
               },
               {
                 num: "5",
                 title: "Relaxarea musculară progresivă",
                 text: "Tensionezi un grup muscular 5 secunde, apoi relaxezi 15 secunde, de la picioare la cap. Fă-o seara, înainte de somn. 15 minute.",
-                result: "Nu încerci să \"nu te gândești la nimic\". Doar muți atenția pe corp.",
+                result: "Scopul e să muți atenția pe corp, nu să-ți golești mintea complet.",
               },
             ].map((ex, i) => (
               <Reveal key={i} delay={i * 120}>
@@ -1192,7 +1192,7 @@ export default function AnxietateGeneralizataPage() {
             <div className="tag-faq-list">
               <FAQ
                 question="Dacă mă îngrijorez mereu, nu înseamnă că sunt doar o persoană anxioasă?"
-                answer={`Anxietatea generalizată nu e o trăsătură de personalitate, ci o condiție cu mecanisme specifice (meta-worry, intoleranța la incertitudine, evitare emoțională) care pot fi identificate și tratate. Diferența dintre "sunt anxios din fire" și "am anxietate generalizată" e că prima te oprește din a căuta ajutor, iar a doua deschide o cale de tratament.`}
+                answer={`Anxietatea generalizată nu e o trăsătură de personalitate, ci o condiție cu mecanisme specifice (meta-worry, intoleranța la incertitudine, evitare emoțională) care pot fi identificate și tratate. Diferența între a crede că ești anxios din fire și a înțelege că ai anxietate generalizată e că prima te oprește din a căuta ajutor, iar a doua deschide o cale de tratament.`}
               />
               <FAQ
                 question="De ce grijile mele sar de la un subiect la altul?"
