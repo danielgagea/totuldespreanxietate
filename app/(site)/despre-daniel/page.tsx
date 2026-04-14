@@ -305,13 +305,14 @@ export default function DespreDesignPage() {
           <p className="about-body">
             Majoritatea oamenilor care ajung la mine vin cu aceleași întrebări..
             de ce îmi bate inima așa, am ceva grav, de ce nu trece.
+            Mulți trec prin <Link href="/atac-de-panica" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>atacuri de panică</Link> fără să știe ce sunt.
             Au fost la cardiolog, la neurolog, la urgențe. Analizele sunt
             normale, dar ei se simt tot rău.
           </p>
           <p className="about-body">
             Am ales să mă specializez în anxietate pentru că am văzut cât de
             mult suferă oamenii nu doar din cauza simptomelor, ci din cauza
-            confuziei. Nimeni nu le-a explicat ce se întâmplă, de ce se
+            confuziei. Fie că e vorba de <Link href="/tipuri/anxietate-generalizata" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>anxietate generalizată</Link>, de <Link href="/tipuri/anxietate-sociala" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>anxietate socială</Link> sau de <Link href="/tipuri/fobii-specifice" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>fobii</Link>, nimeni nu le-a explicat ce se întâmplă, de ce se
             întâmplă, și mai ales, ce vrea să le spună psihicul lor prin aceste
             simptome.
           </p>

@@ -133,7 +133,7 @@ export default function FobiiSpecificePage() {
             Ce sunt fobiile specifice
           </h2>
           <p style={{ marginBottom: 16 }}>
-            O fobie specifică este o frică intensă și persistentă față de un obiect sau o situație concretă, disproporționată față de pericolul real, care duce la evitare activă și afectează viața de zi cu zi. Fobiile specifice sunt cea mai frecventă tulburare de anxietate, afectând <strong>7-12.5% din populație</strong>.
+            O fobie specifică este o frică intensă și persistentă față de un obiect sau o situație concretă, disproporționată față de pericolul real, care duce la evitare activă și afectează viața de zi cu zi. Fobiile specifice sunt cea mai frecventă tulburare de anxietate (mai frecventă decât <Link href="/tipuri/anxietate-sociala" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>anxietatea socială</Link> sau <Link href="/tipuri/anxietate-generalizata" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>anxietatea generalizată</Link>), afectând <strong>7-12.5% din populație</strong>.
           </p>
           <p style={{ marginBottom: 32 }}>
             Au cel mai bun prognostic din toate tulburările de anxietate, cu <strong>80-95% rată de succes</strong> la tratamentul prin expunere, adesea în doar 1-12 ședințe.
@@ -193,7 +193,7 @@ export default function FobiiSpecificePage() {
           </h2>
 
           <p style={{ color: "rgba(250,247,242,0.8)", marginBottom: 24, fontSize: 18 }}>
-            Sistemul tău de alarmă intern funcționează perfect. Problema e că <strong style={{ color: "#FAF7F2" }}>reacționează la fel de intens</strong> și la un pericol real, și la ceva inofensiv. Nu e un defect, doar e calibrat prea sensibil. Și pentru că reacția e atât de neplăcută, ai învățat să eviți orice ar putea-o declanșa.
+            Sistemul tău de alarmă intern funcționează perfect. Problema e că <strong style={{ color: "#FAF7F2" }}>reacționează la fel de intens</strong> și la un pericol real, și la ceva inofensiv (la fel ca într-un <Link href="/atac-de-panica" style={{ color: "#C4966C", textDecoration: "underline", textUnderlineOffset: 3 }}>atac de panică</Link>). Nu e un defect, doar e calibrat prea sensibil. Și pentru că reacția e atât de neplăcută, ai învățat să eviți orice ar putea-o declanșa.
           </p>
 
           <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 22, fontWeight: 500, color: "#FAF7F2", marginBottom: 16, marginTop: 40 }}>

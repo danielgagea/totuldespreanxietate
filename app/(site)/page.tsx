@@ -76,13 +76,13 @@ export default function HomePage() {
             {/* Text */}
             <div className="flex-1 text-center md:text-left">
               <p className="text-xs font-medium uppercase tracking-[0.15em] mb-6" style={{ color: "var(--color-text-secondary)" }}>
-                De Daniel Gagea, psiholog clinician, psihoterapeut
+                De <Link href="/despre-daniel" style={{ color: "inherit", textDecoration: "none" }}>Daniel Gagea</Link>, psiholog clinician, psihoterapeut
               </p>
               <h1 className="text-[28px] md:text-[42px] leading-[1.2] mb-6" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}>
                 Anxietatea ta are un sens. Aici îl înțelegi.
               </h1>
               <p className="text-[17px] md:text-[19px] leading-[1.7] mb-10" style={{ color: "var(--color-text-secondary)" }}>
-                Informații complete despre anxietate, scrise de specialiști în anxietate. Ca să te recunoști, să înțelegi ce ți se întâmplă și să știi ce ai de făcut.
+                Informații complete despre anxietate, scrise de specialiști în anxietate. De la <Link href="/atac-de-panica" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: 3 }}>atacul de panică</Link> la <Link href="/tipuri/anxietate-generalizata" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: 3 }}>anxietatea generalizată</Link>, ca să te recunoști, să înțelegi ce ți se întâmplă și să știi ce ai de făcut.
               </p>
               <Link href="#tipuri" className="inline-block px-8 py-4 rounded-lg text-[16px] font-semibold text-white" style={{ backgroundColor: "var(--color-secondary)" }}>
                 Descoperă ce tip de anxietate ai &rarr;
@@ -747,10 +747,10 @@ export default function HomePage() {
                 Psiholog clinician și psihoterapeut cu peste 10 ani de experiență și peste 500 de clienți.
               </p>
               <p className="text-[17px] leading-[1.75] mb-4" style={{ color: "var(--color-text)" }}>
-                A construit acest site din aceeași frustrare pe care o au cei care caută răspunsuri.. cele mai multe resurse din România despre anxietate sunt incomplete, superficiale și pline de sfaturi generice.
+                A construit acest site din aceeași frustrare pe care o au cei care caută răspunsuri.. cele mai multe resurse din România despre anxietate, de la <Link href="/tipuri/anxietate-sociala" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>anxietatea socială</Link> la <Link href="/tipuri/tspt" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>stresul post-traumatic</Link>, sunt incomplete, superficiale și pline de sfaturi generice.
               </p>
               <p className="text-[17px] leading-[1.75] mb-6" style={{ color: "var(--color-text)" }}>
-                Abordarea lui este diferită.. nu lucrează pe simptome, ci pe cauze. Te ajută să înțelegi de ce corpul și mintea ta au ajuns să funcționeze așa, și ce trebuie să se schimbe la rădăcină.
+                Abordarea lui este diferită.. fie că trăiești <Link href="/tipuri/toc" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>gânduri obsesive</Link>, <Link href="/tipuri/fobii-specifice" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>fobii</Link> sau altceva, nu lucrează pe simptome, ci pe cauze. Te ajută să înțelegi de ce corpul și mintea ta au ajuns să funcționeze așa, și ce trebuie să se schimbe la rădăcină.
               </p>
               <Link
                 href="/despre-daniel"
