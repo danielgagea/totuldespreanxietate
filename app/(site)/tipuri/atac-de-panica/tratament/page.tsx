@@ -7,11 +7,16 @@ export const metadata: Metadata = {
   description:
     "85-90% rată de recuperare cu TCC în 12-15 ședințe. Când să ceri ajutor, ce te oprește, și ce funcționează. De Daniel Gagea, psiholog clinician.",
   authors: [{ name: "Daniel Gagea" }],
+  alternates: {
+    canonical: "https://totuldespreanxietate.ro/tipuri/atac-de-panica/tratament",
+  },
   openGraph: {
     title: "Tratament atac de panică. Când și cum să ceri ajutor",
     description:
       "85-90% rată de recuperare cu TCC în 12-15 ședințe. Când să ceri ajutor, ce te oprește, și ce funcționează.",
     type: "article",
+    locale: "ro_RO",
+    siteName: "Totul despre Anxietate",
   },
 };
 
@@ -24,11 +29,11 @@ const jsonLd = {
   author: {
     "@type": "Person",
     name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician",
+    jobTitle: "Psiholog clinician, psihoterapeut",
     url: "https://totuldespreanxietate.ro/despre-daniel/",
   },
   datePublished: "2026-03-19",
-  dateModified: "2026-03-19",
+  dateModified: "2026-04-13",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":

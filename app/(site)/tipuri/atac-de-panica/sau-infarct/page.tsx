@@ -7,11 +7,16 @@ export const metadata: Metadata = {
   description:
     "Diferențele dintre atacul de panică și infarct. Când mergi la medic și când e panică. De Daniel Gagea, psiholog clinician.",
   authors: [{ name: "Daniel Gagea" }],
+  alternates: {
+    canonical: "https://totuldespreanxietate.ro/tipuri/atac-de-panica/sau-infarct",
+  },
   openGraph: {
     title: "Atac de panică sau infarct? Cum faci diferența",
     description:
       "Diferențele dintre atacul de panică și infarct. Când mergi la medic și când e panică.",
     type: "article",
+    locale: "ro_RO",
+    siteName: "Totul despre Anxietate",
   },
 };
 
@@ -24,11 +29,11 @@ const jsonLd = {
   author: {
     "@type": "Person",
     name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician",
+    jobTitle: "Psiholog clinician, psihoterapeut",
     url: "https://totuldespreanxietate.ro/despre-daniel/",
   },
   datePublished: "2026-03-19",
-  dateModified: "2026-03-19",
+  dateModified: "2026-04-13",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":

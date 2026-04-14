@@ -7,11 +7,16 @@ export const metadata: Metadata = {
   description:
     "5 pași concreți pentru momentul unui atac de panică și când să ceri ajutor profesionist. Ghid complet de Daniel Gagea, psiholog clinician, psihoterapeut. De Daniel Gagea.",
   authors: [{ name: "Daniel Gagea" }],
+  alternates: {
+    canonical: "https://totuldespreanxietate.ro/atac-de-panica/actioneaza",
+  },
   openGraph: {
     title: "Ce faci la un atac de panică + Când ceri ajutor",
     description:
       "5 pași concreți pentru momentul unui atac de panică și când să ceri ajutor profesionist. Ghid complet de Daniel Gagea, psiholog clinician, psihoterapeut.",
     type: "article",
+    locale: "ro_RO",
+    siteName: "Totul despre Anxietate",
   },
 };
 
@@ -24,11 +29,11 @@ const jsonLd = {
   author: {
     "@type": "Person",
     name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician",
+    jobTitle: "Psiholog clinician, psihoterapeut",
     url: "https://totuldespreanxietate.ro/despre-daniel/",
   },
   datePublished: "2026-03-19",
-  dateModified: "2026-03-19",
+  dateModified: "2026-04-13",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":

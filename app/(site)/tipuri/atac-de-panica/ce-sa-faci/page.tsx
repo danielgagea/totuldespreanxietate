@@ -7,11 +7,16 @@ export const metadata: Metadata = {
   description:
     "5 pași concreți pentru momentul unui atac de panică. Ce ajută și ce NU ajută. Ghid practic de Daniel Gagea, psiholog clinician.",
   authors: [{ name: "Daniel Gagea" }],
+  alternates: {
+    canonical: "https://totuldespreanxietate.ro/tipuri/atac-de-panica/ce-sa-faci",
+  },
   openGraph: {
     title: "Ce faci în momentul unui atac de panică. 5 pași",
     description:
       "5 pași concreți pentru momentul unui atac de panică. Ce ajută și ce NU ajută. Ghid practic.",
     type: "article",
+    locale: "ro_RO",
+    siteName: "Totul despre Anxietate",
   },
 };
 
@@ -24,11 +29,11 @@ const jsonLd = {
   author: {
     "@type": "Person",
     name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician",
+    jobTitle: "Psiholog clinician, psihoterapeut",
     url: "https://totuldespreanxietate.ro/despre-daniel/",
   },
   datePublished: "2026-03-19",
-  dateModified: "2026-03-19",
+  dateModified: "2026-04-13",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":

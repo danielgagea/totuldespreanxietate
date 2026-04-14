@@ -8,11 +8,16 @@ export const metadata: Metadata = {
   description:
     "De ce ți se întâmplă tocmai ție? Perspectiva clinică a lui Daniel Gagea despre mesajul din spatele atacului de panică.",
   authors: [{ name: "Daniel Gagea" }],
+  alternates: {
+    canonical: "https://totuldespreanxietate.ro/tipuri/atac-de-panica/ce-vrea-sa-spuna-psihicul",
+  },
   openGraph: {
     title: "Ce vrea să spună psihicul prin atacul de panică",
     description:
       "De ce ți se întâmplă tocmai ție? Perspectiva clinică a lui Daniel Gagea despre mesajul din spatele atacului de panică.",
     type: "article",
+    locale: "ro_RO",
+    siteName: "Totul despre Anxietate",
   },
 };
 
@@ -25,11 +30,11 @@ const jsonLd = {
   author: {
     "@type": "Person",
     name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician",
+    jobTitle: "Psiholog clinician, psihoterapeut",
     url: "https://totuldespreanxietate.ro/despre-daniel/",
   },
   datePublished: "2026-03-19",
-  dateModified: "2026-03-19",
+  dateModified: "2026-04-13",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":

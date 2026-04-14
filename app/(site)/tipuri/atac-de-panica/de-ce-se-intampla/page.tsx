@@ -3,15 +3,20 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "De ce se întâmplă atacurile de panică. Mecanismul explicat | Totul despre Anxietate",
+    "De ce se întâmplă atacurile de panică. Mecanismul explicat",
   description:
     "De ce ai atacuri de panică: alarma falsă, cercul vicios, declanșatori și vulnerabilitate. Explicat pe bază de cercetare de Daniel Gagea.",
   authors: [{ name: "Daniel Gagea" }],
+  alternates: {
+    canonical: "https://totuldespreanxietate.ro/tipuri/atac-de-panica/de-ce-se-intampla",
+  },
   openGraph: {
     title: "De ce se întâmplă atacurile de panică. Mecanismul explicat",
     description:
-      "De ce ai atacuri de panică: alarma falsă, cercul vicios, declanșatori și vulnerabilitate. Explicat pe bază de cercetare.",
+      "De ce ai atacuri de panică: alarma falsă, cercul vicios, declanșatori și vulnerabilitate. De Daniel Gagea.",
     type: "article",
+    locale: "ro_RO",
+    siteName: "Totul despre Anxietate",
   },
 };
 
@@ -20,15 +25,15 @@ const jsonLd = {
   "@type": "Article",
   headline: "De ce se întâmplă atacurile de panică. Mecanismul explicat",
   description:
-    "De ce ai atacuri de panică: alarma falsă, cercul vicios, declanșatori și vulnerabilitate. Explicat pe bază de cercetare de Daniel Gagea.",
+    "De ce ai atacuri de panică: alarma falsă, cercul vicios, declanșatori și vulnerabilitate. De Daniel Gagea.",
   author: {
     "@type": "Person",
     name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician",
+    jobTitle: "Psiholog clinician, psihoterapeut",
     url: "https://totuldespreanxietate.ro/despre-daniel/",
   },
   datePublished: "2026-03-19",
-  dateModified: "2026-03-19",
+  dateModified: "2026-04-13",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":

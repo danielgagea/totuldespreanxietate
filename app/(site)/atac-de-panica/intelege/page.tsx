@@ -3,15 +3,20 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "De ce ai atacuri de panică. Mecanismul și mesajul din spate | Totul despre Anxietate",
+    "De ce ai atacuri de panică. Mecanismul din spate",
   description:
-    "De ce se întâmplă atacurile de panică: alarma falsă, cercul vicios, ce vrea să spună psihicul, și frica de următorul atac. De Daniel Gagea, psiholog clinician, psihoterapeut.",
+    "De ce se întâmplă atacurile de panică: alarma falsă, cercul vicios, mesajul psihicului și frica de următorul atac. De Daniel Gagea, psihoterapeut.",
   authors: [{ name: "Daniel Gagea" }],
+  alternates: {
+    canonical: "https://totuldespreanxietate.ro/atac-de-panica/intelege",
+  },
   openGraph: {
-    title: "De ce ai atacuri de panică. Mecanismul și mesajul din spate",
+    title: "De ce ai atacuri de panică. Mecanismul din spate",
     description:
-      "De ce se întâmplă atacurile de panică: alarma falsă, cercul vicios, ce vrea să spună psihicul, și frica de următorul atac.",
+      "De ce se întâmplă atacurile de panică: alarma falsă, cercul vicios, mesajul psihicului și frica de următorul atac.",
     type: "article",
+    locale: "ro_RO",
+    siteName: "Totul despre Anxietate",
   },
 };
 
@@ -19,17 +24,17 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "De ce ai atacuri de panică. Mecanismul și mesajul din spate",
+    "De ce ai atacuri de panică. Mecanismul din spate",
   description:
-    "De ce se întâmplă atacurile de panică: alarma falsă, cercul vicios, ce vrea să spună psihicul, și frica de următorul atac. De Daniel Gagea, psiholog clinician, psihoterapeut.",
+    "De ce se întâmplă atacurile de panică: alarma falsă, cercul vicios, mesajul psihicului și frica de următorul atac. De Daniel Gagea, psihoterapeut.",
   author: {
     "@type": "Person",
     name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician",
+    jobTitle: "Psiholog clinician, psihoterapeut",
     url: "https://totuldespreanxietate.ro/despre-daniel/",
   },
   datePublished: "2026-03-19",
-  dateModified: "2026-03-19",
+  dateModified: "2026-04-13",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":

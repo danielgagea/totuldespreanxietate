@@ -6,11 +6,16 @@ export const metadata: Metadata = {
   description:
     "Ce este un atac de panică, de ce se întâmplă, ce simți, și ce poți face. Ghid complet bazat pe cercetare, de Daniel Gagea, psiholog clinician, psihoterapeut.",
   authors: [{ name: "Daniel Gagea" }],
+  alternates: {
+    canonical: "https://totuldespreanxietate.ro/atac-de-panica",
+  },
   openGraph: {
     title: "Atacul de panică. Ghid complet",
     description:
       "Ce este un atac de panică, de ce se întâmplă, ce simți, și ce poți face.",
     type: "article",
+    locale: "ro_RO",
+    siteName: "Totul despre Anxietate",
   },
 };
 
@@ -25,11 +30,11 @@ const jsonLd = {
       author: {
         "@type": "Person",
         name: "Daniel Gagea",
-        jobTitle: "Psiholog clinician",
+        jobTitle: "Psiholog clinician, psihoterapeut",
         url: "https://totuldespreanxietate.ro/despre-daniel/",
       },
       datePublished: "2026-03-18",
-      dateModified: "2026-03-19",
+      dateModified: "2026-04-13",
       mainEntityOfPage: {
         "@type": "WebPage",
         "@id": "https://totuldespreanxietate.ro/atac-de-panica/",
@@ -59,7 +64,7 @@ const jsonLd = {
     {
       "@type": "Person",
       name: "Daniel Gagea",
-      jobTitle: "Psiholog clinician",
+      jobTitle: "Psiholog clinician, psihoterapeut",
       description:
         "Psiholog clinician cu peste 10 ani de experien\u021b\u0103 \u0219i peste 500 de clien\u021bi.",
       url: "https://totuldespreanxietate.ro/despre-daniel/",
