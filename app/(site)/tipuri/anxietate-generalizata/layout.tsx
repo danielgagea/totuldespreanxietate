@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-const title = "Anxietatea generalizată (TAG) .. Ghid complet | Totul despre Anxietate";
+const title = "Anxietatea generalizată (TAG) .. Ghid complet";
 const description =
-  "Ce este anxietatea generalizată, de ce mintea ta nu se oprește, mecanismul îngrijorării și ce funcționează ca tratament. Ghid complet de Daniel Gagea, psiholog clinician, psihoterapeut.";
+  "Ce este anxietatea generalizată, de ce mintea nu se oprește și ce funcționează ca tratament. De Daniel Gagea, psiholog clinician, psihoterapeut.";
 const url = "https://totuldespreanxietate.ro/tipuri/anxietate-generalizata";
 
 export const metadata: Metadata = {

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-const title = "Fobia de inaltimi (acrofobie) .. Ghid complet 2026 | Totul despre Anxietate";
+const title = "Fobia de înălțimi (acrofobie) .. Ghid complet 2026";
 const description =
-  "De ce ameteala la inaltime e reala, ce e chemarea vidului si cum se trateaza fobia de inaltimi. 80-95% rata de succes. De Daniel Gagea, psiholog clinician, psihoterapeut.";
+  "De ce ameteala la inaltime e reala, ce e chemarea vidului si cum se trateaza fobia de inaltimi. 80-95% rata de succes. De Daniel Gagea, psihoterapeut.";
 const url = "https://totuldespreanxietate.ro/tipuri/fobii-specifice/fobie-de-inaltime";
 
 export const metadata: Metadata = {

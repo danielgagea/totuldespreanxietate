@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-const title = "Stresul post-traumatic (TSPT) .. Ghid complet | Totul despre Anxietate";
+const title = "Stresul post-traumatic (TSPT) .. Ghid complet";
 const description =
-  "Ce este stresul post-traumatic, de ce trecutul se simte ca prezent, ce se întâmplă în creier și ce funcționează ca tratament. Ghid complet de Daniel Gagea, psiholog clinician, psihoterapeut.";
+  "Ce este stresul post-traumatic, de ce trecutul se simte ca prezent și ce funcționează ca tratament. De Daniel Gagea, psiholog clinician, psihoterapeut.";
 const url = "https://totuldespreanxietate.ro/tipuri/tspt";
 
 export const metadata: Metadata = {

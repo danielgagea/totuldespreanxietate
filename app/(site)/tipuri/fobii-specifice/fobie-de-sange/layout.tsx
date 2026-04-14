@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-const title = "Fobia de sange si ace .. Ghid complet 2026 | Totul despre Anxietate";
+const title = "Fobia de sânge și ace .. Ghid complet 2026";
 const description =
-  "De ce lesinezi la vederea sangelui, de ce relaxarea nu functioneaza si ce e tensiunea activa. Ghid complet cu 80-90% rata de succes. De Daniel Gagea, psiholog clinician, psihoterapeut.";
+  "De ce lesinezi la vederea sangelui, de ce relaxarea nu functioneaza si ce e tensiunea activa. 80-90% rata de succes. De Daniel Gagea, psihoterapeut.";
 const url = "https://totuldespreanxietate.ro/tipuri/fobii-specifice/fobie-de-sange";
 
 export const metadata: Metadata = {

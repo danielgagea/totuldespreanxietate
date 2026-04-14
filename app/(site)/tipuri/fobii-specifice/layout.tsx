@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-const title = "Fobii specifice .. Ghid complet 2026 | Totul despre Anxietate";
+const title = "Fobii specifice .. Ghid complet 2026";
 const description =
-  "Ce sunt fobiile specifice, de ce apar, cum funcționează și cum se tratează. Ghid complet cu 80-95% rată de succes la tratament. De Daniel Gagea, psiholog clinician, psihoterapeut.";
+  "Ce sunt fobiile specifice, de ce apar și cum se tratează. 80-95% rată de succes la tratament. De Daniel Gagea, psiholog clinician, psihoterapeut.";
 const url = "https://totuldespreanxietate.ro/tipuri/fobii-specifice";
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Article",
-      headline: "Fobii specifice — Ghid complet 2026",
+      headline: "Fobii specifice .. Ghid complet 2026",
       description,
       author: {
         "@type": "Person",

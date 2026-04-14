@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Anxietate: ce este, simptome, cauze și tratament | Totul despre Anxietate",
+  title: "Anxietate: simptome, cauze și tratament | Totul despre Anxietate",
   description:
-    "Ce este anxietatea, de ce apare și ce poți face. Ghiduri complete despre atacul de panică, anxietatea socială și alte forme de anxietate. De psihologul Daniel Gagea.",
+    "Ce este anxietatea, de ce apare și ce poți face. Ghiduri despre atacul de panică, anxietatea socială și alte forme. De Daniel Gagea, psihoterapeut.",
   alternates: { canonical: "https://totuldespreanxietate.ro" },
   openGraph: {
     title: "Totul despre Anxietate .. Ghiduri complete de la psiholog",

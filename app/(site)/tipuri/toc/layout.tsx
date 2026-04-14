@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-const title = "TOC (Tulburarea Obsesiv-Compulsiva) .. Ghid complet 2026 | Totul despre Anxietate";
+const title = "TOC (Tulburarea Obsesiv-Compulsivă) .. Ghid complet 2026";
 const description =
-  "Ce este TOC-ul, de ce apar gandurile obsesive, de ce ritualurile nu functioneaza si cum se trateaza. Ghid complet cu 60-80% rata de succes. De Daniel Gagea, psiholog clinician, psihoterapeut.";
+  "Ce este TOC-ul, de ce apar gandurile obsesive, de ce ritualurile nu functioneaza si cum se trateaza. 60-80% rata de succes. De Daniel Gagea, psihoterapeut.";
 const url = "https://totuldespreanxietate.ro/tipuri/toc";
 
 export const metadata: Metadata = {
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Daniel Gagea" }],
   alternates: { canonical: url },
   openGraph: {
-    title: "TOC (Tulburarea Obsesiv-Compulsiva) .. Ghid complet 2026",
+    title: "TOC (Tulburarea Obsesiv-Compulsivă) .. Ghid complet 2026",
     description,
     url,
     siteName: "Totul despre Anxietate",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TOC (Tulburarea Obsesiv-Compulsiva) .. Ghid complet 2026",
+    title: "TOC (Tulburarea Obsesiv-Compulsivă) .. Ghid complet 2026",
     description,
   },
 };
