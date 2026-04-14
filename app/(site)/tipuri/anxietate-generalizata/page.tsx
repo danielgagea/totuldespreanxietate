@@ -337,7 +337,7 @@ export default function AnxietateGeneralizataPage() {
           <Reveal delay={300}>
             <div className="tag-feel">
               <h3>Cum se simte de fapt</h3>
-              <p>Anxietatea generalizată nu vine în episoade intense, ca atacul de panică. E mai degrabă un fond permanent de neliniște, ca un motor care nu se oprește niciodată complet.</p>
+              <p>Anxietatea generalizată nu vine în episoade intense, ca <a href="/atac-de-panica" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: "3px" }}>atacul de panică</a>. E mai degrabă un fond permanent de neliniște, ca un motor care nu se oprește niciodată complet.</p>
               <div className="tag-symptoms-grid">
                 {[
                   { icon: "💪", label: "Tensiune musculară", detail: "cronică, mai ales în umeri, maxilar și gât" },
@@ -1177,6 +1177,19 @@ export default function AnxietateGeneralizataPage() {
               <h3>Următorul pas</h3>
               <p>Dacă ai ajuns până aici, ai făcut deja ceva important.. ai căutat să înțelegi ce ți se întâmplă. Asta nu e puțin.</p>
               <a href="/programare?din=anxietate-generalizata" className="tag-cta-primary">Programează o consultație</a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ── CITESTE SI ── */}
+      <section className="tag-section" id="citeste-si" style={{ paddingTop: 0 }}>
+        <div className="tag-container tag-container-narrow">
+          <Reveal>
+            <p style={{ fontSize: "14px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--color-text-secondary)", marginBottom: "12px" }}>Citește și</p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <a href="/tipuri/anxietate-sociala" style={{ fontSize: "15px", color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Anxietatea socială: cum arată din interior și ce poți face</a>
+              <a href="/tipuri/toc" style={{ fontSize: "15px", color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Tulburarea obsesiv-compulsivă (TOC): gânduri intruzive și ritualuri</a>
             </div>
           </Reveal>
         </div>

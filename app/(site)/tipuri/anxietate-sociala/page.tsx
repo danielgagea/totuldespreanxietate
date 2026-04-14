@@ -729,6 +729,19 @@ export default function AnxietateSocialaPage() {
         </div>
       </section>
 
+      {/* ── CITESTE SI ── */}
+      <section className="as-section" id="citeste-si" style={{ paddingTop: 0 }}>
+        <div className="as-container as-container-narrow">
+          <Reveal>
+            <p style={{ fontSize: "14px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--color-text-secondary)", marginBottom: "12px" }}>Citește și</p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <a href="/tipuri/anxietate-generalizata" style={{ fontSize: "15px", color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Anxietatea generalizată: de ce mintea nu se oprește din gândit</a>
+              <a href="/tipuri/fobii-specifice" style={{ fontSize: "15px", color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Fobii specifice: când frica e disproporționată și corpul nu ascultă</a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ── S11: FAQ ── */}
       <section className="as-section as-faq">
         <div className="as-container as-container-narrow">

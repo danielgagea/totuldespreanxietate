@@ -700,7 +700,7 @@ export default function TSPTPage() {
               <div className="tspt-case-label">Studiu de caz</div>
               <h3>Cristina: când corpul vorbește pentru minte</h3>
               <p>
-                Cristina a venit în terapie la 34 de ani, cu atacuri de panică aparent din senin și o tensiune musculară cronică în umeri și gât pe care niciun masaj nu o rezolva. A făcut toate analizele, totul era în parametri normali.
+                Cristina a venit în terapie la 34 de ani, cu <a href="/atac-de-panica" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: "3px" }}>atacuri de panică</a> aparent din senin și o tensiune musculară cronică în umeri și gât pe care niciun masaj nu o rezolva. A făcut toate analizele, totul era în parametri normali.
               </p>
               <p>
                 În ședința a patra, povestind despre copilărie, a menționat în treacăt că tatăl ei se enerva uneori. Corpul ei s-a tensionat vizibil în acel moment, dar vocea a rămas calmă, detașată.
@@ -939,6 +939,19 @@ export default function TSPTPage() {
               <h3>Următorul pas</h3>
               <p>Dacă ai ajuns până aici, ai făcut deja ceva important.. ai căutat să înțelegi ce ți se întâmplă. Asta nu e puțin.</p>
               <a href="/programare?din=tspt" className="tspt-cta-primary">Programează o consultație</a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ── CITESTE SI ── */}
+      <section className="tspt-section" id="citeste-si" style={{ paddingTop: 0 }}>
+        <div className="tspt-container tspt-container-narrow">
+          <Reveal>
+            <p style={{ fontSize: "14px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--color-text-secondary)", marginBottom: "12px" }}>Citește și</p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <a href="/tipuri/anxietate-generalizata" style={{ fontSize: "15px", color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Anxietatea generalizată: de ce mintea nu se oprește din gândit</a>
+              <a href="/atac-de-panica" style={{ fontSize: "15px", color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Atacul de panică: ce se întâmplă în corp și ce poți face</a>
             </div>
           </Reveal>
         </div>
