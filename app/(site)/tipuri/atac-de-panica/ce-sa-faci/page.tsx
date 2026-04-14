@@ -22,23 +22,36 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Ce faci în momentul unui atac de panică. 5 pași",
-  description:
-    "5 pași concreți pentru momentul unui atac de panică. Ce ajută și ce NU ajută. Ghid practic de Daniel Gagea, psiholog clinician.",
-  author: {
-    "@type": "Person",
-    name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician, psihoterapeut",
-    url: "https://totuldespreanxietate.ro/despre-daniel/",
-  },
-  datePublished: "2026-03-19",
-  dateModified: "2026-04-13",
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id":
-      "https://totuldespreanxietate.ro/tipuri/atac-de-panica/ce-sa-faci/",
-  },
+  "@graph": [
+    {
+      "@type": "Article",
+      headline: "Ce faci în momentul unui atac de panică. 5 pași",
+      description:
+        "5 pași concreți pentru momentul unui atac de panică. Ce ajută și ce NU ajută. Ghid practic de Daniel Gagea, psiholog clinician.",
+      author: {
+        "@type": "Person",
+        name: "Daniel Gagea",
+        jobTitle: "Psiholog clinician, psihoterapeut",
+        url: "https://totuldespreanxietate.ro/despre-daniel/",
+      },
+      datePublished: "2026-03-19",
+      dateModified: "2026-04-13",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://totuldespreanxietate.ro/tipuri/atac-de-panica/ce-sa-faci/",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Acasă", item: "https://totuldespreanxietate.ro" },
+        { "@type": "ListItem", position: 2, name: "Tipuri", item: "https://totuldespreanxietate.ro/tipuri" },
+        { "@type": "ListItem", position: 3, name: "Atac de panică", item: "https://totuldespreanxietate.ro/tipuri/atac-de-panica" },
+        { "@type": "ListItem", position: 4, name: "Ce să faci", item: "https://totuldespreanxietate.ro/tipuri/atac-de-panica/ce-sa-faci" },
+      ],
+    },
+  ],
 };
 
 /* ─── Reusable section wrapper ─── */

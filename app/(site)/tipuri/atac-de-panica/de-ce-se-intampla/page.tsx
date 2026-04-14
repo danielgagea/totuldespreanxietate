@@ -22,23 +22,36 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "De ce se întâmplă atacurile de panică. Mecanismul explicat",
-  description:
-    "De ce ai atacuri de panică: alarma falsă, cercul vicios, declanșatori și vulnerabilitate. De Daniel Gagea.",
-  author: {
-    "@type": "Person",
-    name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician, psihoterapeut",
-    url: "https://totuldespreanxietate.ro/despre-daniel/",
-  },
-  datePublished: "2026-03-19",
-  dateModified: "2026-04-13",
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id":
-      "https://totuldespreanxietate.ro/tipuri/atac-de-panica/de-ce-se-intampla/",
-  },
+  "@graph": [
+    {
+      "@type": "Article",
+      headline: "De ce se întâmplă atacurile de panică. Mecanismul explicat",
+      description:
+        "De ce ai atacuri de panică: alarma falsă, cercul vicios, declanșatori și vulnerabilitate. De Daniel Gagea.",
+      author: {
+        "@type": "Person",
+        name: "Daniel Gagea",
+        jobTitle: "Psiholog clinician, psihoterapeut",
+        url: "https://totuldespreanxietate.ro/despre-daniel/",
+      },
+      datePublished: "2026-03-19",
+      dateModified: "2026-04-13",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://totuldespreanxietate.ro/tipuri/atac-de-panica/de-ce-se-intampla/",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Acasă", item: "https://totuldespreanxietate.ro" },
+        { "@type": "ListItem", position: 2, name: "Tipuri", item: "https://totuldespreanxietate.ro/tipuri" },
+        { "@type": "ListItem", position: 3, name: "Atac de panică", item: "https://totuldespreanxietate.ro/tipuri/atac-de-panica" },
+        { "@type": "ListItem", position: 4, name: "De ce se întâmplă", item: "https://totuldespreanxietate.ro/tipuri/atac-de-panica/de-ce-se-intampla" },
+      ],
+    },
+  ],
 };
 
 /* ─── Reusable section wrapper ─── */

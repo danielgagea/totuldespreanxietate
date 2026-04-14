@@ -22,24 +22,65 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  headline:
-    "De ce ai atacuri de panică. Mecanismul din spate",
-  description:
-    "De ce se întâmplă atacurile de panică: alarma falsă, cercul vicios, mesajul psihicului și frica de următorul atac. De Daniel Gagea, psihoterapeut.",
-  author: {
-    "@type": "Person",
-    name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician, psihoterapeut",
-    url: "https://totuldespreanxietate.ro/despre-daniel/",
-  },
-  datePublished: "2026-03-19",
-  dateModified: "2026-04-13",
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id":
-      "https://totuldespreanxietate.ro/atac-de-panica/intelege/",
-  },
+  "@graph": [
+    {
+      "@type": "Article",
+      headline:
+        "De ce ai atacuri de panică. Mecanismul din spate",
+      description:
+        "De ce se întâmplă atacurile de panică: alarma falsă, cercul vicios, mesajul psihicului și frica de următorul atac. De Daniel Gagea, psihoterapeut.",
+      author: {
+        "@type": "Person",
+        name: "Daniel Gagea",
+        jobTitle: "Psiholog clinician, psihoterapeut",
+        url: "https://totuldespreanxietate.ro/despre-daniel/",
+      },
+      datePublished: "2026-03-19",
+      dateModified: "2026-04-13",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://totuldespreanxietate.ro/atac-de-panica/intelege/",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Acasă", item: "https://totuldespreanxietate.ro" },
+        { "@type": "ListItem", position: 2, name: "Atac de panică", item: "https://totuldespreanxietate.ro/atac-de-panica" },
+        { "@type": "ListItem", position: 3, name: "Înțelege", item: "https://totuldespreanxietate.ro/atac-de-panica/intelege" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Trece de la sine?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Rareori. Fără ajutor profesional, doar 12% dintre persoane ajung la remisie completă în 5 ani. Panica tinde să se cronicizeze.. evitarea crește, viața se restrânge, iar atacurile devin mai frecvente. Cu psihoterapie, 85-90% se recuperează în câteva luni.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "De ce am atacuri de panică fără niciun motiv aparent?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Atacurile par că vin din senin, dar de cele mai multe ori sunt declanșate de o senzație internă pe care creierul o interpretează ca pericol. O ușoară amețeală, o palpitație, chiar și o digestie mai dificilă pot porni ciclul. 40% din atacurile raportate nici măcar nu sunt însoțite de o creștere reală a ritmului cardiac.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "De ce îmi e frică de lucruri care înainte nu mă deranjau?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Când experimentezi atacuri de panică repetate, creierul începe să asocieze tot mai multe locuri, activități și senzații cu pericolul. E un proces de sensibilizare.. nu pentru că acele lucruri sunt periculoase, ci pentru că îți amintesc de senzațiile din atac.",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 /* ─── Design helpers ─── */

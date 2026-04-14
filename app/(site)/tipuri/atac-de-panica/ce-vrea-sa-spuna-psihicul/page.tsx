@@ -23,23 +23,36 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Ce vrea să spună psihicul prin atacul de panică",
-  description:
-    "De ce ți se întâmplă tocmai ție? Perspectiva clinică a lui Daniel Gagea despre mesajul din spatele atacului de panică.",
-  author: {
-    "@type": "Person",
-    name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician, psihoterapeut",
-    url: "https://totuldespreanxietate.ro/despre-daniel/",
-  },
-  datePublished: "2026-03-19",
-  dateModified: "2026-04-13",
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id":
-      "https://totuldespreanxietate.ro/tipuri/atac-de-panica/ce-vrea-sa-spuna-psihicul/",
-  },
+  "@graph": [
+    {
+      "@type": "Article",
+      headline: "Ce vrea să spună psihicul prin atacul de panică",
+      description:
+        "De ce ți se întâmplă tocmai ție? Perspectiva clinică a lui Daniel Gagea despre mesajul din spatele atacului de panică.",
+      author: {
+        "@type": "Person",
+        name: "Daniel Gagea",
+        jobTitle: "Psiholog clinician, psihoterapeut",
+        url: "https://totuldespreanxietate.ro/despre-daniel/",
+      },
+      datePublished: "2026-03-19",
+      dateModified: "2026-04-13",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://totuldespreanxietate.ro/tipuri/atac-de-panica/ce-vrea-sa-spuna-psihicul/",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Acasă", item: "https://totuldespreanxietate.ro" },
+        { "@type": "ListItem", position: 2, name: "Tipuri", item: "https://totuldespreanxietate.ro/tipuri" },
+        { "@type": "ListItem", position: 3, name: "Atac de panică", item: "https://totuldespreanxietate.ro/tipuri/atac-de-panica" },
+        { "@type": "ListItem", position: 4, name: "Ce vrea să spună psihicul", item: "https://totuldespreanxietate.ro/tipuri/atac-de-panica/ce-vrea-sa-spuna-psihicul" },
+      ],
+    },
+  ],
 };
 
 /* ─── Reusable section wrapper ─── */

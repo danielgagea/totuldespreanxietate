@@ -24,6 +24,7 @@ const jsonLd = {
       "@type": "WebSite",
       name: "Totul despre Anxietate",
       url: "https://totuldespreanxietate.ro",
+      dateCreated: "2026-02-15",
       publisher: { "@type": "Person", name: "Daniel Gagea", jobTitle: "Psiholog clinician, psihoterapeut" },
     },
     {
@@ -35,6 +36,12 @@ const jsonLd = {
       ],
     },
     { "@type": "Person", name: "Daniel Gagea", jobTitle: "Psiholog clinician, psihoterapeut", url: "https://totuldespreanxietate.ro" },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Acasă", item: "https://totuldespreanxietate.ro" },
+      ],
+    },
   ],
 };
 

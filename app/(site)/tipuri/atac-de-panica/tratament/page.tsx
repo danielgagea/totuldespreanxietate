@@ -22,23 +22,36 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Tratament atac de panică. Când și cum să ceri ajutor",
-  description:
-    "85-90% rată de recuperare cu TCC în 12-15 ședințe. Când să ceri ajutor, ce te oprește, și ce funcționează. De Daniel Gagea, psiholog clinician.",
-  author: {
-    "@type": "Person",
-    name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician, psihoterapeut",
-    url: "https://totuldespreanxietate.ro/despre-daniel/",
-  },
-  datePublished: "2026-03-19",
-  dateModified: "2026-04-13",
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id":
-      "https://totuldespreanxietate.ro/tipuri/atac-de-panica/tratament/",
-  },
+  "@graph": [
+    {
+      "@type": "Article",
+      headline: "Tratament atac de panică. Când și cum să ceri ajutor",
+      description:
+        "85-90% rată de recuperare cu TCC în 12-15 ședințe. Când să ceri ajutor, ce te oprește, și ce funcționează. De Daniel Gagea, psiholog clinician.",
+      author: {
+        "@type": "Person",
+        name: "Daniel Gagea",
+        jobTitle: "Psiholog clinician, psihoterapeut",
+        url: "https://totuldespreanxietate.ro/despre-daniel/",
+      },
+      datePublished: "2026-03-19",
+      dateModified: "2026-04-13",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://totuldespreanxietate.ro/tipuri/atac-de-panica/tratament/",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Acasă", item: "https://totuldespreanxietate.ro" },
+        { "@type": "ListItem", position: 2, name: "Tipuri", item: "https://totuldespreanxietate.ro/tipuri" },
+        { "@type": "ListItem", position: 3, name: "Atac de panică", item: "https://totuldespreanxietate.ro/tipuri/atac-de-panica" },
+        { "@type": "ListItem", position: 4, name: "Tratament", item: "https://totuldespreanxietate.ro/tipuri/atac-de-panica/tratament" },
+      ],
+    },
+  ],
 };
 
 /* ─── Reusable section wrapper ─── */

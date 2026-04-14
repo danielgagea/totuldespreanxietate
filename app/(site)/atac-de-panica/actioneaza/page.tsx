@@ -22,23 +22,48 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Ce faci la un atac de panică + Când ceri ajutor",
-  description:
-    "5 pași concreți pentru momentul unui atac de panică și când să ceri ajutor profesionist. Ghid complet de Daniel Gagea, psiholog clinician, psihoterapeut. De Daniel Gagea.",
-  author: {
-    "@type": "Person",
-    name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician, psihoterapeut",
-    url: "https://totuldespreanxietate.ro/despre-daniel/",
-  },
-  datePublished: "2026-03-19",
-  dateModified: "2026-04-13",
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id":
-      "https://totuldespreanxietate.ro/atac-de-panica/actioneaza/",
-  },
+  "@graph": [
+    {
+      "@type": "Article",
+      headline: "Ce faci la un atac de panică + Când ceri ajutor",
+      description:
+        "5 pași concreți pentru momentul unui atac de panică și când să ceri ajutor profesionist. Ghid complet de Daniel Gagea, psiholog clinician, psihoterapeut. De Daniel Gagea.",
+      author: {
+        "@type": "Person",
+        name: "Daniel Gagea",
+        jobTitle: "Psiholog clinician, psihoterapeut",
+        url: "https://totuldespreanxietate.ro/despre-daniel/",
+      },
+      datePublished: "2026-03-19",
+      dateModified: "2026-04-13",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://totuldespreanxietate.ro/atac-de-panica/actioneaza/",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Acasă", item: "https://totuldespreanxietate.ro" },
+        { "@type": "ListItem", position: 2, name: "Atac de panică", item: "https://totuldespreanxietate.ro/atac-de-panica" },
+        { "@type": "ListItem", position: 3, name: "Ce este de făcut", item: "https://totuldespreanxietate.ro/atac-de-panica/actioneaza" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Funcționează terapia pentru atacuri de panică?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Da. Psihoterapia pentru atacurile de panică este unul dintre cele mai studiate și eficiente tratamente din psihologie, cu efecte pe termen lung. Durata variază de la persoană la persoană, în funcție de complexitatea și profunzimea problemei.",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 /* ─── Reusable section wrapper ─── */

@@ -69,6 +69,13 @@ const jsonLd = {
         "Psiholog clinician cu peste 10 ani de experien\u021b\u0103 \u0219i peste 500 de clien\u021bi.",
       url: "https://totuldespreanxietate.ro/despre-daniel/",
     },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Acasă", item: "https://totuldespreanxietate.ro" },
+        { "@type": "ListItem", position: 2, name: "Atac de panică", item: "https://totuldespreanxietate.ro/atac-de-panica" },
+      ],
+    },
   ],
 };
 

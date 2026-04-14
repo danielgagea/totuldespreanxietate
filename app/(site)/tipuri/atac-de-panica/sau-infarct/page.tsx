@@ -22,23 +22,36 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Atac de panică sau infarct? Cum faci diferența",
-  description:
-    "Diferențele dintre atacul de panică și infarct. Când mergi la medic și când e panică. De Daniel Gagea, psiholog clinician.",
-  author: {
-    "@type": "Person",
-    name: "Daniel Gagea",
-    jobTitle: "Psiholog clinician, psihoterapeut",
-    url: "https://totuldespreanxietate.ro/despre-daniel/",
-  },
-  datePublished: "2026-03-19",
-  dateModified: "2026-04-13",
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id":
-      "https://totuldespreanxietate.ro/tipuri/atac-de-panica/sau-infarct/",
-  },
+  "@graph": [
+    {
+      "@type": "Article",
+      headline: "Atac de panică sau infarct? Cum faci diferența",
+      description:
+        "Diferențele dintre atacul de panică și infarct. Când mergi la medic și când e panică. De Daniel Gagea, psiholog clinician.",
+      author: {
+        "@type": "Person",
+        name: "Daniel Gagea",
+        jobTitle: "Psiholog clinician, psihoterapeut",
+        url: "https://totuldespreanxietate.ro/despre-daniel/",
+      },
+      datePublished: "2026-03-19",
+      dateModified: "2026-04-13",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://totuldespreanxietate.ro/tipuri/atac-de-panica/sau-infarct/",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Acasă", item: "https://totuldespreanxietate.ro" },
+        { "@type": "ListItem", position: 2, name: "Tipuri", item: "https://totuldespreanxietate.ro/tipuri" },
+        { "@type": "ListItem", position: 3, name: "Atac de panică", item: "https://totuldespreanxietate.ro/tipuri/atac-de-panica" },
+        { "@type": "ListItem", position: 4, name: "Sau infarct", item: "https://totuldespreanxietate.ro/tipuri/atac-de-panica/sau-infarct" },
+      ],
+    },
+  ],
 };
 
 /* ─── Reusable components ─── */
