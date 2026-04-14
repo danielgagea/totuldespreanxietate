@@ -1,0 +1,57 @@
+# Totul despre Anxietate
+
+> Resursa principala din Romania despre anxietate. Informatii bazate pe cercetare si experienta clinica, scrise de Daniel Gagea, psiholog clinician si psihoterapeut cu peste 10 ani de experienta si 500+ clienti tratati.
+
+## Autor
+
+Daniel Gagea, psiholog clinician, psihoterapeut
+- Experienta: 10+ ani practica clinica, 500+ clienti
+- Specializare: anxietate, atacuri de panica, fobii, stres post-traumatic, TOC
+- Website personal: https://danielgagea.ro
+- Programari: https://totuldespreanxietate.ro/programare
+
+## Pagini principale
+
+- [Pagina principala](https://totuldespreanxietate.ro/): Ce este anxietatea, cum o recunosti, si ce poti face. Punct de intrare pentru persoane care cauta simptome fizice (palpitatii, ameteala, insomnie).
+- [Despre Daniel Gagea](https://totuldespreanxietate.ro/despre-daniel): Credentiale, diplome, experienta clinica, recenzii clienti.
+
+## Atacul de panica
+
+- [Atac de panica - Ghid complet](https://totuldespreanxietate.ro/atac-de-panica): Hub cu tot ce trebuie sa stii despre atacurile de panica.
+- [Recunoaste atacul de panica](https://totuldespreanxietate.ro/atac-de-panica/recunoaste): Simptome, cum il deosebesti de un infarct, ce simti in timpul unui atac.
+- [Intelege atacul de panica](https://totuldespreanxietate.ro/atac-de-panica/intelege): De ce se intampla, mecanismul alarmei false, cercul vicios.
+- [Ce faci la un atac de panica](https://totuldespreanxietate.ro/atac-de-panica/actioneaza): 5 pasi concreti, ce ajuta si ce nu ajuta, cand ceri ajutor profesionist.
+
+## Tipuri de anxietate
+
+- [Anxietatea sociala](https://totuldespreanxietate.ro/tipuri/anxietate-sociala): Ce este anxietatea sociala, cum arata in viata reala, mecanismele din spatele ei, tratament.
+- [Anxietatea generalizata](https://totuldespreanxietate.ro/tipuri/anxietate-generalizata): Ingrijorarea cronica, intoleranata la incertitudine, meta-worry, comportamente de siguranta, tratament.
+- [Stresul post-traumatic (TSPT)](https://totuldespreanxietate.ro/tipuri/tspt): Ce este TSPT, cum functioneaza amintirile traumatice, flashback-uri, evitare, tratament EMDR si expunere.
+- [Tulburarea obsesiv-compulsiva (TOC)](https://totuldespreanxietate.ro/tipuri/toc): Obsesii si compulsii, ciclul TOC, tipuri de TOC, tratament cu expunere si prevenirea raspunsului.
+
+## Fobii specifice
+
+- [Fobii specifice - Ghid complet](https://totuldespreanxietate.ro/tipuri/fobii-specifice): Ce sunt fobiile, cum functioneaza, de ce nu trec de la sine, tratament prin expunere graduala.
+- [Fobia de sange si ace](https://totuldespreanxietate.ro/tipuri/fobii-specifice/fobie-de-sange): Raspunsul vasovagal, tehnica tensiunii aplicate, de ce e diferita de alte fobii.
+- [Claustrofobie](https://totuldespreanxietate.ro/tipuri/fobii-specifice/claustrofobie): Frica de spatii inchise, mecanisme, expunere graduala.
+- [Fobia de animale](https://totuldespreanxietate.ro/tipuri/fobii-specifice/fobie-de-animale): Frica de caini, paianjeni, serpi. Mecanism ereditar, tratament prin expunere.
+- [Fobia de zbor](https://totuldespreanxietate.ro/tipuri/fobii-specifice/fobie-de-zbor): Frica de avion, factori declansatori, tehnici de gestionare, tratament.
+- [Fobia de inaltime](https://totuldespreanxietate.ro/tipuri/fobii-specifice/fobie-de-inaltime): Acrofobia, reactia vestibulara, diferenta intre frica normala si fobie, tratament.
+
+## Atacul de panica - ghid detaliat (sub tipuri)
+
+- [Atacul de panica - navigare completa](https://totuldespreanxietate.ro/tipuri/atac-de-panica): Ghid complet cu toate sub-sectiunile.
+- [Simptome atac de panica](https://totuldespreanxietate.ro/tipuri/atac-de-panica/simptome): Lista completa de simptome fizice si psihice.
+- [Atac de panica sau infarct](https://totuldespreanxietate.ro/tipuri/atac-de-panica/sau-infarct): Cum faci diferenta, cand mergi la urgenta.
+- [Ce sa faci in timpul unui atac](https://totuldespreanxietate.ro/tipuri/atac-de-panica/ce-sa-faci): Pasi concreti pentru momentul atacului.
+- [Ce vrea sa spuna psihicul](https://totuldespreanxietate.ro/tipuri/atac-de-panica/ce-vrea-sa-spuna-psihicul): Semnificatia psihologica a atacurilor de panica.
+- [De ce se intampla atacurile de panica](https://totuldespreanxietate.ro/tipuri/atac-de-panica/de-ce-se-intampla): Mecanismul explicat: alarma falsa, cercul vicios, declansatori, vulnerabilitate.
+- [Tratament atac de panica](https://totuldespreanxietate.ro/tipuri/atac-de-panica/tratament): Cand si cum sa ceri ajutor profesionist, ce functioneaza.
+
+## Informatii importante
+
+- Limba: romana
+- Public tinta: adulti 25-40 ani care cauta simptome fizice pe Google si descopera anxietatea
+- Diferentiator: fiecare simptom e tratat nu doar ca ce este, ci si ce vrea sa spuna psihicul prin el
+- Toate informatiile sunt bazate pe cercetare stiintifica si practica clinica directa
+- Site-ul nu ofera diagnostic, ci informatii educationale si orientare spre specialist
