@@ -2,9 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Atacul de panică. Ce este și ce simți | Totul despre Anxietate`,
+  title: "Atacul de panică. Ce este și ce simți | Totul despre Anxietate",
   description:
-    `Ce este un atac de panică, cât de comun este, simptomele fizice și mentale, și cum deosebești de infarct. De Daniel Gagea, psiholog clinician, psihoterapeut.`,
+    "Ce este un atac de panică, cât de comun este, simptomele fizice și mentale, și cum deosebești de infarct. De Daniel Gagea, psiholog clinician, psihoterapeut.",
+  authors: [{ name: "Daniel Gagea" }],
+  openGraph: {
+    title: "Atacul de panică. Ce este și ce simți | Totul despre Anxietate",
+    description:
+      "Ce este un atac de panică, cât de comun este, simptomele fizice și mentale, și cum deosebești de infarct.",
+    type: "article",
+    locale: "ro_RO",
+    siteName: "Totul despre Anxietate",
+  },
 };
 
 /* ─── Design helpers ─── */
@@ -107,11 +116,97 @@ function Stat({ number, text }: { number: string; text: string }) {
   );
 }
 
+/* ─── JSON-LD ─── */
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      headline: "Atacul de panică. Ce este și ce simți",
+      description:
+        "Ce este un atac de panică, cât de comun este, simptomele fizice și mentale, și cum deosebești de infarct.",
+      datePublished: "2026-03-19",
+      dateModified: "2026-04-13",
+      author: {
+        "@type": "Person",
+        name: "Daniel Gagea",
+        jobTitle: "Psiholog clinician, psihoterapeut",
+        url: "https://totuldespreanxietate.ro",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Totul despre Anxietate",
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://totuldespreanxietate.ro/atac-de-panica/recunoaste",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Acasă",
+          item: "https://totuldespreanxietate.ro",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Atac de panică",
+          item: "https://totuldespreanxietate.ro/atac-de-panica",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Recunoaște",
+          item: "https://totuldespreanxietate.ro/atac-de-panica/recunoaste",
+        },
+      ],
+    },
+    {
+      "@type": "Person",
+      name: "Daniel Gagea",
+      jobTitle: "Psiholog clinician, psihoterapeut",
+      url: "https://totuldespreanxietate.ro",
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Cât durează un atac de panică?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "5-10 minute intensitate maximă, 10-20 minute total. Atacul trece întotdeauna.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Pot să mor din cauza unui atac de panică?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nu. Un atac de panică nu produce infarct, AVC sau nebunie. Odată confirmat medical că ești sănătos, atacul este, prin definiție, inofensiv.",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 /* ─── Page ─── */
 
 export default function RecunoastePage() {
   return (
     <>
+      {/* JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* ─── CRISIS ANCHOR ─── */}
       <div
         className="w-full py-3 text-center text-sm font-medium"

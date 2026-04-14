@@ -3,17 +3,17 @@ import Link from "next/link";
 import { VideoPlaceholder } from "@/components/sections/VideoPlaceholder";
 
 export const metadata: Metadata = {
-  title:
-    "Ce sim\u021Bi \u00EEn timpul unui atac de panic\u0103 \u2014 Simptome fizice \u0219i mentale | Totul despre Anxietate",
+  title: "Simptome atac de panică | Totul despre Anxietate",
   description:
-    "Simptomele unui atac de panic\u0103: palpita\u021Bii, dificult\u0103\u021Bi de respira\u021Bie, ame\u021Beal\u0103, derealizare. Cum escaladeaz\u0103 \u0219i de ce. De Daniel Gagea, psiholog clinician.",
+    "Ce simți în timpul unui atac de panică: palpitații, amețeală, derealizare, furnicături. Cum escaladează și de ce. De Daniel Gagea, psiholog clinician, psihoterapeut.",
   authors: [{ name: "Daniel Gagea" }],
   openGraph: {
-    title:
-      "Ce sim\u021Bi \u00EEn timpul unui atac de panic\u0103 \u2014 Simptome fizice \u0219i mentale",
+    title: "Simptome atac de panică | Totul despre Anxietate",
     description:
-      "Simptomele unui atac de panic\u0103: palpita\u021Bii, dificult\u0103\u021Bi de respira\u021Bie, ame\u021Beal\u0103, derealizare. Cum escaladeaz\u0103 \u0219i de ce.",
+      "Ce simți în timpul unui atac de panică: palpitații, amețeală, derealizare, furnicături. Cum escaladează și de ce.",
     type: "article",
+    locale: "ro_RO",
+    siteName: "Totul despre Anxietate",
   },
 };
 
@@ -54,10 +54,75 @@ function Callout({ children }: { children: React.ReactNode }) {
   );
 }
 
+/* ─── JSON-LD ─── */
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      headline: "Simptome atac de panică",
+      description:
+        "Ce simți în timpul unui atac de panică: palpitații, amețeală, derealizare, furnicături. Cum escaladează și de ce.",
+      datePublished: "2026-03-19",
+      dateModified: "2026-04-13",
+      author: {
+        "@type": "Person",
+        name: "Daniel Gagea",
+        jobTitle: "Psiholog clinician, psihoterapeut",
+        url: "https://totuldespreanxietate.ro",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Totul despre Anxietate",
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://totuldespreanxietate.ro/tipuri/atac-de-panica/simptome",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Acasă",
+          item: "https://totuldespreanxietate.ro",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Atac de panică",
+          item: "https://totuldespreanxietate.ro/tipuri/atac-de-panica",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Simptome",
+          item: "https://totuldespreanxietate.ro/tipuri/atac-de-panica/simptome",
+        },
+      ],
+    },
+    {
+      "@type": "Person",
+      name: "Daniel Gagea",
+      jobTitle: "Psiholog clinician, psihoterapeut",
+      url: "https://totuldespreanxietate.ro",
+    },
+  ],
+};
+
 /* ─── Page ─── */
 export default function SimptomePage() {
   return (
     <>
+      {/* JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* ── Hero / Intro ── */}
       <Section bg="white">
         {/* Breadcrumb */}
@@ -92,7 +157,7 @@ export default function SimptomePage() {
           className="text-sm mb-10"
           style={{ color: "var(--color-text-secondary)" }}
         >
-          Daniel Gagea, psiholog clinician
+          Daniel Gagea, psiholog clinician, psihoterapeut
         </p>
 
         {/* Intro */}
