@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   description:
     "Programează o ședință online cu Daniel Gagea, psiholog clinician, psihoterapeut. Fără presiune, în ritmul tău. Primele cuvinte sunt cele mai grele.",
   authors: [{ name: "Daniel Gagea" }],
+  alternates: {
+    canonical: "https://totuldespreanxietate.ro/programare",
+  },
   openGraph: {
     title: "Programare consultație anxietate | Daniel Gagea",
     description:

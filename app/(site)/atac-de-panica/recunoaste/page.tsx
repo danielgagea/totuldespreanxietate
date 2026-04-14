@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description:
     "Ce este un atac de panică, cât de comun este, simptomele fizice și mentale, și cum deosebești de infarct. De Daniel Gagea, psiholog clinician, psihoterapeut.",
   authors: [{ name: "Daniel Gagea" }],
+  alternates: {
+    canonical: "https://totuldespreanxietate.ro/atac-de-panica/recunoaste",
+  },
   openGraph: {
     title: "Atacul de panică. Ce este și ce simți | Totul despre Anxietate",
     description:
