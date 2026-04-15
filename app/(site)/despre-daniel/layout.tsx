@@ -64,8 +64,8 @@ const jsonLd = {
         },
         image: "https://totuldespreanxietate.ro/images/daniel-gagea.jpg",
       },
-      datePublished: "2026-04-07",
-      dateModified: "2026-04-07",
+      datePublished: "2026-04-07T10:00:00+03:00",
+      dateModified: "2026-04-13T10:00:00+03:00",
     },
     {
       "@type": "Person",
