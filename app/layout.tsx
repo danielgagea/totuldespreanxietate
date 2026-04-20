@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Fraunces } from "next/font/google";
+import { Fraunces } from "next/font/google";
 import "./globals.css";
 import { CookieConsent } from "@/components/CookieConsent";
 import { AnalyticsLoader } from "@/components/AnalyticsLoader";
 import { Footer } from "@/components/Footer";
-
-const inter = Inter({
-  variable: "--font-body",
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600"],
-});
 
 const fraunces = Fraunces({
   variable: "--font-heading",
@@ -44,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ro">
-      <body className={`${inter.variable} ${fraunces.variable} antialiased`}>
+      <body className={`${fraunces.variable} antialiased`}>
         {children}
         <Footer />
         <CookieConsent />
