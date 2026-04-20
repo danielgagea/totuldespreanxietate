@@ -40,6 +40,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ── Tipuri de anxietate ──
     {
+      url: `${base}/tipuri`,
+      lastModified: "2026-04-20",
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${base}/tipuri/anxietate-sociala`,
       lastModified: "2026-04-13",
       changeFrequency: "monthly",

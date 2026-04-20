@@ -4,7 +4,7 @@ import { VideoPlaceholder } from "@/components/sections/VideoPlaceholder";
 
 export const metadata: Metadata = {
   title:
-    "Ce vrea să spună psihicul prin atacul de panică | Totul despre Anxietate",
+    "Ce vrea să spună psihicul prin atacul de panică",
   description:
     "De ce ți se întâmplă tocmai ție? Perspectiva clinică a lui Daniel Gagea despre mesajul din spatele atacului de panică.",
   authors: [{ name: "Daniel Gagea" }],

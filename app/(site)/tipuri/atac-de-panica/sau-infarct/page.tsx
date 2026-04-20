@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "Atac de panică sau infarct? Cum faci diferența | Totul despre Anxietate",
+    "Atac de panică sau infarct? Cum faci diferența",
   description:
     "Diferențele dintre atacul de panică și infarct. Când mergi la medic și când e panică. De Daniel Gagea, psiholog clinician.",
   authors: [{ name: "Daniel Gagea" }],

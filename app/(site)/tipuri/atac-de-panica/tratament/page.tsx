@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "Tratament atac de panică. Când și cum să ceri ajutor | Totul despre Anxietate",
+    "Tratament atac de panică. Când și cum să ceri ajutor",
   description:
     "85-90% rată de recuperare cu TCC în 12-15 ședințe. Când să ceri ajutor, ce te oprește, și ce funcționează. De Daniel Gagea, psiholog clinician.",
   authors: [{ name: "Daniel Gagea" }],

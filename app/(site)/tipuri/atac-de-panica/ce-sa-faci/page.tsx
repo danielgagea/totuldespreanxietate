@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "Ce faci în momentul unui atac de panică. 5 pași | Totul despre Anxietate",
+    "Ce faci în momentul unui atac de panică. 5 pași",
   description:
     "5 pași concreți pentru momentul unui atac de panică. Ce ajută și ce NU ajută. Ghid practic de Daniel Gagea, psiholog clinician.",
   authors: [{ name: "Daniel Gagea" }],
