@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const title = "Despre Daniel Gagea, psiholog clinician | Totul despre Anxietate";
+const title = "Despre Daniel Gagea, psiholog clinician";
 const description =
   "Daniel Gagea, psiholog clinician și psihoterapeut cu peste 10 ani de experiență și 500+ clienți. Specializat în anxietate, traume și psihoterapie pozitivă.";
 const url = "https://totuldespreanxietate.ro/despre-daniel";

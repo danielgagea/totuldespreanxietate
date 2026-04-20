@@ -3,7 +3,7 @@ import Link from "next/link";
 import { VideoPlaceholder } from "@/components/sections/VideoPlaceholder";
 
 export const metadata: Metadata = {
-  title: "Simptome atac de panică | Totul despre Anxietate",
+  title: "Simptome atac de panică",
   description:
     "Ce simți în timpul unui atac de panică: palpitații, amețeală, derealizare, furnicături. Cum escaladează și de ce. De Daniel Gagea, psiholog clinician, psihoterapeut.",
   authors: [{ name: "Daniel Gagea" }],
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://totuldespreanxietate.ro/tipuri/atac-de-panica/simptome",
   },
   openGraph: {
-    title: "Simptome atac de panică | Totul despre Anxietate",
+    title: "Simptome atac de panică",
     description:
       "Ce simți în timpul unui atac de panică: palpitații, amețeală, derealizare, furnicături. Cum escaladează și de ce.",
     type: "article",

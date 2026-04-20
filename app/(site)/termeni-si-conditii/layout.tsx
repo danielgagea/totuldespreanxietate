@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const title = "Termeni si Conditii | Totul despre Anxietate";
+const title = "Termeni si Conditii";
 const description =
   "Termenii si conditiile de utilizare ale site-ului totuldespreanxietate.ro. Informatii despre servicii, drepturi, obligatii si protectia datelor.";
 const url = "https://totuldespreanxietate.ro/termeni-si-conditii";
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Termeni si Conditii | Totul despre Anxietate",
+    title: "Termeni si Conditii",
     description,
   },
   robots: {

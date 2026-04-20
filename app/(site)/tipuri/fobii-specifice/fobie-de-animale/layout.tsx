@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const title = "Fobia de animale .. Ghid complet 2026 | Totul despre Anxietate";
+const title = "Fobia de animale .. Ghid complet 2026";
 const description =
   "De ce te temi de caini, paianjeni sau insecte, de ce corpul nu asculta de ratiune si cum se trateaza. 80-95% rata de succes. De Daniel Gagea, psiholog clinician, psihoterapeut.";
 const url = "https://totuldespreanxietate.ro/tipuri/fobii-specifice/fobie-de-animale";

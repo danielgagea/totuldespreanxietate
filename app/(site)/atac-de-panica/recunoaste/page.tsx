@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Atacul de panică. Ce este și ce simți | Totul despre Anxietate",
+  title: "Atacul de panică. Ce este și ce simți",
   description:
     "Ce este un atac de panică, cât de comun este, simptomele fizice și mentale, și cum deosebești de infarct. De Daniel Gagea, psiholog clinician, psihoterapeut.",
   authors: [{ name: "Daniel Gagea" }],
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://totuldespreanxietate.ro/atac-de-panica/recunoaste",
   },
   openGraph: {
-    title: "Atacul de panică. Ce este și ce simți | Totul despre Anxietate",
+    title: "Atacul de panică. Ce este și ce simți",
     description:
       "Ce este un atac de panică, cât de comun este, simptomele fizice și mentale, și cum deosebești de infarct.",
     type: "article",

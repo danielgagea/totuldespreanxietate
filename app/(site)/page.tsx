@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Anxietate: simptome, cauze și tratament | Totul despre Anxietate",
+  title: "Anxietate: simptome, cauze și tratament",
   description:
     "Ce este anxietatea, de ce apare și ce poți face. Ghiduri despre atacul de panică, anxietatea socială și alte forme. De Daniel Gagea, psihoterapeut.",
   alternates: { canonical: "https://totuldespreanxietate.ro" },

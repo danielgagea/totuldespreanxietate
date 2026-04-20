@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Atacul de panică. Ghid complet | Totul despre Anxietate",
+  title: "Atacul de panică. Ghid complet",
   description:
     "Ce este un atac de panică, de ce se întâmplă, ce simți, și ce poți face. Ghid complet bazat pe cercetare, de Daniel Gagea, psiholog clinician.",
   authors: [{ name: "Daniel Gagea" }],

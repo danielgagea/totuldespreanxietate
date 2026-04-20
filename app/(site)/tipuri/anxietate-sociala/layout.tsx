@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const title = "Anxietatea socială .. Ghid complet | Totul despre Anxietate";
+const title = "Anxietatea socială .. Ghid complet";
 const description =
   "Ce este anxietatea socială, cum o recunoști, de ce se întâmplă și ce poți face. Ghid complet bazat pe cercetare, de Daniel Gagea, psiholog clinician, psihoterapeut.";
 const url = "https://totuldespreanxietate.ro/tipuri/anxietate-sociala";

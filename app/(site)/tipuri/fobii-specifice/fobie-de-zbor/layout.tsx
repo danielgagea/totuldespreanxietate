@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const title = "Fobia de zbor .. Ghid complet 2026 | Totul despre Anxietate";
+const title = "Fobia de zbor .. Ghid complet 2026";
 const description =
   "De ce iti e frica sa zbori, cele 5 frici combinate si cum se trateaza fobia de zbor. 80-95% rata de succes. De Daniel Gagea, psiholog clinician, psihoterapeut.";
 const url = "https://totuldespreanxietate.ro/tipuri/fobii-specifice/fobie-de-zbor";

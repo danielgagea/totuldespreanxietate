@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const title = "Claustrofobie .. Ghid complet 2026 | Totul despre Anxietate";
+const title = "Claustrofobie .. Ghid complet 2026";
 const description =
   "Ce este claustrofobia, de ce simti ca ramai fara aer, cum functioneaza cercul vicios si ce tratament are 80-95% rata de succes. De Daniel Gagea, psiholog clinician, psihoterapeut.";
 const url = "https://totuldespreanxietate.ro/tipuri/fobii-specifice/claustrofobie";
