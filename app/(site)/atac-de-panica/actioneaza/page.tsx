@@ -420,51 +420,9 @@ export default function ActioneazaPage() {
         </div>
       </header>
 
-      {/* ─── PART 2: Ce NU ajută ─── */}
-      <Section id="ce-nu-ajuta" bg="white">
-        <SectionLabel>02 · Evită</SectionLabel>
-
-        <h2
-          className="text-2xl md:text-3xl font-medium mb-10"
-          style={{
-            fontFamily: "var(--font-heading)",
-            color: "var(--color-primary)",
-          }}
-        >
-          Ce NU ajută
-        </h2>
-
-        <div className="flex flex-col gap-5">
-          <WarningCard title="Respirația adâncă ca ritual">
-            Dacă respiri adânc doar pentru că simți că fără tehnica ta pierzi controlul, respirația devine parte din problemă. Scopul nu e să controlezi panica cu o tehnică, ci să înveți că panica trece singură.
-          </WarningCard>
-
-          <WarningCard title="Fuga din situație">
-            Te calmezi imediat, dar confirmi creierului că pericolul era real.
-          </WarningCard>
-
-          <WarningCard title="Căutarea repetată de reasigurare">
-            Când ceri cuiva să te asigure că ești ok, ușurarea durează câteva minute, dar apoi nevoia revine mai puternică. Cu cât primești mai multă reasigurare, cu atât ai nevoie de mai multă.
-          </WarningCard>
-
-          <WarningCard title="Monitorizarea obsesivă a corpului">
-            Cu cât cauți mai mult semne de pericol, cu atât găsești mai multe.
-            Hipervigilența amplifică exact senzațiile de care te temi.
-          </WarningCard>
-        </div>
-
-        <p
-          className="mt-10 text-[15px] italic leading-relaxed"
-          style={{ color: "var(--color-text-secondary)" }}
-        >
-          Aceste tehnici te ajută să treci prin atac. Dar nu înlocuiesc
-          ajutorul profesionist.
-        </p>
-      </Section>
-
-      {/* ─── PART 3: Când să ceri ajutor ─── */}
-      <Section id="ajutor" bg="default">
-        <SectionLabel>03 · Pasul următor</SectionLabel>
+      {/* ─── PART 2: Când să ceri ajutor ─── */}
+      <Section id="ajutor" bg="white">
+        <SectionLabel>02 · Pasul următor</SectionLabel>
 
         <h2
           className="text-2xl md:text-3xl font-medium mb-10"

@@ -147,23 +147,38 @@ function SceneBefore() {
   return (
     <div className="as-scene">
       <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* Room background hint */}
+        <rect x="40" y="20" width="200" height="120" rx="4" fill="#1B2B4B" opacity="0.04"/>
         {/* Desk */}
-        <rect x="60" y="130" width="160" height="8" rx="2" fill="#1B2B4B" opacity="0.3"/>
-        <rect x="80" y="100" width="50" height="35" rx="4" fill="#1B2B4B" opacity="0.2"/>
-        {/* Person sitting */}
-        <circle cx="140" cy="70" r="16" fill="#1B2B4B" opacity="0.4"/>
-        <path d="M140 86 C125 86 115 100 115 115 L115 130 L165 130 L165 115 C165 100 155 86 140 86Z" fill="#1B2B4B" opacity="0.3"/>
-        {/* Phone in hand */}
-        <rect x="152" y="105" width="12" height="20" rx="2" fill="#1B2B4B" opacity="0.35"/>
-        {/* Thought bubbles */}
-        <circle cx="185" cy="45" r="22" fill="#C4966C" opacity="0.1" className="as-thought-1"/>
-        <circle cx="185" cy="45" r="22" fill="none" stroke="#C4966C" strokeWidth="2" opacity="0.7" className="as-thought-1"/>
-        <circle cx="210" cy="28" r="12" fill="none" stroke="#C4966C" strokeWidth="1.5" opacity="0.6" className="as-thought-2"/>
-        <circle cx="225" cy="18" r="6" fill="none" stroke="#C4966C" strokeWidth="1.5" opacity="0.5" className="as-thought-3"/>
-        {/* Clock */}
-        <circle cx="220" cy="70" r="14" fill="none" stroke="#1B2B4B" strokeWidth="1.5" opacity="0.3"/>
-        <line x1="220" y1="70" x2="220" y2="62" stroke="#1B2B4B" strokeWidth="1.5" opacity="0.4"/>
-        <line x1="220" y1="70" x2="226" y2="70" stroke="#1B2B4B" strokeWidth="1.5" opacity="0.4"/>
+        <rect x="55" y="130" width="170" height="10" rx="3" fill="#1B2B4B" opacity="0.4"/>
+        <rect x="70" y="138" width="8" height="45" rx="1" fill="#1B2B4B" opacity="0.25"/>
+        <rect x="202" y="138" width="8" height="45" rx="1" fill="#1B2B4B" opacity="0.25"/>
+        {/* Laptop on desk */}
+        <rect x="85" y="100" width="55" height="35" rx="3" fill="#1B2B4B" opacity="0.3"/>
+        <rect x="89" y="104" width="47" height="27" rx="2" fill="#1B2B4B" opacity="0.12"/>
+        <rect x="78" y="130" width="70" height="4" rx="1" fill="#1B2B4B" opacity="0.25"/>
+        {/* Person sitting - hunched posture */}
+        <circle cx="140" cy="65" r="18" fill="#1B2B4B" opacity="0.5"/>
+        {/* Eyes looking down/anxious */}
+        <path d="M134 63 L137 65" stroke="#1B2B4B" strokeWidth="1.5" opacity="0.3" strokeLinecap="round"/>
+        <path d="M143 63 L146 65" stroke="#1B2B4B" strokeWidth="1.5" opacity="0.3" strokeLinecap="round"/>
+        <path d="M140 83 C128 83 118 95 118 110 L118 130 L162 130 L162 110 C162 95 152 83 140 83Z" fill="#1B2B4B" opacity="0.35"/>
+        {/* Phone in hand - composing excuse message */}
+        <rect x="155" y="102" width="13" height="22" rx="2" fill="#1B2B4B" opacity="0.45"/>
+        <rect x="157" y="105" width="9" height="14" rx="1" fill="#C4966C" opacity="0.25"/>
+        {/* Thought cloud - anxiety spiral */}
+        <circle cx="190" cy="42" r="24" fill="#C4966C" opacity="0.15"/>
+        <circle cx="190" cy="42" r="24" fill="none" stroke="#C4966C" strokeWidth="2.5" opacity="0.7"/>
+        {/* Spiral inside the thought */}
+        <path d="M190 50 Q195 42 190 36 Q184 30 190 26" fill="none" stroke="#C4966C" strokeWidth="1.5" opacity="0.5" strokeLinecap="round"/>
+        {/* Smaller bubbles trailing */}
+        <circle cx="215" cy="25" r="10" fill="none" stroke="#C4966C" strokeWidth="2" opacity="0.55"/>
+        <circle cx="232" cy="15" r="5" fill="none" stroke="#C4966C" strokeWidth="1.5" opacity="0.45"/>
+        {/* Clock ticking - time pressure */}
+        <circle cx="225" cy="70" r="15" fill="#1B2B4B" opacity="0.08"/>
+        <circle cx="225" cy="70" r="15" fill="none" stroke="#1B2B4B" strokeWidth="2" opacity="0.4"/>
+        <line x1="225" y1="70" x2="225" y2="60" stroke="#1B2B4B" strokeWidth="2" opacity="0.5" strokeLinecap="round"/>
+        <line x1="225" y1="70" x2="232" y2="72" stroke="#1B2B4B" strokeWidth="2" opacity="0.5" strokeLinecap="round"/>
       </svg>
     </div>
   );
@@ -174,25 +189,32 @@ function SceneDuring() {
     <div className="as-scene">
       <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg">
         {/* Table */}
-        <ellipse cx="140" cy="150" rx="110" ry="25" fill="#1B2B4B" opacity="0.12"/>
-        {/* People around (3 others) */}
-        <circle cx="60" cy="100" r="12" fill="#1B2B4B" opacity="0.2"/>
-        <path d="M60 112 C50 112 44 120 44 130 L76 130 C76 120 70 112 60 112Z" fill="#1B2B4B" opacity="0.15"/>
-        <circle cx="220" cy="100" r="12" fill="#1B2B4B" opacity="0.2"/>
-        <path d="M220 112 C210 112 204 120 204 130 L236 130 C236 120 230 112 220 112Z" fill="#1B2B4B" opacity="0.15"/>
-        <circle cx="140" cy="85" r="12" fill="#1B2B4B" opacity="0.2"/>
-        <path d="M140 97 C130 97 124 105 124 115 L156 115 C156 105 150 97 140 97Z" fill="#1B2B4B" opacity="0.15"/>
-        {/* Main person (highlighted, front) */}
-        <circle cx="140" cy="55" r="14" fill="#1B2B4B" opacity="0.45"/>
-        <path d="M140 69 C128 69 120 80 120 92 L160 92 C160 80 152 69 140 69Z" fill="#1B2B4B" opacity="0.35"/>
+        <ellipse cx="140" cy="155" rx="115" ry="28" fill="#1B2B4B" opacity="0.15"/>
+        {/* People around (3 others) - more visible */}
+        <circle cx="55" cy="100" r="14" fill="#1B2B4B" opacity="0.3"/>
+        <path d="M55 114 C43 114 36 124 36 135 L74 135 C74 124 67 114 55 114Z" fill="#1B2B4B" opacity="0.22"/>
+        <circle cx="225" cy="100" r="14" fill="#1B2B4B" opacity="0.3"/>
+        <path d="M225 114 C213 114 206 124 206 135 L244 135 C244 124 237 114 225 114Z" fill="#1B2B4B" opacity="0.22"/>
+        <circle cx="140" cy="88" r="13" fill="#1B2B4B" opacity="0.25"/>
+        <path d="M140 101 C129 101 122 110 122 120 L158 120 C158 110 151 101 140 101Z" fill="#1B2B4B" opacity="0.18"/>
+        {/* Main person (highlighted, in front) - clearly different */}
+        <circle cx="140" cy="50" r="16" fill="#1B2B4B" opacity="0.55"/>
+        {/* Worried expression */}
+        <path d="M134 48 Q137 50 140 48" fill="none" stroke="#1B2B4B" strokeWidth="1.2" opacity="0.3" strokeLinecap="round"/>
+        <path d="M140 48 Q143 50 146 48" fill="none" stroke="#1B2B4B" strokeWidth="1.2" opacity="0.3" strokeLinecap="round"/>
+        <path d="M140 66 C126 66 117 78 117 92 L163 92 C163 78 154 66 140 66Z" fill="#1B2B4B" opacity="0.4"/>
         {/* Glass with trembling lines */}
-        <rect x="155" y="78" width="8" height="14" rx="1" fill="#C4966C" opacity="0.55"/>
-        <line x1="151" y1="82" x2="149" y2="80" stroke="#C4966C" strokeWidth="1.5" opacity="0.6" className="as-tremble-1"/>
-        <line x1="167" y1="82" x2="169" y2="80" stroke="#C4966C" strokeWidth="1.5" opacity="0.6" className="as-tremble-2"/>
-        <line x1="151" y1="88" x2="149" y2="86" stroke="#C4966C" strokeWidth="1.5" opacity="0.6" className="as-tremble-1"/>
-        {/* Eyes/attention lines pointing at person */}
-        <line x1="75" y1="98" x2="120" y2="65" stroke="#C4966C" strokeWidth="1" opacity="0.4" strokeDasharray="4 4" className="as-gaze"/>
-        <line x1="205" y1="98" x2="160" y2="65" stroke="#C4966C" strokeWidth="1" opacity="0.4" strokeDasharray="4 4" className="as-gaze"/>
+        <rect x="157" y="76" width="9" height="16" rx="1.5" fill="#C4966C" opacity="0.7"/>
+        <line x1="152" y1="79" x2="149" y2="76" stroke="#C4966C" strokeWidth="2" opacity="0.65" className="as-tremble-1"/>
+        <line x1="170" y1="79" x2="173" y2="76" stroke="#C4966C" strokeWidth="2" opacity="0.65" className="as-tremble-2"/>
+        <line x1="152" y1="87" x2="149" y2="84" stroke="#C4966C" strokeWidth="2" opacity="0.65" className="as-tremble-1"/>
+        <line x1="170" y1="87" x2="173" y2="84" stroke="#C4966C" strokeWidth="2" opacity="0.65" className="as-tremble-2"/>
+        {/* Gaze lines - eyes pointing at person */}
+        <line x1="70" y1="98" x2="124" y2="60" stroke="#C4966C" strokeWidth="1.5" opacity="0.5" strokeDasharray="4 4" className="as-gaze"/>
+        <line x1="210" y1="98" x2="156" y2="60" stroke="#C4966C" strokeWidth="1.5" opacity="0.5" strokeDasharray="4 4" className="as-gaze"/>
+        <line x1="140" y1="88" x2="140" y2="66" stroke="#C4966C" strokeWidth="1.5" opacity="0.4" strokeDasharray="4 4" className="as-gaze"/>
+        {/* Spotlight / exposure feeling */}
+        <circle cx="140" cy="60" r="35" fill="#C4966C" opacity="0.06"/>
       </svg>
     </div>
   );
@@ -202,20 +224,31 @@ function SceneAfter() {
   return (
     <div className="as-scene">
       <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-        {/* Bed/couch */}
-        <rect x="50" y="140" width="180" height="30" rx="8" fill="#1B2B4B" opacity="0.15"/>
-        <rect x="45" y="135" width="40" height="40" rx="6" fill="#1B2B4B" opacity="0.12"/>
-        {/* Person lying/sitting */}
-        <circle cx="120" cy="110" r="14" fill="#1B2B4B" opacity="0.4"/>
-        <path d="M90 140 L100 125 C108 118 132 118 140 125 L150 140Z" fill="#1B2B4B" opacity="0.3"/>
-        {/* Replay/loop symbol around head */}
-        <path d="M95 95 A30 30 0 1 1 145 95" fill="none" stroke="#C4966C" strokeWidth="2.5" opacity="0.6" className="as-replay"/>
-        <polygon points="145,92 145,99 151,95.5" fill="#C4966C" opacity="0.6" className="as-replay"/>
-        {/* Thought fragments floating */}
-        <text x="170" y="60" fill="#C4966C" opacity="0.6" fontSize="13" fontWeight="600" className="as-float-1">de ce?</text>
-        <text x="182" y="85" fill="#C4966C" opacity="0.5" fontSize="12" fontWeight="600" className="as-float-2">ciudat</text>
-        <text x="160" y="105" fill="#C4966C" opacity="0.6" fontSize="13" fontWeight="600" className="as-float-3">greșit</text>
-        <text x="195" y="72" fill="#C4966C" opacity="0.45" fontSize="11" fontWeight="500" className="as-float-1">au observat</text>
+        {/* Dark cloud behind everything - makes scene feel heavy */}
+        <circle cx="140" cy="120" r="85" fill="#1B2B4B" opacity="0.05"/>
+        {/* Couch */}
+        <rect x="40" y="145" width="190" height="30" rx="10" fill="#1B2B4B" opacity="0.35"/>
+        {/* Pillow */}
+        <rect x="42" y="133" width="45" height="42" rx="8" fill="#1B2B4B" opacity="0.25"/>
+        {/* Armrest */}
+        <rect x="35" y="128" width="16" height="50" rx="6" fill="#1B2B4B" opacity="0.3"/>
+        {/* Person sitting curled up */}
+        <circle cx="130" cy="105" r="18" fill="#1B2B4B" opacity="0.55"/>
+        {/* Eyes looking down - defeated */}
+        <path d="M124 104 L128 107" stroke="#1B2B4B" strokeWidth="1.5" opacity="0.35" strokeLinecap="round"/>
+        <path d="M132 104 L136 107" stroke="#1B2B4B" strokeWidth="1.5" opacity="0.35" strokeLinecap="round"/>
+        <path d="M100 145 L108 128 C115 120 145 120 152 128 L160 145Z" fill="#1B2B4B" opacity="0.4"/>
+        {/* Knees drawn up */}
+        <circle cx="115" cy="138" r="11" fill="#1B2B4B" opacity="0.35"/>
+        <circle cx="145" cy="138" r="11" fill="#1B2B4B" opacity="0.35"/>
+        {/* Replay/loop symbol around head - the post-mortem */}
+        <path d="M105 88 A30 30 0 1 1 155 88" fill="none" stroke="#C4966C" strokeWidth="3" opacity="0.75" className="as-replay"/>
+        <polygon points="155,85 155,93 162,89" fill="#C4966C" opacity="0.75" className="as-replay"/>
+        {/* Thought fragments floating - bold and visible */}
+        <text x="175" y="50" fill="#C4966C" opacity="0.85" fontSize="15" fontWeight="700" fontFamily="system-ui, sans-serif" className="as-float-1">de ce?</text>
+        <text x="192" y="80" fill="#C4966C" opacity="0.75" fontSize="14" fontWeight="700" fontFamily="system-ui, sans-serif" className="as-float-2">ciudat</text>
+        <text x="168" y="108" fill="#C4966C" opacity="0.85" fontSize="15" fontWeight="700" fontFamily="system-ui, sans-serif" className="as-float-3">greșit</text>
+        <text x="200" y="63" fill="#C4966C" opacity="0.7" fontSize="12" fontWeight="600" fontFamily="system-ui, sans-serif" className="as-float-1">au observat</text>
       </svg>
     </div>
   );
@@ -407,7 +440,7 @@ export default function AnxietateSocialaPage() {
                 <strong>Omul timid</strong> merge la petrecere și după 20 de minute se simte OK, începe să vorbească, se relaxează.
               </p>
               <p>
-                <strong>Omul cu anxietate socială</strong> petrece 3 ore monitorizându-se.. am spus ceva greșit, se vede că transpir.. apoi 2 zile analizând fiecare moment.
+                <strong>Omul cu anxietate socială</strong> petrece 3 ore monitorizându-se.. „am spus ceva greșit", „se vede că transpir".. apoi 2 zile analizând fiecare moment.
               </p>
             </div>
           </Reveal>
@@ -427,13 +460,13 @@ export default function AnxietateSocialaPage() {
           </Reveal>
 
           {[
-            { bold: "Telefonul sună.", text: "Cineva te caută. Îl lași să sune până se oprește. Apoi îi scrii un mesaj.. scuze, nu am putut răspunde. Știi că ai putut. Dar a răspunde însemna să vorbești nepregătit, și asta e prea mult." },
+            { bold: "Telefonul sună.", text: `Cineva te caută. Îl lași să sune până se oprește. Apoi îi scrii un mesaj.. „scuze, nu am putut răspunde". Știi că ai putut. Dar a răspunde însemna să vorbești nepregătit, și asta e prea mult.` },
             { bold: "Ești la masă cu colegi.", text: "Toți comandă la fel de repede, natural. Tu citești meniul de 3 ori, dar nu fiindcă nu știi ce vrei, ci fiindcă îți repeți în cap cum să comanzi fără să te bâlbâi." },
-            { bold: "O ședință de lucru.", text: "Ai o idee bună. O știi. Dar în capul tău se derulează scenariul.. dacă spun o prostie, dacă toți se uită la mine. Așa că taci. Altcineva spune aceeași idee, 10 minute mai târziu. Primește felicitări." },
+            { bold: "O ședință de lucru.", text: `Ai o idee bună. O știi. Dar în capul tău se derulează scenariul.. „dacă spun o prostie?", „dacă toți se uită la mine?". Așa că taci. Altcineva spune aceeași idee, 10 minute mai târziu. Primește felicitări.` },
             { bold: "O petrecere.", text: "Te-ai pregătit o oră. Ai repetat mental câteva subiecte de conversație. Ajungi acolo și primele 20 de minute le petreci lângă perete, cu telefonul în mână, prefăcându-te că verifici ceva important." },
-            { bold: "Cineva îți face un compliment.", text: "În loc să simți bucurie, simți disconfort.. sigur nu vorbește serios. Sau dacă acum așteaptă ceva de la mine și eu nu mă ridic la nivelul așteptărilor?" },
+            { bold: "Cineva îți face un compliment.", text: "În loc să simți bucurie, simți disconfort. Îți spui că sigur nu vorbește serios. Sau dacă acum așteaptă ceva de la tine și nu te ridici la nivelul așteptărilor?" },
             { bold: "După orice interacțiune socială.", text: "Nu te gândești la ce a mers bine. Derulezi filmul doar pe momentele în care ai simțit că ai greșit. Un cuvânt spus greșit, o pauză prea lungă, un zâmbet care poate a părut forțat.. le analizezi ore întregi." },
-            { bold: "Succesul te sperie la fel de tare ca eșecul.", text: "Ai fost lăudat într-o ședință. În loc să te simți bine, simți o presiune enormă. Acum așteaptă și mai mult de la mine, și data viitoare, dacă nu performez la fel, vor vedea că de fapt nu sunt așa de bun." },
+            { bold: "Succesul te sperie la fel de tare ca eșecul.", text: "Ai fost lăudat într-o ședință. În loc să te simți bine, simți o presiune enormă. Te gândești că acum așteaptă și mai mult de la tine, și data viitoare, dacă nu performezi la fel, vor vedea că de fapt nu ești așa de bun." },
           ].map((item, i) => (
             <Reveal key={i} delay={i * 120}>
               <div className="as-situation">
@@ -471,17 +504,17 @@ export default function AnxietateSocialaPage() {
             {
               label: "Faza 1",
               title: "Predicția negativă (înainte)",
-              text: "Totul începe înainte ca situația socială să aibă loc. Creierul tău lansează o serie de predicții automate.. vor vedea că sunt anxios, o să mă bâlbâi și toată lumea o să observe. Aceste predicții nu sunt simple gânduri negative în sensul banal, ci estimări automate ale amenințării pe care creierul tău le generează fără voia ta. Studiile arată că persoanele cu anxietate socială estimează probabilitatea unui rezultat social negativ de 2-3 ori mai mare decât realitatea."
+              text: `Totul începe înainte ca situația socială să aibă loc. Creierul tău lansează o serie de predicții automate.. „vor vedea că sunt anxios", „o să mă bâlbâi și toată lumea o să observe". Aceste predicții nu sunt simple gânduri negative în sensul banal, ci estimări automate ale amenințării pe care creierul tău le generează fără voia ta. Studiile arată că persoanele cu anxietate socială estimează probabilitatea unui rezultat social negativ de 2-3 ori mai mare decât realitatea.`
             },
             {
               label: "Faza 2",
               title: "Auto-monitorizarea excesivă (în timpul)",
-              text: "Odată ce ești în situația socială, atenția ta face ceva paradoxal. În loc să se îndrepte către exterior, se întoarce către interior. Începi să te observi pe tine.. îmi tremură mâna, am transpirat pe frunte. Această auto-monitorizare funcționează ca o cameră de supraveghere întoarsă spre tine. Nu mai ești în conversație, ci în evaluare. Ironia e brutală: tocmai încercarea de a nu părea anxios te face să pari și să fii mai anxios."
+              text: `Odată ce ești în situația socială, atenția ta face ceva paradoxal. În loc să se îndrepte către exterior, se întoarce către interior. Începi să te observi pe tine.. „îmi tremură mâna", „am transpirat pe frunte". Această auto-monitorizare funcționează ca o cameră de supraveghere întoarsă spre tine. Nu mai ești în conversație, ci în evaluare. Ironia e brutală: tocmai încercarea de a nu părea anxios te face să pari și să fii mai anxios.`
             },
             {
               label: "Faza 3",
               title: "Ruminația post-eveniment (după)",
-              text: "După interacțiunea socială, creierul tău nu se oprește. Pornește procesul de revizie, dar cu un filtru sistematic negativ.. derulezi filmul doar pe momentele în care ai simțit că ceva a mers prost, ignori tot ce a mers bine, amplifici semnificația fiecărui mic eșec. Această ruminație confirmă predicția negativă inițială, acel sentiment familiar de am știut eu că va fi rău. Și astfel, cercul se închide."
+              text: `După interacțiunea socială, creierul tău nu se oprește. Pornește procesul de revizie, dar cu un filtru sistematic negativ.. derulezi filmul doar pe momentele în care ai simțit că ceva a mers prost, ignori tot ce a mers bine, amplifici semnificația fiecărui mic eșec. Această ruminație confirmă predicția negativă inițială, acel sentiment familiar de „am știut eu că va fi rău". Și astfel, cercul se închide.`
             },
           ].map((phase, i) => (
             <Reveal key={i} delay={i * 200}>
@@ -584,7 +617,7 @@ export default function AnxietateSocialaPage() {
             {
               title: "Părintele interior critic",
               subtitle: "Vocea din capul tău nu e a ta",
-              text: "Fiecare persoană cu anxietate socială are un critic interior extrem de vocal.. vocea care spune că nu trebuie să te dai mare, cine te crezi, o să te faci de râs. Această voce nu s-a născut în capul tău, ci a fost internalizată. Ai înghițit vocile critice din copilărie și le-ai instalat ca un software care rulează automat."
+              text: `Fiecare persoană cu anxietate socială are un critic interior extrem de vocal.. vocea care spune „nu trebuie să te dai mare", „cine te crezi", „o să te faci de râs". Această voce nu s-a născut în capul tău, ci a fost internalizată. Ai înghițit vocile critice din copilărie și le-ai instalat ca un software care rulează automat.`
             },
             {
               title: "Dorința vs. teama",
@@ -611,12 +644,12 @@ export default function AnxietateSocialaPage() {
               <h3>Cele șase mesaje ale psihicului</h3>
               <p className="as-messages-intro">Dacă ar putea vorbi, anxietatea ta socială ți-ar spune:</p>
               {[
-                "Am nevoie de siguranță, nu de curaj.. nu îți lipsește curajul, ci senzația că ești în siguranță printre oameni.",
-                "Cineva mi-a spus că sunt greșit și am crezut.. convingerea ta despre tine nu e un adevăr, e o internalizare.",
-                "Vreau să fiu văzut, dar mă tem de ce vor vedea.. nu eviți oamenii, ci judecata.",
-                "Încerc să te protejez de o durere veche.. evitarea nu e slăbiciune, e un mecanism de apărare care a funcționat cândva.",
-                "Nu mai vreau să mă prefac.. mulți clienți descriu senzația de impostor, că se prefac că sunt adulți, că sunt competenți.",
-                "Am nevoie să fiu acceptat, nu reparat.. primul pas nu este să te schimbi, ci să înțelegi că nu ești defect.",
+                `„Am nevoie de siguranță, nu de curaj".. nu îți lipsește curajul, ci senzația că ești în siguranță printre oameni.`,
+                `„Cineva mi-a spus că sunt greșit și am crezut".. convingerea ta despre tine nu e un adevăr, e o internalizare.`,
+                `„Vreau să fiu văzut, dar mă tem de ce vor vedea".. nu eviți oamenii, ci judecata.`,
+                `„Încerc să te protejez de o durere veche".. evitarea nu e slăbiciune, e un mecanism de apărare care a funcționat cândva.`,
+                `„Nu mai vreau să mă prefac".. mulți clienți descriu senzația de impostor, că se prefac că sunt adulți, că sunt competenți.`,
+                `„Am nevoie să fiu acceptat, nu reparat".. primul pas nu este să te schimbi, ci să înțelegi că nu ești defect.`,
               ].map((msg, i) => (
                 <Reveal key={i} delay={i * 150}>
                   <div className="as-message">{msg}</div>
@@ -654,7 +687,7 @@ export default function AnxietateSocialaPage() {
               {
                 num: "3",
                 title: "Testează-ți predicțiile",
-                text: "Înainte de o situație socială, notează-ți predicția. Exact, pe hârtie.. cred că voi roși și toată lumea va observa. Apoi, după situație, verifică: s-a întâmplat? Cu timpul, această practică demolează o iluzie fundamentală.. că predicțiile tale sunt fapte."
+                text: `Înainte de o situație socială, notează-ți predicția. Exact, pe hârtie.. „cred că voi roși și toată lumea va observa". Apoi, după situație, verifică: s-a întâmplat? Cu timpul, această practică demolează o iluzie fundamentală.. că predicțiile tale sunt fapte.`
               },
               {
                 num: "4",
@@ -687,7 +720,7 @@ export default function AnxietateSocialaPage() {
                 <li><strong>Evitarea</strong> .. Reduce anxietatea pe termen scurt, o amplifică pe termen lung.</li>
                 <li><strong>Alcoolul ca lubrifiant social</strong> .. Funcționează temporar, dar împiedică învățarea. Creierul atribuie succesul social alcoolului, nu ție.</li>
                 <li><strong>Autoperfecționarea</strong> .. Problema nu e performanța ta. Problema e standardul imposibil pe care ți l-ai fixat.</li>
-                <li><strong>Căutarea de reasigurare</strong> .. întrebarea a fost OK oferă alinare pentru 5 minute, apoi revine îndoiala.</li>
+                <li><strong>Căutarea de reasigurare</strong> .. întrebarea „a fost OK?" oferă alinare pentru 5 minute, apoi revine îndoiala.</li>
               </ul>
             </div>
           </Reveal>
@@ -708,7 +741,7 @@ export default function AnxietateSocialaPage() {
 
           <div className="as-demystify">
             {[
-              { bold: "Nu trebuie să vorbești la telefon.", text: "Poți scrie. Un mesaj, un email, un formular. Primele cuvinte pot fi.. am citit pagina și mă recunosc. Atât, e suficient." },
+              { bold: "Nu trebuie să vorbești la telefon.", text: `Poți scrie. Un mesaj, un email, un formular. Primele cuvinte pot fi.. „am citit pagina și mă recunosc". Atât, e suficient.` },
               { bold: "Nu trebuie să fii pregătit pentru terapie.", text: "Nu există un nivel de pregătire necesar. Vii așa cum ești. Cu anxietatea, cu îndoielile, cu senzația că poate exagerezi." },
               { bold: "Nu te voi judeca.", text: "Lucrez cu oameni care trăiesc exact ce trăiești tu de peste 10 ani. Am auzit fiecare variantă a acestei povești. Nimic nu te va face să pari ciudat în ochii mei." },
               { bold: "Nu va fi un interogatoriu.", text: "Terapia nu înseamnă să răspunzi la întrebări inconfortabile în prima ședință. Înseamnă să construim, în ritmul tău, un spațiu în care poți fi văzut fără să te temi." },
@@ -1078,9 +1111,9 @@ const pageStyles = `
   align-items: center;
   margin-bottom: 64px;
   padding: 40px;
-  background: rgba(250, 247, 242, 0.6);
+  background: rgba(240, 235, 225, 0.5);
   border-radius: 16px;
-  border: 1px solid rgba(27, 43, 75, 0.05);
+  border: 1px solid rgba(27, 43, 75, 0.08);
 }
 
 .as-act-card-reverse {

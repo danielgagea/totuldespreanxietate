@@ -349,43 +349,96 @@ export default function AtacDePanicaHub() {
             </div>
             {/* Illustration: person with heart racing but safe */}
             <div
-              className="shrink-0 w-full md:w-[280px] h-[320px] rounded-xl flex items-center justify-center"
+              className="shrink-0 w-full md:w-[280px] h-[320px] rounded-2xl flex items-center justify-center"
               style={{
-                backgroundColor: "var(--color-secondary-light)",
-                border: "1px solid var(--color-border)",
+                background: "linear-gradient(160deg, #DDD6CA 0%, #D0C9BC 100%)",
                 overflow: "hidden",
+                position: "relative",
               }}
             >
               <style>{`
-                @keyframes adp-pulse { 0%,100%{opacity:0.6} 50%{opacity:0.9} }
-                @keyframes adp-ring { 0%{r:20;opacity:0.3} 100%{r:60;opacity:0} }
-                @keyframes adp-ring2 { 0%{r:20;opacity:0.3} 100%{r:60;opacity:0} }
-                .adp-heart { animation: adp-pulse 0.8s ease-in-out infinite; }
-                .adp-ring1 { animation: adp-ring 1.5s ease-out infinite; }
-                .adp-ring2 { animation: adp-ring 1.5s ease-out 0.5s infinite; }
+                @keyframes adp-beat {
+                  0%, 100% { transform: scale(1); }
+                  12% { transform: scale(1.18); }
+                  24% { transform: scale(0.95); }
+                  36% { transform: scale(1.1); }
+                  48% { transform: scale(1); }
+                }
+                @keyframes adp-ripple {
+                  0% { r: 22; opacity: 0.4; }
+                  100% { r: 65; opacity: 0; }
+                }
+                @keyframes adp-breathe {
+                  0%, 100% { opacity: 0.08; }
+                  50% { opacity: 0.15; }
+                }
+                .adp-beat { transform-origin: 140px 155px; animation: adp-beat 1.3s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+                .adp-rip1 { animation: adp-ripple 2.2s ease-out infinite; }
+                .adp-rip2 { animation: adp-ripple 2.2s ease-out 0.7s infinite; }
+                .adp-rip3 { animation: adp-ripple 2.2s ease-out 1.4s infinite; }
+                .adp-breathe { animation: adp-breathe 4s ease-in-out infinite; }
               `}</style>
               <svg viewBox="0 0 280 320" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "100%" }}>
-                {/* Person silhouette */}
-                <circle cx="140" cy="105" r="28" fill="#1B2B4B" opacity="0.35"/>
-                <path d="M140 133 C115 133 95 158 95 185 L95 220 L185 220 L185 185 C185 158 165 133 140 133Z" fill="#1B2B4B" opacity="0.25"/>
-                {/* Hand on chest */}
-                <ellipse cx="155" cy="175" rx="12" ry="8" fill="#1B2B4B" opacity="0.3" transform="rotate(-15 155 175)"/>
-                {/* Heart icon pulsing */}
-                <path d="M140 161 C140 157.5 136.5 155 133.5 155 C130.5 155 127.5 157.5 127.5 161 C127.5 167 140 173 140 173 C140 173 152.5 167 152.5 161 C152.5 157.5 149.5 155 146.5 155 C143.5 155 140 157.5 140 161Z" fill="#C4614A" className="adp-heart"/>
-                {/* Pulse waves from chest */}
-                <circle cx="140" cy="170" r="20" fill="none" stroke="#C4614A" strokeWidth="1" className="adp-ring1"/>
-                <circle cx="140" cy="170" r="20" fill="none" stroke="#C4614A" strokeWidth="1" className="adp-ring2"/>
-                {/* Safety circle / shield */}
-                <circle cx="140" cy="160" r="85" fill="none" stroke="#5C7A6A" strokeWidth="1.5" opacity="0.2" strokeDasharray="6 4"/>
-                {/* Text */}
-                <text x="140" y="275" textAnchor="middle" fill="#5C7A6A" fontSize="11" fontWeight="500" opacity="0.5">ești în siguranță</text>
-                {/* Alarm bell with strikethrough */}
-                <g transform="translate(200, 55)" opacity="0.3">
-                  <path d="M8 0 C8 0 0 6 0 12 L16 12 C16 6 8 0 8 0Z" fill="#C4614A" opacity="0.4"/>
-                  <line x1="5" y1="12" x2="11" y2="12" stroke="#C4614A" strokeWidth="1.5"/>
-                  <circle cx="8" cy="14" r="2" fill="#C4614A" opacity="0.3"/>
-                  <line x1="0" y1="0" x2="16" y2="14" stroke="#5C7A6A" strokeWidth="1.5" opacity="0.6"/>
+                <defs>
+                  <radialGradient id="adp-warmth" cx="50%" cy="48%" r="35%">
+                    <stop offset="0%" stopColor="#C4614A" stopOpacity="0.35"/>
+                    <stop offset="100%" stopColor="#C4614A" stopOpacity="0"/>
+                  </radialGradient>
+                  <radialGradient id="adp-calm" cx="50%" cy="48%" r="50%">
+                    <stop offset="0%" stopColor="#5C7A6A" stopOpacity="0.12"/>
+                    <stop offset="100%" stopColor="#5C7A6A" stopOpacity="0"/>
+                  </radialGradient>
+                </defs>
+
+                {/* Calm field - large green glow behind everything */}
+                <circle cx="140" cy="150" r="120" fill="url(#adp-calm)" className="adp-breathe"/>
+
+                {/* Person - head with subtle face suggestion */}
+                <circle cx="140" cy="82" r="26" fill="#1B2B4B" opacity="0.45"/>
+                {/* Eyes closed - peaceful/enduring expression */}
+                <path d="M131 80 Q134 82 137 80" fill="none" stroke="#1B2B4B" strokeWidth="1.5" opacity="0.35" strokeLinecap="round"/>
+                <path d="M143 80 Q146 82 149 80" fill="none" stroke="#1B2B4B" strokeWidth="1.5" opacity="0.35" strokeLinecap="round"/>
+
+                {/* Person - neck */}
+                <path d="M134 107 L134 118 Q134 122 137 122 L143 122 Q146 122 146 118 L146 107" fill="#1B2B4B" opacity="0.35"/>
+
+                {/* Person - shoulders flowing into torso */}
+                <path d="M140 122 C120 122 98 138 88 158 L82 178 Q80 186 86 188 L94 188 L94 260 L186 260 L186 188 L194 188 Q200 186 198 178 L192 158 C182 138 160 122 140 122Z" fill="#1B2B4B" opacity="0.3"/>
+
+                {/* Arms crossed on chest - left arm */}
+                <path d="M88 158 C92 164 100 172 118 168 L132 158" fill="none" stroke="#1B2B4B" strokeWidth="8" opacity="0.25" strokeLinecap="round"/>
+                {/* Right arm */}
+                <path d="M192 158 C188 164 180 172 162 168 L148 158" fill="none" stroke="#1B2B4B" strokeWidth="8" opacity="0.25" strokeLinecap="round"/>
+                {/* Hands meeting at chest */}
+                <ellipse cx="132" cy="162" rx="10" ry="6" fill="#1B2B4B" opacity="0.28" transform="rotate(-10 132 162)"/>
+                <ellipse cx="148" cy="162" rx="10" ry="6" fill="#1B2B4B" opacity="0.28" transform="rotate(10 148 162)"/>
+
+                {/* Warm glow from chest */}
+                <circle cx="140" cy="155" r="35" fill="url(#adp-warmth)"/>
+
+                {/* Ripple waves from heart */}
+                <circle cx="140" cy="155" r="22" fill="none" stroke="#C4614A" strokeWidth="1.2" className="adp-rip1"/>
+                <circle cx="140" cy="155" r="22" fill="none" stroke="#C4614A" strokeWidth="0.8" className="adp-rip2"/>
+                <circle cx="140" cy="155" r="22" fill="none" stroke="#C4614A" strokeWidth="0.5" className="adp-rip3"/>
+
+                {/* Heart - the focal point */}
+                <g className="adp-beat">
+                  <path d="M140 160 C140 153 133 148 128 148 C122 148 117 153 117 160 C117 171 140 182 140 182 C140 182 163 171 163 160 C163 153 158 148 152 148 C147 148 140 153 140 160Z" fill="#C4614A" opacity="0.9"/>
+                  {/* Heart sheen */}
+                  <path d="M128 153 Q131 149 135 153" fill="none" stroke="white" strokeWidth="1.5" opacity="0.25" strokeLinecap="round"/>
                 </g>
+
+                {/* Safety circle - single, clear, protective */}
+                <circle cx="140" cy="150" r="100" fill="none" stroke="#5C7A6A" strokeWidth="1.8" opacity="0.25" strokeDasharray="4 6"/>
+
+                {/* Small leaf/nature element - calm anchor */}
+                <g transform="translate(210, 248)" opacity="0.35">
+                  <path d="M0 12 Q4 0 12 0 Q8 6 6 12 Z" fill="#5C7A6A"/>
+                  <path d="M6 12 L6 0" fill="none" stroke="#5C7A6A" strokeWidth="0.7" opacity="0.6"/>
+                </g>
+
+                {/* Text */}
+                <text x="140" y="290" textAnchor="middle" fill="#4A6B5C" fontSize="11" fontWeight="600" opacity="0.65" fontFamily="system-ui, sans-serif" letterSpacing="0.08em">ești în siguranță</text>
               </svg>
             </div>
           </div>

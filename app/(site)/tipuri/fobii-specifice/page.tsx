@@ -81,46 +81,132 @@ export default function FobiiSpecificePage() {
                 <strong>Nu ești irațional. Nu ești slab.</strong> Ce trăiești poartă un nume.. fobie specifică.
               </p>
             </div>
-            {/* Illustration */}
+            {/* Illustration — CSS composition */}
             <div style={{ flexShrink: 0, width: 300 }} aria-hidden="true">
-              <style>{`
-                @keyframes fb-pulse{0%,100%{opacity:0.15}50%{opacity:0.3}}
-                @keyframes fb-shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-2px)}75%{transform:translateX(2px)}}
-                @keyframes fb-wave{0%,100%{opacity:0.2;transform:scale(1)}50%{opacity:0.35;transform:scale(1.05)}}
-                .fb-pulse{animation:fb-pulse 2.5s ease-in-out infinite}
-                .fb-shake{animation:fb-shake 0.4s ease-in-out infinite}
-                .fb-wave{animation:fb-wave 3s ease-in-out infinite}
-              `}</style>
-              <svg viewBox="0 0 300 320" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%" }}>
-                {/* Safety circles */}
-                <circle cx="150" cy="150" r="130" fill="#5C7A6A" opacity="0.04" className="fb-wave" />
-                <circle cx="150" cy="150" r="95" fill="#5C7A6A" opacity="0.06" />
+              <div style={{
+                position: "relative",
+                width: 300,
+                height: 320,
+                borderRadius: 20,
+                background: "linear-gradient(160deg, #E4DFD5 0%, #D8D2C6 100%)",
+                overflow: "hidden",
+              }}>
+                {/* Calm circle — the rational mind */}
+                <div style={{
+                  position: "absolute",
+                  top: 55,
+                  left: 45,
+                  width: 140,
+                  height: 140,
+                  borderRadius: "50%",
+                  background: "radial-gradient(circle at 40% 40%, rgba(92, 122, 106, 0.25), rgba(92, 122, 106, 0.08))",
+                  border: "2px solid rgba(92, 122, 106, 0.3)",
+                }} />
+                {/* Label: mintea știe */}
+                <div style={{
+                  position: "absolute",
+                  top: 108,
+                  left: 62,
+                  fontSize: 14,
+                  fontWeight: 600,
+                  color: "#5C7A6A",
+                  opacity: 0.85,
+                  fontFamily: "system-ui, sans-serif",
+                  letterSpacing: "0.02em",
+                }}>mintea știe</div>
 
-                {/* Person */}
-                <circle cx="150" cy="100" r="26" fill="#1B2B4B" opacity="0.35" />
-                <path d="M150 126 C128 126 110 148 110 173 L110 200 L190 200 L190 173 C190 148 172 126 150 126Z" fill="#1B2B4B" opacity="0.25" />
+                {/* Alert circle — the body reacting */}
+                <div style={{
+                  position: "absolute",
+                  top: 100,
+                  left: 115,
+                  width: 140,
+                  height: 140,
+                  borderRadius: "50%",
+                  background: "radial-gradient(circle at 60% 40%, rgba(196, 97, 74, 0.28), rgba(196, 97, 74, 0.08))",
+                  border: "2px solid rgba(196, 97, 74, 0.35)",
+                }} />
+                {/* Label: corpul nu */}
+                <div style={{
+                  position: "absolute",
+                  top: 158,
+                  left: 172,
+                  fontSize: 14,
+                  fontWeight: 600,
+                  color: "#C4614A",
+                  opacity: 0.9,
+                  fontFamily: "system-ui, sans-serif",
+                  letterSpacing: "0.02em",
+                }}>corpul nu</div>
 
-                {/* Exclamation marks around (anxiety signals) */}
-                <text x="85" y="85" fill="#C4614A" fontSize="18" fontWeight="700" opacity="0.4" className="fb-shake">!</text>
-                <text x="210" y="90" fill="#C4614A" fontSize="16" fontWeight="700" opacity="0.35" className="fb-shake">!</text>
-                <text x="75" y="145" fill="#C4614A" fontSize="14" fontWeight="700" opacity="0.3" className="fb-shake">!</text>
-                <text x="220" y="155" fill="#C4614A" fontSize="15" fontWeight="700" opacity="0.3" className="fb-shake">!</text>
+                {/* Overlap zone — the conflict */}
+                <div style={{
+                  position: "absolute",
+                  top: 125,
+                  left: 130,
+                  width: 40,
+                  height: 50,
+                  borderRadius: "50%",
+                  background: "radial-gradient(circle, rgba(196, 97, 74, 0.12), transparent)",
+                }} />
 
-                {/* Shield / safety arc */}
-                <path d="M70 220 Q150 190 230 220" stroke="#5C7A6A" strokeWidth="2" opacity="0.2" fill="none" strokeLinecap="round" />
+                {/* Phobia trigger tags floating around */}
+                {[
+                  { label: "înălțime", top: 22, left: 170, rotate: 6 },
+                  { label: "zbor", top: 48, left: 20, rotate: -4 },
+                  { label: "sânge", top: 260, left: 35, rotate: -3 },
+                  { label: "spații închise", top: 270, left: 150, rotate: 5 },
+                  { label: "animale", top: 30, left: 90, rotate: -2 },
+                ].map((tag, i) => (
+                  <div key={i} style={{
+                    position: "absolute",
+                    top: tag.top,
+                    left: tag.left,
+                    fontSize: 11,
+                    fontWeight: 500,
+                    color: "#1B2B4B",
+                    opacity: 0.5,
+                    fontFamily: "system-ui, sans-serif",
+                    letterSpacing: "0.04em",
+                    padding: "3px 8px",
+                    borderRadius: 10,
+                    border: "1px solid rgba(27, 43, 75, 0.12)",
+                    background: "rgba(255, 255, 255, 0.4)",
+                    transform: `rotate(${tag.rotate}deg)`,
+                    whiteSpace: "nowrap",
+                  }}>{tag.label}</div>
+                ))}
 
-                {/* Brain with lock */}
-                <circle cx="150" cy="100" r="18" fill="none" stroke="#C4614A" strokeWidth="1.5" opacity="0.25" className="fb-pulse" />
-                <circle cx="150" cy="100" r="28" fill="none" stroke="#C4614A" strokeWidth="1" opacity="0.15" className="fb-pulse" />
+                {/* Decorative line — tension */}
+                <div style={{
+                  position: "absolute",
+                  top: 148,
+                  left: 70,
+                  width: 160,
+                  height: 1,
+                  background: "linear-gradient(90deg, rgba(92, 122, 106, 0.4), rgba(196, 97, 74, 0.4))",
+                }} />
 
-                {/* Small spider, snake, plane icons (fobia triggers) */}
-                <text x="60" y="210" fill="#1B2B4B" fontSize="20" opacity="0.15">🕷️</text>
-                <text x="130" y="240" fill="#1B2B4B" fontSize="18" opacity="0.12">✈️</text>
-                <text x="210" y="215" fill="#1B2B4B" fontSize="18" opacity="0.15">🏔️</text>
-
-                {/* Bottom text */}
-                <text x="150" y="280" textAnchor="middle" fill="#5C7A6A" fontSize="10" fontWeight="500" opacity="0.4">mintea știe. corpul nu.</text>
-              </svg>
+                {/* Small dots — scattered tension markers */}
+                {[
+                  { top: 85, left: 200, size: 5, color: "#C4614A", opacity: 0.4 },
+                  { top: 190, left: 60, size: 4, color: "#C4614A", opacity: 0.35 },
+                  { top: 70, left: 165, size: 4, color: "#5C7A6A", opacity: 0.35 },
+                  { top: 215, left: 230, size: 5, color: "#C4614A", opacity: 0.3 },
+                  { top: 55, left: 240, size: 4, color: "#5C7A6A", opacity: 0.3 },
+                ].map((dot, i) => (
+                  <div key={i} style={{
+                    position: "absolute",
+                    top: dot.top,
+                    left: dot.left,
+                    width: dot.size,
+                    height: dot.size,
+                    borderRadius: "50%",
+                    background: dot.color,
+                    opacity: dot.opacity,
+                  }} />
+                ))}
+              </div>
             </div>
           </div>
         </div>

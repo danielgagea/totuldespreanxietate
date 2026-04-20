@@ -75,52 +75,20 @@ export default function TOCPage() {
               </p>
             </div>
 
-            {/* Illustration - cycle/loop motif */}
-            <div style={{ flexShrink: 0, width: 300 }} aria-hidden="true">
-              <style>{`
-                @keyframes cl-spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
-                @keyframes cl-pulse{0%,100%{opacity:0.15;transform:scale(1)}50%{opacity:0.3;transform:scale(1.06)}}
-                .cl-spin{animation:cl-spin 12s linear infinite}
-                .cl-pulse{animation:cl-pulse 3s ease-in-out infinite}
-              `}</style>
-              <svg viewBox="0 0 300 320" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%" }}>
-                {/* Background pulse */}
-                <circle cx="150" cy="155" r="130" fill="#5C7A6A" opacity="0.04" className="cl-pulse" />
-
-                {/* Person silhouette */}
-                <circle cx="150" cy="120" r="22" fill="#1B2B4B" opacity="0.3" />
-                <path d="M128 155 Q150 145 172 155 L168 215 Q150 225 132 215 Z" fill="#1B2B4B" opacity="0.2" />
-
-                {/* Rotating cycle arrows */}
-                <g className="cl-spin" style={{ transformOrigin: "150px 155px" }}>
-                  {/* Outer circle path */}
-                  <path d="M150 60 A95 95 0 0 1 245 155" stroke="#1B2B4B" strokeWidth="2" opacity="0.15" fill="none" />
-                  <path d="M245 155 A95 95 0 0 1 150 250" stroke="#1B2B4B" strokeWidth="2" opacity="0.15" fill="none" />
-                  <path d="M150 250 A95 95 0 0 1 55 155" stroke="#1B2B4B" strokeWidth="2" opacity="0.15" fill="none" />
-                  <path d="M55 155 A95 95 0 0 1 150 60" stroke="#1B2B4B" strokeWidth="2" opacity="0.15" fill="none" />
-                  {/* Arrow heads */}
-                  <polygon points="245,155 235,148 235,162" fill="#1B2B4B" opacity="0.2" />
-                  <polygon points="150,250 143,240 157,240" fill="#1B2B4B" opacity="0.2" />
-                  <polygon points="55,155 65,148 65,162" fill="#1B2B4B" opacity="0.2" />
-                  <polygon points="150,60 143,70 157,70" fill="#1B2B4B" opacity="0.2" />
-                </g>
-
-                {/* Inner rotating arrows (opposite direction) */}
-                <g className="cl-spin" style={{ transformOrigin: "150px 155px", animationDirection: "reverse", animationDuration: "8s" }}>
-                  <path d="M150 100 A55 55 0 0 1 205 155" stroke="#5C7A6A" strokeWidth="1.5" opacity="0.12" fill="none" strokeDasharray="6 4" />
-                  <path d="M205 155 A55 55 0 0 1 150 210" stroke="#5C7A6A" strokeWidth="1.5" opacity="0.12" fill="none" strokeDasharray="6 4" />
-                  <path d="M150 210 A55 55 0 0 1 95 155" stroke="#5C7A6A" strokeWidth="1.5" opacity="0.12" fill="none" strokeDasharray="6 4" />
-                  <path d="M95 155 A55 55 0 0 1 150 100" stroke="#5C7A6A" strokeWidth="1.5" opacity="0.12" fill="none" strokeDasharray="6 4" />
-                </g>
-
-                {/* Thought bubble dots */}
-                <circle cx="170" cy="100" r="4" fill="#8B3A3A" opacity="0.2" className="cl-pulse" />
-                <circle cx="182" cy="90" r="3" fill="#8B3A3A" opacity="0.15" className="cl-pulse" style={{ animationDelay: "0.5s" }} />
-                <circle cx="190" cy="78" r="2.5" fill="#8B3A3A" opacity="0.12" className="cl-pulse" style={{ animationDelay: "1s" }} />
-
-                {/* Label */}
-                <text x="150" y="300" textAnchor="middle" fill="#1B2B4B" opacity="0.4" style={{ fontSize: 11, fontFamily: "var(--font-body)" }}>ciclul obsesie-compulsie</text>
-              </svg>
+            {/* Illustration — OCD hero image */}
+            <div style={{ flexShrink: 0, width: 340 }} aria-hidden="true">
+              <img
+                src="/images/toc-hero.jpg"
+                alt=""
+                width={340}
+                height={230}
+                style={{
+                  width: 340,
+                  height: 230,
+                  objectFit: "cover",
+                  borderRadius: 16,
+                }}
+              />
             </div>
           </div>
 
