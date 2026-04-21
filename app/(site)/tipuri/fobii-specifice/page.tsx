@@ -47,11 +47,99 @@ function Insight({ title, text }: { title: string; text: string }) {
   );
 }
 
+const hubJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      headline: "Fobii specifice .. Ghid complet 2026",
+      description: "Ce sunt fobiile specifice, de ce apar și cum se tratează. 80-95% rată de succes la tratament. De Daniel Gagea, psiholog clinician, psihoterapeut.",
+      author: {
+        "@type": "Person",
+        name: "Daniel Gagea",
+        jobTitle: "Psiholog clinician, psihoterapeut",
+        url: "https://totuldespreanxietate.ro",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Totul despre Anxietate",
+        url: "https://totuldespreanxietate.ro",
+      },
+      datePublished: "2026-04-03",
+      dateModified: "2026-04-03",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://totuldespreanxietate.ro/tipuri/fobii-specifice" },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Se vindecă complet o fobie specifică?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "În majoritatea cazurilor, da. 80-95% dintre persoanele care urmează tratament prin expunere raportează îmbunătățiri semnificative. Tratamentul durează între 1 și 12 ședințe.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Cât durează tratamentul pentru fobii?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Între 1 și 12 ședințe. În modelul Ost, o singură ședință de 2-3 ore poate fi suficientă. Fobiile au cel mai bun prognostic din toate tulburările de anxietate.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Trebuie să iau medicamente pentru fobie?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nu ca primă linie. Fobia specifică este una dintre puținele tulburări pentru care medicația NU este recomandată ca prim tratament. Expunerea terapeutică are cele mai puternice dovezi.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "De ce am fobie dacă nu am avut o experiență traumatică?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Există trei căi: experiență directă, învățare observațională (ai văzut pe cineva speriat) și transmitere informațională (ai auzit că e periculos). În plus, unele frici sunt cablate biologic.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Pot să mor din cauza fobiei?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nu. Senzațiile pe care le simți sunt produse de răspunsul fight-or-flight. Sunt menite să te protejeze. Corpul nu poate susține acel nivel de activare mai mult de câteva minute.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Person",
+      name: "Daniel Gagea",
+      jobTitle: "Psiholog clinician, psihoterapeut",
+      url: "https://totuldespreanxietate.ro",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Acasă", item: "https://totuldespreanxietate.ro" },
+        { "@type": "ListItem", position: 2, name: "Tipuri de anxietate", item: "https://totuldespreanxietate.ro/tipuri" },
+        { "@type": "ListItem", position: 3, name: "Fobii specifice", item: "https://totuldespreanxietate.ro/tipuri/fobii-specifice" },
+      ],
+    },
+  ],
+};
+
 export default function FobiiSpecificePage() {
   const [refsOpen, setRefsOpen] = useState(false);
 
   return (
     <main style={{ fontFamily: "var(--font-body)", color: "var(--color-text)", fontSize: 17, lineHeight: 1.75 }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(hubJsonLd) }}
+      />
 
       {/* ── HERO ── */}
       <section style={{ background: "var(--color-background)", padding: "48px 24px 64px" }}>
