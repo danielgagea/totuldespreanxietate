@@ -9,7 +9,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://totuldespreanxietate.ro" },
   openGraph: {
     title: "Totul despre Anxietate .. Ghiduri complete de la psiholog",
-    description: "Ce este anxietatea, de ce apare și ce poți face. Resursa #1 din România despre anxietate.",
+    description:
+      "Ce este anxietatea, de ce apare și ce poți face. Resursa #1 din România despre anxietate.",
     url: "https://totuldespreanxietate.ro",
     type: "website",
     locale: "ro_RO",
@@ -25,813 +26,458 @@ const jsonLd = {
       name: "Totul despre Anxietate",
       url: "https://totuldespreanxietate.ro",
       dateCreated: "2026-02-15",
-      publisher: { "@type": "Person", name: "Daniel Gagea", jobTitle: "Psiholog clinician, psihoterapeut" },
+      publisher: {
+        "@type": "Person",
+        name: "Daniel Gagea",
+        jobTitle: "Psiholog clinician, psihoterapeut",
+      },
     },
     {
       "@type": "FAQPage",
       mainEntity: [
-        { "@type": "Question", name: "Ce este anxietatea?", acceptedAnswer: { "@type": "Answer", text: "Anxietatea este un r\u0103spuns natural al corpului la o amenin\u021bare perceput\u0103. Devine o problem\u0103 c\u00e2nd se activeaz\u0103 frecvent, intens \u0219i f\u0103r\u0103 un pericol real." } },
-        { "@type": "Question", name: "Anxietatea se trateaz\u0103?", acceptedAnswer: { "@type": "Answer", text: "Da. Psihoterapia are rate de succes \u00eentre 60-80%. Majoritatea persoanelor observ\u0103 \u00eembun\u0103t\u0103\u021biri \u00een 8-16 \u0219edin\u021be." } },
-        { "@type": "Question", name: "Anxietatea e periculoas\u0103?", acceptedAnswer: { "@type": "Answer", text: "Anxietatea \u00een sine nu este periculoas\u0103 fizic. Un atac de panic\u0103 nu produce infarct. Totu\u0219i, anxietatea netratat\u0103 afecteaz\u0103 calitatea vie\u021bii." } },
+        {
+          "@type": "Question",
+          name: "Ce este anxietatea?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Anxietatea este un răspuns natural al corpului la o amenințare percepută. Devine o problemă când se activează frecvent, intens și fără un pericol real.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Anxietatea se tratează?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Da. Psihoterapia are rate de succes între 60-80%. Majoritatea persoanelor observă îmbunătățiri în 8-16 ședințe.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Anxietatea e periculoasă?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Anxietatea în sine nu este periculoasă fizic. Un atac de panică nu produce infarct. Totuși, anxietatea netratată afectează calitatea vieții.",
+          },
+        },
       ],
     },
-    { "@type": "Person", name: "Daniel Gagea", jobTitle: "Psiholog clinician, psihoterapeut", url: "https://totuldespreanxietate.ro" },
+    {
+      "@type": "Person",
+      name: "Daniel Gagea",
+      jobTitle: "Psiholog clinician, psihoterapeut",
+      url: "https://totuldespreanxietate.ro",
+    },
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Acasă", item: "https://totuldespreanxietate.ro" },
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Acasă",
+          item: "https://totuldespreanxietate.ro",
+        },
       ],
     },
   ],
 };
 
-const tipuri = [
-  { title: "Atacul de panică", href: "/atac-de-panica", desc: "Inima bate puternic, simți că nu poți respira, ești convins că faci infarct. Totul durează câteva minute, dar se simte ca o eternitate." },
-  { title: "Anxietatea socială", href: "/tipuri/anxietate-sociala", desc: "Repeți mental ce vei spune. Analizezi fiecare interacțiune ore sau zile. Eviți situații sociale nu pentru că nu vrei, ci pentru că te temi de judecată." },
-  { title: "Anxietatea generalizată", href: "/tipuri/anxietate-generalizata", desc: "Te îngrijorezi constant, nu despre un lucru anume, ci despre orice. Mintea ta produce scenarii negative non-stop." },
-  { title: "Tulburarea obsesiv-compulsivă", href: "/tipuri/toc", desc: "Gânduri intruzive care revin, ritualuri pe care le repeți ca să scapi de anxietate. Un cerc vicios." },
-  { title: "Stresul post-traumatic", href: "/tipuri/tspt", desc: "Tresări la sunete puternice, ai coșmaruri sau eviți anumite locuri de luni de zile. Trecutul se simte ca prezent." },
-  { title: "Fobii specifice", href: "/tipuri/fobii-specifice", desc: "Frica intensă de ceva concret.. înălțimi, zbor, spații închise. Știi rațional că frica e disproporționată, dar corpul nu ascultă." },
+type TipAccent = "cyan" | "yellow" | "navy";
+
+const TIPURI_FEATURED: Array<{
+  eyebrow: string;
+  title: string;
+  body: string;
+  cta: string;
+  href: string;
+  accent: TipAccent;
+}> = [
+  {
+    eyebrow: "Cel mai căutat ghid",
+    title: "Atacul de panică",
+    body: "Inima bate puternic, simți că nu poți respira, ești convins că faci infarct. Totul durează câteva minute, dar se simte ca o eternitate. Aici înțelegi de ce.",
+    cta: "Citește ghidul complet",
+    href: "/atac-de-panica",
+    accent: "cyan",
+  },
+  {
+    eyebrow: "Îngrijorare permanentă",
+    title: "Anxietatea generalizată",
+    body: "Te îngrijorezi constant, nu despre un lucru anume, ci despre orice. Mintea ta produce scenarii negative non-stop și nu poți să o oprești.",
+    cta: "Vezi mecanismul",
+    href: "/tipuri/anxietate-generalizata",
+    accent: "yellow",
+  },
+  {
+    eyebrow: "Frica de oameni",
+    title: "Anxietatea socială",
+    body: "Repeți mental ce vei spune. Analizezi fiecare interacțiune ore sau zile. Eviți situații nu pentru că nu vrei, ci pentru că te temi de judecată.",
+    cta: "Înțelege-o mai bine",
+    href: "/tipuri/anxietate-sociala",
+    accent: "navy",
+  },
 ];
 
-const faqs = [
-  { q: "Ce este anxietatea?", a: "Anxietatea este un răspuns natural al corpului la o amenințare percepută. Devine o problemă atunci când se activează frecvent, intens și fără un pericol real. Se manifestă prin senzații fizice (palpitații, amețeli, dificultăți de respirație), gânduri catastrofice și comportamente de evitare." },
-  { q: "Care sunt simptomele anxietății?", a: "Palpitații, presiune în piept, amețeli, senzație de sufocare, furnicături, transpirație, tremur, greață, tensiune musculară. Mental: îngrijorare excesivă, gânduri catastrofice, dificultăți de concentrare." },
-  { q: "Cum scap de anxietate?", a: "Nu scapi de anxietate ca de o răceală. Obiectivul este înțelegerea și gestionarea ei. Pașii includ: înțelegerea mecanismului, tehnici de reglare a respirației, modificarea gândurilor catastrofice și, când e necesar, psihoterapie." },
-  { q: "Anxietatea se tratează?", a: "Da. Anxietatea este una dintre cele mai tratabile condiții din psihologie. Psihoterapia are rate de succes între 60-80%. Majoritatea persoanelor observă îmbunătățiri semnificative în 8-16 ședințe." },
-  { q: "Anxietatea e periculoasă?", a: "Anxietatea în sine nu este periculoasă fizic. Un atac de panică nu produce infarct și nu te face să înnebunești. Totuși, anxietatea netratată poate afecta semnificativ calitatea vieții." },
-  { q: "De ce am anxietate dacă analizele sunt normale?", a: "Pentru că anxietatea nu este o boală fizică, ci un răspuns al sistemului nervos. Corpul funcționează perfect mecanic. Problema este că sistemul de alarmă se activează când nu ar trebui." },
-  { q: "Trebuie să iau medicamente pentru anxietate?", a: "Nu neapărat. Multe persoane reușesc să gestioneze anxietatea doar prin psihoterapie. Medicația funcționează cel mai bine în combinație cu terapia, nu ca înlocuitor." },
+const TIP_ACCENT_PILL: Record<TipAccent, string> = {
+  cyan: "bg-lp-cyan text-lp-navy",
+  yellow: "bg-lp-yellow text-lp-navy",
+  navy: "bg-lp-navy text-white",
+};
+
+const TIP_ACCENT_BORDER: Record<TipAccent, string> = {
+  cyan: "hover:border-lp-cyan",
+  yellow: "hover:border-lp-yellow",
+  navy: "hover:border-lp-navy",
+};
+
+const TIPURI_SECUNDARE = [
+  {
+    title: "Tulburarea obsesiv-compulsivă",
+    desc: "Gânduri intruzive care revin, ritualuri pe care le repeți ca să scapi de anxietate. Un cerc vicios.",
+    href: "/tipuri/toc",
+  },
+  {
+    title: "Stresul post-traumatic",
+    desc: "Tresări la sunete puternice, ai coșmaruri, eviți anumite locuri. Trecutul se simte ca prezent.",
+    href: "/tipuri/tspt",
+  },
+  {
+    title: "Fobii specifice",
+    desc: "Frica intensă de ceva concret.. înălțimi, zbor, spații închise. Știi rațional că frica e disproporționată, dar corpul nu ascultă.",
+    href: "/tipuri/fobii-specifice",
+  },
+];
+
+const GHIDURI = [
+  {
+    eyebrow: "Atacul de panică",
+    title: "Cum recunoști un atac de panică",
+    body: "Semnele clare care te ajută să-ți dai seama că ce trăiești este un atac de panică, nu un infarct sau altceva.",
+    href: "/atac-de-panica/recunoaste",
+  },
+  {
+    eyebrow: "Atacul de panică",
+    title: "De ce apar atacurile de panică",
+    body: "Mecanismul din spatele atacului de panică explicat pe înțelesul tău. Ce se întâmplă în corp și de ce.",
+    href: "/atac-de-panica/intelege",
+  },
+  {
+    eyebrow: "Atacul de panică",
+    title: "Ce poți face când ai un atac de panică",
+    body: "Tehnici concrete care funcționează, în loc de sfaturi vagi de tipul „respiră adânc” sau „relaxează-te”.",
+    href: "/atac-de-panica/actioneaza",
+  },
+];
+
+const FAQS = [
+  {
+    q: "Ce este anxietatea?",
+    a: "Anxietatea este un răspuns natural al corpului la o amenințare percepută. Devine o problemă atunci când se activează frecvent, intens și fără un pericol real. Se manifestă prin senzații fizice (palpitații, amețeli, dificultăți de respirație), gânduri catastrofice și comportamente de evitare.",
+  },
+  {
+    q: "Care sunt simptomele anxietății?",
+    a: "Palpitații, presiune în piept, amețeli, senzație de sufocare, furnicături, transpirație, tremur, greață, tensiune musculară. Mental: îngrijorare excesivă, gânduri catastrofice, dificultăți de concentrare.",
+  },
+  {
+    q: "Cum scap de anxietate?",
+    a: "Nu scapi de anxietate ca de o răceală. Obiectivul este înțelegerea și gestionarea ei. Pașii includ: înțelegerea mecanismului, tehnici de reglare a respirației, modificarea gândurilor catastrofice și, când e necesar, psihoterapie.",
+  },
+  {
+    q: "Anxietatea se tratează?",
+    a: "Da. Anxietatea este una dintre cele mai tratabile condiții din psihologie. Psihoterapia are rate de succes între 60-80%. Majoritatea persoanelor observă îmbunătățiri semnificative în 8-16 ședințe.",
+  },
+  {
+    q: "Anxietatea e periculoasă?",
+    a: "Anxietatea în sine nu este periculoasă fizic. Un atac de panică nu produce infarct și nu te face să înnebunești. Totuși, anxietatea netratată poate afecta semnificativ calitatea vieții.",
+  },
+  {
+    q: "De ce am anxietate dacă analizele sunt normale?",
+    a: "Pentru că anxietatea nu este o boală fizică, ci un răspuns al sistemului nervos. Corpul funcționează perfect mecanic. Problema este că sistemul de alarmă se activează când nu ar trebui.",
+  },
+  {
+    q: "Trebuie să iau medicamente pentru anxietate?",
+    a: "Nu neapărat. Multe persoane reușesc să gestioneze anxietatea doar prin psihoterapie. Medicația funcționează cel mai bine în combinație cu terapia, nu ca înlocuitor.",
+  },
 ];
 
 export default function HomePage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+    <main className="font-work min-h-screen bg-white text-lp-navy">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       {/* HERO */}
-      <section className="py-16 md:py-24" style={{ backgroundColor: "var(--color-background)" }}>
-        <div className="mx-auto max-w-[1000px] px-6">
-          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
-            {/* Text */}
-            <div className="flex-1 text-center md:text-left">
-              <p className="text-xs font-medium uppercase tracking-[0.15em] mb-6" style={{ color: "var(--color-text-secondary)" }}>
-                De <Link href="/despre-daniel" style={{ color: "inherit", textDecoration: "none" }}>Daniel Gagea</Link>, psiholog clinician, psihoterapeut
-              </p>
-              <h1 className="text-[28px] md:text-[42px] leading-[1.2] mb-6" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}>
-                Anxietatea ta are un sens. Aici îl înțelegi.
-              </h1>
-              <p className="text-[17px] md:text-[19px] leading-[1.7] mb-10" style={{ color: "var(--color-text-secondary)" }}>
-                Informații complete despre anxietate, scrise de specialiști în anxietate. De la <Link href="/atac-de-panica" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: 3 }}>atacul de panică</Link> la <Link href="/tipuri/anxietate-generalizata" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: 3 }}>anxietatea generalizată</Link>, ca să te recunoști, să înțelegi ce ți se întâmplă și să știi ce ai de făcut.
-              </p>
-              <Link href="#tipuri" className="inline-block px-8 py-4 rounded-lg text-[16px] font-semibold text-white" style={{ backgroundColor: "var(--color-secondary)" }}>
-                Descoperă ce tip de anxietate ai &rarr;
-              </Link>
-            </div>
-            {/* Hero illustration */}
-            <div className="shrink-0 w-[280px] md:w-[360px]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/homepage-hero.svg"
-                alt="Ilustrație persoană într-un moment de reflecție"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PROBLEMA */}
-      <section className="py-16 md:py-20" style={{ backgroundColor: "var(--color-background-white)" }}>
-        <style>{`
-          .hp-journey-container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
-          .hp-journey-intro { font-size: 17px; line-height: 1.75; color: var(--color-text); margin-bottom: 40px; }
-          .hp-journey-timeline { position: relative; padding-left: 32px; margin-bottom: 40px; }
-          .hp-journey-timeline::before {
-            content: '';
-            position: absolute;
-            left: 7px;
-            top: 8px;
-            bottom: 8px;
-            width: 2px;
-            background: linear-gradient(180deg, var(--color-secondary) 0%, #C4966C 100%);
-            opacity: 0.3;
-            border-radius: 1px;
-          }
-          .hp-journey-step {
-            position: relative;
-            margin-bottom: 28px;
-          }
-          .hp-journey-step:last-child { margin-bottom: 0; }
-          .hp-journey-dot {
-            position: absolute;
-            left: -32px;
-            top: 6px;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            border: 2px solid var(--color-secondary);
-            background: var(--color-background-white);
-          }
-          .hp-journey-step:last-child .hp-journey-dot {
-            border-color: #C4966C;
-            background: #C4966C;
-          }
-          .hp-journey-label {
-            font-family: var(--font-body), sans-serif;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--color-secondary);
-            margin-bottom: 4px;
-          }
-          .hp-journey-step:last-child .hp-journey-label { color: #C4966C; }
-          .hp-journey-text {
-            font-size: 16px;
-            line-height: 1.7;
-            color: var(--color-text);
-          }
-          .hp-journey-close {
-            padding: 28px;
-            background: var(--color-background);
-            border-radius: 12px;
-            border-left: 3px solid var(--color-secondary);
-          }
-          .hp-journey-close p {
-            font-size: 17px;
-            line-height: 1.75;
-            color: var(--color-text);
-            margin: 0;
-          }
-        `}</style>
-        <div className="hp-journey-container">
-          <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-6" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}>
-            Ți se pare cunoscută povestea asta?
-          </h2>
-          <p className="hp-journey-intro">
-            Începi să simți o senzație pe care nu o poți explica. Și de acolo urmează un drum pe care milioane de oameni l-au parcurs deja.
+      <section className="bg-white px-6 pt-16 pb-20 md:pt-24 md:pb-28">
+        <div className="mx-auto max-w-[920px] text-center">
+          <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+            Anxietate · Atac de panică · Psihoterapie
+          </p>
+          <h1 className="mt-5 font-work text-4xl font-bold leading-[1.05] tracking-tight text-lp-navy md:text-5xl lg:text-6xl">
+            <span className="lp-yellow-underline">Anxietatea ta</span> are un
+            sens. Aici îl înțelegi.
+          </h1>
+          <p className="mx-auto mt-6 max-w-[720px] text-lg leading-relaxed text-lp-mute md:text-xl">
+            Ghiduri complete despre atacul de panică, anxietatea socială și
+            alte forme. Scrise de psiholog, ca să te recunoști, să înțelegi
+            ce ți se întâmplă și să știi ce ai de făcut.
           </p>
 
-          <div className="hp-journey-timeline">
-            {[
-              { label: "Simți", text: "Palpitații, amețeli, furnicături, presiune în piept, senzația că nu poți respira. Apar din senin, fără un motiv clar." },
-              { label: "Mergi la doctor", text: "Urgență sau medicul de familie. EKG, analize de sânge, investigații. Totul iese în parametri normali." },
-              { label: "Ce spune doctorul", text: "\"Nu aveți nimic. Probabil e stresul.\" Dar tu simți ceva, senzațiile sunt reale, și dacă nu ai nimic, de ce corpul tău face asta?" },
-              { label: "Ce faci după", text: "Ajungi pe Google. Cauți palpitații fără cauză sau de ce îmi bate inima repede fără motiv. Citești zeci de articole." },
-            ].map((step, i) => (
-              <div key={i} className="hp-journey-step">
-                <span className="hp-journey-dot" />
-                <p className="hp-journey-label">{step.label}</p>
-                <p className="hp-journey-text">{step.text}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="hp-journey-close">
-            <p>
-              Dacă ai ajuns aici prin acest drum, ești exact unde trebuie. Aici vei găsi răspunsurile pe care nimeni nu ți le-a dat încă.
-            </p>
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <a
+              href="#tipuri"
+              className="lp-cta inline-flex items-center justify-center gap-2 rounded-md px-7 py-4 text-base font-semibold md:text-lg"
+            >
+              Descoperă ce tip de anxietate ai
+              <span aria-hidden>→</span>
+            </a>
+            <Link
+              href="/programare?din=homepage-hero"
+              className="inline-flex items-center justify-center gap-2 text-base font-semibold text-lp-navy underline-offset-4 hover:underline md:text-lg"
+            >
+              Programează o consultație
+              <span aria-hidden>→</span>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* VALUE PROPOSITION */}
-      <section className="py-16 md:py-20" style={{ backgroundColor: "var(--color-background)" }}>
-        <div className="mx-auto max-w-[760px] px-6">
-          <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-4" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}>
-            Ce găsești pe acest site
-          </h2>
-          <p className="text-[17px] leading-[1.75] mb-10" style={{ color: "var(--color-text-secondary)" }}>
-            Acest site nu este o enciclopedie medicală. Vei găsi trei lucruri pe care, împreună, nu le găsești în altă parte.
-          </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              ["Recunoaștere", "Ceea ce simți are un nume. Nu ești ciudat, nu ți se pare și nu ești singurul. Aici vei găsi descrieri exacte ale experiențelor prin care treci."],
-              ["Claritate", "Înțelegi ce ți se întâmplă și de ce. Cum funcționează anxietatea în corp, în minte, în relații. Explicate pe înțelesul tău."],
-              ["Direcție", "Știi ce urmează. Fiecare articol se termină cu pași concreți, nu cu sfaturi vagi de tipul relaxează-te sau gândește pozitiv."],
-            ].map(([title, text], i) => (
-              <div key={i} className="p-6 rounded-xl" style={{ backgroundColor: "var(--color-background-white)", border: "1px solid var(--color-border)" }}>
-                <h3 className="text-[20px] mb-3" style={{ fontFamily: "var(--font-heading)", fontWeight: 500, color: "var(--color-primary)" }}>{title}</h3>
-                <p className="text-[15px] leading-[1.7]" style={{ color: "var(--color-text-secondary)" }}>{text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* TIPURI */}
-      <section id="tipuri" className="py-16 md:py-24" style={{ backgroundColor: "var(--color-background-white)", position: "relative", overflow: "hidden" }}>
-        {/* Subtle background texture */}
-        <div style={{ position: "absolute", inset: 0, opacity: 0.03, pointerEvents: "none" }} aria-hidden="true">
-          <svg width="100%" height="100%">
-            <filter id="tipuri-grain">
-              <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
-              <feColorMatrix type="saturate" values="0" />
-            </filter>
-            <rect width="100%" height="100%" filter="url(#tipuri-grain)" />
-          </svg>
-        </div>
-
-        <div className="mx-auto max-w-[1000px] px-6" style={{ position: "relative" }}>
-          <div className="text-center mb-12 md:mb-16">
-            <p className="text-xs font-medium uppercase tracking-[0.18em] mb-4" style={{ color: "var(--color-accent)" }}>
+      {/* TIPURI DE ANXIETATE */}
+      <section id="tipuri" className="bg-lp-bg px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-[1180px]">
+          <div className="text-center">
+            <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
               Ghiduri complete
             </p>
-            <h2 className="text-[26px] md:text-[34px] leading-[1.2] mb-5" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)", letterSpacing: "-0.02em" }}>
-              Tipuri de anxietate
+            <h2 className="mt-3 font-work text-3xl font-bold leading-tight text-lp-navy md:text-4xl lg:text-5xl">
+              Tipuri de anxietate.
             </h2>
-            <p className="text-[17px] leading-[1.75] mx-auto" style={{ color: "var(--color-text)", maxWidth: 560 }}>
-              Anxietatea are forme diferite, cu mecanisme diferite și cu soluții diferite. Alege-o pe cea în care te recunoști.
+            <p className="mx-auto mt-4 max-w-[680px] text-base leading-relaxed text-lp-mute md:text-lg">
+              Anxietatea are forme diferite, cu mecanisme diferite și soluții
+              diferite. Alege-o pe cea în care te recunoști.
             </p>
           </div>
 
-          <style>{`
-            /* Featured card */
-            .hp-tip-featured {
-              display: flex;
-              flex-direction: column;
-              position: relative;
-              padding: 36px 32px 32px;
-              border-radius: 16px;
-              background: var(--color-primary);
-              text-decoration: none;
-              overflow: hidden;
-              margin-bottom: 16px;
-              transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s ease-out;
-            }
-            @media (min-width: 768px) {
-              .hp-tip-featured {
-                flex-direction: row;
-                align-items: center;
-                gap: 40px;
-                padding: 48px 44px;
-              }
-            }
-            .hp-tip-featured:hover {
-              transform: translateY(-4px);
-            }
-            .hp-tip-featured:focus-visible {
-              outline: 3px solid var(--color-accent);
-              outline-offset: 3px;
-            }
-            .hp-tip-featured:active { transform: translateY(-1px); }
-            .hp-tip-featured::before {
-              content: '';
-              position: absolute;
-              top: 0; left: 0; right: 0; bottom: 0;
-              background: radial-gradient(ellipse at 80% 20%, rgba(196,150,108,0.15) 0%, transparent 60%),
-                          radial-gradient(ellipse at 20% 80%, rgba(92,122,106,0.1) 0%, transparent 50%);
-              pointer-events: none;
-            }
-            .hp-tip-featured-icon {
-              flex-shrink: 0;
-              width: 120px;
-              height: 120px;
-              margin: 0 auto 20px;
-              opacity: 0.85;
-              transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease-out;
-            }
-            @media (min-width: 768px) {
-              .hp-tip-featured-icon { margin: 0; width: 140px; height: 140px; }
-            }
-            .hp-tip-featured:hover .hp-tip-featured-icon {
-              transform: scale(1.06);
-              opacity: 1;
-            }
-            .hp-tip-featured-content { flex: 1; position: relative; z-index: 1; }
-            .hp-tip-featured-label {
-              display: inline-block;
-              font-size: 11px;
-              font-weight: 600;
-              letter-spacing: 0.12em;
-              text-transform: uppercase;
-              color: #C4966C;
-              margin-bottom: 12px;
-              padding: 4px 12px;
-              border-radius: 20px;
-              background: rgba(196,150,108,0.12);
-            }
-            .hp-tip-featured-title {
-              font-family: var(--font-heading), 'Fraunces', serif;
-              font-size: 24px;
-              font-weight: 400;
-              color: #FAF7F2;
-              margin-bottom: 10px;
-              letter-spacing: -0.02em;
-            }
-            @media (min-width: 768px) {
-              .hp-tip-featured-title { font-size: 28px; }
-            }
-            .hp-tip-featured-desc {
-              font-size: 16px;
-              line-height: 1.7;
-              color: rgba(250,247,242,0.75);
-              margin-bottom: 20px;
-            }
-            .hp-tip-featured-cta {
-              display: inline-flex;
-              align-items: center;
-              gap: 8px;
-              font-size: 15px;
-              font-weight: 600;
-              color: #C4966C;
-              padding: 10px 20px;
-              border-radius: 8px;
-              background: rgba(196,150,108,0.1);
-              border: 1px solid rgba(196,150,108,0.2);
-              transition: transform 0.2s ease-out, opacity 0.2s ease-out;
-            }
-            .hp-tip-featured:hover .hp-tip-featured-cta {
-              transform: translateX(4px);
-            }
-
-            /* Secondary cards grid - 3 top, 2 bottom centered */
-            .hp-tipuri-grid-v2 {
-              display: grid;
-              grid-template-columns: 1fr;
-              gap: 14px;
-            }
-            @media (min-width: 640px) {
-              .hp-tipuri-grid-v2 { grid-template-columns: 1fr 1fr; }
-            }
-            @media (min-width: 900px) {
-              .hp-tipuri-grid-v2 {
-                grid-template-columns: repeat(6, 1fr);
-              }
-              .hp-tipuri-grid-v2 > a:nth-child(1),
-              .hp-tipuri-grid-v2 > a:nth-child(2),
-              .hp-tipuri-grid-v2 > a:nth-child(3) {
-                grid-column: span 2;
-              }
-              .hp-tipuri-grid-v2 > a:nth-child(4) {
-                grid-column: 2 / span 2;
-              }
-              .hp-tipuri-grid-v2 > a:nth-child(5) {
-                grid-column: 4 / span 2;
-              }
-            }
-
-            /* Secondary card */
-            .hp-tip-card-v2 {
-              display: flex;
-              flex-direction: column;
-              padding: 24px 22px 22px;
-              border-radius: 14px;
-              background: var(--color-background);
-              text-decoration: none;
-              position: relative;
-              overflow: hidden;
-              transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s ease-out;
-            }
-            .hp-tip-card-v2::before {
-              content: '';
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              height: 3px;
-              border-radius: 14px 14px 0 0;
-              transition: opacity 0.25s ease-out;
-            }
-            .hp-tip-card-v2:hover {
-              transform: translateY(-5px);
-            }
-            .hp-tip-card-v2:focus-visible {
-              outline: 2px solid var(--color-secondary);
-              outline-offset: 2px;
-            }
-            .hp-tip-card-v2:active { transform: translateY(-1px); }
-
-            /* Color accents per card */
-            .hp-tip-card-v2[data-accent="green"]::before { background: #5C7A6A; }
-            .hp-tip-card-v2[data-accent="amber"]::before { background: #C4966C; }
-            .hp-tip-card-v2[data-accent="teal"]::before { background: #4A8B7F; }
-            .hp-tip-card-v2[data-accent="slate"]::before { background: #6B7B8D; }
-            .hp-tip-card-v2[data-accent="rust"]::before { background: #A0735C; }
-
-            .hp-tip-card-v2-icon {
-              width: 44px;
-              height: 44px;
-              margin-bottom: 14px;
-              opacity: 0.7;
-              transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease-out;
-            }
-            .hp-tip-card-v2:hover .hp-tip-card-v2-icon {
-              transform: scale(1.1) translateY(-2px);
-              opacity: 1;
-            }
-            .hp-tip-card-v2-title {
-              font-family: var(--font-heading), 'Fraunces', serif;
-              font-size: 18px;
-              font-weight: 500;
-              color: var(--color-primary);
-              margin-bottom: 8px;
-              letter-spacing: -0.01em;
-            }
-            .hp-tip-card-v2-desc {
-              font-size: 14px;
-              line-height: 1.65;
-              color: var(--color-text);
-              margin-bottom: 16px;
-              flex: 1;
-            }
-            .hp-tip-card-v2-cta {
-              font-size: 13px;
-              font-weight: 600;
-              display: inline-flex;
-              align-items: center;
-              gap: 5px;
-              transition: transform 0.2s ease-out, opacity 0.2s ease-out;
-            }
-            .hp-tip-card-v2:hover .hp-tip-card-v2-cta {
-              transform: translateX(3px);
-            }
-            .hp-tip-card-v2[data-accent="green"] .hp-tip-card-v2-cta { color: #5C7A6A; }
-            .hp-tip-card-v2[data-accent="amber"] .hp-tip-card-v2-cta { color: #B08050; }
-            .hp-tip-card-v2[data-accent="teal"] .hp-tip-card-v2-cta { color: #4A8B7F; }
-            .hp-tip-card-v2[data-accent="slate"] .hp-tip-card-v2-cta { color: #6B7B8D; }
-            .hp-tip-card-v2[data-accent="rust"] .hp-tip-card-v2-cta { color: #A0735C; }
-
-            /* Shadow system for cards */
-            .hp-tip-card-v2 {
-              box-shadow: 0 1px 3px rgba(27,43,75,0.04), 0 4px 12px rgba(27,43,75,0.03);
-            }
-            .hp-tip-card-v2:hover {
-              box-shadow: 0 4px 12px rgba(27,43,75,0.06), 0 12px 32px rgba(27,43,75,0.06);
-            }
-            .hp-tip-featured {
-              box-shadow: 0 4px 16px rgba(0,0,0,0.15), 0 12px 40px rgba(0,0,0,0.1);
-            }
-            .hp-tip-featured:hover {
-              box-shadow: 0 8px 24px rgba(0,0,0,0.18), 0 20px 56px rgba(0,0,0,0.12);
-            }
-          `}</style>
-
-          {/* Featured card: Atacul de panică */}
-          <Link href={tipuri[0].href} className="hp-tip-featured">
-            <div className="hp-tip-featured-icon" aria-hidden="true">
-              <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                {/* Pulsing circles */}
-                <circle cx="70" cy="70" r="55" stroke="#C4966C" strokeWidth="0.8" opacity="0.15">
-                  <animate attributeName="r" values="50;58;50" dur="3s" repeatCount="indefinite" />
-                  <animate attributeName="opacity" values="0.15;0.05;0.15" dur="3s" repeatCount="indefinite" />
-                </circle>
-                <circle cx="70" cy="70" r="40" stroke="#C4966C" strokeWidth="0.8" opacity="0.2">
-                  <animate attributeName="r" values="38;44;38" dur="2.5s" repeatCount="indefinite" />
-                  <animate attributeName="opacity" values="0.2;0.08;0.2" dur="2.5s" repeatCount="indefinite" />
-                </circle>
-                {/* Heart shape */}
-                <path d="M70 95 C70 95 45 78 45 62 C45 52 53 46 62 48 C67 49 70 54 70 54 C70 54 73 49 78 48 C87 46 95 52 95 62 C95 78 70 95 70 95Z" fill="#C4966C" opacity="0.35">
-                  <animate attributeName="opacity" values="0.35;0.5;0.35" dur="1.8s" repeatCount="indefinite" />
-                </path>
-                <path d="M70 95 C70 95 45 78 45 62 C45 52 53 46 62 48 C67 49 70 54 70 54 C70 54 73 49 78 48 C87 46 95 52 95 62 C95 78 70 95 70 95Z" stroke="#C4966C" strokeWidth="1.2" fill="none" opacity="0.5" />
-                {/* ECG line */}
-                <path d="M20 70 L45 70 L52 70 L56 55 L60 85 L64 60 L68 75 L70 70 L95 70 L120 70" stroke="#FAF7F2" strokeWidth="1.2" opacity="0.25" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
-            <div className="hp-tip-featured-content">
-              <span className="hp-tip-featured-label">Cel mai căutat ghid</span>
-              <h3 className="hp-tip-featured-title">{tipuri[0].title}</h3>
-              <p className="hp-tip-featured-desc">{tipuri[0].desc}</p>
-              <span className="hp-tip-featured-cta">
-                Citește ghidul complet
-                <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </span>
-            </div>
-          </Link>
-
-          {/* Secondary cards */}
-          <div className="hp-tipuri-grid-v2">
-            {/* Anxietatea socială */}
-            <Link href={tipuri[1].href} className="hp-tip-card-v2" data-accent="green">
-              <div className="hp-tip-card-v2-icon" aria-hidden="true">
-                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Two figures, one faded */}
-                  <circle cx="16" cy="14" r="5" fill="#5C7A6A" opacity="0.5" />
-                  <path d="M8 30 C8 24 12 20 16 20 C20 20 24 24 24 30" fill="#5C7A6A" opacity="0.35" />
-                  <circle cx="30" cy="14" r="5" fill="#5C7A6A" opacity="0.2" />
-                  <path d="M22 30 C22 24 26 20 30 20 C34 20 38 24 38 30" fill="#5C7A6A" opacity="0.12" />
-                  {/* Dividing line */}
-                  <line x1="22" y1="8" x2="22" y2="34" stroke="#5C7A6A" strokeWidth="0.8" opacity="0.15" strokeDasharray="2 2" />
-                </svg>
-              </div>
-              <h3 className="hp-tip-card-v2-title">{tipuri[1].title}</h3>
-              <p className="hp-tip-card-v2-desc">{tipuri[1].desc}</p>
-              <span className="hp-tip-card-v2-cta">
-                Citește ghidul
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </span>
-            </Link>
-
-            {/* Anxietatea generalizată */}
-            <Link href={tipuri[2].href} className="hp-tip-card-v2" data-accent="amber">
-              <div className="hp-tip-card-v2-icon" aria-hidden="true">
-                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Thought cloud / spiraling lines */}
-                  <circle cx="22" cy="20" r="10" stroke="#C4966C" strokeWidth="0.8" opacity="0.3" fill="none" />
-                  <circle cx="22" cy="20" r="6" stroke="#C4966C" strokeWidth="0.8" opacity="0.4" fill="none" />
-                  <circle cx="22" cy="20" r="2.5" fill="#C4966C" opacity="0.35" />
-                  {/* Radiating worry lines */}
-                  <path d="M22 6 L22 3" stroke="#C4966C" strokeWidth="0.8" opacity="0.25" strokeLinecap="round" />
-                  <path d="M32 10 L34.5 7.5" stroke="#C4966C" strokeWidth="0.8" opacity="0.25" strokeLinecap="round" />
-                  <path d="M36 20 L39 20" stroke="#C4966C" strokeWidth="0.8" opacity="0.25" strokeLinecap="round" />
-                  <path d="M12 10 L9.5 7.5" stroke="#C4966C" strokeWidth="0.8" opacity="0.25" strokeLinecap="round" />
-                  <path d="M8 20 L5 20" stroke="#C4966C" strokeWidth="0.8" opacity="0.25" strokeLinecap="round" />
-                  {/* Small dots - scattered thoughts */}
-                  <circle cx="15" cy="34" r="1.2" fill="#C4966C" opacity="0.2" />
-                  <circle cx="29" cy="36" r="1" fill="#C4966C" opacity="0.15" />
-                  <circle cx="22" cy="38" r="0.8" fill="#C4966C" opacity="0.1" />
-                </svg>
-              </div>
-              <h3 className="hp-tip-card-v2-title">{tipuri[2].title}</h3>
-              <p className="hp-tip-card-v2-desc">{tipuri[2].desc}</p>
-              <span className="hp-tip-card-v2-cta">
-                Citește ghidul
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </span>
-            </Link>
-
-            {/* TOC */}
-            <Link href={tipuri[3].href} className="hp-tip-card-v2" data-accent="teal">
-              <div className="hp-tip-card-v2-icon" aria-hidden="true">
-                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Circular arrows / loop */}
-                  <path d="M22 8 A14 14 0 0 1 36 22" stroke="#4A8B7F" strokeWidth="1.2" opacity="0.4" fill="none" strokeLinecap="round" />
-                  <path d="M36 22 A14 14 0 0 1 22 36" stroke="#4A8B7F" strokeWidth="1.2" opacity="0.3" fill="none" strokeLinecap="round" />
-                  <path d="M22 36 A14 14 0 0 1 8 22" stroke="#4A8B7F" strokeWidth="1.2" opacity="0.4" fill="none" strokeLinecap="round" />
-                  <path d="M8 22 A14 14 0 0 1 22 8" stroke="#4A8B7F" strokeWidth="1.2" opacity="0.3" fill="none" strokeLinecap="round" />
-                  {/* Arrows */}
-                  <polygon points="35,18 37,22 33,22" fill="#4A8B7F" opacity="0.4" />
-                  <polygon points="9,26 7,22 11,22" fill="#4A8B7F" opacity="0.4" />
-                  {/* Center lock */}
-                  <rect x="18" y="19" width="8" height="7" rx="1.5" stroke="#4A8B7F" strokeWidth="1" opacity="0.35" fill="none" />
-                  <path d="M20 19 V16 A2 2 0 0 1 24 16 V19" stroke="#4A8B7F" strokeWidth="1" opacity="0.35" fill="none" />
-                </svg>
-              </div>
-              <h3 className="hp-tip-card-v2-title">{tipuri[3].title}</h3>
-              <p className="hp-tip-card-v2-desc">{tipuri[3].desc}</p>
-              <span className="hp-tip-card-v2-cta">
-                Citește ghidul
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </span>
-            </Link>
-
-            {/* TSPT */}
-            <Link href={tipuri[4].href} className="hp-tip-card-v2" data-accent="slate">
-              <div className="hp-tip-card-v2-icon" aria-hidden="true">
-                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Cracked / fractured shape */}
-                  <circle cx="22" cy="22" r="14" stroke="#6B7B8D" strokeWidth="0.8" opacity="0.25" fill="none" />
-                  {/* Lightning crack */}
-                  <path d="M22 8 L20 18 L25 19 L19 36" stroke="#6B7B8D" strokeWidth="1.2" opacity="0.4" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                  {/* Fragment lines */}
-                  <path d="M20 18 L12 15" stroke="#6B7B8D" strokeWidth="0.6" opacity="0.2" strokeLinecap="round" />
-                  <path d="M25 19 L33 16" stroke="#6B7B8D" strokeWidth="0.6" opacity="0.2" strokeLinecap="round" />
-                  <path d="M19 28 L10 30" stroke="#6B7B8D" strokeWidth="0.6" opacity="0.2" strokeLinecap="round" />
-                </svg>
-              </div>
-              <h3 className="hp-tip-card-v2-title">{tipuri[4].title}</h3>
-              <p className="hp-tip-card-v2-desc">{tipuri[4].desc}</p>
-              <span className="hp-tip-card-v2-cta">
-                Citește ghidul
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </span>
-            </Link>
-
-            {/* Fobii specifice */}
-            <Link href={tipuri[5].href} className="hp-tip-card-v2" data-accent="rust">
-              <div className="hp-tip-card-v2-icon" aria-hidden="true">
-                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Eye with fearful pupil */}
-                  <path d="M6 22 C6 22 14 12 22 12 C30 12 38 22 38 22 C38 22 30 32 22 32 C14 32 6 22 6 22Z" stroke="#A0735C" strokeWidth="1" opacity="0.35" fill="none" />
-                  <circle cx="22" cy="22" r="6" stroke="#A0735C" strokeWidth="0.8" opacity="0.3" fill="none" />
-                  <circle cx="22" cy="22" r="2.5" fill="#A0735C" opacity="0.4" />
-                  {/* Avoidance - looking away lines */}
-                  <path d="M4 18 L2 16" stroke="#A0735C" strokeWidth="0.8" opacity="0.2" strokeLinecap="round" />
-                  <path d="M4 26 L2 28" stroke="#A0735C" strokeWidth="0.8" opacity="0.2" strokeLinecap="round" />
-                  <path d="M40 18 L42 16" stroke="#A0735C" strokeWidth="0.8" opacity="0.2" strokeLinecap="round" />
-                  <path d="M40 26 L42 28" stroke="#A0735C" strokeWidth="0.8" opacity="0.2" strokeLinecap="round" />
-                </svg>
-              </div>
-              <h3 className="hp-tip-card-v2-title">{tipuri[5].title}</h3>
-              <p className="hp-tip-card-v2-desc">{tipuri[5].desc}</p>
-              <span className="hp-tip-card-v2-cta">
-                Citește ghidul
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </span>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* CE VREA SA SPUNA CORPUL */}
-      <section className="py-16 md:py-20" style={{ backgroundColor: "var(--color-primary)", color: "#FAF7F2" }}>
-        <style>{`
-          .hp-body-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            margin: 32px 0;
-          }
-          @media (max-width: 767px) {
-            .hp-body-grid { grid-template-columns: 1fr; }
-          }
-          .hp-body-card {
-            padding: 24px;
-            background: rgba(250, 247, 242, 0.06);
-            border-radius: 12px;
-            border: 1px solid rgba(250, 247, 242, 0.08);
-            transition: transform 0.2s ease-out, background 0.2s ease-out;
-          }
-          .hp-body-card:hover {
-            transform: translateY(-2px);
-            background: rgba(250, 247, 242, 0.1);
-          }
-          .hp-body-icon {
-            font-size: 28px;
-            margin-bottom: 12px;
-            display: block;
-          }
-          .hp-body-card h3 {
-            font-family: var(--font-heading), 'Fraunces', serif;
-            font-size: 18px;
-            font-weight: 500;
-            color: #FAF7F2;
-            margin-bottom: 6px;
-          }
-          .hp-body-card p {
-            font-size: 15px;
-            line-height: 1.7;
-            color: rgba(250, 247, 242, 0.7);
-            margin: 0;
-          }
-          .hp-body-conclusion {
-            padding: 28px;
-            background: rgba(196, 150, 108, 0.12);
-            border-radius: 12px;
-            border-left: 3px solid #C4966C;
-            margin-top: 32px;
-          }
-          .hp-body-conclusion p {
-            font-family: var(--font-heading), 'Fraunces', serif;
-            font-size: 19px;
-            line-height: 1.6;
-            color: #FAF7F2;
-            margin: 0;
-          }
-        `}</style>
-        <div className="mx-auto max-w-[900px] px-6">
-          <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-4" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "#FAF7F2" }}>
-            Ce vrea să-ți spună corpul tău
-          </h2>
-          <p className="text-[17px] leading-[1.75] mb-2" style={{ color: "rgba(250,247,242,0.7)" }}>
-            Fiecare simptom de anxietate este o formă de comunicare. Corpul tău încearcă să-ți transmită ceva prin singurele mijloace pe care le are.. senzații fizice.
-          </p>
-
-          <div className="hp-body-grid">
-            {[
-              { icon: "💓", title: "Palpitațiile", text: "Corpul tău se pregătește pentru ceva pe care mintea ta nu a procesat încă" },
-              { icon: "🫁", title: "Respirația blocată", text: "Senzația de sufocare reflectă adesea un spațiu emoțional în care simți că nu ai loc" },
-              { icon: "🫄", title: "Nodul din stomac", text: "O tensiune pe care o porți, dar pe care nu ai pus-o în cuvinte" },
-              { icon: "🪨", title: "Tensiunea din maxilar, gât, umeri", text: "Lucruri pe care le înghiți în loc să le spui" },
-            ].map((item, i) => (
-              <div key={i} className="hp-body-card">
-                <span className="hp-body-icon">{item.icon}</span>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {TIPURI_FEATURED.map((s) => (
+              <Link
+                key={s.title}
+                href={s.href}
+                className={`group relative flex flex-col rounded-md border border-lp-border bg-white p-7 transition hover:-translate-y-0.5 hover:shadow-[0_16px_48px_rgba(8,29,61,0.12)] md:p-8 ${TIP_ACCENT_BORDER[s.accent]}`}
+              >
+                <span
+                  className={`inline-flex w-fit items-center rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] ${TIP_ACCENT_PILL[s.accent]}`}
+                >
+                  {s.eyebrow}
+                </span>
+                <h3 className="mt-4 font-work text-[26px] font-extrabold leading-tight tracking-tight text-lp-navy md:text-3xl">
+                  {s.title}
+                </h3>
+                <p className="mt-4 flex-1 text-[17px] leading-relaxed text-lp-mute md:text-lg">
+                  {s.body}
+                </p>
+                <span className="mt-7 inline-flex items-center gap-1.5 text-base font-semibold text-lp-cyan-dark transition group-hover:text-lp-navy">
+                  {s.cta}
+                  <span aria-hidden>→</span>
+                </span>
+              </Link>
             ))}
           </div>
 
-          <div className="hp-body-conclusion">
-            <p>
-              Anxietatea nu este dușmanul tău, ci un mesaj. Când înțelegi mesajul, simptomul începe să aibă sens. Și când are sens, încetează să mai fie atât de înfricoșător.
-            </p>
+          {/* Tipuri secundare */}
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
+            {TIPURI_SECUNDARE.map((t) => (
+              <Link
+                key={t.title}
+                href={t.href}
+                className="group flex flex-col rounded-md border border-lp-border bg-white p-6 transition hover:-translate-y-0.5 hover:border-lp-cyan hover:shadow-[0_12px_40px_rgba(8,29,61,0.08)]"
+              >
+                <h3 className="font-work text-xl font-bold leading-tight text-lp-navy transition group-hover:text-lp-cyan-dark md:text-2xl">
+                  {t.title}
+                </h3>
+                <p className="mt-3 flex-1 text-[15px] leading-relaxed text-lp-mute md:text-base">
+                  {t.desc}
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-lp-cyan-dark">
+                  Citește ghidul
+                  <span aria-hidden>→</span>
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       {/* DESPRE DANIEL */}
-      <section className="py-16 md:py-20" style={{ backgroundColor: "var(--color-background)" }}>
-        <div className="mx-auto max-w-[900px] px-6">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="shrink-0 mx-auto md:mx-0">
-              <Image
-                src="/images/daniel-gagea.jpg"
-                alt="Daniel Gagea, psiholog clinician, psihoterapeut"
-                width={560}
-                height={560}
-                className="rounded-2xl object-cover"
-                style={{ width: 280, height: 340, border: "1px solid var(--color-border)", boxShadow: "0 8px 32px rgba(27, 43, 75, 0.08)" }}
-              />
+      <section
+        id="despre"
+        className="bg-white px-6 py-20 md:py-24"
+      >
+        <div className="mx-auto grid max-w-[1180px] gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:gap-16">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-[400px] overflow-hidden rounded-md bg-lp-bg shadow-[0_20px_60px_rgba(8,29,61,0.12)] lg:mx-0">
+            <Image
+              src="/images/daniel-gagea.jpg"
+              alt="Daniel Gagea, psiholog și psihoterapeut specializat în anxietate"
+              fill
+              sizes="(max-width: 1024px) 80vw, 400px"
+              className="object-cover"
+            />
+          </div>
+          <div>
+            <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+              Cine scrie acest site
+            </p>
+            <h2 className="mt-3 font-work text-3xl font-bold leading-tight text-lp-navy md:text-4xl lg:text-[44px]">
+              Nu lucrez pe simptome. Lucrez pe{" "}
+              <span className="lp-yellow-underline">cauze</span>.
+            </h2>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-lp-mute md:text-lg">
+              <p>
+                Sunt Daniel Gagea, psiholog clinician și psihoterapeut cu peste
+                10 ani de experiență și peste 500 de clienți în cabinet și
+                online.
+              </p>
+              <p>
+                Cele mai multe resurse din România despre anxietate sunt
+                incomplete, superficiale sau pline de sfaturi generice de tipul
+                „respiră adânc” sau „gândește pozitiv”. Site-ul ăsta există
+                tocmai ca să compenseze.
+              </p>
+              <p>
+                Abordarea mea este diferită.. nu lucrez pe simptome, ci pe
+                cauze. Te ajut să înțelegi de ce corpul și mintea ta au ajuns să
+                funcționeze așa, și ce trebuie să se schimbe la rădăcină.
+              </p>
             </div>
-            <div className="flex-1">
-              <p className="text-xs font-medium uppercase tracking-[0.12em] mb-3" style={{ color: "var(--color-text-secondary)" }}>Cine scrie acest site</p>
-              <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-6" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}>
-                Daniel Gagea
-              </h2>
-              <p className="text-[17px] leading-[1.75] mb-4" style={{ color: "var(--color-text)" }}>
-                Psiholog clinician și psihoterapeut cu peste 10 ani de experiență și peste 500 de clienți.
-              </p>
-              <p className="text-[17px] leading-[1.75] mb-4" style={{ color: "var(--color-text)" }}>
-                A construit acest site din aceeași frustrare pe care o au cei care caută răspunsuri.. cele mai multe resurse din România despre anxietate, de la <Link href="/tipuri/anxietate-sociala" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>anxietatea socială</Link> la <Link href="/tipuri/tspt" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>stresul post-traumatic</Link>, sunt incomplete, superficiale și pline de sfaturi generice.
-              </p>
-              <p className="text-[17px] leading-[1.75] mb-6" style={{ color: "var(--color-text)" }}>
-                Abordarea lui este diferită.. fie că trăiești <Link href="/tipuri/toc" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>gânduri obsesive</Link>, <Link href="/tipuri/fobii-specifice" style={{ color: "var(--color-secondary)", textDecoration: "underline", textUnderlineOffset: 3 }}>fobii</Link> sau altceva, nu lucrează pe simptome, ci pe cauze. Te ajută să înțelegi de ce corpul și mintea ta au ajuns să funcționeze așa, și ce trebuie să se schimbe la rădăcină.
-              </p>
+
+            <div className="mt-8">
               <Link
                 href="/despre-daniel"
-                className="inline-flex items-center gap-2 text-[15px] font-semibold"
-                style={{ color: "var(--color-secondary)", textDecoration: "none", transition: "opacity 0.2s ease-out" }}
+                className="lp-cta inline-flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold md:text-base"
               >
-                Află mai multe despre Daniel
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
+                Mai multe despre mine
+                <span aria-hidden>→</span>
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* TREI PASI */}
-      <section className="py-16 md:py-20" style={{ backgroundColor: "var(--color-background-white)" }}>
-        <div className="mx-auto max-w-[760px] px-6">
-          <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-4" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}>
-            Trei pași simpli
-          </h2>
-          <p className="text-[17px] leading-[1.75] mb-10" style={{ color: "var(--color-text-secondary)" }}>
-            Nu trebuie să știi de unde să începi. Site-ul este construit să te ghideze natural.
-          </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              ["1", "Citește", "Alege tipul de anxietate. Fiecare ghid începe cu experiența trăită, ca să te recunoști, și continuă cu mecanismul."],
-              ["2", "Înțelege", "Când înțelegi ce ți se întâmplă și de ce, anxietatea își pierde din putere. Nu dispare prin magie, dar încetează să mai fie un mister."],
-              ["3", "Acționează", "Fiecare ghid se termină cu pași concreți. Ce poți face singur, acum. Și dacă ai nevoie de mai mult, cum arată următorul pas."],
-            ].map(([num, title, text], i) => (
-              <div key={i} className="text-center">
-                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full text-[18px] font-semibold mb-4" style={{ backgroundColor: "var(--color-secondary)", color: "#ffffff" }}>{num}</span>
-                <h3 className="text-[20px] mb-2" style={{ fontFamily: "var(--font-heading)", fontWeight: 500, color: "var(--color-primary)" }}>{title}</h3>
-                <p className="text-[15px] leading-[1.7]" style={{ color: "var(--color-text-secondary)" }}>{text}</p>
-              </div>
+      {/* GHIDURI ATAC DE PANICĂ */}
+      <section id="ghiduri" className="bg-lp-bg px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-[1180px]">
+          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+            <div>
+              <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+                Atacul de panică, pe pași
+              </p>
+              <h2 className="mt-3 font-work text-3xl font-bold leading-tight text-lp-navy md:text-4xl">
+                Recunoaște, înțelege, acționează.
+              </h2>
+            </div>
+            <Link
+              href="/atac-de-panica"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-lp-cyan-dark transition hover:text-lp-cyan"
+            >
+              Vezi ghidul complet despre atacul de panică
+              <span aria-hidden>→</span>
+            </Link>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {GHIDURI.map((g) => (
+              <Link
+                key={g.title}
+                href={g.href}
+                className="group flex flex-col gap-3 rounded-md border border-lp-border bg-white p-6 transition hover:-translate-y-0.5 hover:border-lp-cyan hover:shadow-[0_12px_40px_rgba(8,29,61,0.08)]"
+              >
+                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-lp-cyan-dark">
+                  {g.eyebrow}
+                </p>
+                <h3 className="font-work text-lg font-bold leading-snug text-lp-navy transition group-hover:text-lp-cyan-dark md:text-xl">
+                  {g.title}
+                </h3>
+                <p className="line-clamp-3 text-base leading-relaxed text-lp-mute md:text-lg">
+                  {g.body}
+                </p>
+                <span className="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-lp-cyan-dark">
+                  Citește articolul
+                  <span aria-hidden>→</span>
+                </span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA FINAL */}
-      <section className="py-16 md:py-20" style={{ backgroundColor: "var(--color-background)" }}>
-        <div className="mx-auto max-w-[760px] px-6 text-center">
-          <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-4" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}>
-            Nu trebuie să faci nimic acum
-          </h2>
-          <p className="text-[17px] leading-[1.75] mb-10" style={{ color: "var(--color-text-secondary)" }}>
-            Dacă ai ajuns aici, ai făcut deja primul pas. Ai căutat. Ai citit. Ai început să înțelegi.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/programare?din=homepage" className="inline-block px-8 py-4 rounded-lg text-[16px] font-semibold text-white" style={{ backgroundColor: "var(--color-secondary)" }}>
-              Scrie-mi un mesaj
-            </Link>
-            <Link href="/programare?din=homepage" className="inline-block px-8 py-4 rounded-lg text-[16px] font-semibold" style={{ border: "2px solid var(--color-secondary)", color: "var(--color-secondary)" }}>
-              Programează o ședință
-            </Link>
+      {/* CTA DARK — Programare */}
+      <section className="bg-lp-navy px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-[1100px]">
+          <div className="text-center text-white">
+            <p className="text-base md:text-lg font-semibold uppercase tracking-[0.22em] text-lp-cyan">
+              Cabinet
+            </p>
+            <h2 className="mt-4 font-work text-3xl font-bold leading-tight md:text-5xl">
+              Psihoterapie individuală.{" "}
+              <span className="bg-lp-yellow px-2 text-lp-navy">
+                Pentru anxietate.
+              </span>
+            </h2>
+            <p className="mx-auto mt-6 max-w-[680px] text-lg leading-relaxed text-white/85 md:text-xl">
+              Dacă ai citit articolele și știi că ai nevoie de mai mult,
+              programează o consultație. Lucrăm pe cauzele din spatele
+              simptomelor, cu obiective clare și un proces predictibil. Cabinet
+              la Sibiu sau online.
+            </p>
+
+            <div className="mt-10 flex flex-col items-center gap-4">
+              <Link
+                href="/programare?din=homepage-cta"
+                className="lp-cta inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold md:text-lg"
+              >
+                Programează o consultație
+                <span aria-hidden>→</span>
+              </Link>
+              <p className="text-sm text-white/60">
+                Răspund personal la fiecare mesaj.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-16 md:py-20" style={{ backgroundColor: "var(--color-background-white)" }}>
-        <div className="mx-auto max-w-[760px] px-6">
-          <h2 className="text-[24px] md:text-[30px] leading-[1.3] mb-8" style={{ fontFamily: "var(--font-heading)", fontWeight: 400, color: "var(--color-primary)" }}>
-            Întrebări frecvente despre anxietate
-          </h2>
-          <div className="space-y-0">
-            {faqs.map((faq, i) => (
-              <details key={i} className="group border-b" style={{ borderColor: "var(--color-border)" }}>
-                <summary className="flex items-center justify-between py-5 cursor-pointer list-none text-[17px] font-semibold" style={{ color: "var(--color-primary)" }}>
-                  {faq.q}
-                  <span className="shrink-0 ml-4 transition-transform group-open:rotate-45" style={{ color: "var(--color-text-secondary)" }}>+</span>
+      <section id="faq" className="bg-lp-bg px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-[820px]">
+          <div className="text-center">
+            <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-cyan-dark">
+              Întrebări frecvente
+            </p>
+            <h2 className="mt-3 font-work text-3xl font-bold leading-tight tracking-tight text-lp-navy md:text-4xl lg:text-[44px]">
+              Ce vor să știe oamenii despre anxietate.
+            </h2>
+          </div>
+
+          <div className="mt-10 divide-y divide-lp-border rounded-md border border-lp-border bg-white">
+            {FAQS.map((faq, i) => (
+              <details key={i} className="group">
+                <summary className="flex cursor-pointer list-none items-start justify-between gap-6 px-6 py-5 text-left text-[17px] font-semibold text-lp-navy md:text-lg">
+                  <span>{faq.q}</span>
+                  <span
+                    aria-hidden
+                    className="mt-1 shrink-0 text-2xl leading-none text-lp-cyan-dark transition-transform group-open:rotate-45"
+                  >
+                    +
+                  </span>
                 </summary>
-                <p className="pb-5 text-[16px] leading-[1.7]" style={{ color: "var(--color-text-secondary)" }}>{faq.a}</p>
+                <p className="px-6 pb-5 text-base leading-relaxed text-lp-mute md:text-[17px]">
+                  {faq.a}
+                </p>
               </details>
             ))}
           </div>
         </div>
       </section>
-
-    </>
+    </main>
   );
 }

@@ -1,88 +1,404 @@
 @import "tailwindcss";
 
+/* ============================================================================
+   DESIGN SYSTEM — sincronizat cu platforma-antreprenori (danielgagea.ro)
+   Sursa originală: /Users/danielgagea/platforma-antreprenori/src/app/globals.css
+   Vezi DESIGN-SYSTEM.md pentru regulile de sync.
+   ============================================================================ */
+
+@theme {
+  /* Paleta principală LIDER PERFORMANT / DANIEL GAGEA */
+  --color-lp-navy: #081d3d;
+  --color-lp-navy-soft: #102a52;
+  --color-lp-cyan: #61c6ea;
+  --color-lp-cyan-dark: #4fb1d6;
+  --color-lp-yellow: #fee770;
+  --color-lp-bg: #f2f4f5;
+  --color-lp-border: #e2e5ed;
+  --color-lp-mute: #555555;
+  --color-lp-mute-soft: #4a5560;
+
+  /* Reading style (păstrat din anxiety vechi pentru articole long-form) */
+  --color-anx-background: #f5f0e8;
+  --color-anx-background-white: #fdfaf5;
+  --color-anx-primary: #1b2b4b;
+  --color-anx-secondary: #5c7a6a;
+  --color-anx-accent: #c4614a;
+  --color-anx-text: #2c2c2c;
+  --color-anx-border: #ddd8ce;
+}
+
 :root {
-  /* Culori — LIB.md */
-  --color-primary: #1B2B4B;
-  --color-primary-light: #2A3F6F;
-  --color-secondary: #5C7A6A;
-  --color-secondary-light: #EBF0ED;
-  --color-accent: #C4614A;
-  --color-accent-hover: #A84F3A;
-  --color-background: #F5F0E8;
-  --color-background-white: #FDFAF5;
-  --color-text: #2C2C2C;
-  --color-text-secondary: #5A5A5A;
-  --color-border: #DDD8CE;
+  --background: #ffffff;
+  --foreground: #081d3d;
 
-  /* Tipografie */
-  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --text-base: 17px;
-
-  /* Spacing — 8px grid */
-  --space-xs: 4px;
-  --space-sm: 8px;
-  --space-md: 16px;
-  --space-lg: 24px;
-  --space-xl: 32px;
-  --space-2xl: 48px;
-  --space-3xl: 64px;
-  --space-4xl: 96px;
-
-  /* Border radius */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-
-  /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-  --shadow-lg: 0 8px 24px rgba(0,0,0,0.10);
-
-  /* Layout */
-  --max-width-content: 760px;
-  --max-width-layout: 1200px;
-
-  /* Motion */
-  --transition-fast: 200ms ease-out;
-  --transition-base: 300ms ease-out;
-  --transition-slow: 400ms ease-out;
-}
-
-@theme inline {
-  --color-background: var(--color-background);
-  --color-foreground: var(--color-text);
-  --font-sans: var(--font-body);
-}
-
-html {
-  font-size: var(--text-base);
+  /* Compatibility aliases — paginile vechi referențiază aceste tokens.
+     Le mapăm la paleta lp-* ca pagini ne-redesign-uite să adopte instant noua temă.
+     Pe măsură ce paginile sunt rescrise complet, aceste alias-uri devin redundante. */
+  --color-background: #f2f4f5;
+  --color-background-white: #ffffff;
+  --color-primary: #081d3d;
+  --color-primary-light: #102a52;
+  --color-secondary: #4fb1d6;
+  --color-secondary-light: rgba(97, 198, 234, 0.08);
+  --color-accent: #fee770;
+  --color-text: #1e2a3f;
+  --color-text-secondary: #4a5560;
+  --color-border: #e2e5ed;
+  --shadow-sm: 0 1px 3px rgba(8, 29, 61, 0.04), 0 4px 12px rgba(8, 29, 61, 0.03);
+  --shadow-md: 0 4px 12px rgba(8, 29, 61, 0.06), 0 12px 32px rgba(8, 29, 61, 0.06);
+  --transition-fast: all 0.18s ease;
 }
 
 body {
-  background: var(--color-background);
-  color: var(--color-text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.75;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.65;
+
 }
 
-h1, h2, h3 {
-  font-family: var(--font-heading), 'Fraunces', serif;
-  color: var(--color-primary);
+/* Override --font-heading from Fraunces to Work Sans pentru paginile vechi.
+   Necesită !important pentru a bate className-ul Next.js Font (specificity 0,1,1). */
+:root,
+html body {
+  --font-heading: var(--font-work-sans), Helvetica, Arial, sans-serif !important;
 }
 
-h1 { font-size: 38px; font-weight: 400; line-height: 1.25; }
-h2 { font-size: 30px; font-weight: 400; line-height: 1.30; }
-h3 { font-size: 24px; font-weight: 500; line-height: 1.35; }
-h4, h5 { font-family: var(--font-body); font-weight: 600; line-height: 1.40; }
-h4 { font-size: 19px; }
-h5 { font-size: 16px; }
+/* ============================================================================
+   FONTURI — alias-uri pentru cele 4 fonturi încărcate în layout.tsx
+   ============================================================================ */
 
-@media (max-width: 767px) {
-  h1 { font-size: 28px; }
-  h2 { font-size: 24px; }
-  h3 { font-size: 20px; }
-  h4 { font-size: 17px; }
-  h5 { font-size: 15px; }
+.font-serif {
+  font-family: var(--font-merriweather), Georgia, serif;
+}
+
+.font-display {
+  font-family: var(--font-bebas), Impact, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.font-work {
+  font-family: var(--font-work-sans), Helvetica, Arial, Lucida, sans-serif;
+}
+
+.font-heading-anx {
+  font-family: var(--font-heading), "Fraunces", serif;
+}
+
+/* ============================================================================
+   BUTOANE + INPUT-URI
+   ============================================================================ */
+
+.lp-cta {
+  background: #61c6ea;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 2px 0 rgba(8, 29, 61, 0.08);
+}
+
+.lp-cta:hover {
+  background: #4fb1d6;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(8, 29, 61, 0.18);
+}
+
+.lp-cta-ghost {
+  background: transparent;
+  color: #081d3d;
+  border: 2px solid #081d3d;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.lp-cta-ghost:hover {
+  background: #081d3d;
+  color: #ffffff;
+}
+
+.lp-yellow-underline {
+  background-image: linear-gradient(transparent 60%, #fee770 60%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0 0.05em;
+}
+
+.lp-input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #e2e5ed;
+  border-radius: 4px;
+  font-family: var(--font-work-sans), Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #081d3d;
+  background: #ffffff;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.lp-input:focus {
+  outline: none;
+  border-color: #61c6ea;
+  box-shadow: 0 0 0 3px rgba(97, 198, 234, 0.18);
+}
+
+/* ============================================================================
+   ANIMAȚII MICRO
+   ============================================================================ */
+
+@keyframes lp-arrow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(97, 198, 234, 0.55), 0 6px 18px rgba(8, 29, 61, 0.12);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(97, 198, 234, 0), 0 6px 18px rgba(8, 29, 61, 0.12);
+  }
+}
+
+@keyframes lp-arrow-nudge {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(3px, 0); }
+}
+
+@keyframes lp-arrow-nudge-down {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(0, 3px); }
+}
+
+.lp-arrow-pulse { animation: lp-arrow-pulse 2s ease-out infinite; }
+.lp-arrow-icon-right { animation: lp-arrow-nudge 1.6s ease-in-out infinite; }
+.lp-arrow-icon-down { animation: lp-arrow-nudge-down 1.6s ease-in-out infinite; }
+
+/* Logo marquee (clienți/parteneri) */
+.logo-marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+}
+.logo-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 4rem;
+  align-items: center;
+  animation: logo-marquee-scroll 40s linear infinite;
+}
+.logo-marquee:hover .logo-marquee-track { animation-play-state: paused; }
+@keyframes logo-marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% / 3)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ============================================================================
+   ARTICLE PROSE — stil long-form (articole anxietate, paginile cu mult text)
+   Folosit prin <div className="article-prose">...</div>
+   ============================================================================ */
+
+.article-prose {
+  color: #1e2a3f;
+  font-size: 1.125rem;
+  line-height: 1.78;
+  font-feature-settings: "kern", "liga", "calt";
+  text-rendering: optimizeLegibility;
+}
+.article-prose > * + * { margin-top: 1.4em; }
+.article-prose > p:first-of-type {
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  color: var(--color-lp-navy);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+}
+.article-prose > p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--font-work-sans), Georgia, serif;
+  font-size: 4.25rem;
+  font-weight: 800;
+  line-height: 0.9;
+  margin: 0.15em 0.12em 0 0;
+  color: var(--color-lp-navy);
+  background: linear-gradient(135deg, var(--color-lp-navy) 0%, var(--color-lp-cyan-dark) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.article-prose h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-top: 2.75em;
+  margin-bottom: 0.6em;
+  color: var(--color-lp-navy);
+  position: relative;
+  padding-top: 0.6em;
+}
+.article-prose h2::before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--color-lp-cyan);
+  margin-bottom: 0.6em;
+  border-radius: 2px;
+}
+.article-prose h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin-top: 2.25em;
+  margin-bottom: 0.5em;
+  color: var(--color-lp-navy);
+}
+.article-prose h4 {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  margin-top: 1.85em;
+  margin-bottom: 0.4em;
+  color: var(--color-lp-navy);
+  letter-spacing: -0.005em;
+}
+.article-prose p { color: #1e2a3f; }
+.article-prose strong { font-weight: 700; color: var(--color-lp-navy); }
+.article-prose em { font-style: italic; color: #2c3a52; }
+.article-prose a {
+  color: var(--color-lp-cyan-dark);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: 1.5px;
+  transition: color 0.15s ease;
+}
+.article-prose a:hover {
+  color: var(--color-lp-navy);
+  text-decoration-thickness: 2px;
+}
+.article-prose ul {
+  list-style: none;
+  padding-left: 0;
+}
+.article-prose ul > li {
+  position: relative;
+  padding-left: 1.5em;
+}
+.article-prose ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0.25em;
+  top: 0.75em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: var(--color-lp-cyan);
+}
+.article-prose ol {
+  list-style: decimal;
+  counter-reset: item;
+  padding-left: 0;
+}
+.article-prose ol > li {
+  counter-increment: item;
+  list-style: none;
+  position: relative;
+  padding-left: 2.25em;
+}
+.article-prose ol > li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 800;
+  color: var(--color-lp-cyan-dark);
+  font-size: 1.05em;
+  width: 1.75em;
+  text-align: right;
+  padding-right: 0.5em;
+}
+.article-prose li {
+  margin-top: 0.6em;
+  line-height: 1.7;
+}
+.article-prose blockquote {
+  position: relative;
+  border-left: 3px solid var(--color-lp-cyan);
+  padding: 0.5em 0 0.5em 1.5em;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: var(--color-lp-navy);
+  margin: 2em 0 2em 0;
+  font-weight: 500;
+}
+.article-prose img {
+  border-radius: 0.75rem;
+  width: 100%;
+  height: auto;
+  margin: 2.25em 0;
+  box-shadow: 0 8px 32px rgba(8, 29, 61, 0.08);
+}
+.article-prose figure { margin: 2.25em 0; }
+.article-prose figcaption {
+  font-size: 0.875rem;
+  color: var(--color-lp-mute-soft);
+  text-align: center;
+  margin-top: 0.75em;
+  font-style: italic;
+}
+.article-prose hr {
+  border: none;
+  border-top: 1px solid var(--color-lp-border);
+  margin: 3em auto;
+  width: 60px;
+  border-top-width: 2px;
+}
+
+/* Quick Read callout — folosit pe articole pentru rezumate */
+.article-prose .quick-read {
+  margin: 2.5em 0;
+  padding: 1.75rem 1.75rem 1.5rem;
+  background: linear-gradient(135deg, rgba(97, 198, 234, 0.08) 0%, rgba(254, 231, 112, 0.08) 100%);
+  border: 1px solid var(--color-lp-border);
+  border-left: 4px solid var(--color-lp-cyan);
+  border-radius: 0.75rem;
+  position: relative;
+}
+.article-prose .quick-read::before {
+  content: "Pe scurt";
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-lp-cyan-dark);
+  margin-bottom: 0.85rem;
+}
+.article-prose .quick-read > p:first-child { display: none; }
+.article-prose .quick-read ul { margin: 0; padding: 0; }
+.article-prose .quick-read ul > li {
+  font-size: 1rem;
+  line-height: 1.55;
+  margin-top: 0.6em;
+  color: #1e2a3f;
+  padding-left: 1.4em;
+}
+.article-prose .quick-read ul > li:first-child { margin-top: 0; }
+.article-prose .quick-read ul > li::before {
+  background: var(--color-lp-cyan-dark);
+  top: 0.6em;
+  width: 0.4em;
+  height: 0.4em;
 }
 
 @media (prefers-reduced-motion: reduce) {

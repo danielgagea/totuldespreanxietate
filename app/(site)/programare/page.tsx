@@ -30,9 +30,10 @@ function ProgramareForm() {
     try {
       await submitContact({ ...form, pagina: sursa });
 
-      // Track Lead event if consent was given
       try {
-        const consent = JSON.parse(localStorage.getItem("cookie-consent") || "{}");
+        const consent = JSON.parse(
+          localStorage.getItem("cookie-consent") || "{}",
+        );
         if (consent.analytics && typeof window.gtag === "function") {
           window.gtag("event", "generate_lead", {
             event_category: "conversion",
@@ -54,93 +55,147 @@ function ProgramareForm() {
   }
 
   return (
-    <main className="prog-page">
-      <style>{styles}</style>
-      <div className="prog-container">
-        <div className="prog-header">
-          <h1>Trimite un mesaj</h1>
-          <p>
-            Nu trebuie să explici tot. Poți scrie doar câteva cuvinte.
-            Ședințele sunt online, în ritmul tău, fără presiune.
+    <main className="font-work min-h-screen bg-lp-bg px-6 py-16 md:py-24">
+      <div className="mx-auto max-w-[640px]">
+        <div className="text-center">
+          <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+            Cabinet · Sibiu · Online
           </p>
-          <p className="prog-author">Daniel Gagea, psiholog clinician, psihoterapeut</p>
+          <h1 className="mt-4 font-work text-4xl font-bold leading-[1.05] tracking-tight text-lp-navy md:text-5xl">
+            <span className="lp-yellow-underline">Trimite-mi</span> un mesaj.
+          </h1>
+          <p className="mx-auto mt-5 max-w-[520px] text-base leading-relaxed text-lp-mute md:text-lg">
+            Nu trebuie să explici tot. Poți scrie doar câteva cuvinte. Ședințele
+            sunt online, în ritmul tău, fără presiune.
+          </p>
+          <p className="mt-4 text-xs font-semibold uppercase tracking-[0.12em] text-lp-mute-soft">
+            Daniel Gagea, psiholog clinician, psihoterapeut
+          </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="prog-form">
-          <div className="prog-row">
-            <div className="prog-field">
-              <label htmlFor="nume">Nume *</label>
-              <input
-                id="nume"
-                type="text"
-                required
-                value={form.nume}
-                onChange={(e) => update("nume", e.target.value)}
-                placeholder=""
-              />
-            </div>
-            <div className="prog-field">
-              <label htmlFor="prenume">Prenume *</label>
-              <input
-                id="prenume"
-                type="text"
-                required
-                value={form.prenume}
-                onChange={(e) => update("prenume", e.target.value)}
-                placeholder=""
-              />
-            </div>
-          </div>
-
-          <div className="prog-row">
-            <div className="prog-field">
-              <label htmlFor="email">Email *</label>
-              <input
-                id="email"
-                type="email"
-                required
-                value={form.email}
-                onChange={(e) => update("email", e.target.value)}
-                placeholder=""
-              />
-            </div>
-            <div className="prog-field">
-              <label htmlFor="telefon">Telefon *</label>
-              <input
-                id="telefon"
-                type="tel"
-                required
-                value={form.telefon}
-                onChange={(e) => update("telefon", e.target.value)}
-                placeholder=""
-                autoComplete="tel"
-              />
-            </div>
-          </div>
-
-          <div className="prog-field">
-            <label htmlFor="mesaj">Mesaj *</label>
-            <textarea
-              id="mesaj"
+        <form
+          onSubmit={handleSubmit}
+          className="mt-10 rounded-md border border-lp-border bg-white p-7 shadow-[0_4px_24px_rgba(8,29,61,0.05)] md:p-10"
+        >
+          <div className="grid gap-4 md:grid-cols-2">
+            <Field
+              id="nume"
+              label="Nume"
+              value={form.nume}
+              onChange={(v) => update("nume", v)}
               required
-              rows={4}
-              value={form.mesaj}
-              onChange={(e) => update("mesaj", e.target.value)}
+            />
+            <Field
+              id="prenume"
+              label="Prenume"
+              value={form.prenume}
+              onChange={(v) => update("prenume", v)}
+              required
             />
           </div>
 
-          <p className="prog-gdpr">
-            Prin înregistrare, confirmi că ești de acord cu Termenii și Condițiile și cu Politica de Confidențialitate, precum și cu primirea de notificări pentru evenimente viitoare. Îți poți retrage oricând consimțământul, dezabonându-te.
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
+            <Field
+              id="email"
+              label="Email"
+              type="email"
+              value={form.email}
+              onChange={(v) => update("email", v)}
+              required
+            />
+            <Field
+              id="telefon"
+              label="Telefon"
+              type="tel"
+              autoComplete="tel"
+              value={form.telefon}
+              onChange={(v) => update("telefon", v)}
+              required
+            />
+          </div>
+
+          <div className="mt-4 flex flex-col">
+            <label
+              htmlFor="mesaj"
+              className="mb-2 text-sm font-semibold text-lp-navy"
+            >
+              Mesaj <span className="text-lp-cyan-dark">*</span>
+            </label>
+            <textarea
+              id="mesaj"
+              required
+              rows={5}
+              value={form.mesaj}
+              onChange={(e) => update("mesaj", e.target.value)}
+              className="lp-input resize-y"
+              style={{ minHeight: 120 }}
+            />
+          </div>
+
+          <p className="mt-6 text-xs leading-relaxed text-lp-mute-soft">
+            Prin înregistrare, confirmi că ești de acord cu Termenii și
+            Condițiile și cu Politica de Confidențialitate, precum și cu
+            primirea de notificări pentru evenimente viitoare. Îți poți retrage
+            oricând consimțământul, dezabonându-te.
           </p>
 
-          <button type="submit" disabled={loading} className="prog-submit">
+          <button
+            type="submit"
+            disabled={loading}
+            className="lp-cta mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md px-6 py-4 text-base font-semibold disabled:cursor-not-allowed disabled:opacity-60 md:text-lg"
+          >
             {loading ? "Se trimite..." : "Trimite mesajul"}
+            {!loading && <span aria-hidden>→</span>}
           </button>
 
-          {error && <p className="prog-error">{error}</p>}
+          {error && (
+            <p className="mt-4 text-center text-sm font-medium text-red-600">
+              {error}
+            </p>
+          )}
         </form>
+
+        <p className="mt-8 text-center text-sm text-lp-mute-soft">
+          Răspund personal la fiecare mesaj, de obicei în 24-48 de ore.
+        </p>
       </div>
     </main>
+  );
+}
+
+function Field({
+  id,
+  label,
+  type = "text",
+  value,
+  onChange,
+  required,
+  autoComplete,
+}: {
+  id: string;
+  label: string;
+  type?: string;
+  value: string;
+  onChange: (v: string) => void;
+  required?: boolean;
+  autoComplete?: string;
+}) {
+  return (
+    <div className="flex flex-col">
+      <label htmlFor={id} className="mb-2 text-sm font-semibold text-lp-navy">
+        {label}
+        {required && <span className="text-lp-cyan-dark"> *</span>}
+      </label>
+      <input
+        id={id}
+        type={type}
+        required={required}
+        autoComplete={autoComplete}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="lp-input"
+      />
+    </div>
   );
 }
 
@@ -151,168 +206,3 @@ export default function ProgramarePage() {
     </Suspense>
   );
 }
-
-const styles = `
-.prog-page {
-  min-height: 100vh;
-  background: var(--color-background, #F5F0E8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 64px 24px;
-}
-
-.prog-container {
-  width: 100%;
-  max-width: 600px;
-}
-
-.prog-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.prog-header h1 {
-  font-family: var(--font-heading), 'Fraunces', serif;
-  font-size: 36px;
-  font-weight: 400;
-  color: var(--color-primary, #1B2B4B);
-  margin-bottom: 12px;
-  letter-spacing: -0.02em;
-}
-
-.prog-header p {
-  font-size: 17px;
-  color: var(--color-text-secondary, #5A5A5A);
-  line-height: 1.6;
-}
-
-.prog-author {
-  font-size: 13px !important;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-text-secondary, #5A5A5A) !important;
-  margin-top: 16px;
-}
-
-.prog-form {
-  background: var(--color-background-white, #FDFAF5);
-  border: 1px solid var(--color-border, #DDD8CE);
-  border-radius: 12px;
-  padding: 32px;
-  box-shadow: var(--shadow-md, 0 4px 12px rgba(0,0,0,0.08));
-}
-
-.prog-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-
-.prog-field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
-}
-
-.prog-row .prog-field {
-  margin-bottom: 0;
-}
-
-.prog-field label {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--color-primary, #1B2B4B);
-  margin-bottom: 6px;
-}
-
-.prog-field input,
-.prog-field textarea {
-  font-family: var(--font-body), 'Inter', sans-serif;
-  font-size: 16px;
-  padding: 12px 16px;
-  border: 1px solid var(--color-border, #DDD8CE);
-  border-radius: 8px;
-  background: #ffffff;
-  color: var(--color-text, #2C2C2C);
-  transition: border-color 0.2s ease-out, box-shadow 0.2s ease-out;
-  outline: none;
-}
-
-.prog-field input::placeholder,
-.prog-field textarea::placeholder {
-  color: #A0A0A0;
-}
-
-.prog-field input:focus,
-.prog-field textarea:focus {
-  border-color: var(--color-secondary, #5C7A6A);
-  box-shadow: 0 0 0 3px rgba(92, 122, 106, 0.12);
-}
-
-.prog-field textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-.prog-gdpr {
-  font-size: 12px;
-  line-height: 1.5;
-  color: #888;
-  margin-bottom: 24px;
-}
-
-.prog-submit {
-  width: 100%;
-  padding: 14px 24px;
-  background: var(--color-secondary, #5C7A6A);
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  font-family: var(--font-body), 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s ease-out, transform 0.2s ease-out;
-}
-
-.prog-submit:hover {
-  background: #4A6858;
-  transform: translateY(-1px);
-}
-
-.prog-submit:active {
-  transform: translateY(0);
-}
-
-.prog-submit:focus-visible {
-  outline: 2px solid var(--color-secondary, #5C7A6A);
-  outline-offset: 2px;
-}
-
-.prog-submit:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-}
-
-.prog-error {
-  margin-top: 12px;
-  color: #c0392b;
-  font-size: 14px;
-  text-align: center;
-}
-
-@media (max-width: 600px) {
-  .prog-row {
-    grid-template-columns: 1fr;
-  }
-  .prog-form {
-    padding: 24px 20px;
-  }
-  .prog-header h1 {
-    font-size: 28px;
-  }
-}
-`;

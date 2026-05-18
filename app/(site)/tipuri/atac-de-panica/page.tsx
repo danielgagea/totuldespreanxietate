@@ -45,26 +45,26 @@ const jsonLd = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "C\u00e2t dureaz\u0103 un atac de panic\u0103?",
+          name: "Cât durează un atac de panică?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Un atac de panic\u0103 atinge de obicei intensitatea maxim\u0103 \u00een 5-10 minute \u0219i dureaz\u0103 \u00een medie 10-20 de minute. Atacul trece \u00eentotdeauna.",
+            text: "Un atac de panică atinge de obicei intensitatea maximă în 5-10 minute și durează în medie 10-20 de minute. Atacul trece întotdeauna.",
           },
         },
         {
           "@type": "Question",
-          name: "Pot s\u0103 mor din cauza unui atac de panic\u0103?",
+          name: "Pot să mor din cauza unui atac de panică?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Nu. Un atac de panic\u0103 nu este periculos din punct de vedere medical.",
+            text: "Nu. Un atac de panică nu este periculos din punct de vedere medical.",
           },
         },
         {
           "@type": "Question",
-          name: "Func\u021bioneaz\u0103 terapia pentru atacuri de panic\u0103?",
+          name: "Funcționează terapia pentru atacuri de panică?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Da. TCC are o rat\u0103 de eficacitate de 85-90% dup\u0103 12-15 \u0219edin\u021be.",
+            text: "Da. TCC are o rată de eficacitate de 85-90% după 12-15 ședințe.",
           },
         },
       ],
@@ -74,7 +74,7 @@ const jsonLd = {
       name: "Daniel Gagea",
       jobTitle: "Psiholog clinician, psihoterapeut",
       description:
-        "Psiholog clinician cu peste 10 ani de experien\u021b\u0103 \u0219i peste 500 de clien\u021bi.",
+        "Psiholog clinician cu peste 10 ani de experiență și peste 500 de clienți.",
       url: "https://totuldespreanxietate.ro/despre-daniel/",
     },
     {
@@ -88,156 +88,137 @@ const jsonLd = {
   ],
 };
 
-/* ─── Card component for hub navigation ─── */
-function GuideCard({
-  number,
-  title,
-  description,
-  href,
-  accent = false,
-}: {
+const GUIDE_CARDS: Array<{
   number: string;
   title: string;
   description: string;
   href: string;
-  accent?: boolean;
-}) {
-  return (
-    <Link
-      href={href}
-      className="group block rounded-xl p-6 cursor-pointer"
-      style={{
-        backgroundColor: accent
-          ? "var(--color-accent)"
-          : "var(--color-background-white)",
-        border: accent ? "none" : "1px solid var(--color-border)",
-        transition: "var(--transition-fast)",
-      }}
-    >
-      <div className="flex items-start gap-4">
-        <span
-          className="shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-sm font-medium"
-          style={{
-            backgroundColor: accent
-              ? "rgba(255,255,255,0.2)"
-              : "var(--color-primary)",
-            color: "#FFFFFF",
-          }}
-        >
-          {number}
-        </span>
-        <div>
-          <h3
-            className="text-[17px] font-semibold mb-1"
-            style={{ color: accent ? "#FFFFFF" : "var(--color-primary)" }}
-          >
-            {title}
-            <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity">
-              &rarr;
-            </span>
-          </h3>
-          <p
-            className="text-[14px] leading-relaxed"
-            style={{
-              color: accent
-                ? "rgba(255,255,255,0.85)"
-                : "var(--color-text-secondary)",
-            }}
-          >
-            {description}
-          </p>
-        </div>
-      </div>
-    </Link>
-  );
-}
+  accent: "cyan" | "yellow" | "navy";
+}> = [
+  {
+    number: "1",
+    title: "Ce simți în timpul unui atac",
+    description:
+      "Senzațiile fizice, gândurile automate, și cum escaladează totul. Cercul vicios explicat pas cu pas.",
+    href: "/tipuri/atac-de-panica/simptome",
+    accent: "cyan",
+  },
+  {
+    number: "2",
+    title: "Atac de panică sau infarct?",
+    description:
+      "Diferențele practice, când mergi la medic, și perspectiva care schimbă totul.",
+    href: "/tipuri/atac-de-panica/sau-infarct",
+    accent: "navy",
+  },
+  {
+    number: "3",
+    title: "De ce se întâmplă",
+    description:
+      "Alarma falsă, cercul vicios, ce arată cercetarea, declanșatori și vulnerabilitate.",
+    href: "/tipuri/atac-de-panica/de-ce-se-intampla",
+    accent: "cyan",
+  },
+  {
+    number: "4",
+    title: "Ce vrea să spună psihicul",
+    description:
+      "Perspectiva clinică a lui Daniel Gagea, mesajul din spatele atacului de panică. Conținut unic.",
+    href: "/tipuri/atac-de-panica/ce-vrea-sa-spuna-psihicul",
+    accent: "navy",
+  },
+  {
+    number: "!",
+    title: "Ce faci în momentul unui atac",
+    description:
+      "5 pași concreți pentru momentul de criză. Ce ajută și ce NU ajută.",
+    href: "/tipuri/atac-de-panica/ce-sa-faci",
+    accent: "yellow",
+  },
+  {
+    number: "6",
+    title: "Când și cum să ceri ajutor",
+    description:
+      "85-90% se recuperează în 12-15 ședințe. Ce te oprește, ce funcționează, și următorul pas.",
+    href: "/tipuri/atac-de-panica/tratament",
+    accent: "cyan",
+  },
+];
 
-function Stat({ number, text }: { number: string; text: string }) {
-  return (
-    <div className="text-center">
-      <p
-        className="text-3xl md:text-4xl font-medium mb-1"
-        style={{
-          fontFamily: "var(--font-heading)",
-          color: "var(--color-primary)",
-        }}
-      >
-        {number}
-      </p>
-      <p
-        className="text-[13px] leading-snug"
-        style={{ color: "var(--color-text-secondary)" }}
-      >
-        {text}
-      </p>
-    </div>
-  );
-}
+const ACCENT_PILL: Record<"cyan" | "yellow" | "navy", string> = {
+  cyan: "bg-lp-cyan text-lp-navy",
+  yellow: "bg-lp-yellow text-lp-navy",
+  navy: "bg-lp-navy text-white",
+};
 
-/* ─── Page ─── */
+const ACCENT_BORDER: Record<"cyan" | "yellow" | "navy", string> = {
+  cyan: "hover:border-lp-cyan",
+  yellow: "hover:border-lp-yellow",
+  navy: "hover:border-lp-navy",
+};
+
+const FAQS = [
+  {
+    q: "Cât durează un atac de panică?",
+    a: "Un atac de panică atinge de obicei intensitatea maximă în 5-10 minute și durează în medie 10-20 de minute (Rachman, 2004). Atacul trece întotdeauna.",
+  },
+  {
+    q: "Pot să mor din cauza unui atac de panică?",
+    a: "Nu. Un atac de panică nu este periculos din punct de vedere medical. Nu produce infarct, nu produce AVC, nu produce nebunie. Este important să excluzi mai întâi cauzele medicale, dar odată confirmat că ești sănătos fizic, atacul de panică este, prin definiție, inofensiv.",
+  },
+  {
+    q: "De ce am atacuri de panică noaptea?",
+    a: "Între 25% și 70% dintre persoanele cu tulburare de panică raportează cel puțin un atac în timpul somnului. Trezirea bruscă apare în tranziția dintre fazele de somn, când corpul trece prin schimbări fiziologice naturale pe care creierul le interpretează catastrofic.",
+  },
+  {
+    q: "Funcționează terapia pentru atacuri de panică?",
+    a: "Da. Terapia cognitiv-comportamentală are o rată de eficacitate de 85-90% după 12-15 ședințe. Este cel mai studiat și cel mai eficient tratament, cu efecte care se mențin pe termen lung.",
+  },
+  {
+    q: "Am nevoie de medicamente?",
+    a: "Nu neapărat. TCC este la fel de eficientă ca medicația. Medicamentele pot fi utile în cazurile severe, dar efectele lor tind să dispară după oprirea tratamentului. Decizia se ia împreună cu un specialist.",
+  },
+];
+
 export default function AtacDePanicaHub() {
   return (
-    <>
+    <main className="font-work min-h-screen bg-white text-lp-navy">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* ─── CRISIS ANCHOR ─── */}
-      <div
-        className="w-full py-3 text-center text-sm font-medium"
-        style={{ backgroundColor: "var(--color-accent)", color: "#FFFFFF" }}
-      >
+      {/* CRISIS ANCHOR */}
+      <div className="w-full bg-lp-yellow px-6 py-3 text-center text-sm font-semibold text-lp-navy">
         <Link
           href="/tipuri/atac-de-panica/ce-sa-faci"
           className="underline underline-offset-2 hover:no-underline"
         >
-          Ai un atac de panică acum? &rarr; Mergi direct la ce poți face
+          Ai un atac de panică acum? → Mergi direct la ce poți face
         </Link>
       </div>
 
-      {/* ─── HERO ─── */}
-      <header
-        className="py-16 md:py-24"
-        style={{ backgroundColor: "var(--color-background)" }}
-      >
-        <div className="mx-auto max-w-[760px] px-6">
-          <p
-            className="text-xs font-medium uppercase tracking-[0.15em] mb-6"
-            style={{ color: "var(--color-text-secondary)" }}
-          >
+      {/* HERO */}
+      <header className="bg-white px-6 pt-14 pb-12 md:pt-20 md:pb-16">
+        <div className="mx-auto max-w-[820px]">
+          <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
             Tipuri de anxietate
           </p>
-          <h1
-            className="text-[28px] md:text-[38px] leading-[1.25] mb-6"
-            style={{
-              fontFamily: "var(--font-heading)",
-              fontWeight: 400,
-              color: "var(--color-primary)",
-            }}
-          >
-            Atacul de panică. Ghid complet
+          <h1 className="mt-4 font-work text-4xl font-bold leading-[1.05] tracking-tight text-lp-navy md:text-5xl lg:text-6xl">
+            <span className="lp-yellow-underline">Atacul</span> de panică. Ghid complet.
           </h1>
-          <p
-            className="text-sm mb-10"
-            style={{ color: "var(--color-text-secondary)" }}
-          >
+          <p className="mt-5 text-sm text-lp-mute-soft">
             De{" "}
             <Link
               href="/despre-daniel/"
-              className="font-medium"
-              style={{ color: "var(--color-primary)" }}
+              className="font-semibold text-lp-navy underline-offset-2 hover:underline"
             >
               Daniel Gagea
             </Link>
             , psiholog clinician, 10+ ani experiență, 500+ clienți
           </p>
 
-          {/* Empathic intro */}
-          <div
-            className="text-[17px] leading-[1.75] space-y-5"
-            style={{ color: "var(--color-text)" }}
-          >
+          <div className="mt-8 space-y-5 text-lg leading-relaxed text-lp-mute md:text-xl">
             <p>
               Inima bate atât de tare că o simți în gât. Simți că nu mai poți
               respira, de parcă cineva ți-ar apăsa pieptul. Mâinile tremură,
@@ -245,7 +226,7 @@ export default function AtacDePanicaHub() {
               sticlă.
             </p>
             <p>
-              <strong>
+              <strong className="text-lp-navy">
                 Dacă te recunoști în aceste cuvinte, nu ești singur și nu ești
                 nebun.
               </strong>{" "}
@@ -255,49 +236,26 @@ export default function AtacDePanicaHub() {
             </p>
           </div>
 
-          {/* Quick stats */}
-          <div
-            className="grid grid-cols-3 gap-4 mt-10 py-8 px-6 rounded-xl"
-            style={{
-              backgroundColor: "var(--color-background-white)",
-              border: "1px solid var(--color-border)",
-            }}
-          >
-            <Stat
-              number="30-40%"
-              text="dintre adulți experimentează cel puțin un atac"
-            />
+          <div className="mt-10 grid grid-cols-3 gap-4 rounded-md border border-lp-border bg-lp-bg px-6 py-8">
+            <Stat number="30-40%" text="dintre adulți experimentează cel puțin un atac" />
             <Stat number="5-20 min" text="durata medie a unui atac de panică" />
-            <Stat
-              number="85-90%"
-              text="rată de recuperare cu terapie (TCC)"
-            />
+            <Stat number="85-90%" text="rată de recuperare cu terapie (TCC)" />
           </div>
         </div>
       </header>
 
-      {/* ─── CE ESTE (scurt) ─── */}
-      <section
-        className="py-16 md:py-20"
-        style={{ backgroundColor: "var(--color-background-white)" }}
-      >
-        <div className="mx-auto max-w-[760px] px-6">
-          <h2
-            className="text-[24px] md:text-[30px] leading-[1.30] mb-5"
-            style={{
-              fontFamily: "var(--font-heading)",
-              fontWeight: 400,
-              color: "var(--color-primary)",
-            }}
-          >
-            Ce este un atac de panică
+      {/* CE ESTE */}
+      <section className="bg-lp-bg px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-[820px]">
+          <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+            Definiție
+          </p>
+          <h2 className="mt-3 font-work text-3xl font-bold leading-tight text-lp-navy md:text-4xl lg:text-[44px]">
+            Ce este un atac de panică.
           </h2>
-          <div
-            className="text-[17px] leading-[1.75] space-y-5"
-            style={{ color: "var(--color-text)" }}
-          >
+          <div className="mt-6 space-y-5 text-base leading-relaxed text-lp-mute md:text-lg">
             <p>
-              <strong>
+              <strong className="text-lp-navy">
                 Un atac de panică este un episod brusc de frică intensă în care
                 corpul tău reacționează ca și cum ai fi în pericol de moarte
                 deși nu există niciun pericol real.
@@ -308,210 +266,146 @@ export default function AtacDePanicaHub() {
             <p>
               Gândește-te la o alarmă de incendiu care pornește într-o clădire
               în care nu există niciun foc. Alarma urlă la fel de tare. Toată
-              lumea reacționează la fel de intens. Singura diferență: nu arde
+              lumea reacționează la fel de intens. Singura diferență.. nu arde
               nimic. Asta face corpul tău.. activează sistemul de alarmă fără
               pericol real.
             </p>
             <p>
-              <strong>
+              <strong className="text-lp-navy">
                 A avea un atac de panică NU înseamnă că ai o tulburare.
               </strong>{" "}
               Un atac izolat este extrem de comun. Ceea ce transformă un atac
               izolat în tulburare este{" "}
-              <strong>interpretarea</strong> pe care i-o dai și{" "}
-              <strong>frica</strong> de a-l retrăi.
+              <strong className="text-lp-navy">interpretarea</strong> pe care i-o dai și{" "}
+              <strong className="text-lp-navy">frica</strong> de a-l retrăi.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ─── GUIDE NAVIGATION ─── */}
-      <section
-        className="py-16 md:py-20"
-        style={{ backgroundColor: "var(--color-background)" }}
-      >
-        <div className="mx-auto max-w-[760px] px-6">
-          <p
-            className="text-xs font-medium uppercase tracking-[0.15em] mb-3"
-            style={{ color: "var(--color-text-secondary)" }}
-          >
-            Explorează ghidul
-          </p>
-          <h2
-            className="text-[24px] md:text-[30px] leading-[1.30] mb-8"
-            style={{
-              fontFamily: "var(--font-heading)",
-              fontWeight: 400,
-              color: "var(--color-primary)",
-            }}
-          >
-            Ce vrei să înțelegi?
-          </h2>
+      {/* GUIDE NAVIGATION */}
+      <section className="bg-white px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-[1180px]">
+          <div className="text-center">
+            <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+              Explorează ghidul
+            </p>
+            <h2 className="mt-3 font-work text-3xl font-bold leading-tight text-lp-navy md:text-4xl lg:text-5xl">
+              Ce vrei să <span className="lp-yellow-underline">înțelegi</span>?
+            </h2>
+            <p className="mx-auto mt-4 max-w-[640px] text-base leading-relaxed text-lp-mute md:text-lg">
+              Șase capitole care răspund la întrebările pe care le ai acum.
+            </p>
+          </div>
 
-          <div className="grid gap-4">
-            <GuideCard
-              number="1"
-              title="Ce simți în timpul unui atac"
-              description="Senzațiile fizice, gândurile automate, și cum escaladează totul. Cercul vicios explicat pas cu pas."
-              href="/tipuri/atac-de-panica/simptome"
-            />
-            <GuideCard
-              number="2"
-              title="Atac de panică sau infarct?"
-              description="Diferențele practice, când mergi la medic, și perspectiva care schimbă totul."
-              href="/tipuri/atac-de-panica/sau-infarct"
-            />
-            <GuideCard
-              number="3"
-              title="De ce se întâmplă"
-              description="Alarma falsă, cercul vicios, ce arată cercetarea, declanșatori și vulnerabilitate."
-              href="/tipuri/atac-de-panica/de-ce-se-intampla"
-            />
-            <GuideCard
-              number="4"
-              title="Ce vrea să spună psihicul"
-              description="Perspectiva clinică a lui Daniel Gagea, mesajul din spatele atacului de panică. Conținut unic."
-              href="/tipuri/atac-de-panica/ce-vrea-sa-spuna-psihicul"
-            />
-            <GuideCard
-              number="!"
-              title="Ce faci în momentul unui atac"
-              description="5 pași concreți pentru momentul de criză. Ce ajută și ce NU ajută."
-              href="/tipuri/atac-de-panica/ce-sa-faci"
-              accent
-            />
-            <GuideCard
-              number="6"
-              title="Când și cum să ceri ajutor"
-              description="85-90% se recuperează în 12-15 ședințe. Ce te oprește, ce funcționează, și următorul pas."
-              href="/tipuri/atac-de-panica/tratament"
-            />
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {GUIDE_CARDS.map((s) => (
+              <Link
+                key={s.title}
+                href={s.href}
+                className={`group relative flex flex-col rounded-md border border-lp-border bg-white p-7 transition hover:-translate-y-0.5 hover:shadow-[0_16px_48px_rgba(8,29,61,0.12)] md:p-8 ${ACCENT_BORDER[s.accent]}`}
+              >
+                <div className="flex items-center gap-3">
+                  <span
+                    className={`inline-flex h-9 w-9 items-center justify-center rounded-full text-sm font-bold ${ACCENT_PILL[s.accent]}`}
+                  >
+                    {s.number}
+                  </span>
+                </div>
+                <h3 className="mt-5 font-work text-xl font-bold leading-tight tracking-tight text-lp-navy md:text-2xl">
+                  {s.title}
+                </h3>
+                <p className="mt-4 flex-1 text-[15px] leading-relaxed text-lp-mute md:text-base">
+                  {s.description}
+                </p>
+                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-lp-cyan-dark transition group-hover:text-lp-navy">
+                  Citește capitolul
+                  <span aria-hidden>→</span>
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ─── FAQ ─── */}
-      <section
-        className="py-16 md:py-20"
-        style={{ backgroundColor: "var(--color-background-white)" }}
-      >
-        <div className="mx-auto max-w-[760px] px-6">
-          <h2
-            className="text-[24px] md:text-[30px] leading-[1.30] mb-8"
-            style={{
-              fontFamily: "var(--font-heading)",
-              fontWeight: 400,
-              color: "var(--color-primary)",
-            }}
-          >
-            Întrebări frecvente
-          </h2>
+      {/* FAQ */}
+      <section className="bg-lp-bg px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-[820px]">
+          <div className="text-center">
+            <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-cyan-dark">
+              Întrebări frecvente
+            </p>
+            <h2 className="mt-3 font-work text-3xl font-bold leading-tight tracking-tight text-lp-navy md:text-4xl">
+              Ce vor să știe oamenii despre atacul de panică.
+            </h2>
+          </div>
 
-          <div className="space-y-3">
-            {[
-              {
-                q: "Cât durează un atac de panică?",
-                a: "Un atac de panică atinge de obicei intensitatea maximă în 5-10 minute și durează în medie 10-20 de minute (Rachman, 2004). Atacul trece întotdeauna.",
-              },
-              {
-                q: "Pot să mor din cauza unui atac de panică?",
-                a: "Nu. Un atac de panică nu este periculos din punct de vedere medical. Nu produce infarct, nu produce AVC, nu produce nebunie. Este important să excluzi mai întâi cauzele medicale, dar odată confirmat că ești sănătos fizic, atacul de panică este, prin definiție, inofensiv.",
-              },
-              {
-                q: "De ce am atacuri de panică noaptea?",
-                a: "Între 25% și 70% dintre persoanele cu tulburare de panică raportează cel puțin un atac în timpul somnului. Trezirea bruscă apare în tranziția dintre fazele de somn, când corpul trece prin schimbări fiziologice naturale pe care creierul le interpretează catastrofic.",
-              },
-              {
-                q: "Funcționează terapia pentru atacuri de panică?",
-                a: "Da. Terapia cognitiv-comportamentală are o rată de eficacitate de 85-90% după 12-15 ședințe. Este cel mai studiat și cel mai eficient tratament, cu efecte care se mențin pe termen lung.",
-              },
-              {
-                q: "Am nevoie de medicamente?",
-                a: "Nu neapărat. TCC este la fel de eficientă ca medicația. Medicamentele pot fi utile în cazurile severe, dar efectele lor tind să dispară după oprirea tratamentului. Decizia se ia împreună cu un specialist.",
-              },
-            ].map(({ q, a }) => (
-              <details
-                key={q}
-                className="group rounded-xl"
-                style={{
-                  backgroundColor: "var(--color-background)",
-                  border: "1px solid var(--color-border)",
-                }}
-              >
-                <summary
-                  className="flex items-center justify-between cursor-pointer px-6 py-4 text-[16px] font-medium list-none"
-                  style={{ color: "var(--color-primary)" }}
-                >
-                  {q}
-                  <span className="shrink-0 ml-4 text-xl transition-transform group-open:rotate-45">
+          <div className="mt-10 divide-y divide-lp-border rounded-md border border-lp-border bg-white">
+            {FAQS.map((faq) => (
+              <details key={faq.q} className="group">
+                <summary className="flex cursor-pointer list-none items-start justify-between gap-6 px-6 py-5 text-left text-[17px] font-semibold text-lp-navy md:text-lg">
+                  <span>{faq.q}</span>
+                  <span
+                    aria-hidden
+                    className="mt-1 shrink-0 text-2xl leading-none text-lp-cyan-dark transition-transform group-open:rotate-45"
+                  >
                     +
                   </span>
                 </summary>
-                <div
-                  className="px-6 pb-5 text-[15px] leading-[1.70]"
-                  style={{ color: "var(--color-text)" }}
-                >
-                  {a}
-                </div>
+                <p className="px-6 pb-5 text-base leading-relaxed text-lp-mute md:text-[17px]">
+                  {faq.a}
+                </p>
               </details>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ─── CTA ─── */}
-      <section
-        className="py-16 md:py-20"
-        style={{ backgroundColor: "var(--color-background)" }}
-      >
-        <div className="mx-auto max-w-[760px] px-6">
-          <div
-            className="rounded-xl p-8 md:p-12 text-center"
-            style={{
-              backgroundColor: "var(--color-background-white)",
-              border: "1px solid var(--color-border)",
-            }}
-          >
-            <h2
-              className="text-[24px] md:text-[30px] mb-4"
-              style={{
-                fontFamily: "var(--font-heading)",
-                fontWeight: 400,
-                color: "var(--color-primary)",
-              }}
-            >
-              Primul pas este o conversație
+      {/* CTA DARK */}
+      <section className="bg-lp-navy px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-[1100px]">
+          <div className="text-center text-white">
+            <p className="text-base md:text-lg font-semibold uppercase tracking-[0.22em] text-lp-cyan">
+              Cabinet
+            </p>
+            <h2 className="mt-4 font-work text-3xl font-bold leading-tight md:text-5xl">
+              Primul pas este{" "}
+              <span className="bg-lp-yellow px-2 text-lp-navy">o conversație.</span>
             </h2>
-            <p
-              className="text-[15px] mb-8 max-w-lg mx-auto leading-relaxed"
-              style={{ color: "var(--color-text)" }}
-            >
+            <p className="mx-auto mt-6 max-w-[680px] text-lg leading-relaxed text-white/85 md:text-xl">
               Am lucrat cu sute de persoane care au trecut prin exact ce treci tu
               acum. Știu cum arată, știu cum se simte, și știu că se poate
               schimba.
             </p>
-            <Link
-              href="/programare/"
-              className="inline-block rounded-lg px-7 py-3.5 text-[16px] font-medium text-white cursor-pointer"
-              style={{
-                backgroundColor: "var(--color-accent)",
-                transition: "var(--transition-fast)",
-              }}
-            >
-              Programează o conversație cu Daniel
-            </Link>
+
+            <div className="mt-10 flex flex-col items-center gap-4">
+              <Link
+                href="/programare/?din=tipuri-atac-de-panica"
+                className="lp-cta inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold md:text-lg"
+              >
+                Programează o conversație cu Daniel
+                <span aria-hidden>→</span>
+              </Link>
+              <p className="text-sm text-white/60">
+                Răspund personal la fiecare mesaj.
+              </p>
+            </div>
           </div>
         </div>
       </section>
+    </main>
+  );
+}
 
-      {/* ─── Author footer ─── */}
-      <section
-        className="py-8"
-        style={{ backgroundColor: "var(--color-background-white)" }}
-      >
-        <div className="mx-auto max-w-[760px] px-6">
-        </div>
-      </section>
-    </>
+function Stat({ number, text }: { number: string; text: string }) {
+  return (
+    <div className="text-center">
+      <p className="font-work text-2xl font-bold tracking-tight text-lp-navy md:text-3xl">
+        {number}
+      </p>
+      <p className="mt-1 text-xs leading-snug text-lp-mute md:text-sm">
+        {text}
+      </p>
+    </div>
   );
 }

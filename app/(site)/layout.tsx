@@ -8,9 +8,7 @@ export default function SiteLayout({
   return (
     <>
       <Navbar />
-      <div style={{ paddingTop: 64 }}>
-        {children}
-      </div>
+      {children}
     </>
   );
 }

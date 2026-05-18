@@ -54,292 +54,239 @@ const jsonLd = {
   ],
 };
 
-/* ─── Reusable section wrapper ─── */
-function Section({
-  id,
-  children,
-  bg = "default",
-  className = "",
-}: {
-  id: string;
-  children: React.ReactNode;
-  bg?: "default" | "white" | "sage";
-  className?: string;
-}) {
-  const bgMap = {
-    default: "var(--color-background)",
-    white: "var(--color-background-white)",
-    sage: "var(--color-secondary-light)",
-  };
-  return (
-    <section
-      id={id}
-      className={`scroll-mt-8 ${className}`}
-      style={{ backgroundColor: bgMap[bg] }}
-    >
-      <div className="mx-auto max-w-[760px] px-6 py-16 md:py-24">
-        {children}
-      </div>
-    </section>
-  );
-}
+const STEPS = [
+  {
+    title: "Oprește-te. Nu fugi.",
+    body: "Impulsul de a fugi este puternic. Dar fuga confirmă creierului că pericolul este real. Rămâi unde ești. Dacă ești într-un loc sigur, și ești, chiar dacă nu simți asta acum, rămâi.",
+  },
+  {
+    title: "Amintește-ți: nu mori, nu înnebunești, nu pierzi controlul.",
+    body: "Gândurile tale de panică au un track record de 0%. De câte ori ai crezut că mori, și de câte ori s-a întâmplat? Răspunsul este zero. De fiecare dată.",
+  },
+  {
+    title: "Observă, nu lupta.",
+    body: "Nu încerca să oprești senzațiile cu forța. Privește-le ca un observator: inima bate repede, interesant, mâinile tremură, ok. Când observi în loc să lupți, senzațiile își pierd puterea.",
+  },
+  {
+    title: "Expiră lung și lent.",
+    body: "Nu respira adânc și repede, asta este hiperventilație. În schimb: inspiră ușor pe nas, 4 secunde. Apoi expiră lent pe gură, 6 secunde, ca și cum ai sufla printr-un pai. Repetă de 5-6 ori.",
+  },
+  {
+    title: "Rămâi în situație.",
+    body: "Anxietatea are un plafon. Nu crește la infinit. Dacă rămâi unde ești, fără să fugi și fără să lupți, după 10-20 de minute anxietatea începe să scadă natural.",
+  },
+];
 
-/* ─── Step card ─── */
-function StepCard({
-  number,
-  title,
-  children,
-}: {
-  number: number;
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div
-      className="rounded-lg p-6 shadow-sm"
-      style={{ backgroundColor: "var(--color-background-white)" }}
-    >
-      <div className="flex items-start gap-4">
-        <div
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
-          style={{ backgroundColor: "var(--color-primary)" }}
-        >
-          {number}
-        </div>
-        <div>
-          <h3
-            className="text-lg font-semibold mb-2"
-            style={{
-              fontFamily: "var(--font-heading)",
-              color: "var(--color-primary)",
-            }}
-          >
-            {title}
-          </h3>
-          <p
-            className="text-[15px] leading-relaxed"
-            style={{ color: "var(--color-text)" }}
-          >
-            {children}
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-/* ─── Warning card ─── */
-function WarningCard({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div
-      className="rounded-lg p-5"
-      style={{ backgroundColor: "rgba(196, 97, 74, 0.08)" }}
-    >
-      <p
-        className="font-semibold mb-1"
-        style={{ color: "var(--color-accent)" }}
-      >
-        {title}
-      </p>
-      <p
-        className="text-[15px] leading-relaxed"
-        style={{ color: "var(--color-text)" }}
-      >
-        {children}
-      </p>
-    </div>
-  );
-}
+const WARNINGS = [
+  {
+    title: "Respirația adâncă ca ritual",
+    body: "Un studiu controlat a arătat că adăugarea trainingului respirației la TCC a scăzut rata de recuperare de la 57% la 37% la 12 luni (Schmidt et al., 2000).",
+  },
+  {
+    title: "Fuga din situație",
+    body: "Te calmezi imediat, dar confirmi creierului că pericolul era real.",
+  },
+  {
+    title: "Căutarea repetată de reasigurare",
+    body: "Nevoia de a auzi că ești ok funcționează 5 minute. Apoi nevoia revine, mai puternică.",
+  },
+  {
+    title: "Monitorizarea obsesivă a corpului",
+    body: "Cu cât cauți mai mult semne de pericol, cu atât găsești mai multe (Clark & Beck, 2010).",
+  },
+];
 
 export default function CeSaFaciPage() {
   return (
-    <>
+    <main className="font-work min-h-screen bg-white text-lp-navy">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* ─── Breadcrumb + Hero ─── */}
-      <Section id="hero" bg="default">
-        {/* Breadcrumb */}
-        <nav
-          className="flex items-center gap-2 text-sm mb-8"
-          style={{ color: "var(--color-text-secondary)" }}
-        >
-          <Link
-            href="/tipuri/atac-de-panica/"
-            className="underline underline-offset-2 hover:opacity-80 transition-opacity"
-            style={{ color: "var(--color-accent)" }}
-          >
-            Atac de panică
-          </Link>
-          <span aria-hidden="true">→</span>
-          <span>Ce faci acum</span>
-        </nav>
+      {/* CRISIS ANCHOR */}
+      <div className="w-full bg-lp-yellow px-6 py-3 text-center text-sm font-semibold text-lp-navy">
+        Dacă ești în mijlocul unui atac acum, citește doar textul boldat.
+      </div>
 
-        {/* H1 */}
-        <h1
-          className="text-3xl md:text-[40px] font-medium leading-tight mb-6"
-          style={{
-            fontFamily: "var(--font-heading)",
-            color: "var(--color-primary)",
-          }}
-        >
-          Ce faci în momentul unui atac de panică
-        </h1>
+      {/* HERO */}
+      <header className="bg-white px-6 pt-14 pb-12 md:pt-20 md:pb-16">
+        <div className="mx-auto max-w-[820px]">
+          <nav className="mb-8 flex items-center gap-2 text-sm text-lp-mute-soft">
+            <Link
+              href="/tipuri/atac-de-panica/"
+              className="underline underline-offset-2 hover:no-underline"
+            >
+              Atac de panică
+            </Link>
+            <span aria-hidden="true">→</span>
+            <span className="text-lp-navy">Ce faci acum</span>
+          </nav>
 
-        {/* Subtitle */}
-        <p
-          className="text-lg leading-relaxed"
-          style={{ color: "var(--color-text-secondary)" }}
-        >
-          Dacă ești în mijlocul unui atac de panică acum, citește doar{" "}
-          <strong style={{ color: "var(--color-text)" }}>textul bold</strong>.
-        </p>
-      </Section>
+          <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+            Pași concreți
+          </p>
+          <h1 className="mt-4 font-work text-4xl font-bold leading-[1.05] tracking-tight text-lp-navy md:text-5xl lg:text-6xl">
+            Ce <span className="lp-yellow-underline">faci</span> în momentul unui atac de panică.
+          </h1>
 
-      {/* ─── 5 Steps ─── */}
-      <Section id="pasi" bg="sage">
-        <h2
-          className="text-2xl md:text-3xl font-medium mb-10"
-          style={{
-            fontFamily: "var(--font-heading)",
-            color: "var(--color-primary)",
-          }}
-        >
-          5 pași concreți
-        </h2>
-
-        <div className="flex flex-col gap-6">
-          <StepCard number={1} title="Oprește-te. Nu fugi.">
-            Impulsul de a fugi este puternic. Dar fuga confirmă creierului că
-            pericolul este real. Rămâi unde ești. Dacă ești într-un loc sigur
-            , și ești, chiar dacă nu simți asta acum, rămâi.
-          </StepCard>
-
-          <StepCard
-            number={2}
-            title="Amintește-ți: nu mori, nu înnebunești, nu pierzi controlul."
-          >
-            Gândurile tale de panică au un track record de 0%. De câte ori ai
-            crezut că mori, și de câte ori s-a întâmplat? Răspunsul este
-            zero. De fiecare dată.
-          </StepCard>
-
-          <StepCard number={3} title="Observă, nu lupta.">
-            Nu încerca să oprești senzațiile cu forța. Privește-le ca un
-            observator: inima bate repede, interesant, mâinile tremură, ok.{" "}
-            Când observi în loc să lupți, senzațiile își pierd puterea.
-          </StepCard>
-
-          <StepCard number={4} title="Expiră lung și lent.">
-            Nu respira adânc și repede, asta este hiperventilație. În schimb:
-            inspiră ușor pe nas, 4 secunde. Apoi expiră lent pe gură, 6
-            secunde, ca și cum ai sufla printr-un pai. Repetă de 5-6 ori.
-          </StepCard>
-
-          <StepCard number={5} title="Rămâi în situație.">
-            Anxietatea are un plafon. Nu crește la infinit. Dacă rămâi unde
-            ești, fără să fugi și fără să lupți, după 10-20 de minute
-            anxietatea începe să scadă natural.
-          </StepCard>
+          <p className="mt-8 text-lg leading-relaxed text-lp-mute md:text-xl">
+            Dacă ești în mijlocul unui atac de panică acum, citește doar{" "}
+            <strong className="text-lp-navy">textul bold</strong>.
+          </p>
         </div>
-      </Section>
+      </header>
 
-      {/* ─── Ce NU ajută ─── */}
-      <Section id="ce-nu-ajuta" bg="white">
-        <h2
-          className="text-2xl md:text-3xl font-medium mb-10"
-          style={{
-            fontFamily: "var(--font-heading)",
-            color: "var(--color-primary)",
-          }}
-        >
-          Ce NU ajută
-        </h2>
+      {/* 5 STEPS */}
+      <section id="pasi" className="bg-lp-bg px-6 py-20 md:py-24 scroll-mt-8">
+        <div className="mx-auto max-w-[820px]">
+          <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+            Acum
+          </p>
+          <h2 className="mt-3 font-work text-3xl font-bold leading-tight text-lp-navy md:text-4xl lg:text-[44px]">
+            5 pași concreți.
+          </h2>
 
-        <div className="flex flex-col gap-5">
-          <WarningCard title="Respirația adâncă ca ritual">
-            Un studiu controlat a arătat că adăugarea trainingului respirației
-            la TCC a scăzut rata de recuperare de la 57% la 37% la 12 luni
-            (Schmidt et al., 2000).
-          </WarningCard>
-
-          <WarningCard title="Fuga din situație">
-            Te calmezi imediat, dar confirmi creierului că pericolul era real.
-          </WarningCard>
-
-          <WarningCard title="Căutarea repetată de reasigurare">
-            Nevoia de a auzi că ești ok funcționează 5 minute. Apoi
-            nevoia revine, mai puternică.
-          </WarningCard>
-
-          <WarningCard title="Monitorizarea obsesivă a corpului">
-            Cu cât cauți mai mult semne de pericol, cu atât găsești mai multe
-            (Clark &amp; Beck, 2010).
-          </WarningCard>
+          <div className="mt-10 flex flex-col gap-6">
+            {STEPS.map((step, i) => (
+              <div
+                key={step.title}
+                className="rounded-md border border-lp-border bg-white p-6 md:p-7"
+              >
+                <div className="flex items-start gap-4">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lp-navy text-sm font-bold text-white">
+                    {i + 1}
+                  </span>
+                  <div>
+                    <h3 className="font-work text-xl font-bold leading-snug text-lp-navy">
+                      {step.title}
+                    </h3>
+                    <p className="mt-3 text-base leading-relaxed text-lp-mute md:text-[17px]">
+                      {step.body}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+      </section>
 
-        <p
-          className="mt-10 text-[15px] italic leading-relaxed"
-          style={{ color: "var(--color-text-secondary)" }}
-        >
-          Aceste tehnici te ajută să treci prin atac. Dar nu înlocuiesc
-          ajutorul profesionist.
-        </p>
-      </Section>
+      {/* CE NU AJUTĂ */}
+      <section id="ce-nu-ajuta" className="bg-white px-6 py-20 md:py-24 scroll-mt-8">
+        <div className="mx-auto max-w-[820px]">
+          <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+            Capcane
+          </p>
+          <h2 className="mt-3 font-work text-3xl font-bold leading-tight text-lp-navy md:text-4xl lg:text-[44px]">
+            Ce <span className="lp-yellow-underline">NU</span> ajută.
+          </h2>
 
-      {/* ─── Navigation ─── */}
-      <Section id="navigare" bg="default">
-        <div
-          className="flex flex-col gap-4 rounded-lg p-6"
-          style={{
-            backgroundColor: "var(--color-background-white)",
-            border: "1px solid var(--color-border)",
-          }}
-        >
-          <Link
-            href="/tipuri/atac-de-panica/"
-            className="flex items-center gap-2 text-[15px] font-medium underline underline-offset-2 hover:opacity-80 transition-opacity"
-            style={{ color: "var(--color-accent)" }}
-          >
-            ← Înapoi la ghidul complet
-          </Link>
-          <Link
-            href="/tipuri/atac-de-panica/tratament"
-            className="flex items-center gap-2 text-[15px] font-medium underline underline-offset-2 hover:opacity-80 transition-opacity"
-            style={{ color: "var(--color-accent)" }}
-          >
-            Când să ceri ajutor profesionist →
-          </Link>
-          <Link
-            href="/tipuri/atac-de-panica/simptome"
-            className="flex items-center gap-2 text-[15px] font-medium underline underline-offset-2 hover:opacity-80 transition-opacity"
-            style={{ color: "var(--color-accent)" }}
-          >
-            Simptomele atacului de panică →
-          </Link>
+          <div className="mt-10 flex flex-col gap-5">
+            {WARNINGS.map((w) => (
+              <div
+                key={w.title}
+                className="rounded-md border-l-4 border-lp-yellow bg-lp-bg p-5"
+              >
+                <p className="font-work text-base font-bold text-lp-navy">
+                  {w.title}
+                </p>
+                <p className="mt-2 text-base leading-relaxed text-lp-mute md:text-[17px]">
+                  {w.body}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-10 text-base italic leading-relaxed text-lp-mute-soft">
+            Aceste tehnici te ajută să treci prin atac. Dar nu înlocuiesc
+            ajutorul profesionist.
+          </p>
         </div>
-      </Section>
+      </section>
 
-      {/* ─── Author footer ─── */}
-      <Section id="autor" bg="white">
-        <div
-          className="text-center text-sm"
-          style={{ color: "var(--color-text-secondary)" }}
-        >
-          <p className="font-medium" style={{ color: "var(--color-text)" }}>
+      {/* NAVIGATION */}
+      <section className="bg-lp-bg px-6 py-16 md:py-20">
+        <div className="mx-auto max-w-[1100px]">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <Link
+              href="/tipuri/atac-de-panica/"
+              className="group block rounded-md border border-lp-border bg-white p-6 transition hover:-translate-y-0.5 hover:border-lp-cyan hover:shadow-[0_12px_40px_rgba(8,29,61,0.08)]"
+            >
+              <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-lp-mute-soft">
+                ← Înapoi
+              </span>
+              <span className="mt-2 block font-work text-lg font-bold text-lp-navy">
+                Ghidul complet
+              </span>
+            </Link>
+
+            <Link
+              href="/tipuri/atac-de-panica/tratament"
+              className="group block rounded-md border border-lp-border bg-white p-6 transition hover:-translate-y-0.5 hover:border-lp-cyan hover:shadow-[0_12px_40px_rgba(8,29,61,0.08)]"
+            >
+              <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-lp-mute-soft">
+                Următor →
+              </span>
+              <span className="mt-2 block font-work text-lg font-bold text-lp-navy">
+                Când să ceri ajutor profesionist
+              </span>
+            </Link>
+
+            <Link
+              href="/tipuri/atac-de-panica/simptome"
+              className="group block rounded-md border border-lp-border bg-white p-6 transition hover:-translate-y-0.5 hover:border-lp-cyan hover:shadow-[0_12px_40px_rgba(8,29,61,0.08)]"
+            >
+              <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-lp-mute-soft">
+                Citește
+              </span>
+              <span className="mt-2 block font-work text-lg font-bold text-lp-navy">
+                Simptomele atacului de panică
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA DARK */}
+      <section className="bg-lp-navy px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-[1100px]">
+          <div className="text-center text-white">
+            <p className="text-base md:text-lg font-semibold uppercase tracking-[0.22em] text-lp-cyan">
+              Cabinet
+            </p>
+            <h2 className="mt-4 font-work text-3xl font-bold leading-tight md:text-5xl">
+              Atacul a trecut. <span className="bg-lp-yellow px-2 text-lp-navy">Următorul pas?</span>
+            </h2>
+            <p className="mx-auto mt-6 max-w-[680px] text-lg leading-relaxed text-white/85 md:text-xl">
+              Ai trecut prin el. Acum putem lucra să nu mai fie nevoie să treci prin asta singur.
+            </p>
+
+            <div className="mt-10 flex flex-col items-center gap-4">
+              <Link
+                href="/programare/?din=ce-sa-faci"
+                className="lp-cta inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold md:text-lg"
+              >
+                Programează o conversație cu Daniel
+                <span aria-hidden>→</span>
+              </Link>
+              <p className="text-sm text-white/60">
+                Răspund personal la fiecare mesaj.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AUTHOR FOOTER */}
+      <section className="bg-white px-6 py-12 md:py-16">
+        <div className="mx-auto max-w-[820px] text-center text-sm text-lp-mute-soft">
+          <p className="font-work text-base font-bold text-lp-navy">
             Daniel Gagea
           </p>
           <p>psiholog clinician</p>
         </div>
-      </Section>
-    </>
+      </section>
+    </main>
   );
 }

@@ -66,532 +66,336 @@ const jsonLd = {
   ],
 };
 
-/* ─── Reusable section wrapper ─── */
-function Section({
-  id,
-  children,
-  bg = "default",
-}: {
-  id: string;
-  children: React.ReactNode;
-  bg?: "default" | "white" | "sage";
-}) {
-  const bgMap = {
-    default: "var(--color-background)",
-    white: "var(--color-background-white)",
-    sage: "var(--color-secondary-light)",
-  };
-  return (
-    <section
-      id={id}
-      className="scroll-mt-8"
-      style={{ backgroundColor: bgMap[bg] }}
-    >
-      <div className="mx-auto max-w-[760px] px-6 py-16 md:py-24">
-        {children}
-      </div>
-    </section>
-  );
-}
+const STEPS = [
+  {
+    title: "Oprește-te. Nu fugi.",
+    text: "Impulsul de a fugi este puternic. Dar fuga confirmă creierului că pericolul este real. Rămâi unde ești. Dacă ești într-un loc sigur, și ești, chiar dacă nu simți asta acum, rămâi.",
+  },
+  {
+    title: "Amintește-ți: nu mori, nu înnebunești, nu pierzi controlul.",
+    text: "Corpul tău a trecut prin asta de fiecare dată și de fiecare dată a fost ok. Inima a bătut repede și s-a oprit. Amețeala a venit și a trecut. Senzația de sufocare s-a dizolvat. Niciodată nu s-a întâmplat ce te-ai temut.",
+  },
+  {
+    title: "Observă, nu lupta.",
+    text: "În loc să lupți cu senzațiile, încearcă să le observi fără să reacționezi.. notează mental ce simți, unde simți, și cât durează. Când observi în loc să lupți, senzațiile își pierd din intensitate.",
+  },
+  {
+    title: "Expiră lung și lent.",
+    text: "NU respira adânc și repede.. asta este hiperventilație. În schimb: inspiră ușor pe nas, 4 secunde. Apoi expiră lent pe gură, 6 secunde, ca și cum ai sufla printr-un pai. Repetă de 5-6 ori.",
+  },
+  {
+    title: "Rămâi în situație.",
+    text: "Anxietatea are un plafon. Nu crește la infinit. Dacă rămâi unde ești, fără să fugi și fără să lupți, după 10-20 de minute anxietatea începe să scadă natural.",
+  },
+];
 
-/* ─── Section label ─── */
-function SectionLabel({ children }: { children: React.ReactNode }) {
-  return (
-    <p
-      className="text-xs font-semibold uppercase tracking-[0.15em] mb-4"
-      style={{ color: "var(--color-text-secondary)" }}
-    >
-      {children}
-    </p>
-  );
-}
+const MYTHS = [
+  {
+    myth: `„Nu am nevoie de ani de terapie.”`,
+    reality:
+      "Terapia durează cât are nevoie să dureze.. până înțelegi mesajul pe care corpul și psihicul tău încearcă să ți-l transmită. La unii oameni e mai scurt, la alții mai lung.",
+  },
+  {
+    myth: `„Terapia înseamnă să stau pe divan și să vorbesc despre copilărie.”`,
+    reality:
+      "Psihoterapia pentru panică este complet diferită. Cu teme de casă, exerciții concrete, rezultate măsurabile.",
+  },
+  {
+    myth: `„E mai bine să iau pastile.”`,
+    reality:
+      "Psihoterapia este la fel de eficientă ca medicația, cu un avantaj major: efectele se mențin pe termen lung.",
+  },
+];
 
-/* ─── Callout ─── */
-function Callout({ children }: { children: React.ReactNode }) {
-  return (
-    <div
-      className="rounded-lg p-6"
-      style={{
-        backgroundColor: "var(--color-secondary-light)",
-        borderLeft: "4px solid var(--color-secondary)",
-      }}
-    >
-      {children}
-    </div>
-  );
-}
-
-/* ─── Stat ─── */
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="text-center">
-      <p
-        className="text-3xl md:text-4xl font-medium mb-1"
-        style={{
-          fontFamily: "var(--font-heading)",
-          color: "var(--color-primary)",
-        }}
-      >
-        {value}
-      </p>
-      <p
-        className="text-sm leading-snug"
-        style={{ color: "var(--color-text-secondary)" }}
-      >
-        {label}
-      </p>
-    </div>
-  );
-}
-
-/* ─── Step card ─── */
-function StepCard({
-  number,
-  title,
-  children,
-}: {
-  number: number;
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div
-      className="rounded-lg p-6 shadow-sm"
-      style={{ backgroundColor: "var(--color-background-white)" }}
-    >
-      <div className="flex items-start gap-4">
-        <div
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
-          style={{ backgroundColor: "var(--color-primary)" }}
-        >
-          {number}
-        </div>
-        <div>
-          <h3
-            className="text-lg font-semibold mb-2"
-            style={{
-              fontFamily: "var(--font-heading)",
-              color: "var(--color-primary)",
-            }}
-          >
-            {title}
-          </h3>
-          <p
-            className="text-[15px] leading-relaxed"
-            style={{ color: "var(--color-text)" }}
-          >
-            {children}
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-/* ─── Warning card ─── */
-function WarningCard({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div
-      className="rounded-lg p-5"
-      style={{
-        backgroundColor: "rgba(196, 97, 74, 0.06)",
-        border: "1px solid rgba(196, 97, 74, 0.15)",
-      }}
-    >
-      <p
-        className="font-semibold mb-1"
-        style={{ color: "var(--color-accent)" }}
-      >
-        {title}
-      </p>
-      <p
-        className="text-[15px] leading-relaxed"
-        style={{ color: "var(--color-text)" }}
-      >
-        {children}
-      </p>
-    </div>
-  );
-}
-
-/* ─── Myth / Reality card ─── */
-function MythRealityCard({
-  myth,
-  reality,
-}: {
-  myth: string;
-  reality: string;
-}) {
-  return (
-    <div
-      className="rounded-lg p-6 shadow-sm"
-      style={{
-        backgroundColor: "var(--color-background-white)",
-        border: "1px solid var(--color-border)",
-      }}
-    >
-      <p
-        className="text-lg italic mb-3"
-        style={{
-          fontFamily: "var(--font-heading)",
-          color: "var(--color-text-secondary)",
-        }}
-      >
-        {myth}
-      </p>
-      <p
-        className="text-[15px] leading-relaxed"
-        style={{
-          fontFamily: "var(--font-body)",
-          color: "var(--color-text)",
-        }}
-      >
-        {reality}
-      </p>
-    </div>
-  );
-}
-
-/* ─── FAQ Accordion ─── */
-function FAQItem({
-  question,
-  children,
-}: {
-  question: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <details
-      className="group rounded-lg p-6"
-      style={{
-        backgroundColor: "var(--color-background-white)",
-        border: "1px solid var(--color-border)",
-      }}
-    >
-      <summary
-        className="cursor-pointer list-none text-[15px] font-medium flex items-center justify-between"
-        style={{ color: "var(--color-text)" }}
-      >
-        {question}
-        <span
-          className="ml-4 shrink-0 transition-transform duration-200 group-open:rotate-45"
-          aria-hidden="true"
-        >
-          +
-        </span>
-      </summary>
-      <div
-        className="mt-4 text-[15px] leading-relaxed"
-        style={{ color: "var(--color-text)" }}
-      >
-        {children}
-      </div>
-    </details>
-  );
-}
+const MOMENT_ITEMS = [
+  "Atacuri de panică mai mult de o dată pe lună",
+  "Eviți locuri, activități sau situații din cauza panicii",
+  "Ai renunțat la lucruri importante pentru tine",
+  "Folosești alcool, medicamente sau alte substanțe ca să faci față",
+  "Simți că viața ta se restrânge",
+  "Te temi constant de următorul atac",
+];
 
 export default function ActioneazaPage() {
   return (
-    <>
+    <main className="font-work min-h-screen bg-white text-lp-navy">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* ─── CRISIS ANCHOR ─── */}
-      <div
-        className="w-full py-3 text-center text-sm font-medium"
-        style={{ backgroundColor: "var(--color-accent)", color: "#FFFFFF" }}
-      >
+      {/* ─── CRISIS ANCHOR (prominent, links to 5-pași anchor) ─── */}
+      <div className="w-full bg-lp-yellow px-6 py-3 text-center text-sm font-semibold text-lp-navy">
         <Link
           href="#acum"
           className="underline underline-offset-2 hover:no-underline"
         >
-          Ai un atac de panică acum? &rarr; Mergi direct la cei 5 pași
+          Ai un atac de panică acum? → Mergi direct la cei 5 pași
         </Link>
       </div>
 
-      {/* ─── HERO + 5 PAȘI (combined) ─── */}
-      <header
-        id="acum"
-        className="scroll-mt-8"
-        style={{ backgroundColor: "var(--color-secondary-light)" }}
-      >
-        <div className="mx-auto max-w-[760px] px-6 pt-16 md:pt-24 pb-8">
+      {/* ─── HERO + 5 PAȘI (combined, prominent for crisis users) ─── */}
+      <header id="acum" className="scroll-mt-8 bg-white px-6 pt-10 pb-12 md:pt-16 md:pb-16">
+        <div className="mx-auto max-w-[820px]">
           {/* Breadcrumb */}
-          <nav
-            className="flex items-center gap-2 text-sm mb-8"
-            style={{ color: "var(--color-text-secondary)" }}
-          >
+          <nav className="mb-8 flex items-center gap-2 text-sm text-lp-mute-soft">
             <Link
               href="/atac-de-panica/"
-              className="hover:underline"
-              style={{ color: "var(--color-text-secondary)" }}
+              className="hover:text-lp-cyan-dark hover:underline underline-offset-2"
             >
               Atac de panică
             </Link>
-            <span aria-hidden="true">&rarr;</span>
-            <span style={{ color: "var(--color-primary)" }} className="font-medium">
-              Acționează
-            </span>
+            <span aria-hidden="true">→</span>
+            <span className="font-semibold text-lp-navy">Acționează</span>
           </nav>
 
-          <SectionLabel>01 &middot; Acum</SectionLabel>
-
-          <h1
-            className="text-[28px] md:text-[38px] leading-[1.25] mb-3"
-            style={{
-              fontFamily: "var(--font-heading)",
-              fontWeight: 400,
-              color: "var(--color-primary)",
-            }}
-          >
-            Ce poți face, acum și pe termen lung
+          <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+            01 · Acum
+          </p>
+          <h1 className="mt-4 font-work text-4xl font-bold leading-[1.05] tracking-tight text-lp-navy md:text-5xl lg:text-6xl">
+            Ce poți face, <span className="lp-yellow-underline">acum</span> și
+            pe termen lung.
           </h1>
-
-          <p
-            className="text-sm mb-2"
-            style={{ color: "var(--color-text-secondary)" }}
-          >
+          <p className="mt-5 text-sm text-lp-mute-soft">
             De{" "}
-            <span
-              className="font-medium"
-              style={{ color: "var(--color-primary)" }}
+            <Link
+              href="/despre-daniel/"
+              className="font-semibold text-lp-navy underline-offset-2 hover:underline"
             >
               Daniel Gagea
-            </span>
+            </Link>
             , psiholog clinician, psihoterapeut
           </p>
 
-          <p
-            className="text-[15px] leading-relaxed mb-10"
-            style={{ color: "var(--color-text-secondary)" }}
-          >
+          <p className="mt-6 text-base leading-relaxed text-lp-mute md:text-lg">
             Dacă ești în mijlocul unui atac de panică acum, citește doar{" "}
-            <strong style={{ color: "var(--color-text)" }}>textul bold</strong>.
+            <strong className="text-lp-navy">textul bold</strong>.
           </p>
 
-          <h2
-            className="text-[22px] md:text-[26px] font-medium mb-8"
-            style={{
-              fontFamily: "var(--font-heading)",
-              color: "var(--color-primary)",
-            }}
-          >
+          <h2 className="mt-12 font-work text-2xl font-bold leading-tight text-lp-navy md:text-3xl">
             5 pași concreți
           </h2>
 
-        <div className="flex flex-col gap-6">
-          <StepCard number={1} title="Oprește-te. Nu fugi.">
-            Impulsul de a fugi este puternic. Dar fuga confirmă creierului că
-            pericolul este real. Rămâi unde ești. Dacă ești într-un loc sigur
-            , și ești, chiar dacă nu simți asta acum, rămâi.
-          </StepCard>
-
-          <StepCard
-            number={2}
-            title="Amintește-ți: nu mori, nu înnebunești, nu pierzi controlul."
-          >
-            Corpul tău a trecut prin asta de fiecare dată și de fiecare dată a fost ok. Inima a bătut repede și s-a oprit. Amețeala a venit și a trecut. Senzația de sufocare s-a dizolvat. Niciodată nu s-a întâmplat ce te-ai temut.
-          </StepCard>
-
-          <StepCard number={3} title="Observă, nu lupta.">
-            În loc să lupți cu senzațiile, încearcă să le observi fără să reacționezi.. notează mental ce simți, unde simți, și cât durează. Când observi în loc să lupți, senzațiile își pierd din intensitate.
-          </StepCard>
-
-          <StepCard number={4} title="Expiră lung și lent.">
-            NU respira adânc și repede.. asta este hiperventilație. În schimb:
-            inspiră ușor pe nas, 4 secunde. Apoi expiră lent pe gură, 6
-            secunde, ca și cum ai sufla printr-un pai. Repetă de 5-6 ori.
-          </StepCard>
-
-          <StepCard number={5} title="Rămâi în situație.">
-            Anxietatea are un plafon. Nu crește la infinit. Dacă rămâi unde
-            ești, fără să fugi și fără să lupți, după 10-20 de minute
-            anxietatea începe să scadă natural.
-          </StepCard>
-        </div>
+          <div className="mt-8 flex flex-col gap-5">
+            {STEPS.map((s, i) => (
+              <div
+                key={s.title}
+                className="rounded-md border border-lp-border bg-white p-6 shadow-[0_4px_20px_rgba(8,29,61,0.04)] md:p-7"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lp-yellow text-sm font-bold text-lp-navy">
+                    {i + 1}
+                  </div>
+                  <div>
+                    <h3 className="font-work text-lg font-bold leading-snug text-lp-navy md:text-xl">
+                      {s.title}
+                    </h3>
+                    <p className="mt-2 text-base leading-relaxed text-lp-mute">
+                      {s.text}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </header>
 
-      {/* ─── PART 2: Când să ceri ajutor ─── */}
-      <Section id="ajutor" bg="white">
-        <SectionLabel>02 · Pasul următor</SectionLabel>
+      {/* ─── CÂND SĂ CERI AJUTOR ─── */}
+      <section id="ajutor" className="bg-lp-bg px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-[820px]">
+          <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+            02 · Pasul următor
+          </p>
+          <h2 className="mt-3 font-work text-3xl font-bold leading-tight text-lp-navy md:text-4xl lg:text-[44px]">
+            Când să ceri{" "}
+            <span className="lp-yellow-underline">ajutor</span> profesionist.
+          </h2>
 
-        <h2
-          className="text-2xl md:text-3xl font-medium mb-10"
-          style={{
-            fontFamily: "var(--font-heading)",
-            color: "var(--color-primary)",
-          }}
-        >
-          Când să ceri ajutor profesionist
-        </h2>
+          {/* Stats row */}
+          <div className="mt-10 grid grid-cols-1 gap-6 rounded-md border border-lp-border bg-white p-6 md:grid-cols-3">
+            <Stat value="85–90%" label="rată de recuperare cu psihoterapie" />
+            <Stat value="12–15" label="ședințe, nu ani" />
+            <Stat value="78%" label="remisie completă (APA)" />
+          </div>
 
-        {/* Stats row */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 rounded-lg p-6"
-          style={{
-            backgroundColor: "var(--color-background-white)",
-            border: "1px solid var(--color-border)",
-          }}
-        >
-          <Stat value="85–90%" label="rată de recuperare cu psihoterapie" />
-          <Stat value="12–15" label="ședințe, nu ani" />
-          <Stat value="78%" label="remisie completă (APA)" />
-        </div>
-
-        {/* Evidence text */}
-        <div className="mt-10 space-y-5">
-          <p
-            className="text-[15px] leading-relaxed"
-            style={{ color: "var(--color-text)" }}
-          >
+          {/* Evidence text */}
+          <p className="mt-10 text-base leading-relaxed text-lp-mute md:text-lg">
             Studii derulate la Universitățile Oxford, Pennsylvania și New York
             au confirmat aceste rezultate. La 15 luni după terminarea terapiei,
-            85% dintre pacienții tratați cu psihoterapie nu mai aveau
-            atacuri de panică (Clark et al., 1994). 20% dintre pacienți au
-            raportat ameliorare semnificativă după doar 2 ședințe (Clerkin et
-            al., 2008).
+            85% dintre pacienții tratați cu psihoterapie nu mai aveau atacuri
+            de panică (Clark et al., 1994). 20% dintre pacienți au raportat
+            ameliorare semnificativă după doar 2 ședințe (Clerkin et al., 2008).
           </p>
-        </div>
 
-        {/* Ce te oprește */}
-        <h3
-          className="text-xl md:text-2xl font-medium mt-14 mb-8"
-          style={{
-            fontFamily: "var(--font-heading)",
-            color: "var(--color-primary)",
-          }}
-        >
-          Ce te oprește și de ce nu ar trebui
-        </h3>
-
-        <div className="flex flex-col gap-6">
-          <MythRealityCard
-            myth={`„Nu am nevoie de ani de terapie."`}
-            reality="Terapia durează cât are nevoie să dureze.. până înțelegi mesajul pe care corpul și psihicul tău încearcă să ți-l transmită. La unii oameni e mai scurt, la alții mai lung."
-          />
-          <MythRealityCard
-            myth={`„Terapia înseamnă să stau pe divan și să vorbesc despre copilărie."`}
-            reality="Psihoterapia pentru panică este complet diferită. Cu teme de casă, exerciții concrete, rezultate măsurabile."
-          />
-          <MythRealityCard
-            myth={`„E mai bine să iau pastile."`}
-            reality="Psihoterapia este la fel de eficientă ca medicația, cu un avantaj major: efectele se mențin pe termen lung."
-          />
-        </div>
-
-        {/* Când este momentul */}
-        <h3
-          className="text-xl md:text-2xl font-medium mt-14 mb-8"
-          style={{
-            fontFamily: "var(--font-heading)",
-            color: "var(--color-primary)",
-          }}
-        >
-          Când este momentul
-        </h3>
-
-        <ul className="space-y-4">
-          {[
-            "Atacuri de panică mai mult de o dată pe lună",
-            "Eviți locuri, activități sau situații din cauza panicii",
-            "Ai renunțat la lucruri importante pentru tine",
-            "Folosești alcool, medicamente sau alte substanțe ca să faci față",
-            "Simți că viața ta se restrânge",
-            "Te temi constant de următorul atac",
-          ].map((item) => (
-            <li key={item} className="flex items-start gap-3">
-              <span
-                className="mt-[7px] h-2.5 w-2.5 shrink-0 rounded-full"
-                style={{ backgroundColor: "var(--color-accent)" }}
-                aria-hidden="true"
-              />
-              <span
-                className="text-[15px] leading-relaxed"
-                style={{ color: "var(--color-text)" }}
-              >
-                {item}
-              </span>
-            </li>
-          ))}
-        </ul>
-
-        {/* Callout */}
-      </Section>
-
-      {/* ─── CTA ─── */}
-      <Section id="cta" bg="white">
-        <div
-          className="rounded-lg p-8 md:p-10 text-center"
-          style={{
-            backgroundColor: "var(--color-background-white)",
-            border: "1px solid var(--color-border)",
-          }}
-        >
-          <h3
-            className="text-2xl md:text-3xl font-medium mb-4"
-            style={{
-              fontFamily: "var(--font-heading)",
-              color: "var(--color-primary)",
-            }}
-          >
-            Următorul pas
+          {/* Ce te oprește */}
+          <h3 className="mt-14 font-work text-2xl font-bold leading-tight text-lp-navy md:text-3xl">
+            Ce te oprește și de ce nu ar trebui
           </h3>
-          <p
-            className="text-[15px] leading-relaxed mb-8 max-w-lg mx-auto"
-            style={{ color: "var(--color-text)" }}
-          >
-            Primul pas este o conversație. Nu un angajament, nu o promisiune,
-            doar o discuție în care înțelegem împreună ce ți se întâmplă și ce
-            poți face.
-          </p>
-          <Link
-            href="/programare/"
-            className="inline-block rounded-lg px-7 py-3.5 text-[15px] font-medium text-white transition-colors"
-            style={{ backgroundColor: "var(--color-accent)" }}
-          >
-            Programează o conversație cu Daniel
-          </Link>
+
+          <div className="mt-8 flex flex-col gap-4">
+            {MYTHS.map(({ myth, reality }) => (
+              <div
+                key={myth}
+                className="rounded-md border border-lp-border bg-white p-6 md:p-7"
+              >
+                <p className="font-work text-lg italic leading-snug text-lp-mute-soft md:text-xl">
+                  {myth}
+                </p>
+                <p className="mt-3 text-base leading-relaxed text-lp-navy md:text-lg">
+                  {reality}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Când este momentul */}
+          <h3 className="mt-14 font-work text-2xl font-bold leading-tight text-lp-navy md:text-3xl">
+            Când este momentul
+          </h3>
+
+          <ul className="mt-6 space-y-4">
+            {MOMENT_ITEMS.map((item) => (
+              <li key={item} className="flex items-start gap-3">
+                <span
+                  className="mt-[9px] h-2.5 w-2.5 shrink-0 rounded-full bg-lp-cyan-dark"
+                  aria-hidden="true"
+                />
+                <span className="text-base leading-relaxed text-lp-mute md:text-lg">
+                  {item}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
-      </Section>
+      </section>
+
+      {/* ─── CTA DARK ─── */}
+      <section className="bg-lp-navy px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-[1100px]">
+          <div className="text-center text-white">
+            <p className="text-base md:text-lg font-semibold uppercase tracking-[0.22em] text-lp-cyan">
+              Cabinet
+            </p>
+            <h2 className="mt-4 font-work text-3xl font-bold leading-tight md:text-5xl">
+              Primul pas este{" "}
+              <span className="bg-lp-yellow px-2 text-lp-navy">
+                o conversație.
+              </span>
+            </h2>
+            <p className="mx-auto mt-6 max-w-[680px] text-lg leading-relaxed text-white/85 md:text-xl">
+              Nu un angajament, nu o promisiune, doar o discuție în care
+              înțelegem împreună ce ți se întâmplă și ce poți face.
+            </p>
+
+            <div className="mt-10 flex flex-col items-center gap-4">
+              <Link
+                href="/programare/?din=atac-de-panica-actioneaza"
+                className="lp-cta inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold md:text-lg"
+              >
+                Programează o conversație cu Daniel
+                <span aria-hidden>→</span>
+              </Link>
+              <p className="text-sm text-white/60">
+                Răspund personal la fiecare mesaj.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ─── FAQ ─── */}
-      <Section id="faq" bg="default">
-        <h2
-          className="text-2xl md:text-3xl font-medium mb-8"
-          style={{
-            fontFamily: "var(--font-heading)",
-            color: "var(--color-primary)",
-          }}
-        >
-          Întrebări frecvente
-        </h2>
+      <section id="faq" className="bg-lp-bg px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-[820px]">
+          <div className="text-center">
+            <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-cyan-dark">
+              Întrebări frecvente
+            </p>
+            <h2 className="mt-3 font-work text-3xl font-bold leading-tight tracking-tight text-lp-navy md:text-4xl">
+              Ce vor să știe oamenii despre tratament.
+            </h2>
+          </div>
 
-        <FAQItem question="Funcționează terapia pentru atacuri de panică?">
-          <p>
-            Da. Psihoterapia pentru atacurile de panică este unul dintre cele mai studiate și eficiente tratamente din psihologie, cu efecte pe termen lung. Durata variază de la persoană la persoană, în funcție de complexitatea și profunzimea problemei.
-          </p>
-        </FAQItem>
+          <div className="mt-10 divide-y divide-lp-border rounded-md border border-lp-border bg-white">
+            <details className="group">
+              <summary className="flex cursor-pointer list-none items-start justify-between gap-6 px-6 py-5 text-left text-[17px] font-semibold text-lp-navy md:text-lg">
+                <span>Funcționează terapia pentru atacuri de panică?</span>
+                <span
+                  aria-hidden
+                  className="mt-1 shrink-0 text-2xl leading-none text-lp-cyan-dark transition-transform group-open:rotate-45"
+                >
+                  +
+                </span>
+              </summary>
+              <p className="px-6 pb-5 text-base leading-relaxed text-lp-mute md:text-[17px]">
+                Da. Psihoterapia pentru atacurile de panică este unul dintre
+                cele mai studiate și eficiente tratamente din psihologie, cu
+                efecte pe termen lung. Durata variază de la persoană la
+                persoană, în funcție de complexitatea și profunzimea problemei.
+              </p>
+            </details>
+          </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginTop: "40px" }}>
-          <Link href="/atac-de-panica" style={{ display: "flex", alignItems: "center", gap: "8px", padding: "16px 20px", borderRadius: "10px", background: "var(--color-background-white)", border: "1px solid var(--color-border)", textDecoration: "none", fontSize: "15px", fontWeight: 500, color: "var(--color-primary)", transition: "transform 0.2s ease-out" }}>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            Înapoi la ghid
-          </Link>
-          <Link href="/programare?din=atac-de-panica" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "16px 20px", borderRadius: "10px", background: "var(--color-secondary)", textDecoration: "none", fontSize: "15px", fontWeight: 600, color: "#fff", transition: "transform 0.2s ease-out" }}>
-            Programează o consultație
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-          </Link>
+          {/* Navigation */}
+          <div className="mt-10 grid gap-3 md:grid-cols-2">
+            <Link
+              href="/atac-de-panica"
+              className="flex items-center gap-2 rounded-md border border-lp-border bg-white px-5 py-4 text-[15px] font-semibold text-lp-navy transition hover:-translate-y-0.5 hover:border-lp-cyan hover:shadow-[0_12px_40px_rgba(8,29,61,0.08)]"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden
+              >
+                <path
+                  d="M13 8H3M3 8L7 4M3 8L7 12"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              Înapoi la ghid
+            </Link>
+            <Link
+              href="/programare?din=atac-de-panica"
+              className="lp-cta flex items-center justify-between gap-2 rounded-md px-5 py-4 text-[15px] font-semibold"
+            >
+              Programează o consultație
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden
+              >
+                <path
+                  d="M3 8H13M13 8L9 4M13 8L9 12"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
-      </Section>
-    </>
+      </section>
+    </main>
+  );
+}
+
+function Stat({ value, label }: { value: string; label: string }) {
+  return (
+    <div className="text-center">
+      <p className="font-work text-3xl font-bold tracking-tight text-lp-navy md:text-4xl">
+        {value}
+      </p>
+      <p className="mt-2 text-sm leading-snug text-lp-mute md:text-base">
+        {label}
+      </p>
+    </div>
   );
 }

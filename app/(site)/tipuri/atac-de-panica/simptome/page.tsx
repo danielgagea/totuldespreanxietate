@@ -20,45 +20,6 @@ export const metadata: Metadata = {
   },
 };
 
-/* ─── Reusable section wrapper ─── */
-function Section({
-  children,
-  bg = "default",
-  className = "",
-}: {
-  children: React.ReactNode;
-  bg?: "default" | "white";
-  className?: string;
-}) {
-  const bgMap = {
-    default: "var(--color-background)",
-    white: "var(--color-background-white)",
-  };
-  return (
-    <section className={className} style={{ backgroundColor: bgMap[bg] }}>
-      <div className="mx-auto max-w-[760px] px-6 py-16 md:py-24">
-        {children}
-      </div>
-    </section>
-  );
-}
-
-function Callout({ children }: { children: React.ReactNode }) {
-  return (
-    <div
-      className="rounded-lg p-5 my-8"
-      style={{
-        backgroundColor: "var(--color-secondary-light)",
-        borderLeft: "3px solid var(--color-secondary)",
-      }}
-    >
-      {children}
-    </div>
-  );
-}
-
-/* ─── JSON-LD ─── */
-
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -116,394 +77,265 @@ const jsonLd = {
   ],
 };
 
-/* ─── Page ─── */
+const THOUGHTS = [
+  "„Fac infarct.”",
+  "„Înnebunesc.”",
+  "„Pierd controlul.”",
+  "„Nu pot respira, mă sufoc.”",
+  "„Trebuie să ies de aici.”",
+  "„Mă voi face de râs.”",
+  "„Nu se va termina niciodată.”",
+];
+
+const CASCADE = [
+  "Apare o senzație fizică.. poate o palpitație, o amețeală, o ușoară dificultate de respirație. Poate fi cauzată de stres, oboseală, cafea, sau pur și simplu de corpul tău funcționând normal.",
+  "Creierul interpretează senzația ca pericol: „Inima bate repede, probabil fac infarct.”",
+  "Interpretarea produce frică. Frica intensifică senzațiile fizice.. inima bate și mai repede, respirația se accelerează și mai mult.",
+  "Senzațiile intensificate confirmă interpretarea: „Vedeți? E și mai rău. Chiar e ceva grav.”",
+  "Ciclul se repetă, și în câteva secunde, ești în mijlocul unui atac de panică complet.",
+];
+
 export default function SimptomePage() {
   return (
-    <>
-      {/* JSON-LD */}
+    <main className="font-work min-h-screen bg-white text-lp-navy">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* ── Hero / Intro ── */}
-      <Section bg="white">
-        {/* Breadcrumb */}
-        <nav
-          className="flex items-center gap-2 text-sm mb-10"
-          style={{ color: "var(--color-text-secondary)" }}
-        >
-          <Link
-            href="/tipuri/atac-de-panica/"
-            className="underline underline-offset-2 transition-colors"
-            style={{ color: "var(--color-text-secondary)" }}
-          >
-            Atac de panic\u0103
-          </Link>
-          <span aria-hidden="true">\u2192</span>
-          <span style={{ color: "var(--color-text)" }}>Simptome</span>
-        </nav>
-
-        {/* H1 */}
-        <h1
-          className="text-3xl md:text-[42px] leading-[1.2] font-medium mb-4"
-          style={{
-            fontFamily: "var(--font-heading)",
-            color: "var(--color-primary)",
-          }}
-        >
-          Ce sim\u021Bi \u00EEn timpul unui atac de panic\u0103
-        </h1>
-
-        {/* Author */}
-        <p
-          className="text-sm mb-10"
-          style={{ color: "var(--color-text-secondary)" }}
-        >
-          Daniel Gagea, psiholog clinician, psihoterapeut
-        </p>
-
-        {/* Intro */}
-        <p
-          className="text-lg leading-relaxed"
-          style={{
-            fontFamily: "var(--font-body)",
-            color: "var(--color-text)",
-          }}
-        >
-          Totul \u00EEncepe brusc. Uneori \u00EEntr-o situa\u021Bie specific\u0103 .. un loc
-          aglomerat, o c\u0103l\u0103torie, o \u00EEnt\u00E2lnire. Alteori, aparent din senin
-          .. acas\u0103, la birou, sau chiar \u00EEn somn.
-        </p>
-      </Section>
-
-      {/* ── Senza\u021Biile fizice ── */}
-      <Section bg="default">
-        <h2
-          className="text-2xl md:text-3xl font-medium mb-8"
-          style={{
-            fontFamily: "var(--font-heading)",
-            color: "var(--color-primary)",
-          }}
-        >
-          Senza\u021Biile fizice
-        </h2>
-
-        <div
-          className="space-y-6 text-[17px] leading-[1.75]"
-          style={{
-            fontFamily: "var(--font-body)",
-            color: "var(--color-text)",
-          }}
-        >
-          <p>
-            Inima \u00EEncepe s\u0103 bat\u0103 puternic, repede, de parc\u0103 ar vrea s\u0103 ias\u0103
-            din piept. Sim\u021Bi durere sau presiune \u00EEn piept .. \u0219i imediat te
-            g\u00E2nde\u0219ti la ce e mai r\u0103u.
-          </p>
-
-          <p>
-            Respira\u021Bia se schimb\u0103. Sim\u021Bi c\u0103 nu prime\u0219ti destul aer, c\u0103 te
-            sufoci, c\u0103 ceva \u00EE\u021Bi blocheaz\u0103 g\u00E2tul. \u0218i iat\u0103 paradoxul pe care
-            pu\u021Bini oameni \u00EEl \u0219tiu: \u00EEn timpul unui atac de panic\u0103, respiri{" "}
-            <strong>prea mult</strong>, nu prea pu\u021Bin. Senza\u021Bia de sufocare este
-            produs\u0103 de hiperventila\u021Bie .. respira\u021Bia rapid\u0103 \u0219i profund\u0103
-            scade brusc presiunea CO2 din s\u00E2nge (hipocapnie), ceea ce produce
-            ame\u021Beal\u0103, furnic\u0103turi \u0219i senza\u021Bie de sufocare{" "}
-            <span style={{ color: "var(--color-text-secondary)" }}>
-              (Meuret, Ritz, Wilhelm &amp; Roth, 2005; Clark et al., 1985)
-            </span>
-            .
-          </p>
-
-          <p>
-            Ame\u021Beala vine \u00EEn val. Sim\u021Bi c\u0103 te pierzi, c\u0103 le\u0219ini, c\u0103 solul se
-            mi\u0219c\u0103 sub tine. M\u00E2inile \u0219i picioarele amor\u021Besc sau furnic\u0103tur\u0103
-            .. senza\u021Bie ciudat\u0103, ca \u0219i cum nu ar fi ale tale.
-          </p>
-
-          <p>
-            Transpiri .. uneori abundent, uneori doar palme umede.
-            Alternezi \u00EEntre valuri de c\u0103ldur\u0103 \u0219i frisoane. Sim\u021Bi grea\u021B\u0103, ca \u0219i
-            cum ai vomita.
-          </p>
-
-          <p>
-            \u0218i poate cea mai \u00EEnsp\u0103im\u00E2nt\u0103toare senza\u021Bie: totul din jur pare
-            ireal. De parc\u0103 ai privi un film cu tine \u00EEnsu\u021Bi. De parc\u0103 lumea
-            s-a decuplat. Asta se nume\u0219te{" "}
-            <strong>derealizare</strong>, \u0219i este un simptom frecvent, nu un
-            semn de nebunie.
-          </p>
-        </div>
-      </Section>
-
-      {/* ── Ce se \u00EEnt\u00E2mpl\u0103 \u00EEn minte ── */}
-      <Section bg="white">
-        <h2
-          className="text-2xl md:text-3xl font-medium mb-8"
-          style={{
-            fontFamily: "var(--font-heading)",
-            color: "var(--color-primary)",
-          }}
-        >
-          Ce se \u00EEnt\u00E2mpl\u0103 \u00EEn minte
-        </h2>
-
-        <p
-          className="text-[17px] leading-[1.75] mb-8"
-          style={{
-            fontFamily: "var(--font-body)",
-            color: "var(--color-text)",
-          }}
-        >
-          Senza\u021Biile fizice vin cu g\u00E2nduri automate .. rapide, intense, \u0219i
-          extrem de conving\u0103toare \u00EEn acel moment:
-        </p>
-
-        {/* Thoughts list */}
-        <ul className="space-y-3 mb-8">
-          {[
-            `\u201EFac infarct.\u201D`,
-            `\u201E\u00CEnnebunesc.\u201D`,
-            `\u201EPierd controlul.\u201D`,
-            `\u201ENu pot respira, m\u0103 sufoc.\u201D`,
-            `\u201ETrebuie s\u0103 ies de aici.\u201D`,
-            `\u201EM\u0103 voi face de r\u00E2s.\u201D`,
-            `\u201ENu se va termina niciodat\u0103.\u201D`,
-          ].map((thought) => (
-            <li
-              key={thought}
-              className="pl-5 py-2 italic"
-              style={{
-                fontFamily: "var(--font-heading)",
-                fontSize: "18px",
-                lineHeight: 1.6,
-                color: "var(--color-primary)",
-                borderLeft: "3px solid var(--color-accent)",
-              }}
+      {/* HERO */}
+      <header className="bg-white px-6 pt-14 pb-12 md:pt-20 md:pb-16">
+        <div className="mx-auto max-w-[820px]">
+          <nav className="mb-8 flex items-center gap-2 text-sm text-lp-mute-soft">
+            <Link
+              href="/tipuri/atac-de-panica/"
+              className="underline underline-offset-2 hover:no-underline"
             >
-              {thought}
-            </li>
-          ))}
-        </ul>
+              Atac de panică
+            </Link>
+            <span aria-hidden="true">→</span>
+            <span className="text-lp-navy">Simptome</span>
+          </nav>
 
-        <div
-          className="space-y-6 text-[17px] leading-[1.75]"
-          style={{
-            fontFamily: "var(--font-body)",
-            color: "var(--color-text)",
-          }}
-        >
-          <p>
-            Aceste g\u00E2nduri nu sunt ra\u021Bionale. Dar \u00EEn mijlocul atacului, ele se
-            simt absolut adev\u0103rate. \u0218i tocmai asta este problema.
+          <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+            Simptome
           </p>
+          <h1 className="mt-4 font-work text-4xl font-bold leading-[1.05] tracking-tight text-lp-navy md:text-5xl lg:text-6xl">
+            Ce <span className="lp-yellow-underline">simți</span> în timpul unui atac de panică.
+          </h1>
+          <p className="mt-5 text-sm text-lp-mute-soft">
+            De{" "}
+            <Link
+              href="/despre-daniel/"
+              className="font-semibold text-lp-navy underline-offset-2 hover:underline"
+            >
+              Daniel Gagea
+            </Link>
+            , psiholog clinician, psihoterapeut
+          </p>
+
+          <div className="mt-8 space-y-5 text-lg leading-relaxed text-lp-mute md:text-xl">
+            <p>
+              Totul începe brusc. Uneori într-o situație specifică.. un loc
+              aglomerat, o călătorie, o întâlnire. Alteori, aparent din senin..
+              acasă, la birou, sau chiar în somn.
+            </p>
+          </div>
         </div>
-      </Section>
+      </header>
 
-      {/* ── Cascada ── */}
-      <Section bg="default">
-        <h2
-          className="text-2xl md:text-3xl font-medium mb-8"
-          style={{
-            fontFamily: "var(--font-heading)",
-            color: "var(--color-primary)",
-          }}
-        >
-          Cascada: cum escaladeaz\u0103 totul
-        </h2>
+      {/* SENZAȚIILE FIZICE */}
+      <section className="bg-lp-bg px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-[820px]">
+          <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+            Corpul
+          </p>
+          <h2 className="mt-3 font-work text-3xl font-bold leading-tight text-lp-navy md:text-4xl lg:text-[44px]">
+            Senzațiile fizice.
+          </h2>
 
-        <p
-          className="text-[17px] leading-[1.75] mb-10"
-          style={{
-            fontFamily: "var(--font-body)",
-            color: "var(--color-text)",
-          }}
-        >
-          Iat\u0103 ce se \u00EEnt\u00E2mpl\u0103 de fapt, pas cu pas:
-        </p>
+          <div className="mt-6 space-y-5 text-base leading-relaxed text-lp-mute md:text-lg">
+            <p>
+              Inima începe să bată puternic, repede, de parcă ar vrea să iasă
+              din piept. Simți durere sau presiune în piept.. și imediat te
+              gândești la ce e mai rău.
+            </p>
 
-        {/* Numbered cascade steps */}
-        <ol className="space-y-6 mb-10">
-          {[
-            `Apare o senza\u021Bie fizic\u0103.. poate o palpita\u021Bie, o ame\u021Beal\u0103, o u\u0219oar\u0103 dificultate de respira\u021Bie. Poate fi cauzat\u0103 de stres, oboseal\u0103, cafea, sau pur \u0219i simplu de corpul t\u0103u func\u021Bion\u00E2nd normal.`,
-            `Creierul interpreteaz\u0103 senza\u021Bia ca pericol: \u201EInima bate repede, probabil fac infarct.\u201D`,
-            `Interpretarea produce fric\u0103. Frica intensific\u0103 senza\u021Biile fizice.. inima bate \u0219i mai repede, respira\u021Bia se accelereaz\u0103 \u0219i mai mult.`,
-            `Senza\u021Biile intensificate confirm\u0103 interpretarea: \u201EVede\u021Bi? E \u0219i mai r\u0103u. Chiar e ceva grav.\u201D`,
-            `Ciclul se repet\u0103, \u0219i \u00EEn c\u00E2teva secunde, e\u0219ti \u00EEn mijlocul unui atac de panic\u0103 complet.`,
-          ].map((step, i) => (
-            <li key={i} className="flex gap-4 items-start">
-              <span
-                className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-sm font-semibold"
-                style={{
-                  backgroundColor: "var(--color-primary)",
-                  color: "#fff",
-                  fontFamily: "var(--font-body)",
-                }}
-              >
-                {i + 1}
+            <p>
+              Respirația se schimbă. Simți că nu primești destul aer, că te
+              sufoci, că ceva îți blochează gâtul. Și iată paradoxul pe care
+              puțini oameni îl știu: în timpul unui atac de panică, respiri{" "}
+              <strong className="text-lp-navy">prea mult</strong>, nu prea puțin. Senzația de sufocare este
+              produsă de hiperventilație.. respirația rapidă și profundă
+              scade brusc presiunea CO2 din sânge (hipocapnie), ceea ce produce
+              amețeală, furnicături și senzație de sufocare{" "}
+              <span className="text-lp-mute-soft">
+                (Meuret, Ritz, Wilhelm &amp; Roth, 2005; Clark et al., 1985)
               </span>
-              <p
-                className="text-[17px] leading-[1.75] pt-1"
-                style={{
-                  fontFamily: "var(--font-body)",
-                  color: "var(--color-text)",
-                }}
+              .
+            </p>
+
+            <p>
+              Amețeala vine în val. Simți că te pierzi, că leșini, că solul se
+              mișcă sub tine. Mâinile și picioarele amorțesc sau furnicătură..
+              senzație ciudată, ca și cum nu ar fi ale tale.
+            </p>
+
+            <p>
+              Transpiri.. uneori abundent, uneori doar palme umede.
+              Alternezi între valuri de căldură și frisoane. Simți greață, ca și
+              cum ai vomita.
+            </p>
+
+            <p>
+              Și poate cea mai înspăimântătoare senzație: totul din jur pare
+              ireal. De parcă ai privi un film cu tine însuți. De parcă lumea
+              s-a decuplat. Asta se numește{" "}
+              <strong className="text-lp-navy">derealizare</strong>, și este un simptom frecvent, nu un
+              semn de nebunie.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CE SE ÎNTÂMPLĂ ÎN MINTE */}
+      <section className="bg-white px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-[820px]">
+          <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+            Mintea
+          </p>
+          <h2 className="mt-3 font-work text-3xl font-bold leading-tight text-lp-navy md:text-4xl lg:text-[44px]">
+            Ce se întâmplă în <span className="lp-yellow-underline">minte</span>.
+          </h2>
+
+          <p className="mt-6 text-base leading-relaxed text-lp-mute md:text-lg">
+            Senzațiile fizice vin cu gânduri automate.. rapide, intense, și
+            extrem de convingătoare în acel moment:
+          </p>
+
+          <ul className="mt-8 space-y-3">
+            {THOUGHTS.map((thought) => (
+              <li
+                key={thought}
+                className="rounded-md border-l-4 border-lp-cyan bg-lp-bg px-5 py-3 font-work text-lg italic leading-relaxed text-lp-navy"
               >
-                {step}
-              </p>
-            </li>
-          ))}
-        </ol>
+                {thought}
+              </li>
+            ))}
+          </ul>
 
-        {/* Callout */}
-        <Callout>
-          <p
-            className="text-[17px] leading-[1.75] font-medium"
-            style={{
-              fontFamily: "var(--font-body)",
-              color: "var(--color-text)",
-            }}
-          >
-            Asta este ceea ce cercet\u0103torii numesc{" "}
-            <strong>cercul vicios al panicii</strong>{" "}
-            <span style={{ color: "var(--color-text-secondary)" }}>
-              (Clark, 1986; Beck, 1988)
-            </span>
-            . Nu senza\u021Bia fizic\u0103 produce atacul. Interpretarea catastrofic\u0103 a
-            senza\u021Biei .. aceea produce atacul.
-          </p>
-        </Callout>
-
-        <div
-          className="space-y-6 text-[17px] leading-[1.75]"
-          style={{
-            fontFamily: "var(--font-body)",
-            color: "var(--color-text)",
-          }}
-        >
-          <p>
-            Fiecare senza\u021Bie pe care o sim\u021Bi \u00EEn timpul unui atac de panic\u0103 are
-            o explica\u021Bie biologic\u0103 clar\u0103. Niciuna nu este periculoas\u0103. Corpul
-            t\u0103u face exact ceea ce e programat s\u0103 fac\u0103 \u00EEntr-o situa\u021Bie de
-            pericol. Singura problem\u0103: pericolul nu exist\u0103.
+          <p className="mt-8 text-base leading-relaxed text-lp-mute md:text-lg">
+            Aceste gânduri nu sunt raționale. Dar în mijlocul atacului, ele se
+            simt absolut adevărate. Și tocmai asta este problema.
           </p>
         </div>
-      </Section>
+      </section>
 
-      {/* ── Video ── */}
-      <Section bg="white">
-        <VideoPlaceholder title="Daniel Gagea explic\u0103: Simptomele atacului de panic\u0103" />
-      </Section>
+      {/* CASCADA */}
+      <section className="bg-lp-bg px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-[820px]">
+          <p className="text-base md:text-lg font-semibold uppercase tracking-[0.2em] text-lp-mute">
+            Cercul vicios
+          </p>
+          <h2 className="mt-3 font-work text-3xl font-bold leading-tight text-lp-navy md:text-4xl lg:text-[44px]">
+            Cascada.. cum <span className="lp-yellow-underline">escaladează</span> totul.
+          </h2>
 
-      {/* ── Navigation links ── */}
-      <Section bg="default">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {/* Back to guide */}
-          <Link
-            href="/tipuri/atac-de-panica/"
-            className="group block rounded-xl p-5 transition-shadow"
-            style={{
-              backgroundColor: "var(--color-background-white)",
-              border: "1px solid var(--color-border)",
-              boxShadow: "var(--shadow-sm)",
-            }}
-          >
-            <span
-              className="text-sm block mb-1"
-              style={{ color: "var(--color-text-secondary)" }}
-            >
-              \u2190 \u00CEnapoi
-            </span>
-            <span
-              className="font-medium block"
-              style={{
-                fontFamily: "var(--font-heading)",
-                color: "var(--color-primary)",
-              }}
-            >
-              Ghidul complet
-            </span>
-          </Link>
+          <p className="mt-6 text-base leading-relaxed text-lp-mute md:text-lg">
+            Iată ce se întâmplă de fapt, pas cu pas:
+          </p>
 
-          {/* Next: sau-infarct */}
-          <Link
-            href="/tipuri/atac-de-panica/sau-infarct"
-            className="group block rounded-xl p-5 transition-shadow"
-            style={{
-              backgroundColor: "var(--color-background-white)",
-              border: "1px solid var(--color-border)",
-              boxShadow: "var(--shadow-sm)",
-            }}
-          >
-            <span
-              className="text-sm block mb-1"
-              style={{ color: "var(--color-text-secondary)" }}
-            >
-              Urm\u0103tor \u2192
-            </span>
-            <span
-              className="font-medium block"
-              style={{
-                fontFamily: "var(--font-heading)",
-                color: "var(--color-primary)",
-              }}
-            >
-              Atac de panic\u0103 sau infarct?
-            </span>
-          </Link>
+          <ol className="mt-10 space-y-6">
+            {CASCADE.map((step, i) => (
+              <li key={i} className="flex items-start gap-4">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-lp-navy text-sm font-bold text-white">
+                  {i + 1}
+                </span>
+                <p className="pt-1 text-base leading-relaxed text-lp-mute md:text-lg">
+                  {step}
+                </p>
+              </li>
+            ))}
+          </ol>
 
-          {/* Next: ce-sa-faci */}
-          <Link
-            href="/tipuri/atac-de-panica/ce-sa-faci"
-            className="group block rounded-xl p-5 transition-shadow"
-            style={{
-              backgroundColor: "var(--color-background-white)",
-              border: "1px solid var(--color-border)",
-              boxShadow: "var(--shadow-sm)",
-            }}
-          >
-            <span
-              className="text-sm block mb-1"
-              style={{ color: "var(--color-text-secondary)" }}
-            >
-              Urm\u0103tor \u2192
-            </span>
-            <span
-              className="font-medium block"
-              style={{
-                fontFamily: "var(--font-heading)",
-                color: "var(--color-primary)",
-              }}
-            >
-              Ce faci \u00EEn momentul unui atac
-            </span>
-          </Link>
+          <div className="mt-10 rounded-md border-l-4 border-lp-cyan bg-lp-navy p-8 md:p-10">
+            <p className="text-base leading-relaxed text-white/90 md:text-lg">
+              Asta este ceea ce cercetătorii numesc{" "}
+              <strong className="text-white">cercul vicios al panicii</strong>{" "}
+              <span className="text-white/60">(Clark, 1986; Beck, 1988)</span>.
+              Nu senzația fizică produce atacul. Interpretarea catastrofică a
+              senzației.. aceea produce atacul.
+            </p>
+          </div>
+
+          <p className="mt-8 text-base leading-relaxed text-lp-mute md:text-lg">
+            Fiecare senzație pe care o simți în timpul unui atac de panică are
+            o explicație biologică clară. Niciuna nu este periculoasă. Corpul
+            tău face exact ceea ce e programat să facă într-o situație de
+            pericol. Singura problemă.. pericolul nu există.
+          </p>
         </div>
-      </Section>
+      </section>
 
-      {/* ── Author footer ── */}
-      <Section bg="white">
-        <div
-          className="text-center text-sm"
-          style={{ color: "var(--color-text-secondary)" }}
-        >
-          <p
-            className="font-medium mb-1"
-            style={{
-              fontFamily: "var(--font-heading)",
-              color: "var(--color-primary)",
-              fontSize: "16px",
-            }}
-          >
+      {/* VIDEO */}
+      <section className="bg-white px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-[820px]">
+          <VideoPlaceholder title="Daniel Gagea explică: Simptomele atacului de panică" />
+        </div>
+      </section>
+
+      {/* NAVIGATION */}
+      <section className="bg-lp-bg px-6 py-16 md:py-20">
+        <div className="mx-auto max-w-[1100px]">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <Link
+              href="/tipuri/atac-de-panica/"
+              className="group block rounded-md border border-lp-border bg-white p-6 transition hover:-translate-y-0.5 hover:border-lp-cyan hover:shadow-[0_12px_40px_rgba(8,29,61,0.08)]"
+            >
+              <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-lp-mute-soft">
+                ← Înapoi
+              </span>
+              <span className="mt-2 block font-work text-lg font-bold text-lp-navy">
+                Ghidul complet
+              </span>
+            </Link>
+
+            <Link
+              href="/tipuri/atac-de-panica/sau-infarct"
+              className="group block rounded-md border border-lp-border bg-white p-6 transition hover:-translate-y-0.5 hover:border-lp-cyan hover:shadow-[0_12px_40px_rgba(8,29,61,0.08)]"
+            >
+              <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-lp-mute-soft">
+                Următor →
+              </span>
+              <span className="mt-2 block font-work text-lg font-bold text-lp-navy">
+                Atac de panică sau infarct?
+              </span>
+            </Link>
+
+            <Link
+              href="/tipuri/atac-de-panica/ce-sa-faci"
+              className="group block rounded-md border border-lp-border bg-white p-6 transition hover:-translate-y-0.5 hover:border-lp-cyan hover:shadow-[0_12px_40px_rgba(8,29,61,0.08)]"
+            >
+              <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-lp-mute-soft">
+                Următor →
+              </span>
+              <span className="mt-2 block font-work text-lg font-bold text-lp-navy">
+                Ce faci în momentul unui atac
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* AUTHOR FOOTER */}
+      <section className="bg-white px-6 py-12 md:py-16">
+        <div className="mx-auto max-w-[820px] text-center text-sm text-lp-mute-soft">
+          <p className="font-work text-base font-bold text-lp-navy">
             Daniel Gagea
           </p>
-          <p>
-            Psiholog clinician &middot; 10+ ani experien\u021B\u0103 &middot; 500+ clien\u021Bi
-          </p>
+          <p>Psiholog clinician · 10+ ani experiență · 500+ clienți</p>
         </div>
-      </Section>
-    </>
+      </section>
+    </main>
   );
 }

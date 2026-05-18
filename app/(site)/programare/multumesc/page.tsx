@@ -2,33 +2,13 @@ import Link from "next/link";
 
 export default function MultumescPage() {
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        background: "var(--color-background, #F5F0E8)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "64px 24px",
-      }}
-    >
-      <div style={{ maxWidth: 520, textAlign: "center" }}>
-        <div
-          style={{
-            width: 64,
-            height: 64,
-            borderRadius: "50%",
-            background: "var(--color-secondary, #5C7A6A)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0 auto 24px",
-          }}
-        >
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+    <main className="font-work flex min-h-screen items-center justify-center bg-lp-bg px-6 py-16">
+      <div className="max-w-[560px] text-center">
+        <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-lp-cyan text-white">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden>
             <path
               d="M5 13l4 4L19 7"
-              stroke="#ffffff"
+              stroke="currentColor"
               strokeWidth="2.5"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -36,71 +16,33 @@ export default function MultumescPage() {
           </svg>
         </div>
 
-        <h1
-          style={{
-            fontFamily: "var(--font-heading), 'Fraunces', serif",
-            fontSize: 36,
-            fontWeight: 400,
-            color: "var(--color-primary, #1B2B4B)",
-            marginBottom: 16,
-            letterSpacing: "-0.02em",
-          }}
-        >
-          Mesajul tău a fost trimis
+        <h1 className="font-work text-4xl font-bold leading-tight tracking-tight text-lp-navy md:text-5xl">
+          <span className="lp-yellow-underline">Mesaj primit</span>.
         </h1>
 
-        <p
-          style={{
-            fontSize: 18,
-            color: "var(--color-text-secondary, #5A5A5A)",
-            lineHeight: 1.7,
-            marginBottom: 8,
-          }}
-        >
-          Vei fi contactat în maximum <strong style={{ color: "var(--color-primary, #1B2B4B)" }}>24 de ore</strong>.
+        <p className="mx-auto mt-5 max-w-[480px] text-base leading-relaxed text-lp-mute md:text-lg">
+          Vei fi contactat în maximum{" "}
+          <strong className="text-lp-navy">24 de ore</strong>.
         </p>
 
-        <p
-          style={{
-            fontSize: 16,
-            color: "var(--color-text-secondary, #5A5A5A)",
-            lineHeight: 1.7,
-            marginBottom: 32,
-          }}
-        >
+        <p className="mt-2 text-base leading-relaxed text-lp-mute-soft">
           Până atunci, poți continua să citești despre anxietate.
         </p>
 
-        <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-          <Link
-            href="/tipuri/anxietate-sociala"
-            style={{
-              padding: "12px 24px",
-              border: "1px solid var(--color-border, #DDD8CE)",
-              borderRadius: 8,
-              color: "var(--color-primary, #1B2B4B)",
-              textDecoration: "none",
-              fontSize: 15,
-              fontWeight: 500,
-              transition: "background 0.2s",
-            }}
-          >
-            Anxietatea socială
-          </Link>
+        <div className="mt-10 flex flex-wrap justify-center gap-3">
           <Link
             href="/atac-de-panica"
-            style={{
-              padding: "12px 24px",
-              border: "1px solid var(--color-border, #DDD8CE)",
-              borderRadius: 8,
-              color: "var(--color-primary, #1B2B4B)",
-              textDecoration: "none",
-              fontSize: 15,
-              fontWeight: 500,
-              transition: "background 0.2s",
-            }}
+            className="lp-cta inline-flex items-center gap-2 rounded-md px-6 py-3 text-sm font-semibold md:text-base"
           >
             Atacul de panică
+            <span aria-hidden>→</span>
+          </Link>
+          <Link
+            href="/tipuri/anxietate-sociala"
+            className="lp-cta-ghost inline-flex items-center gap-2 rounded-md px-6 py-3 text-sm font-semibold md:text-base"
+          >
+            Anxietatea socială
+            <span aria-hidden>→</span>
           </Link>
         </div>
       </div>
